@@ -1,5 +1,5 @@
 ﻿// Copyright (c) 2016 The btcsuite developers
-// Copyright (c) 2016 The Decred developers
+// Copyright (c) 2016-2017 The Decred developers
 // Licensed under the ISC license.  See LICENSE file in the project root for full license information.
 
 using Google.Protobuf;
@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 4, 1);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 9, 0);
 
         public static void Initialize()
         {
@@ -476,6 +476,47 @@ namespace Paymetheus.Rpc
             {
                 progressCallback?.Invoke(responseServer.ResponseStream.Current.RescannedThrough);
             }
+        }
+
+        public async Task<TupleValue<uint, Agenda[]>> AgendasAsync()
+        {
+            var client = new AgendaService.AgendaServiceClient(_channel);
+            var request = new AgendasRequest();
+            var response = await client.AgendasAsync(request, cancellationToken: _tokenSource.Token);
+            var agendas = response.Agendas.Select(a => new Agenda
+            {
+                ID = a.Id,
+                Description = a.Description,
+                Choices = a.Choices.Select(c => new Agenda.Choice
+                {
+                    ID = c.Id,
+                    Description = c.Description,
+                    Bits = (ushort)c.Bits,
+                    IsAbstain = c.IsAbstain,
+                    IsNo = c.IsNo,
+                }).ToArray(),
+                Mask = (ushort)a.Mask,
+                StartTime = DateTimeOffsetExtras.FromUnixTimeSeconds(a.StartTime),
+                ExpireTime = DateTimeOffsetExtras.FromUnixTimeSeconds(a.ExpireTime),
+            }).ToArray();
+            return TupleValue.Create(response.Version, agendas);
+        }
+
+        public async Task<TupleValue<string, string>[]> VoteChoicesAsync()
+        {
+            var client = new VotingService.VotingServiceClient(_channel);
+            var request = new VoteChoicesRequest();
+            var response = await client.VoteChoicesAsync(request, cancellationToken: _tokenSource.Token);
+            return response.Choices.Select(c => TupleValue.Create(c.AgendaId, c.ChoiceId)).ToArray();
+        }
+
+        public async Task<ushort> SetVoteChoicesAsync(TupleValue<string, string>[] choices)
+        {
+            var client = new VotingService.VotingServiceClient(_channel);
+            var request = new SetVoteChoicesRequest();
+            request.Choices.AddRange(choices.Select(c => new SetVoteChoicesRequest.Types.Choice { AgendaId = c.Item1, ChoiceId = c.Item2 }));
+            var response = await client.SetVoteChoicesAsync(request, cancellationToken: _tokenSource.Token);
+            return (ushort)response.Votebits;
         }
 
         /// <summary>

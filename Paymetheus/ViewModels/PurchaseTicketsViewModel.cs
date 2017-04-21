@@ -64,6 +64,14 @@ namespace Paymetheus.ViewModels
 
         public PurchaseTicketsViewModel() : base()
         {
+            // TODO move this
+            Task.Run(async () =>
+            {
+                var votePrefs = await FetchWalletVotingPreferences();
+                VoteVersion = votePrefs.Item1;
+                AgendaChoices = votePrefs.Item2;
+            }).Wait();
+
             var synchronizer = ViewModelLocator.SynchronizerViewModel as SynchronizerViewModel;
             if (synchronizer != null)
             {
@@ -147,6 +155,8 @@ namespace Paymetheus.ViewModels
         public DelegateCommandAsync ManageStakePools { get; }
         private async Task ManageStakePoolsActionAsync()
         {
+            var prevConfiguredStakepoolCount = ConfiguredStakePools.Count;
+
             // Open dialog that downloads stakepool listing and lets user enter their api key.
             var shell = (ShellViewModel)ViewModelLocator.ShellViewModel;
             var dialog = new ManageStakePoolsDialogViewModel(shell);
@@ -168,6 +178,11 @@ namespace Paymetheus.ViewModels
                     }
                 }
             });
+
+            if (prevConfiguredStakepoolCount != ConfiguredStakePools.Count)
+            {
+                await UpdateStakepoolVotePreferences();
+            }
         }
 
         public ObservableCollection<IStakePoolSelection> ConfiguredStakePools { get; }
@@ -526,6 +541,92 @@ namespace Paymetheus.ViewModels
 
             ResponseString = "Success! Ticket hashes:\n" + string.Join("\n", purchaseResponse);
             return true;
+        }
+
+        public class AgendaChoiceViewModel : ViewModelBase
+        {
+            readonly Action<Agenda, Agenda.Choice> _setChoice;
+            Agenda.Choice _selectedChoice;
+
+            public AgendaChoiceViewModel(Agenda agenda, Agenda.Choice choice, Action<Agenda, Agenda.Choice> setChoice)
+            {
+                Agenda = agenda;
+                _setChoice = setChoice;
+                _selectedChoice = choice;
+            }
+
+            public Agenda Agenda { get; }
+            public string AgendaID => Agenda.ID;
+            public string AgendaDescription => Agenda.Description;
+            public Agenda.Choice[] Choices => Agenda.Choices;
+
+            public Agenda.Choice SelectedChoice
+            {
+                get { return _selectedChoice; }
+                set
+                {
+                    _selectedChoice = value;
+                    _setChoice(Agenda, value);
+                }
+            }
+        }
+
+        public uint VoteVersion { get; private set; }
+        public List<AgendaChoiceViewModel> AgendaChoices { get; private set; }
+
+        private async Task<TupleValue<uint, List<AgendaChoiceViewModel>>> FetchWalletVotingPreferences()
+        {
+            var walletClient = App.Current.Synchronizer.WalletRpcClient;
+            var agendasTask = walletClient.AgendasAsync();
+            var choicesTask = walletClient.VoteChoicesAsync();
+            var agendas = await agendasTask;
+            var choices = await choicesTask;
+            var agendaChoices = agendas.Item2.Select(a =>
+            {
+                var selectedAgendaChoiceID = choices.First(c => c.Item1 == a.ID).Item2;
+                return new AgendaChoiceViewModel(a, a.Choices.First(c => c.ID == selectedAgendaChoiceID), OnAgendaChoiceChanged);
+            }).ToList();
+            return TupleValue.Create(agendas.Item1, agendaChoices);
+        }
+
+        private void OnAgendaChoiceChanged(Agenda agenda, Agenda.Choice choice)
+        {
+            Task.WhenAll(SaveWalletVotePreference(agenda, choice), UpdateStakepoolVotePreferences()).ContinueWith(t =>
+            {
+                var ex = t.Exception;
+                if (ex != null)
+                {
+                    MessageBox.Show(ex.InnerException.Message, "Failed to set vote preferences");
+                }
+            });
+        }
+
+        private Task SaveWalletVotePreference(Agenda agenda, Agenda.Choice choice)
+        {
+            var walletClient = App.Current.Synchronizer.WalletRpcClient;
+            var choices = new TupleValue<string, string>[] { TupleValue.Create(agenda.ID, choice.ID) };
+            return walletClient.SetVoteChoicesAsync(choices);
+        }
+
+        private Task UpdateStakepoolVotePreferences()
+        {
+            var voteBits = CalculateVoteBits();
+            var updateTasks = ConfiguredStakePools.OfType<StakePoolSelection>().Select(sp =>
+            {
+                var client = new PoolApiClient(sp.PoolInfo.Uri, sp.ApiToken, _httpClient);
+                return client.SetVoteBitsAsync(voteBits);
+            });
+            return Task.WhenAll(updateTasks);
+        }
+
+        private ushort CalculateVoteBits()
+        {
+            ushort voteBits = 1;
+            foreach (var agendaChoice in AgendaChoices)
+            {
+                voteBits |= agendaChoice.SelectedChoice.Bits; // Set bits for the selected choice
+            }
+            return voteBits;
         }
     }
 }

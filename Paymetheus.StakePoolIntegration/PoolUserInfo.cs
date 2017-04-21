@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2016 The Decred developers
+﻿// Copyright (c) 2016-2017 The Decred developers
 // Licensed under the ISC license.  See LICENSE file in the project root for full license information.
 
 using Newtonsoft.Json;
@@ -23,5 +23,13 @@ namespace Paymetheus.StakePoolIntegration
         [JsonRequired]
         [JsonProperty(PropertyName = "TicketAddress")]
         public string VotingAddress { get; set; }
+
+        [JsonRequired]
+        [JsonProperty(PropertyName = "VoteBits")]
+        public ushort VoteBits { get; set; }
+
+        [JsonRequired]
+        [JsonProperty(PropertyName = "VoteBitsVersion")]
+        public uint StakeVersion { get; set; }
     }
 }

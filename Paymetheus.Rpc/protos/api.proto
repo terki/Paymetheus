@@ -41,6 +41,7 @@ service WalletService {
 	rpc ImportPrivateKey (ImportPrivateKeyRequest) returns (ImportPrivateKeyResponse);
 	rpc ImportScript(ImportScriptRequest) returns (ImportScriptResponse);
 	rpc FundTransaction (FundTransactionRequest) returns (FundTransactionResponse);
+	rpc ConstructTransaction (ConstructTransactionRequest) returns (ConstructTransactionResponse);
 	rpc SignTransaction (SignTransactionRequest) returns (SignTransactionResponse);
 	rpc PublishTransaction (PublishTransactionRequest) returns (PublishTransactionResponse);
 	rpc PurchaseTickets(PurchaseTicketsRequest) returns (PurchaseTicketsResponse);
@@ -58,6 +59,35 @@ service WalletLoaderService {
 	rpc FetchHeaders(FetchHeadersRequest) returns (FetchHeadersResponse);
 }
 
+service TicketBuyerService {
+    rpc StartAutoBuyer (StartAutoBuyerRequest) returns (StartAutoBuyerResponse);
+    rpc StopAutoBuyer (StopAutoBuyerRequest) returns (StopAutoBuyerResponse);
+    rpc TicketBuyerConfig (TicketBuyerConfigRequest) returns (TicketBuyerConfigResponse);
+    rpc SetAccount (SetAccountRequest) returns (SetAccountResponse);
+    rpc SetBalanceToMaintain (SetBalanceToMaintainRequest) returns (SetBalanceToMaintainResponse);
+    rpc SetMaxFee (SetMaxFeeRequest) returns (SetMaxFeeResponse);
+    rpc SetMaxPriceRelative (SetMaxPriceRelativeRequest) returns (SetMaxPriceRelativeResponse);
+    rpc SetMaxPriceAbsolute (SetMaxPriceAbsoluteRequest) returns (SetMaxPriceAbsoluteResponse);
+    rpc SetVotingAddress (SetVotingAddressRequest) returns (SetVotingAddressResponse);
+    rpc SetPoolAddress (SetPoolAddressRequest) returns (SetPoolAddressResponse);
+    rpc SetPoolFees (SetPoolFeesRequest) returns (SetPoolFeesResponse);
+    rpc SetMaxPerBlock (SetMaxPerBlockRequest) returns (SetMaxPerBlockResponse);
+}
+
+service SeedService {
+	rpc GenerateRandomSeed (GenerateRandomSeedRequest) returns (GenerateRandomSeedResponse);
+	rpc DecodeSeed (DecodeSeedRequest) returns (DecodeSeedResponse);
+}
+
+service AgendaService {
+	rpc Agendas (AgendasRequest) returns (AgendasResponse);
+}
+
+service VotingService {
+	rpc VoteChoices (VoteChoicesRequest) returns (VoteChoicesResponse);
+	rpc SetVoteChoices (SetVoteChoicesRequest) returns (SetVoteChoicesResponse);
+}
+
 message TransactionDetails {
 	message Input {
 		uint32 index = 1;
@@ -68,6 +98,9 @@ message TransactionDetails {
 		uint32 index = 1;
 		uint32 account = 2;
 		bool internal = 3;
+		int64 amount = 4;
+		string address = 5;
+		bytes output_script = 6;
 	}
 	bytes hash = 1;
 	bytes transaction = 2;
@@ -75,6 +108,13 @@ message TransactionDetails {
 	repeated Output credits = 4;
 	int64 fee = 5;
 	int64 timestamp = 6; // May be earlier than a block timestamp, but never later.
+	enum TransactionType {
+		REGULAR = 0;
+		TICKET_PURCHASE = 1;
+		VOTE = 2;
+		REVOCATION = 3;
+	}
+	TransactionType transaction_type = 7;
 }
 
 message BlockDetails {
@@ -268,6 +308,35 @@ message FundTransactionResponse {
 	bytes change_pk_script = 3;
 }
 
+message ConstructTransactionRequest {
+	message OutputDestination {
+		string address = 1;
+
+		bytes script = 2;
+		uint32 script_version = 3;
+	}
+	message Output {
+		OutputDestination destination = 1;
+		int64 amount = 2;
+	}
+	enum OutputSelectionAlgorithm {
+		UNSPECIFIED = 0;
+		ALL = 1;
+	}
+	uint32 source_account = 1;
+	int32 required_confirmations = 2;
+	int32 fee_per_kb = 3;
+	OutputSelectionAlgorithm output_selection_algorithm = 4;
+	repeated Output non_change_outputs = 5;
+	OutputDestination change_destination = 6;
+}
+message ConstructTransactionResponse {
+	bytes unsigned_transaction = 1;
+	int64 total_previous_output_amount = 2;
+	int64 total_output_amount = 3;
+	uint32 estimated_signed_size = 4;
+}
+
 message SignTransactionRequest {
 	bytes passphrase = 1;
 	
@@ -402,4 +471,154 @@ message FetchHeadersResponse {
 	uint32 fetched_headers_count = 1;
 	bytes first_new_block_hash = 2;
 	int32 first_new_block_height = 3;
+	bytes main_chain_tip_block_hash = 4;
+	int32 main_chain_tip_block_height = 5;
+}
+
+message GenerateRandomSeedRequest {
+	uint32 seed_length = 1;
+}
+message GenerateRandomSeedResponse {
+	bytes seed_bytes = 1;
+	string seed_hex = 2;
+	string seed_mnemonic = 3;
+}
+
+message DecodeSeedRequest {
+	string user_input = 1;
+}
+message DecodeSeedResponse {
+	bytes decoded_seed = 1;
+}
+
+message StartAutoBuyerRequest {
+	bytes passphrase = 1;
+	uint32 account = 2;
+	int64 balance_to_maintain = 3;
+	int64 max_fee_per_kb = 4;
+	double max_price_relative = 5;
+	int64 max_price_absolute = 6;
+	string voting_address = 7;
+	string pool_address = 8;
+	double pool_fees = 9;
+	int64 max_per_block = 10;
+}
+message StartAutoBuyerResponse {}
+
+message StopAutoBuyerRequest {}
+message StopAutoBuyerResponse {}
+message TicketBuyerConfigRequest{
+}
+
+message TicketBuyerConfigResponse{
+    uint32 account = 1;
+    string avg_price_mode = 2;
+    int64 avg_priceVWAP_delta = 3;
+    int64 balance_to_maintain = 4;
+    int64 blocks_to_avg = 5;
+    bool dont_wait_for_tickets = 6;
+    int64 expiry_delta = 7;
+    string fee_source = 8;
+    double fee_target_scaling = 9;
+    int64 min_fee = 10;
+    int64 max_fee = 12;
+    int64 max_per_block = 13;
+    int64 max_price_absolute = 14;
+    double max_price_relative = 15;
+    int64 max_in_mempool = 17;
+    string pool_address = 18;
+    double pool_fees = 19;
+    bool spread_ticket_purchases = 20;
+    string voting_address = 21;
+    int64 tx_fee = 22;
+}
+
+message SetAccountRequest{
+    uint32 account = 1;
+}
+message SetAccountResponse{}
+
+message SetBalanceToMaintainRequest{
+    int64 balance_to_maintain = 1;
+}
+message SetBalanceToMaintainResponse{}
+
+message SetMaxFeeRequest{
+    int64 max_fee_per_kb = 1;
+}
+message SetMaxFeeResponse{}
+
+message SetMaxPriceRelativeRequest{
+    double max_price_relative = 1;
+}
+message SetMaxPriceRelativeResponse{}
+
+message SetMaxPriceAbsoluteRequest{
+    int64 max_price_absolute = 1;
+}
+message SetMaxPriceAbsoluteResponse{}
+
+message SetVotingAddressRequest{
+    string voting_address = 1;
+}
+message SetVotingAddressResponse{}
+
+message SetPoolAddressRequest{
+    string pool_address = 1;
+}
+message SetPoolAddressResponse{}
+
+message SetPoolFeesRequest{
+    double pool_fees = 1;
+}
+message SetPoolFeesResponse{}
+
+message SetMaxPerBlockRequest{
+    int64 max_per_block = 1;
+}
+message SetMaxPerBlockResponse{}
+
+message AgendasRequest {}
+message AgendasResponse {
+	message Agenda {
+		string id = 1;
+		string description = 2;
+		uint32 mask = 3;
+		repeated Choice choices = 4;
+		int64 start_time = 5;
+		int64 expire_time = 6;
+	}
+	message Choice {
+		string id = 1;
+		string description = 2;
+		uint32 bits = 3;
+		bool is_abstain = 4;
+		bool is_no = 5;
+	}
+	uint32 version = 1;
+	repeated Agenda agendas = 2;
+}
+
+message VoteChoicesRequest {}
+message VoteChoicesResponse {
+	message Choice {
+		string agenda_id = 1;
+		string agenda_description = 2;
+		string choice_id = 3;
+		string choice_description = 4;
+	}
+	uint32 version = 1;
+	repeated Choice choices = 2;
+	uint32 votebits = 3;
+}
+
+message SetVoteChoicesRequest {
+	message Choice {
+		string agenda_id = 1;
+		string choice_id = 2;
+	}
+	repeated Choice choices = 1;
+}
+message SetVoteChoicesResponse {
+	uint32 votebits = 1;
 }

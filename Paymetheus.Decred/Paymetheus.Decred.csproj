@@ -94,6 +94,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.cs" />
     <Compile Include="Amount.cs" />
     <Compile Include="Blake256.cs" />
     <Compile Include="BlockChain.cs" />
