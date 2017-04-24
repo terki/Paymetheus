@@ -113,6 +113,20 @@ namespace Paymetheus.ViewModels
             set { _syncedBlockHeight = value; RaisePropertyChanged(); }
         }
 
+        private Amount _ticketPrice;
+        public Amount TicketPrice
+        {
+            get { return _ticketPrice; }
+            set { _ticketPrice = value; RaisePropertyChanged(); }
+        }
+
+        private int _blocksUntilTicketPriceRetarget;
+        public int BlocksUntilTicketPriceRetarget
+        {
+            get { return _blocksUntilTicketPriceRetarget; }
+            set { _blocksUntilTicketPriceRetarget = value; RaisePropertyChanged(); }
+        }
+
         public ObservableCollection<AccountViewModel> Accounts { get; } = new ObservableCollection<AccountViewModel>();
 
         private AccountViewModel _selectedAccount;
@@ -137,6 +151,9 @@ namespace Paymetheus.ViewModels
         {
             try
             {
+                var sdiff = await WalletRpcClient.TicketPriceAsync();
+                await App.Current.Dispatcher.InvokeAsync(() => TicketPrice = sdiff);
+
                 var syncingWallet = await WalletRpcClient.Synchronize(OnWalletChangesProcessed);
                 WalletMutex = syncingWallet.Item1;
                 using (var guard = await WalletMutex.LockAsync())
@@ -301,6 +318,20 @@ namespace Paymetheus.ViewModels
             if (e.NewChainTip != null)
             {
                 SyncedBlockHeight = e.NewChainTip.Value.Height;
+                var oldRetarget = BlocksUntilTicketPriceRetarget;
+                BlocksUntilTicketPriceRetarget = BlockChain.BlocksUntilTicketPriceRetarget(SyncedBlockHeight, wallet.ActiveChain);
+                if (BlocksUntilTicketPriceRetarget > oldRetarget)
+                {
+                    Task.Run(async () =>
+                    {
+                        var sdiff = await WalletRpcClient.TicketPriceAsync();
+                        await App.Current.Dispatcher.InvokeAsync(() => TicketPrice = sdiff);
+                    }).ContinueWith(t =>
+                    {
+                        if (t.Exception != null)
+                            MessageBox.Show(t.Exception.InnerException.Message, "Error querying ticket price");
+                    });
+                }
             }
             if (e.AddedTransactions.Count != 0 || e.RemovedTransactions.Count != 0 || e.NewChainTip != null)
             {
@@ -339,6 +370,7 @@ namespace Paymetheus.ViewModels
             TransactionCount = txSet.TransactionCount();
             SyncedBlockHeight = wallet.ChainTip.Height;
             SelectedAccount = accountViewModels[0];
+            BlocksUntilTicketPriceRetarget = BlockChain.BlocksUntilTicketPriceRetarget(SyncedBlockHeight, wallet.ActiveChain);
             RaisePropertyChanged(nameof(TotalBalance));
             RaisePropertyChanged(nameof(AccountNames));
             overviewViewModel.AccountsCount = accountViewModels.Count();

@@ -13,7 +13,9 @@ namespace Paymetheus.Decred
             name: "mainnet",
             network: 0xd9b400f9,
             maturity: 256,
-            coinType: 20
+            coinType: 20,
+            svh: 4096,
+            sdiffRetargetInterval: 8
         );
 
         public static readonly BlockChainIdentity TestNet = new BlockChainIdentity
@@ -21,7 +23,9 @@ namespace Paymetheus.Decred
             name: "testnet",
             network: 0x48e7a065,
             maturity: 16,
-            coinType: 11
+            coinType: 11,
+            svh: 768,
+            sdiffRetargetInterval: 144
         );
 
         public static readonly BlockChainIdentity SimNet = new BlockChainIdentity
@@ -29,21 +33,27 @@ namespace Paymetheus.Decred
             name: "simnet",
             network: 0x12141c16,
             maturity: 16,
-            coinType: 115
+            coinType: 115,
+            svh: 16 + (64 * 2),
+            sdiffRetargetInterval: 8
         );
 
-        private BlockChainIdentity(string name, uint network, int maturity, uint coinType)
+        private BlockChainIdentity(string name, uint network, int maturity, uint coinType, int svh, int sdiffRetargetInterval)
         {
             Name = name;
             Network = network;
             Maturity = maturity;
             Bip44CoinType = coinType;
+            StakeValidationHeight = svh;
+            StakeDifficultyRetargetInterval = sdiffRetargetInterval;
         }
 
         public string Name { get; }
         public uint Network { get; }
         public int Maturity { get; }
         public uint Bip44CoinType { get; }
+        public int StakeValidationHeight { get; }
+        public int StakeDifficultyRetargetInterval { get; }
 
         public static BlockChainIdentity FromNetworkBits(uint network)
         {

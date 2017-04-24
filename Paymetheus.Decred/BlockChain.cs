@@ -52,5 +52,11 @@ namespace Paymetheus.Decred
 
         public static bool IsMatured(int blockchainHeight, int txHeight, BlockChainIdentity blockChain) =>
             IsConfirmed(blockchainHeight, txHeight, blockChain.Maturity);
+
+        public static int BlocksUntilTicketPriceRetarget(int blockHeight, BlockChainIdentity blockChain)
+        {
+            var sdiffInterval = blockChain.StakeDifficultyRetargetInterval;
+            return sdiffInterval - (blockHeight % sdiffInterval);
+        }
     }
 }

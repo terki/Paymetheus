@@ -69,7 +69,7 @@
                 <TextBlock Text="Ticket difficulty" Style="{StaticResource tableItemDescriptionTextBlock}" Grid.Row="3"/>
                 <TextBlock Text="{Binding Path=StakeInfoProperties.PoolSize, FallbackValue='UNDECLARED'}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="1" />
                 <TextBlock Text="{Binding Path=StakeInfoProperties.AllMempoolTickets, FallbackValue='UNDECLARED'}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="2"/>
-                <TextBlock Text="{Binding Path=StakeDifficultyProperties.NextTicketPrice, FallbackValue='UNDECLARED'}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="3"/>
+                <TextBlock Text="{Binding Path=SynchronizerViewModel.TicketPrice, FallbackValue='0', Source={StaticResource ViewModelLocator}}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="3"/>
 
                 <!-- Wallet statistics -->
                 <TextBlock Text="Wallet statistics" FontWeight="Bold"  Style="{StaticResource tableHeaderTextBlock}" Grid.Row="5"/>

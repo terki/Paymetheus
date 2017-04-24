@@ -133,7 +133,6 @@
     <Compile Include="Wallet\ConfirmationStatus.cs" />
     <Compile Include="Wallet\PgpWordList.cs" />
     <Compile Include="Wallet\PgpWordListData.cs" />
-    <Compile Include="Wallet\StakeDifficultyProperties.cs" />
     <Compile Include="Wallet\StakeInfoProperties.cs" />
     <Compile Include="Wallet\TransactionAuthor.cs" />
     <Compile Include="Wallet\TransactionCategory.cs" />

@@ -88,9 +88,6 @@ namespace Paymetheus.ViewModels
             ManageStakePools = new DelegateCommandAsync(ManageStakePoolsActionAsync);
             ManageStakePools.Executable = false; // Set true after pool listing is downloaded and configs are read.
 
-            FetchStakeDifficultyCommand = new DelegateCommand(FetchStakeDifficultyAsync);
-            FetchStakeDifficultyCommand.Execute(null);
-
             _purchaseTickets = new DelegateCommand(PurchaseTicketsAction);
             _purchaseTickets.Executable = false;
         }
@@ -428,38 +425,6 @@ namespace Paymetheus.ViewModels
             _purchaseTickets.Executable = true;
         }
 
-        private StakeDifficultyProperties _stakeDifficultyProperties;
-        public StakeDifficultyProperties StakeDifficultyProperties
-        {
-            get { return _stakeDifficultyProperties; }
-            internal set { _stakeDifficultyProperties = value; RaisePropertyChanged(); }
-        }
-
-        public ICommand FetchStakeDifficultyCommand { get; }
-
-        private async void FetchStakeDifficultyAsync()
-        {
-            try
-            {
-                StakeDifficultyProperties = await App.Current.Synchronizer.WalletRpcClient.StakeDifficultyAsync();
-                int windowSize = 144;
-                int heightOfChange = ((StakeDifficultyProperties.HeightForTicketPrice / windowSize) + 1) * windowSize;
-                BlocksToRetarget = heightOfChange - StakeDifficultyProperties.HeightForTicketPrice;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error");
-            }
-        }
-
-        private int _blocksToRetarget;
-        public int BlocksToRetarget
-        {
-            get { return _blocksToRetarget; }
-            internal set { _blocksToRetarget = value; RaisePropertyChanged(); }
-        }
-
-
         private DelegateCommand _purchaseTickets;
         public ICommand Execute => _purchaseTickets;
 
@@ -486,12 +451,13 @@ namespace Paymetheus.ViewModels
 
         private async Task<bool> PurchaseTicketsWithPassphrase(string passphrase)
         {
-            var walletClient = App.Current.Synchronizer.WalletRpcClient;
+            var synchronizer = App.Current.Synchronizer;
+            var walletClient = synchronizer.WalletRpcClient;
 
             var account = SelectedSourceAccount.Account;
-            var spendLimit = StakeDifficultyProperties.NextTicketPrice;
+            var spendLimit = synchronizer.TicketPrice;
             int requiredConfirms = 2; // TODO allow user to set
-            uint expiryHeight = _expiry + (uint)StakeDifficultyProperties.HeightForTicketPrice;
+            uint expiryHeight = _expiry + (uint)synchronizer.SyncedBlockHeight;
 
             Amount splitFeeLocal = _splitFee;
             Amount ticketFeeLocal = _ticketFee;
@@ -571,6 +537,7 @@ namespace Paymetheus.ViewModels
             }
         }
 
+        public Visibility VotePreferencesVisibility => AgendaChoices.Count == 0 ? Visibility.Collapsed : Visibility.Visible;
         public uint VoteVersion { get; private set; }
         public List<AgendaChoiceViewModel> AgendaChoices { get; private set; }
 

@@ -27,13 +27,6 @@ namespace Paymetheus.ViewModels
             internal set { _stakeInfoProperties = value; RaisePropertyChanged(); }
         }
 
-        private StakeDifficultyProperties _stakeDifficultyProperties;
-        public StakeDifficultyProperties StakeDifficultyProperties
-        {
-            get { return _stakeDifficultyProperties; }
-            internal set { _stakeDifficultyProperties = value; RaisePropertyChanged(); }
-        }
-
         public ICommand FetchStakeInfoCommand { get; }
 
         private async void FetchStakeInfoAsync()
@@ -41,7 +34,6 @@ namespace Paymetheus.ViewModels
             try
             {
                 StakeInfoProperties = await App.Current.Synchronizer.WalletRpcClient.StakeInfoAsync();
-                StakeDifficultyProperties = await App.Current.Synchronizer.WalletRpcClient.StakeDifficultyAsync();
             }
             // Do not give an error if a failed precondition response is given. This generally means that 
             // the wallet is synchronizing to the latest block, and if the user waits a short period of 

@@ -17,7 +17,7 @@
         <StackPanel Margin="40 20 40 0">
             <StackPanel>
                 <TextBlock Margin="0 0 0 10" Grid.Column="0" Text="Purchase tickets" Style="{StaticResource shellMediumHeaderTextBlockStyle}"/>
-                <TextBlock Grid.Column="0" Style="{StaticResource shellDescriptionTextBlockStyle}">
+                <TextBlock Margin="0 0 0 20" Grid.Column="0" Style="{StaticResource shellDescriptionTextBlockStyle}">
                     In order to stake mine, you must make a deposit to the network in the form of a ticket.
                     The ticket enters the owner in a lottery for the next several months, at which time it
                     may be chosen at any block for validation.
@@ -26,18 +26,15 @@
                     be purchased with voting rights assigned to a stake pool or your own separate, always running
                     voting wallet.  The safest way to ensure that your vote succeeds is use a stake pool.
                 </TextBlock>
-                <Button HorizontalAlignment="Right" VerticalAlignment="Top" 
-                    Content="REFRESH" Command="{Binding FetchStakeDifficultyCommand}"
-                    Style="{StaticResource ButtonBlue}"/>
             </StackPanel>
 
             <TextBlock FontSize="16">
                 <Run Text="Ticket difficulty:"/>
-                <Run Text="{Binding StakeDifficultyProperties.NextTicketPrice, Mode=OneWay, StringFormat={}{0} DCR}"/>
+                <Run Text="{Binding Path=SynchronizerViewModel.TicketPrice, Source={StaticResource ViewModelLocator}, Mode=OneWay, StringFormat={}{0} DCR}"/>
             </TextBlock>
             <TextBlock FontSize="16" Margin="0 0 0 40">
                 <Run Text="Blocks until retarget:"/>
-                <Run Text="{Binding BlocksToRetarget, Mode=OneWay}"/>
+                <Run Text="{Binding Path=SynchronizerViewModel.BlocksUntilTicketPriceRetarget, Source={StaticResource ViewModelLocator}, Mode=OneWay}"/>
             </TextBlock>
 
             <Grid>
@@ -138,8 +135,8 @@
 
             <StackPanel Visibility="{Binding VotePreferencesVisibility, Mode=OneTime}">
                 <StackPanel.Resources>
-                    <ControlTemplate x:Key="AgendaChoiceTemplate" TargetType="{x:Type ListBoxItem}">
-                        <Grid x:Name="ItemGrid" Width="540" Margin="0 0 0 12">
+                    <DataTemplate x:Key="AgendaChoiceTemplate">
+                        <Grid x:Name="ItemGrid" Width="540" Margin="0 0 0 12" HorizontalAlignment="Left">
                             <Grid.RowDefinitions>
                                 <RowDefinition />
                                 <RowDefinition />
@@ -147,20 +144,14 @@
                             <TextBlock Grid.Row="0" Text="{Binding AgendaDescription, Mode=OneTime}" FontSize="16" TextWrapping="Wrap"/>
                             <ComboBox Grid.Row="1" ItemsSource="{Binding Choices}" SelectedItem="{Binding SelectedChoice}" DisplayMemberPath="ID" HorizontalAlignment="Left" MinWidth="120"/>
                         </Grid>
-                    </ControlTemplate>
+                    </DataTemplate>
                 </StackPanel.Resources>
                 <TextBlock FontSize="20" Margin="0 0 0 12">
                     <Run Text="Voting preferences"/>
                     <Run Text="(v"/><Run Text="{Binding VoteVersion, FallbackValue=#, Mode=OneTime}"/><Run Text=")"/>
                 </TextBlock>
-                <ListBox ItemsSource="{Binding AgendaChoices, Mode=OneTime}" Background="Transparent" BorderThickness="0" ScrollViewer.CanContentScroll="False">
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="{x:Type ListBoxItem}">
-                            <Setter Property="Template" Value="{StaticResource AgendaChoiceTemplate}"/>
-                            <Setter Property="HorizontalAlignment" Value="Left"/>
-                        </Style>
-                    </ListBox.ItemContainerStyle>
-                </ListBox>
+                <ItemsControl Padding="0 0 0 20" HorizontalContentAlignment="Left" ScrollViewer.CanContentScroll="True"
+                              ItemsSource="{Binding AgendaChoices, Mode=OneTime}" ItemTemplate="{StaticResource AgendaChoiceTemplate}"/>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>

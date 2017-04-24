@@ -387,17 +387,12 @@ namespace Paymetheus.Rpc
             return response.TicketHashes.Select(h => new Blake256Hash(h.ToByteArray())).ToList();
         }
 
-        public async Task<StakeDifficultyProperties> StakeDifficultyAsync()
+        public async Task<Amount> TicketPriceAsync()
         {
             var client = new WalletService.WalletServiceClient(_channel);
             var request = new TicketPriceRequest { };
             var response = await client.TicketPriceAsync(request, cancellationToken: _tokenSource.Token);
-            var properties = new StakeDifficultyProperties
-            {
-                HeightForTicketPrice = response.Height,
-                NextTicketPrice = response.TicketPrice,
-            };
-            return properties;
+            return response.TicketPrice;
         }
 
         public async Task<StakeInfoProperties> StakeInfoAsync()
