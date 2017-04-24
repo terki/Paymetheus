@@ -10,7 +10,7 @@ namespace Paymetheus.Decred.Wallet
 {
     public static class TransactionFees
     {
-        public static readonly Amount DefaultFeePerKb = 1000000;
+        public static readonly Amount DefaultFeePerKb = 100000;
 
         public static Amount FeeForSerializeSize(Amount feePerKb, int txSerializeSize)
         {

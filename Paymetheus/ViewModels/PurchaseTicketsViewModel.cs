@@ -234,7 +234,7 @@ namespace Paymetheus.ViewModels
             set { _ticketsToPurchase = value; EnableOrDisableSendCommand(); }
         }
 
-        private const long minFeePerKb = (long)1e6;
+        private const long minFeePerKb = (long)1e5;
         private const long maxFeePerKb = (long)1e8 - 1;
 
         private Amount _ticketFee = minFeePerKb;
