@@ -29,7 +29,7 @@
             </StackPanel>
 
             <TextBlock FontSize="16">
-                <Run Text="Ticket difficulty:"/>
+                <Run Text="Ticket price:"/>
                 <Run Text="{Binding Path=SynchronizerViewModel.TicketPrice, Source={StaticResource ViewModelLocator}, Mode=OneWay, StringFormat={}{0} DCR}"/>
             </TextBlock>
             <TextBlock FontSize="16" Margin="0 0 0 40">

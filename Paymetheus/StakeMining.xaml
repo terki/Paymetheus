@@ -66,7 +66,7 @@
                 <TextBlock Text="Network statistics" Style="{StaticResource tableHeaderTextBlock}" Grid.Row="0"/>
                 <TextBlock Text="Number of live tickets" Style="{StaticResource tableItemDescriptionTextBlock}" Grid.Row="1"/>
                 <TextBlock Text="Number of tickets in mempool" Style="{StaticResource tableItemDescriptionTextBlock}" Grid.Row="2"/>
-                <TextBlock Text="Ticket difficulty" Style="{StaticResource tableItemDescriptionTextBlock}" Grid.Row="3"/>
+                <TextBlock Text="Ticket price" Style="{StaticResource tableItemDescriptionTextBlock}" Grid.Row="3"/>
                 <TextBlock Text="{Binding Path=StakeInfoProperties.PoolSize, FallbackValue='UNDECLARED'}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="1" />
                 <TextBlock Text="{Binding Path=StakeInfoProperties.AllMempoolTickets, FallbackValue='UNDECLARED'}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="2"/>
                 <TextBlock Text="{Binding Path=SynchronizerViewModel.TicketPrice, FallbackValue='0', Source={StaticResource ViewModelLocator}}" Style="{StaticResource tableItemValueTextBlock}" Grid.Row="3"/>
