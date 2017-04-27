@@ -15,7 +15,7 @@ namespace Paymetheus.Decred
             maturity: 256,
             coinType: 20,
             svh: 4096,
-            sdiffRetargetInterval: 8
+            sdiffRetargetInterval: 144
         );
 
         public static readonly BlockChainIdentity TestNet = new BlockChainIdentity
