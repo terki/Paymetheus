@@ -100,7 +100,7 @@ namespace Paymetheus.ViewModels
                 .Where(p => p.ApiEnabled)
                 .Where(p => p.Uri.Scheme == "https")
                 .Where(p => p.Network == App.Current.ActiveNetwork.Name)
-                .Where(p => p.SupportedApiVersions.Contains(PoolApiClient.Version))
+                .Where(p => p.SupportedApiVersions.Where(PoolApiClient.IsSupportedApiVersion).Any())
                 .OrderBy(p => p.Uri.Host));
 
             if (File.Exists(_configPath))
@@ -117,6 +117,7 @@ namespace Paymetheus.ViewModels
                         }
                         var stakePoolSelection = new StakePoolSelection(entryInfo, entry.ApiKey, Hexadecimal.Decode(entry.MultisigVoteScript));
                         ConfiguredStakePools.Add(stakePoolSelection);
+                        RaisePropertyChanged(nameof(VotePreferencesVisibility));
 
                         // If only one pool is saved, use this as the default.
                         if (config.Entries.Length == 1)
@@ -172,6 +173,7 @@ namespace Paymetheus.ViewModels
                         var stakePoolSelection = new StakePoolSelection(poolInfo, poolUserConfig.ApiKey,
                             Hexadecimal.Decode(poolUserConfig.MultisigVoteScript));
                         ConfiguredStakePools.Add(stakePoolSelection);
+                        RaisePropertyChanged(nameof(VotePreferencesVisibility));
                     }
                 }
             });
@@ -468,7 +470,8 @@ namespace Paymetheus.ViewModels
             if (SelectedStakePool is StakePoolSelection)
             {
                 var selection = (StakePoolSelection)SelectedStakePool;
-                var client = new PoolApiClient(selection.PoolInfo.Uri, selection.ApiToken, _httpClient);
+                var bestApiVersion = PoolApiClient.BestSupportedApiVersion(selection.PoolInfo.SupportedApiVersions);
+                var client = new PoolApiClient(bestApiVersion, selection.PoolInfo.Uri, selection.ApiToken, _httpClient);
                 var purchaseInfo = await client.GetPurchaseInfoAsync();
 
                 // Import the 1-of-2 multisig vote script.  This has to be done here rather than from
@@ -537,7 +540,10 @@ namespace Paymetheus.ViewModels
             }
         }
 
-        public Visibility VotePreferencesVisibility => AgendaChoices.Count == 0 ? Visibility.Collapsed : Visibility.Visible;
+        public Visibility VotePreferencesVisibility =>
+            AgendaChoices.Any() && ConfiguredStakePools.OfType<StakePoolSelection>()
+                .Where(p => p.PoolInfo.SupportedApiVersions.Where(v => v >= 2).Any()).Any()
+            ? Visibility.Visible : Visibility.Collapsed;
         public uint VoteVersion { get; private set; }
         public List<AgendaChoiceViewModel> AgendaChoices { get; private set; }
 
@@ -580,7 +586,12 @@ namespace Paymetheus.ViewModels
             var voteBits = CalculateVoteBits();
             var updateTasks = ConfiguredStakePools.OfType<StakePoolSelection>().Select(sp =>
             {
-                var client = new PoolApiClient(sp.PoolInfo.Uri, sp.ApiToken, _httpClient);
+                var bestApiVersion = PoolApiClient.BestSupportedApiVersion(sp.PoolInfo.SupportedApiVersions);
+                if (bestApiVersion < 2)
+                {
+                    return new Task(() => { });
+                }
+                var client = new PoolApiClient(bestApiVersion, sp.PoolInfo.Uri, sp.ApiToken, _httpClient);
                 return client.SetVoteBitsAsync(voteBits);
             });
             return Task.WhenAll(updateTasks);

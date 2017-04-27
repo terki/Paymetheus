@@ -133,7 +133,7 @@
 
             <TextBox Text="{Binding ResponseString, Mode=TwoWay}" Foreground="#FF0C1E3E" FontSize="16" Margin="0 40 0 0" Background="Transparent" BorderThickness="0" IsReadOnly="True" TextWrapping="Wrap"/>
 
-            <StackPanel Visibility="{Binding VotePreferencesVisibility, Mode=OneTime}">
+            <StackPanel Visibility="{Binding VotePreferencesVisibility, Mode=OneWay}">
                 <StackPanel.Resources>
                     <DataTemplate x:Key="AgendaChoiceTemplate">
                         <Grid x:Name="ItemGrid" Width="540" Margin="0 0 0 12" HorizontalAlignment="Left">

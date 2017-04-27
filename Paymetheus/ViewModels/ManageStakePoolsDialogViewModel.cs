@@ -51,7 +51,7 @@ namespace Paymetheus.ViewModels
                 .Where(p => p.ApiEnabled)
                 .Where(p => p.Uri.Scheme == "https")
                 .Where(p => p.Network == App.Current.ActiveNetwork.Name)
-                .Where(p => p.SupportedApiVersions.Contains(PoolApiClient.Version))
+                .Where(p => p.SupportedApiVersions.Where(PoolApiClient.IsSupportedApiVersion).Any())
                 .OrderBy(p => p.Uri.Host);
 
             var selectedStakePool = availablePools.FirstOrDefault();
@@ -178,7 +178,8 @@ namespace Paymetheus.ViewModels
                 var nextAddressResponse = await App.Current.Synchronizer.WalletRpcClient.NextExternalAddressAsync(SelectedVotingAccount.Account);
                 var pubKeyAddress = nextAddressResponse.Item2;
 
-                var client = new PoolApiClient(SelectedStakePool.Uri, SelectedPoolApiKey, _httpClient);
+                var bestApiVersion = PoolApiClient.BestSupportedApiVersion(SelectedStakePool.SupportedApiVersions);
+                var client = new PoolApiClient(bestApiVersion, SelectedStakePool.Uri, SelectedPoolApiKey, _httpClient);
 
                 // Sumbit the pubkey.  In the current stakepool api version only a single pubkey can
                 // be submitted per user, so if one was already submitted, simply ignore the error.

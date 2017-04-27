@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -12,15 +13,23 @@ namespace Paymetheus.StakePoolIntegration
 {
     public sealed class PoolApiClient
     {
-        public const uint Version = 2;
-        const string VersionString = "v2";
+        public const uint EarliestSupportedVersion = 1;
+        public const uint LatestSupportedVersion = 2;
 
-        static Uri RequestUri(Uri poolUri, string request) => new Uri(poolUri, $"api/{VersionString}/{request}");
+        public static bool IsSupportedApiVersion(uint apiVersion) =>
+            apiVersion >= EarliestSupportedVersion && apiVersion <= LatestSupportedVersion;
+
+        public static uint BestSupportedApiVersion(IEnumerable<uint> apiVersions) =>
+            apiVersions.Where(IsSupportedApiVersion).Max();
 
         readonly Uri _poolUri;
+        readonly uint _version;
+        readonly string _versionString;
         readonly string _apiToken;
         readonly HttpClient _httpClient;
         readonly JsonSerializer _jsonSerializer = new JsonSerializer();
+
+        Uri RequestUri(Uri poolUri, string request) => new Uri(poolUri, $"api/{_versionString}/{request}");
 
         HttpRequestMessage CreateApiRequest(HttpMethod httpMethod, string apiMethod)
         {
@@ -39,7 +48,7 @@ namespace Paymetheus.StakePoolIntegration
             }
         }
 
-        public PoolApiClient(Uri poolUri, string apiToken, HttpClient httpClient)
+        public PoolApiClient(uint apiVersion, Uri poolUri, string apiToken, HttpClient httpClient)
         {
             if (poolUri == null)
                 throw new ArgumentNullException(nameof(poolUri));
@@ -48,12 +57,18 @@ namespace Paymetheus.StakePoolIntegration
             if (httpClient == null)
                 throw new ArgumentNullException(nameof(httpClient));
 
+            if (apiVersion > LatestSupportedVersion)
+            {
+                throw new ArgumentException("API version must not be greater than the last supported version.");
+            }
             if (poolUri.Scheme != "https")
             {
                 throw new ArgumentException("In order to protect API tokens, stakepools must serve API over HTTPS.");
             }
 
             _poolUri = poolUri;
+            _version = apiVersion;
+            _versionString = $"v{apiVersion}";
             _apiToken = apiToken;
             _httpClient = httpClient;
         }
@@ -77,6 +92,11 @@ namespace Paymetheus.StakePoolIntegration
 
         public async Task SetVoteBitsAsync(ushort voteBits)
         {
+            if (_version < 2)
+            {
+                throw new InvalidOperationException("This method is not supported by the client's API version.");
+            }
+
             var request = CreateApiRequest(HttpMethod.Post, "voting");
             request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
             {

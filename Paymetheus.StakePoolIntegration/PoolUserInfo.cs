@@ -24,11 +24,9 @@ namespace Paymetheus.StakePoolIntegration
         [JsonProperty(PropertyName = "TicketAddress")]
         public string VotingAddress { get; set; }
 
-        [JsonRequired]
         [JsonProperty(PropertyName = "VoteBits")]
         public ushort VoteBits { get; set; }
 
-        [JsonRequired]
         [JsonProperty(PropertyName = "VoteBitsVersion")]
         public uint StakeVersion { get; set; }
     }
