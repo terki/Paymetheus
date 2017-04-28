@@ -239,7 +239,7 @@ namespace Paymetheus.ViewModels
         private const long minFeePerKb = (long)1e5;
         private const long maxFeePerKb = (long)1e8 - 1;
 
-        private Amount _ticketFee = minFeePerKb;
+        private Amount _ticketFee = TransactionFees.DefaultFeePerKb;
         public string TicketFee
         {
             get { return _ticketFee.ToString(); }
@@ -264,7 +264,7 @@ namespace Paymetheus.ViewModels
         }
 
 
-        private Amount _splitFee = minFeePerKb;
+        private Amount _splitFee = TransactionFees.DefaultFeePerKb;
         public string SplitFee
         {
             get { return _splitFee.ToString(); }
