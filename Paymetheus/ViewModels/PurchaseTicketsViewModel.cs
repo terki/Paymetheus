@@ -168,12 +168,13 @@ namespace Paymetheus.ViewModels
                     var poolInfo = configuredPool.Item1;
                     var poolUserConfig = configuredPool.Item2;
 
-                    if (ConfiguredStakePools.OfType<StakePoolSelection>().Where(p => p.PoolInfo.Uri.Host == poolInfo.Uri.Host).Count() == 0)
+                    if (!ConfiguredStakePools.OfType<StakePoolSelection>().Where(p => p.PoolInfo.Uri.Host == poolInfo.Uri.Host).Any())
                     {
                         var stakePoolSelection = new StakePoolSelection(poolInfo, poolUserConfig.ApiKey,
                             Hexadecimal.Decode(poolUserConfig.MultisigVoteScript));
                         ConfiguredStakePools.Add(stakePoolSelection);
                         RaisePropertyChanged(nameof(VotePreferencesVisibility));
+                        SelectedStakePool = stakePoolSelection;
                     }
                 }
             });
@@ -584,16 +585,20 @@ namespace Paymetheus.ViewModels
         private Task UpdateStakepoolVotePreferences()
         {
             var voteBits = CalculateVoteBits();
-            var updateTasks = ConfiguredStakePools.OfType<StakePoolSelection>().Select(sp =>
-            {
-                var bestApiVersion = PoolApiClient.BestSupportedApiVersion(sp.PoolInfo.SupportedApiVersions);
-                if (bestApiVersion < 2)
+            var updateTasks = ConfiguredStakePools.OfType<StakePoolSelection>()
+                .Select(sp =>
                 {
-                    return new Task(() => { });
-                }
-                var client = new PoolApiClient(bestApiVersion, sp.PoolInfo.Uri, sp.ApiToken, _httpClient);
-                return client.SetVoteBitsAsync(voteBits);
-            });
+                    var bestApiVersion = PoolApiClient.BestSupportedApiVersion(sp.PoolInfo.SupportedApiVersions);
+                    return TupleValue.Create(sp, bestApiVersion);
+                })
+                .Where(t => t.Item2 >= 2)
+                .Select(t =>
+                {
+                    var sp = t.Item1;
+                    var bestApiVersion = t.Item2;
+                    var client = new PoolApiClient(bestApiVersion, sp.PoolInfo.Uri, sp.ApiToken, _httpClient);
+                    return client.SetVoteBitsAsync(voteBits);
+                });
             return Task.WhenAll(updateTasks);
         }
 
