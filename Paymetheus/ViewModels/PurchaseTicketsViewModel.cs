@@ -237,8 +237,8 @@ namespace Paymetheus.ViewModels
             set { _ticketsToPurchase = value; EnableOrDisableSendCommand(); }
         }
 
-        private const long minFeePerKb = (long)1e5;
-        private const long maxFeePerKb = (long)1e8 - 1;
+        private readonly Amount MinFeePerKb = (Amount)1e5; // 0.001 DCR
+        private readonly Amount HighFeeThreshold = (Amount)1e9; // 10 DCR
 
         private Amount _ticketFee = TransactionFees.DefaultFeePerKb;
         public string TicketFee
@@ -250,10 +250,10 @@ namespace Paymetheus.ViewModels
                 {
                     var ticketFee = Denomination.Decred.AmountFromString(value);
 
-                    if (ticketFee < minFeePerKb)
-                        throw new ArgumentException($"Too small fee passed (must be >= {(Amount)minFeePerKb} DCR/kB)");
-                    if (ticketFee > maxFeePerKb)
-                        throw new ArgumentException($"Too big fee passed (must be <= {(Amount)minFeePerKb} DCR/kB)");
+                    if (ticketFee < MinFeePerKb)
+                        throw new ArgumentException($"Fee is too low (must be at least {MinFeePerKb})");
+                    if (ticketFee >= HighFeeThreshold)
+                        throw new ArgumentException($"Fee is too high (must be less than {HighFeeThreshold})");
 
                     _ticketFee = ticketFee;
                 }
@@ -275,10 +275,10 @@ namespace Paymetheus.ViewModels
                 {
                     var splitFee = Denomination.Decred.AmountFromString(value);
 
-                    if (splitFee < minFeePerKb)
-                        throw new ArgumentException($"Too small fee passed (must be >= {(Amount)minFeePerKb} DCR/kB)");
-                    if (splitFee > maxFeePerKb)
-                        throw new ArgumentException($"Too big fee passed (must be <= {(Amount)minFeePerKb} DCR/kB)");
+                    if (splitFee < MinFeePerKb)
+                        throw new ArgumentException($"Fee is too low (must be at least {MinFeePerKb})");
+                    if (splitFee >= HighFeeThreshold)
+                        throw new ArgumentException($"Fee is too high (must be less than {HighFeeThreshold})");
 
                     _splitFee = splitFee;
                 }
