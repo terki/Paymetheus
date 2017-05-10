@@ -353,14 +353,6 @@ namespace Paymetheus.ViewModels
         private readonly byte[] _seed;
         private readonly bool _restore;
 
-        private bool _usePublicEncryption;
-        public bool UsePublicEncryption
-        {
-            get { return _usePublicEncryption; }
-            set { _usePublicEncryption = value; RaisePropertyChanged(); }
-        }
-        public string PublicPassphrase { private get; set; } = "";
-        public string PublicPassphraseConfirm { private get; set; } = "";
         public string PrivatePassphrase { private get; set; } = "";
         public string PrivatePassphraseConfirm { private get; set; } = "";
 
@@ -387,33 +379,8 @@ namespace Paymetheus.ViewModels
                     return;
                 }
 
-                var publicPassphrase = PublicPassphrase;
-                if (!UsePublicEncryption)
-                {
-                    publicPassphrase = "public";
-                }
-                else
-                {
-                    if (string.IsNullOrEmpty(publicPassphrase))
-                    {
-                        MessageBox.Show("Public passphrase is required");
-                        return;
-                    }
-                    if (string.IsNullOrEmpty(PublicPassphraseConfirm))
-                    {
-                        MessageBox.Show("Confirm public passphrase");
-                        return;
-                    }
-
-                    if (!string.Equals(publicPassphrase, PublicPassphraseConfirm))
-                    {
-                        MessageBox.Show("Public passphrases do not match");
-                        return;
-                    }
-                }
-
                 var rpcClient = App.Current.Synchronizer.WalletRpcClient;
-                await rpcClient.CreateWallet(publicPassphrase, PrivatePassphrase, _seed);
+                await rpcClient.CreateWallet("", PrivatePassphrase, _seed);
                 ValueArray.Zero(_seed);
 
                 if (_restore)
