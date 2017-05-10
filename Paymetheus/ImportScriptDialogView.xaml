@@ -19,6 +19,7 @@
                 <TextBox Height="100" Width="480" Name="textBox" Margin="5 2" Padding="2"
                      Text="{Binding ScriptHexString, Mode=OneWayToSource, ValidatesOnExceptions=True}" 
                      f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text" TextWrapping="Wrap"/>
+                <CheckBox FontSize="14" Foreground="#FF0C1E3E" Margin="5 6 5 2" Content="Rescan" VerticalContentAlignment="Bottom" IsChecked="{Binding Rescan}" />
                 <Label Content="Private passphrase:" FontSize="14" Foreground="#FF0C1E3E"/>
                 <PasswordBox Name="passphraseTextBox" Width="480" PasswordChanged="passphraseTextBox_PasswordChanged" Margin="5 2" Padding="2"/>
             </StackPanel>

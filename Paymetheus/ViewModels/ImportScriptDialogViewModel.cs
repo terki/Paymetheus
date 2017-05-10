@@ -40,13 +40,21 @@ namespace Paymetheus.ViewModels
             }        
         }
 
+        public bool Rescan { get; set; } = false;
+
         public string Passphrase { private get; set; } = "";
 
         private async Task ImportScriptAsync()
         {
             try
             {
-                await App.Current.Synchronizer.WalletRpcClient.ImportScriptAsync(_scriptBytes, false, 0, Passphrase);
+                var rpcClient = App.Current.Synchronizer.WalletRpcClient;
+                await rpcClient.ImportScriptAsync(_scriptBytes, false, 0, Passphrase);
+                if (Rescan)
+                {
+                    // TODO: hook the rescan progress somewhere so the shell viewmodel can show when the rescan is over.
+                    rpcClient.RescanFromBlockHeightAsync(0).ContinueWith(App.Current.WarnIfFailed("Script import rescan failed"));
+                }
                 HideDialog();
             }
             catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.AlreadyExists)

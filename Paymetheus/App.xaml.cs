@@ -204,5 +204,14 @@ namespace Paymetheus
                 Synchronizer?.WalletRpcProcess?.KillIfExecuting();
             }
         }
+
+        public Action<Task> WarnIfFailed(string caption = "Error") => t =>
+        {
+            var ex = t.Exception;
+            if (ex != null)
+            {
+                MessageBox.Show(ex.InnerException.Message, caption);
+            }
+        };
     }
 }
