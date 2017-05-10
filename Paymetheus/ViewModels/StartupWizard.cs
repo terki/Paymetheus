@@ -93,11 +93,13 @@ namespace Paymetheus.ViewModels
                     return;
                 }
 
+                var walletClient = App.Current.Synchronizer.WalletRpcClient;
+
                 var rpcOptions = new ConsensusServerRpcOptions(ConsensusServerNetworkAddress,
                     ConsensusServerRpcUsername, ConsensusServerRpcPassword, ConsensusServerCertificateFile);
                 try
                 {
-                    await App.Current.Synchronizer.WalletRpcClient.StartConsensusRpc(rpcOptions);
+                    await walletClient.StartConsensusRpc(rpcOptions);
                 }
                 catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.NotFound)
                 {
@@ -127,20 +129,24 @@ namespace Paymetheus.ViewModels
                     parser.WriteFile(Path.Combine(appDataDir, "defaults.ini"), ini);
                 });
 
-                var walletExists = await App.Current.Synchronizer.WalletRpcClient.WalletExistsAsync();
+                var walletExists = await walletClient.WalletExistsAsync();
                 if (!walletExists)
                 {
                     _wizard.CurrentDialog = new PickCreateOrImportSeedDialog(Wizard);
                 }
                 else
                 {
-                    // TODO: Determine whether the public encryption is enabled and a prompt for the
-                    // public passphrase prompt is needed before the wallet can be opened.  If it
-                    // does not, then the wallet can be opened directly here instead of creating
-                    // another dialog.
-                    _wizard.CurrentDialog = new PromptPublicPassphraseDialog(Wizard);
-
-                    //await _walletClient.OpenWallet("public");
+                    // Attempt to open the wallet without any public passphrase.  If this succeeds,
+                    // continue by syncing the wallet.  Otherwise, prompt for the public passphrase.
+                    try
+                    {
+                        await walletClient.OpenWallet("");
+                        _wizard.CurrentDialog = new OpenExistingWalletActivityProgress(Wizard);
+                    }
+                    catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.InvalidArgument)
+                    {
+                        _wizard.CurrentDialog = new PromptPublicPassphraseDialog(Wizard);
+                    }
                 }
             }
             catch (Exception ex)
