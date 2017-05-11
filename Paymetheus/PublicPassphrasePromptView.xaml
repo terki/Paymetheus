@@ -16,16 +16,16 @@
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid x:Name="LayoutRoot">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="185" Width="480">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="480">
             <TextBlock Name="PublicPassphraseTextBlock" Text="Public Passphrase" VerticalAlignment="Top" HorizontalAlignment="left" Width="480" Height="40" Padding="0 0 0 0" Style="{StaticResource wizardMediumHeaderTextBlockStyle}"/>
             <Label Margin="0 0 0 0">
                 <TextBlock Width="480" Margin="-5 -5 0 0" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Style="{StaticResource wizardDefaultTextBlockStyle}">
-                A public passphrase is only required to open the wallet when the optional
-                public data encryption feature is enabled.
-                Simply continue by opening the wallet with an empty passphrase if public
-                data encryption is disabled.
+                    Some public data in the wallet has been encrypted.  Please enter your public passphrase below to continue.
+                    <LineBreak/>
+                    Public data encryption can be optionally removed to avoid this prompt in the future.
                 </TextBlock>
             </Label>
+            <CheckBox Content="Remove public data encryption" IsChecked="{Binding RemovePublicEncryption}"  Style="{StaticResource wizardCheckBoxStyle}"/>
             <Border Padding="5" CornerRadius="5" Background="White" Height="35" Width="480" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
                 <PasswordBox x:Name="PasswordBoxPublicPassphrase" BorderThickness="0" Background="{x:Null}" PasswordChanged="PasswordBoxPublicPassphrase_PasswordChanged"/>
             </Border>

@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 9, 0);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 9, 2);
 
         public static void Initialize()
         {
@@ -268,6 +268,33 @@ namespace Paymetheus.Rpc
                 ScanFrom = scanFrom,
             };
             await client.ImportScriptAsync(request, cancellationToken: _tokenSource.Token);
+        }
+
+        private async Task ChangePassphrase(ChangePassphraseRequest.Types.Key which, string oldPassphrase, string newPassphrase)
+        {
+            if (oldPassphrase == null)
+                throw new ArgumentNullException(nameof(oldPassphrase));
+            if (newPassphrase == null)
+                throw new ArgumentNullException(nameof(newPassphrase));
+
+            var client = new WalletService.WalletServiceClient(_channel);
+            var request = new ChangePassphraseRequest
+            {
+                Key = which,
+                OldPassphrase = ByteString.CopyFromUtf8(oldPassphrase),
+                NewPassphrase = ByteString.CopyFromUtf8(newPassphrase),
+            };
+            await client.ChangePassphraseAsync(request, cancellationToken: _tokenSource.Token);
+        }
+
+        public Task ChangePrivatePassphrase(string oldPassphrase, string newPassphrase)
+        {
+            return ChangePassphrase(ChangePassphraseRequest.Types.Key.Private, oldPassphrase, newPassphrase);
+        }
+
+        public Task ChangePublicPassphrase(string oldPassphrase, string newPassphrase)
+        {
+            return ChangePassphrase(ChangePassphraseRequest.Types.Key.Public, oldPassphrase, newPassphrase);
         }
 
         public async Task RenameAccountAsync(Account account, string newAccountName)

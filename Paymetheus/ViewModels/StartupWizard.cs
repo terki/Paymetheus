@@ -407,6 +407,7 @@ namespace Paymetheus.ViewModels
         }
 
         public string PublicPassphrase { get; set; } = "";
+        public bool RemovePublicEncryption { get; set; } = false;
 
         public DelegateCommand OpenWalletCommand { get; }
         private async void OpenWallet()
@@ -415,6 +416,10 @@ namespace Paymetheus.ViewModels
             {
                 OpenWalletCommand.Executable = false;
                 await App.Current.Synchronizer.WalletRpcClient.OpenWallet(PublicPassphrase);
+                if (RemovePublicEncryption)
+                {
+                    await App.Current.Synchronizer.WalletRpcClient.ChangePublicPassphrase(PublicPassphrase, "");
+                }
                 Wizard.CurrentDialog = new OpenExistingWalletActivityProgress(Wizard);
             }
             catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.InvalidArgument)
