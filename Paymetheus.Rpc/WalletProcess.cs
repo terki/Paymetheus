@@ -34,7 +34,7 @@ namespace Paymetheus.Rpc
 
             var processInfo = new ProcessStartInfo();
             processInfo.FileName = executablePath ?? ProcessName;
-            processInfo.Arguments = $"{networkFlag} --noinitialload --experimentalrpclisten={v4ListenAddress} --tlscurve=P-256 --onetimetlskey --appdata=\"{appDataDirectory}\" {extraArgs}";
+            processInfo.Arguments = $"{networkFlag} --noinitialload --grpclisten={v4ListenAddress} --tlscurve=P-256 --onetimetlskey --appdata=\"{appDataDirectory}\" {extraArgs}";
             processInfo.UseShellExecute = false;
             processInfo.RedirectStandardError = true;
             processInfo.RedirectStandardOutput = true;
@@ -60,17 +60,17 @@ namespace Paymetheus.Rpc
             if (intendedNetwork == null)
                 throw new ArgumentNullException(nameof(intendedNetwork));
 
-            // Note: The standard ports for dcrwallet RPC are 9110, 19110, and 19557.
+            // Note: The standard ports for dcrwallet gRPC are 9111, 19111, and 19558.
             // The ports used by Paymetheus are 2 greater than this to avoid conflicts with
             // other running dcrwallet instances using the default settings.
             // The +1 port is reserved for running dcrd on a nonstandard port as well.
             string port;
             if (intendedNetwork == BlockChainIdentity.MainNet)
-                port = "9112";
+                port = "9113";
             else if (intendedNetwork == BlockChainIdentity.TestNet)
-                port = "19112";
+                port = "19113";
             else if (intendedNetwork == BlockChainIdentity.SimNet)
-                port = "19559";
+                port = "19560";
             else
                 throw new UnknownBlockChainException(intendedNetwork);
 
