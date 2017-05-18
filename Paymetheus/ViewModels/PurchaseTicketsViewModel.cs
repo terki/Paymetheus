@@ -17,6 +17,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Text;
 using Paymetheus.Decred.Util;
+using Grpc.Core;
 
 namespace Paymetheus.ViewModels
 {
@@ -90,6 +91,7 @@ namespace Paymetheus.ViewModels
 
             _purchaseTickets = new DelegateCommand(PurchaseTicketsAction);
             _purchaseTickets.Executable = false;
+            _revokeTickets = new DelegateCommand(RevokeTicketsAction);
         }
 
         public async Task RunActivityAsync()
@@ -610,6 +612,43 @@ namespace Paymetheus.ViewModels
                 voteBits |= agendaChoice.SelectedChoice.Bits; // Set bits for the selected choice
             }
             return voteBits;
+        }
+
+        public DelegateCommand _revokeTickets;
+        public ICommand RevokeTickets => _revokeTickets;
+
+        private void RevokeTicketsAction()
+        {
+            var shell = ViewModelLocator.ShellViewModel as ShellViewModel;
+            if (shell != null)
+            {
+                Func<string, Task<bool>> action =
+                    passphrase => RevokeTicketsWithPassphrase(passphrase);
+                shell.VisibleDialogContent = new PassphraseDialogViewModel(shell,
+                    "Enter passphrase to revoke tickets",
+                    "REVOKE",
+                    action);
+            }
+        }
+
+        private async Task<bool> RevokeTicketsWithPassphrase(string passphrase)
+        {
+            var walletClient = App.Current.Synchronizer.WalletRpcClient;
+            try
+            {
+                await walletClient.RevokeTicketsAsync(passphrase);
+                return true;
+            }
+            catch (RpcException ex) when (ex.Status.StatusCode == Grpc.Core.StatusCode.InvalidArgument)
+            {
+                MessageBox.Show(ex.Status.Detail);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+                return false;
+            }
         }
     }
 }

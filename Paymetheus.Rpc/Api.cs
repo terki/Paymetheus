@@ -10,7 +10,6 @@ using scg = global::System.Collections.Generic;
 namespace Walletrpc {
 
   /// <summary>Holder for reflection information generated from api.proto</summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public static partial class ApiReflection {
 
     #region Descriptor
@@ -133,200 +132,194 @@ namespace Walletrpc {
             "CgtudW1fdGlja2V0cxgGIAEoDRIUCgxwb29sX2FkZHJlc3MYByABKAkSEQoJ",
             "cG9vbF9mZWVzGAggASgBEg4KBmV4cGlyeRgJIAEoDRIOCgZ0eF9mZWUYCiAB",
             "KAMSEgoKdGlja2V0X2ZlZRgLIAEoAyIwChdQdXJjaGFzZVRpY2tldHNSZXNw",
-            "b25zZRIVCg10aWNrZXRfaGFzaGVzGAEgAygMIh4KHExvYWRBY3RpdmVEYXRh",
-            "RmlsdGVyc1JlcXVlc3QiHwodTG9hZEFjdGl2ZURhdGFGaWx0ZXJzUmVzcG9u",
-            "c2UiIQofVHJhbnNhY3Rpb25Ob3RpZmljYXRpb25zUmVxdWVzdCLOAQogVHJh",
-            "bnNhY3Rpb25Ob3RpZmljYXRpb25zUmVzcG9uc2USMAoPYXR0YWNoZWRfYmxv",
-            "Y2tzGAEgAygLMhcud2FsbGV0cnBjLkJsb2NrRGV0YWlscxIXCg9kZXRhY2hl",
-            "ZF9ibG9ja3MYAiADKAwSOwoUdW5taW5lZF90cmFuc2FjdGlvbnMYAyADKAsy",
-            "HS53YWxsZXRycGMuVHJhbnNhY3Rpb25EZXRhaWxzEiIKGnVubWluZWRfdHJh",
-            "bnNhY3Rpb25faGFzaGVzGAQgAygMImQKHVNwZW50bmVzc05vdGlmaWNhdGlv",
-            "bnNSZXF1ZXN0Eg8KB2FjY291bnQYASABKA0SGQoRbm9fbm90aWZ5X3Vuc3Bl",
-            "bnQYAiABKAgSFwoPbm9fbm90aWZ5X3NwZW50GAMgASgIIs4BCh5TcGVudG5l",
-            "c3NOb3RpZmljYXRpb25zUmVzcG9uc2USGAoQdHJhbnNhY3Rpb25faGFzaBgB",
-            "IAEoDBIUCgxvdXRwdXRfaW5kZXgYAiABKA0SQgoHc3BlbmRlchgDIAEoCzIx",
-            "LndhbGxldHJwYy5TcGVudG5lc3NOb3RpZmljYXRpb25zUmVzcG9uc2UuU3Bl",
-            "bmRlcho4CgdTcGVuZGVyEhgKEHRyYW5zYWN0aW9uX2hhc2gYASABKAwSEwoL",
-            "aW5wdXRfaW5kZXgYAiABKA0iHQobQWNjb3VudE5vdGlmaWNhdGlvbnNSZXF1",
-            "ZXN0IqABChxBY2NvdW50Tm90aWZpY2F0aW9uc1Jlc3BvbnNlEhYKDmFjY291",
-            "bnRfbnVtYmVyGAEgASgNEhQKDGFjY291bnRfbmFtZRgCIAEoCRIaChJleHRl",
-            "cm5hbF9rZXlfY291bnQYAyABKA0SGgoSaW50ZXJuYWxfa2V5X2NvdW50GAQg",
-            "ASgNEhoKEmltcG9ydGVkX2tleV9jb3VudBgFIAEoDSJaChNDcmVhdGVXYWxs",
-            "ZXRSZXF1ZXN0EhkKEXB1YmxpY19wYXNzcGhyYXNlGAEgASgMEhoKEnByaXZh",
-            "dGVfcGFzc3BocmFzZRgCIAEoDBIMCgRzZWVkGAMgASgMIhYKFENyZWF0ZVdh",
-            "bGxldFJlc3BvbnNlIi4KEU9wZW5XYWxsZXRSZXF1ZXN0EhkKEXB1YmxpY19w",
-            "YXNzcGhyYXNlGAEgASgMIhQKEk9wZW5XYWxsZXRSZXNwb25zZSIUChJDbG9z",
-            "ZVdhbGxldFJlcXVlc3QiFQoTQ2xvc2VXYWxsZXRSZXNwb25zZSIVChNXYWxs",
-            "ZXRFeGlzdHNSZXF1ZXN0IiYKFFdhbGxldEV4aXN0c1Jlc3BvbnNlEg4KBmV4",
-            "aXN0cxgBIAEoCCJsChhTdGFydENvbnNlbnN1c1JwY1JlcXVlc3QSFwoPbmV0",
-            "d29ya19hZGRyZXNzGAEgASgJEhAKCHVzZXJuYW1lGAIgASgJEhAKCHBhc3N3",
-            "b3JkGAMgASgMEhMKC2NlcnRpZmljYXRlGAQgASgMIhsKGVN0YXJ0Q29uc2Vu",
-            "c3VzUnBjUmVzcG9uc2UiUQoYRGlzY292ZXJBZGRyZXNzZXNSZXF1ZXN0EhkK",
-            "EWRpc2NvdmVyX2FjY291bnRzGAEgASgIEhoKEnByaXZhdGVfcGFzc3BocmFz",
-            "ZRgCIAEoDCIbChlEaXNjb3ZlckFkZHJlc3Nlc1Jlc3BvbnNlIiYKJFN1YnNj",
-            "cmliZVRvQmxvY2tOb3RpZmljYXRpb25zUmVxdWVzdCInCiVTdWJzY3JpYmVU",
-            "b0Jsb2NrTm90aWZpY2F0aW9uc1Jlc3BvbnNlIhUKE0ZldGNoSGVhZGVyc1Jl",
-            "cXVlc3QiuwEKFEZldGNoSGVhZGVyc1Jlc3BvbnNlEh0KFWZldGNoZWRfaGVh",
-            "ZGVyc19jb3VudBgBIAEoDRIcChRmaXJzdF9uZXdfYmxvY2tfaGFzaBgCIAEo",
-            "DBIeChZmaXJzdF9uZXdfYmxvY2tfaGVpZ2h0GAMgASgFEiEKGW1haW5fY2hh",
-            "aW5fdGlwX2Jsb2NrX2hhc2gYBCABKAwSIwobbWFpbl9jaGFpbl90aXBfYmxv",
-            "Y2tfaGVpZ2h0GAUgASgFIjAKGUdlbmVyYXRlUmFuZG9tU2VlZFJlcXVlc3QS",
-            "EwoLc2VlZF9sZW5ndGgYASABKA0iWQoaR2VuZXJhdGVSYW5kb21TZWVkUmVz",
-            "cG9uc2USEgoKc2VlZF9ieXRlcxgBIAEoDBIQCghzZWVkX2hleBgCIAEoCRIV",
-            "Cg1zZWVkX21uZW1vbmljGAMgASgJIicKEURlY29kZVNlZWRSZXF1ZXN0EhIK",
-            "CnVzZXJfaW5wdXQYASABKAkiKgoSRGVjb2RlU2VlZFJlc3BvbnNlEhQKDGRl",
-            "Y29kZWRfc2VlZBgBIAEoDCKBAgoVU3RhcnRBdXRvQnV5ZXJSZXF1ZXN0EhIK",
-            "CnBhc3NwaHJhc2UYASABKAwSDwoHYWNjb3VudBgCIAEoDRIbChNiYWxhbmNl",
-            "X3RvX21haW50YWluGAMgASgDEhYKDm1heF9mZWVfcGVyX2tiGAQgASgDEhoK",
-            "Em1heF9wcmljZV9yZWxhdGl2ZRgFIAEoARIaChJtYXhfcHJpY2VfYWJzb2x1",
-            "dGUYBiABKAMSFgoOdm90aW5nX2FkZHJlc3MYByABKAkSFAoMcG9vbF9hZGRy",
-            "ZXNzGAggASgJEhEKCXBvb2xfZmVlcxgJIAEoARIVCg1tYXhfcGVyX2Jsb2Nr",
-            "GAogASgDIhgKFlN0YXJ0QXV0b0J1eWVyUmVzcG9uc2UiFgoUU3RvcEF1dG9C",
-            "dXllclJlcXVlc3QiFwoVU3RvcEF1dG9CdXllclJlc3BvbnNlIhoKGFRpY2tl",
-            "dEJ1eWVyQ29uZmlnUmVxdWVzdCL1AwoZVGlja2V0QnV5ZXJDb25maWdSZXNw",
-            "b25zZRIPCgdhY2NvdW50GAEgASgNEhYKDmF2Z19wcmljZV9tb2RlGAIgASgJ",
-            "EhsKE2F2Z19wcmljZVZXQVBfZGVsdGEYAyABKAMSGwoTYmFsYW5jZV90b19t",
-            "YWludGFpbhgEIAEoAxIVCg1ibG9ja3NfdG9fYXZnGAUgASgDEh0KFWRvbnRf",
-            "d2FpdF9mb3JfdGlja2V0cxgGIAEoCBIUCgxleHBpcnlfZGVsdGEYByABKAMS",
-            "EgoKZmVlX3NvdXJjZRgIIAEoCRIaChJmZWVfdGFyZ2V0X3NjYWxpbmcYCSAB",
-            "KAESDwoHbWluX2ZlZRgKIAEoAxIPCgdtYXhfZmVlGAwgASgDEhUKDW1heF9w",
-            "ZXJfYmxvY2sYDSABKAMSGgoSbWF4X3ByaWNlX2Fic29sdXRlGA4gASgDEhoK",
-            "Em1heF9wcmljZV9yZWxhdGl2ZRgPIAEoARIWCg5tYXhfaW5fbWVtcG9vbBgR",
-            "IAEoAxIUCgxwb29sX2FkZHJlc3MYEiABKAkSEQoJcG9vbF9mZWVzGBMgASgB",
-            "Eh8KF3NwcmVhZF90aWNrZXRfcHVyY2hhc2VzGBQgASgIEhYKDnZvdGluZ19h",
-            "ZGRyZXNzGBUgASgJEg4KBnR4X2ZlZRgWIAEoAyIkChFTZXRBY2NvdW50UmVx",
-            "dWVzdBIPCgdhY2NvdW50GAEgASgNIhQKElNldEFjY291bnRSZXNwb25zZSI6",
-            "ChtTZXRCYWxhbmNlVG9NYWludGFpblJlcXVlc3QSGwoTYmFsYW5jZV90b19t",
-            "YWludGFpbhgBIAEoAyIeChxTZXRCYWxhbmNlVG9NYWludGFpblJlc3BvbnNl",
-            "IioKEFNldE1heEZlZVJlcXVlc3QSFgoObWF4X2ZlZV9wZXJfa2IYASABKAMi",
-            "EwoRU2V0TWF4RmVlUmVzcG9uc2UiOAoaU2V0TWF4UHJpY2VSZWxhdGl2ZVJl",
-            "cXVlc3QSGgoSbWF4X3ByaWNlX3JlbGF0aXZlGAEgASgBIh0KG1NldE1heFBy",
-            "aWNlUmVsYXRpdmVSZXNwb25zZSI4ChpTZXRNYXhQcmljZUFic29sdXRlUmVx",
-            "dWVzdBIaChJtYXhfcHJpY2VfYWJzb2x1dGUYASABKAMiHQobU2V0TWF4UHJp",
-            "Y2VBYnNvbHV0ZVJlc3BvbnNlIjEKF1NldFZvdGluZ0FkZHJlc3NSZXF1ZXN0",
-            "EhYKDnZvdGluZ19hZGRyZXNzGAEgASgJIhoKGFNldFZvdGluZ0FkZHJlc3NS",
-            "ZXNwb25zZSItChVTZXRQb29sQWRkcmVzc1JlcXVlc3QSFAoMcG9vbF9hZGRy",
-            "ZXNzGAEgASgJIhgKFlNldFBvb2xBZGRyZXNzUmVzcG9uc2UiJwoSU2V0UG9v",
-            "bEZlZXNSZXF1ZXN0EhEKCXBvb2xfZmVlcxgBIAEoASIVChNTZXRQb29sRmVl",
-            "c1Jlc3BvbnNlIi4KFVNldE1heFBlckJsb2NrUmVxdWVzdBIVCg1tYXhfcGVy",
-            "X2Jsb2NrGAEgASgDIhgKFlNldE1heFBlckJsb2NrUmVzcG9uc2UiEAoOQWdl",
-            "bmRhc1JlcXVlc3QiyQIKD0FnZW5kYXNSZXNwb25zZRIPCgd2ZXJzaW9uGAEg",
-            "ASgNEjIKB2FnZW5kYXMYAiADKAsyIS53YWxsZXRycGMuQWdlbmRhc1Jlc3Bv",
-            "bnNlLkFnZW5kYRqUAQoGQWdlbmRhEgoKAmlkGAEgASgJEhMKC2Rlc2NyaXB0",
-            "aW9uGAIgASgJEgwKBG1hc2sYAyABKA0SMgoHY2hvaWNlcxgEIAMoCzIhLndh",
-            "bGxldHJwYy5BZ2VuZGFzUmVzcG9uc2UuQ2hvaWNlEhIKCnN0YXJ0X3RpbWUY",
-            "BSABKAMSEwoLZXhwaXJlX3RpbWUYBiABKAMaWgoGQ2hvaWNlEgoKAmlkGAEg",
-            "ASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEgwKBGJpdHMYAyABKA0SEgoKaXNf",
-            "YWJzdGFpbhgEIAEoCBINCgVpc19ubxgFIAEoCCIUChJWb3RlQ2hvaWNlc1Jl",
-            "cXVlc3Qi2AEKE1ZvdGVDaG9pY2VzUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEo",
-            "DRI2CgdjaG9pY2VzGAIgAygLMiUud2FsbGV0cnBjLlZvdGVDaG9pY2VzUmVz",
-            "cG9uc2UuQ2hvaWNlEhAKCHZvdGViaXRzGAMgASgNGmYKBkNob2ljZRIRCglh",
-            "Z2VuZGFfaWQYASABKAkSGgoSYWdlbmRhX2Rlc2NyaXB0aW9uGAIgASgJEhEK",
-            "CWNob2ljZV9pZBgDIAEoCRIaChJjaG9pY2VfZGVzY3JpcHRpb24YBCABKAki",
-            "gQEKFVNldFZvdGVDaG9pY2VzUmVxdWVzdBI4CgdjaG9pY2VzGAEgAygLMicu",
-            "d2FsbGV0cnBjLlNldFZvdGVDaG9pY2VzUmVxdWVzdC5DaG9pY2UaLgoGQ2hv",
-            "aWNlEhEKCWFnZW5kYV9pZBgBIAEoCRIRCgljaG9pY2VfaWQYAiABKAkiKgoW",
-            "U2V0Vm90ZUNob2ljZXNSZXNwb25zZRIQCgh2b3RlYml0cxgBIAEoDTJSCg5W",
-            "ZXJzaW9uU2VydmljZRJACgdWZXJzaW9uEhkud2FsbGV0cnBjLlZlcnNpb25S",
-            "ZXF1ZXN0Ghoud2FsbGV0cnBjLlZlcnNpb25SZXNwb25zZTKsEAoNV2FsbGV0",
-            "U2VydmljZRI3CgRQaW5nEhYud2FsbGV0cnBjLlBpbmdSZXF1ZXN0Ghcud2Fs",
-            "bGV0cnBjLlBpbmdSZXNwb25zZRJACgdOZXR3b3JrEhkud2FsbGV0cnBjLk5l",
-            "dHdvcmtSZXF1ZXN0Ghoud2FsbGV0cnBjLk5ldHdvcmtSZXNwb25zZRJSCg1B",
-            "Y2NvdW50TnVtYmVyEh8ud2FsbGV0cnBjLkFjY291bnROdW1iZXJSZXF1ZXN0",
-            "GiAud2FsbGV0cnBjLkFjY291bnROdW1iZXJSZXNwb25zZRJDCghBY2NvdW50",
-            "cxIaLndhbGxldHJwYy5BY2NvdW50c1JlcXVlc3QaGy53YWxsZXRycGMuQWNj",
-            "b3VudHNSZXNwb25zZRJACgdCYWxhbmNlEhkud2FsbGV0cnBjLkJhbGFuY2VS",
-            "ZXF1ZXN0Ghoud2FsbGV0cnBjLkJhbGFuY2VSZXNwb25zZRJaCg9HZXRUcmFu",
-            "c2FjdGlvbnMSIS53YWxsZXRycGMuR2V0VHJhbnNhY3Rpb25zUmVxdWVzdBoi",
-            "LndhbGxldHJwYy5HZXRUcmFuc2FjdGlvbnNSZXNwb25zZTABEkwKC1RpY2tl",
-            "dFByaWNlEh0ud2FsbGV0cnBjLlRpY2tldFByaWNlUmVxdWVzdBoeLndhbGxl",
-            "dHJwYy5UaWNrZXRQcmljZVJlc3BvbnNlEkYKCVN0YWtlSW5mbxIbLndhbGxl",
-            "dHJwYy5TdGFrZUluZm9SZXF1ZXN0Ghwud2FsbGV0cnBjLlN0YWtlSW5mb1Jl",
-            "c3BvbnNlEnUKGFRyYW5zYWN0aW9uTm90aWZpY2F0aW9ucxIqLndhbGxldHJw",
-            "Yy5UcmFuc2FjdGlvbk5vdGlmaWNhdGlvbnNSZXF1ZXN0Gisud2FsbGV0cnBj",
-            "LlRyYW5zYWN0aW9uTm90aWZpY2F0aW9uc1Jlc3BvbnNlMAESbwoWU3BlbnRu",
-            "ZXNzTm90aWZpY2F0aW9ucxIoLndhbGxldHJwYy5TcGVudG5lc3NOb3RpZmlj",
-            "YXRpb25zUmVxdWVzdBopLndhbGxldHJwYy5TcGVudG5lc3NOb3RpZmljYXRp",
-            "b25zUmVzcG9uc2UwARJpChRBY2NvdW50Tm90aWZpY2F0aW9ucxImLndhbGxl",
-            "dHJwYy5BY2NvdW50Tm90aWZpY2F0aW9uc1JlcXVlc3QaJy53YWxsZXRycGMu",
-            "QWNjb3VudE5vdGlmaWNhdGlvbnNSZXNwb25zZTABElsKEENoYW5nZVBhc3Nw",
-            "aHJhc2USIi53YWxsZXRycGMuQ2hhbmdlUGFzc3BocmFzZVJlcXVlc3QaIy53",
-            "YWxsZXRycGMuQ2hhbmdlUGFzc3BocmFzZVJlc3BvbnNlElIKDVJlbmFtZUFj",
-            "Y291bnQSHy53YWxsZXRycGMuUmVuYW1lQWNjb3VudFJlcXVlc3QaIC53YWxs",
-            "ZXRycGMuUmVuYW1lQWNjb3VudFJlc3BvbnNlEj8KBlJlc2NhbhIYLndhbGxl",
-            "dHJwYy5SZXNjYW5SZXF1ZXN0Ghkud2FsbGV0cnBjLlJlc2NhblJlc3BvbnNl",
-            "MAESTAoLTmV4dEFjY291bnQSHS53YWxsZXRycGMuTmV4dEFjY291bnRSZXF1",
-            "ZXN0Gh4ud2FsbGV0cnBjLk5leHRBY2NvdW50UmVzcG9uc2USTAoLTmV4dEFk",
-            "ZHJlc3MSHS53YWxsZXRycGMuTmV4dEFkZHJlc3NSZXF1ZXN0Gh4ud2FsbGV0",
-            "cnBjLk5leHRBZGRyZXNzUmVzcG9uc2USWwoQSW1wb3J0UHJpdmF0ZUtleRIi",
-            "LndhbGxldHJwYy5JbXBvcnRQcml2YXRlS2V5UmVxdWVzdBojLndhbGxldHJw",
-            "Yy5JbXBvcnRQcml2YXRlS2V5UmVzcG9uc2USTwoMSW1wb3J0U2NyaXB0Eh4u",
-            "d2FsbGV0cnBjLkltcG9ydFNjcmlwdFJlcXVlc3QaHy53YWxsZXRycGMuSW1w",
-            "b3J0U2NyaXB0UmVzcG9uc2USWAoPRnVuZFRyYW5zYWN0aW9uEiEud2FsbGV0",
-            "cnBjLkZ1bmRUcmFuc2FjdGlvblJlcXVlc3QaIi53YWxsZXRycGMuRnVuZFRy",
-            "YW5zYWN0aW9uUmVzcG9uc2USZwoUQ29uc3RydWN0VHJhbnNhY3Rpb24SJi53",
-            "YWxsZXRycGMuQ29uc3RydWN0VHJhbnNhY3Rpb25SZXF1ZXN0Gicud2FsbGV0",
-            "cnBjLkNvbnN0cnVjdFRyYW5zYWN0aW9uUmVzcG9uc2USWAoPU2lnblRyYW5z",
-            "YWN0aW9uEiEud2FsbGV0cnBjLlNpZ25UcmFuc2FjdGlvblJlcXVlc3QaIi53",
-            "YWxsZXRycGMuU2lnblRyYW5zYWN0aW9uUmVzcG9uc2USYQoSUHVibGlzaFRy",
-            "YW5zYWN0aW9uEiQud2FsbGV0cnBjLlB1Ymxpc2hUcmFuc2FjdGlvblJlcXVl",
-            "c3QaJS53YWxsZXRycGMuUHVibGlzaFRyYW5zYWN0aW9uUmVzcG9uc2USWAoP",
-            "UHVyY2hhc2VUaWNrZXRzEiEud2FsbGV0cnBjLlB1cmNoYXNlVGlja2V0c1Jl",
-            "cXVlc3QaIi53YWxsZXRycGMuUHVyY2hhc2VUaWNrZXRzUmVzcG9uc2USagoV",
-            "TG9hZEFjdGl2ZURhdGFGaWx0ZXJzEicud2FsbGV0cnBjLkxvYWRBY3RpdmVE",
-            "YXRhRmlsdGVyc1JlcXVlc3QaKC53YWxsZXRycGMuTG9hZEFjdGl2ZURhdGFG",
-            "aWx0ZXJzUmVzcG9uc2Uy5gUKE1dhbGxldExvYWRlclNlcnZpY2USTwoMV2Fs",
-            "bGV0RXhpc3RzEh4ud2FsbGV0cnBjLldhbGxldEV4aXN0c1JlcXVlc3QaHy53",
-            "YWxsZXRycGMuV2FsbGV0RXhpc3RzUmVzcG9uc2USTwoMQ3JlYXRlV2FsbGV0",
-            "Eh4ud2FsbGV0cnBjLkNyZWF0ZVdhbGxldFJlcXVlc3QaHy53YWxsZXRycGMu",
-            "Q3JlYXRlV2FsbGV0UmVzcG9uc2USSQoKT3BlbldhbGxldBIcLndhbGxldHJw",
-            "Yy5PcGVuV2FsbGV0UmVxdWVzdBodLndhbGxldHJwYy5PcGVuV2FsbGV0UmVz",
-            "cG9uc2USTAoLQ2xvc2VXYWxsZXQSHS53YWxsZXRycGMuQ2xvc2VXYWxsZXRS",
-            "ZXF1ZXN0Gh4ud2FsbGV0cnBjLkNsb3NlV2FsbGV0UmVzcG9uc2USXgoRU3Rh",
-            "cnRDb25zZW5zdXNScGMSIy53YWxsZXRycGMuU3RhcnRDb25zZW5zdXNScGNS",
-            "ZXF1ZXN0GiQud2FsbGV0cnBjLlN0YXJ0Q29uc2Vuc3VzUnBjUmVzcG9uc2US",
-            "XgoRRGlzY292ZXJBZGRyZXNzZXMSIy53YWxsZXRycGMuRGlzY292ZXJBZGRy",
-            "ZXNzZXNSZXF1ZXN0GiQud2FsbGV0cnBjLkRpc2NvdmVyQWRkcmVzc2VzUmVz",
-            "cG9uc2USggEKHVN1YnNjcmliZVRvQmxvY2tOb3RpZmljYXRpb25zEi8ud2Fs",
-            "bGV0cnBjLlN1YnNjcmliZVRvQmxvY2tOb3RpZmljYXRpb25zUmVxdWVzdBow",
-            "LndhbGxldHJwYy5TdWJzY3JpYmVUb0Jsb2NrTm90aWZpY2F0aW9uc1Jlc3Bv",
-            "bnNlEk8KDEZldGNoSGVhZGVycxIeLndhbGxldHJwYy5GZXRjaEhlYWRlcnNS",
-            "ZXF1ZXN0Gh8ud2FsbGV0cnBjLkZldGNoSGVhZGVyc1Jlc3BvbnNlMsAIChJU",
-            "aWNrZXRCdXllclNlcnZpY2USVQoOU3RhcnRBdXRvQnV5ZXISIC53YWxsZXRy",
-            "cGMuU3RhcnRBdXRvQnV5ZXJSZXF1ZXN0GiEud2FsbGV0cnBjLlN0YXJ0QXV0",
-            "b0J1eWVyUmVzcG9uc2USUgoNU3RvcEF1dG9CdXllchIfLndhbGxldHJwYy5T",
-            "dG9wQXV0b0J1eWVyUmVxdWVzdBogLndhbGxldHJwYy5TdG9wQXV0b0J1eWVy",
-            "UmVzcG9uc2USXgoRVGlja2V0QnV5ZXJDb25maWcSIy53YWxsZXRycGMuVGlj",
-            "a2V0QnV5ZXJDb25maWdSZXF1ZXN0GiQud2FsbGV0cnBjLlRpY2tldEJ1eWVy",
-            "Q29uZmlnUmVzcG9uc2USSQoKU2V0QWNjb3VudBIcLndhbGxldHJwYy5TZXRB",
-            "Y2NvdW50UmVxdWVzdBodLndhbGxldHJwYy5TZXRBY2NvdW50UmVzcG9uc2US",
-            "ZwoUU2V0QmFsYW5jZVRvTWFpbnRhaW4SJi53YWxsZXRycGMuU2V0QmFsYW5j",
-            "ZVRvTWFpbnRhaW5SZXF1ZXN0Gicud2FsbGV0cnBjLlNldEJhbGFuY2VUb01h",
-            "aW50YWluUmVzcG9uc2USRgoJU2V0TWF4RmVlEhsud2FsbGV0cnBjLlNldE1h",
-            "eEZlZVJlcXVlc3QaHC53YWxsZXRycGMuU2V0TWF4RmVlUmVzcG9uc2USZAoT",
-            "U2V0TWF4UHJpY2VSZWxhdGl2ZRIlLndhbGxldHJwYy5TZXRNYXhQcmljZVJl",
-            "bGF0aXZlUmVxdWVzdBomLndhbGxldHJwYy5TZXRNYXhQcmljZVJlbGF0aXZl",
-            "UmVzcG9uc2USZAoTU2V0TWF4UHJpY2VBYnNvbHV0ZRIlLndhbGxldHJwYy5T",
-            "ZXRNYXhQcmljZUFic29sdXRlUmVxdWVzdBomLndhbGxldHJwYy5TZXRNYXhQ",
-            "cmljZUFic29sdXRlUmVzcG9uc2USWwoQU2V0Vm90aW5nQWRkcmVzcxIiLndh",
-            "bGxldHJwYy5TZXRWb3RpbmdBZGRyZXNzUmVxdWVzdBojLndhbGxldHJwYy5T",
-            "ZXRWb3RpbmdBZGRyZXNzUmVzcG9uc2USVQoOU2V0UG9vbEFkZHJlc3MSIC53",
-            "YWxsZXRycGMuU2V0UG9vbEFkZHJlc3NSZXF1ZXN0GiEud2FsbGV0cnBjLlNl",
-            "dFBvb2xBZGRyZXNzUmVzcG9uc2USTAoLU2V0UG9vbEZlZXMSHS53YWxsZXRy",
-            "cGMuU2V0UG9vbEZlZXNSZXF1ZXN0Gh4ud2FsbGV0cnBjLlNldFBvb2xGZWVz",
-            "UmVzcG9uc2USVQoOU2V0TWF4UGVyQmxvY2sSIC53YWxsZXRycGMuU2V0TWF4",
-            "UGVyQmxvY2tSZXF1ZXN0GiEud2FsbGV0cnBjLlNldE1heFBlckJsb2NrUmVz",
-            "cG9uc2UyuwEKC1NlZWRTZXJ2aWNlEmEKEkdlbmVyYXRlUmFuZG9tU2VlZBIk",
-            "LndhbGxldHJwYy5HZW5lcmF0ZVJhbmRvbVNlZWRSZXF1ZXN0GiUud2FsbGV0",
-            "cnBjLkdlbmVyYXRlUmFuZG9tU2VlZFJlc3BvbnNlEkkKCkRlY29kZVNlZWQS",
-            "HC53YWxsZXRycGMuRGVjb2RlU2VlZFJlcXVlc3QaHS53YWxsZXRycGMuRGVj",
-            "b2RlU2VlZFJlc3BvbnNlMlEKDUFnZW5kYVNlcnZpY2USQAoHQWdlbmRhcxIZ",
-            "LndhbGxldHJwYy5BZ2VuZGFzUmVxdWVzdBoaLndhbGxldHJwYy5BZ2VuZGFz",
-            "UmVzcG9uc2UytAEKDVZvdGluZ1NlcnZpY2USTAoLVm90ZUNob2ljZXMSHS53",
-            "YWxsZXRycGMuVm90ZUNob2ljZXNSZXF1ZXN0Gh4ud2FsbGV0cnBjLlZvdGVD",
-            "aG9pY2VzUmVzcG9uc2USVQoOU2V0Vm90ZUNob2ljZXMSIC53YWxsZXRycGMu",
-            "U2V0Vm90ZUNob2ljZXNSZXF1ZXN0GiEud2FsbGV0cnBjLlNldFZvdGVDaG9p",
-            "Y2VzUmVzcG9uc2ViBnByb3RvMw=="));
+            "b25zZRIVCg10aWNrZXRfaGFzaGVzGAEgAygMIioKFFJldm9rZVRpY2tldHNS",
+            "ZXF1ZXN0EhIKCnBhc3NwaHJhc2UYASABKAwiFwoVUmV2b2tlVGlja2V0c1Jl",
+            "c3BvbnNlIh4KHExvYWRBY3RpdmVEYXRhRmlsdGVyc1JlcXVlc3QiHwodTG9h",
+            "ZEFjdGl2ZURhdGFGaWx0ZXJzUmVzcG9uc2UiIQofVHJhbnNhY3Rpb25Ob3Rp",
+            "ZmljYXRpb25zUmVxdWVzdCLOAQogVHJhbnNhY3Rpb25Ob3RpZmljYXRpb25z",
+            "UmVzcG9uc2USMAoPYXR0YWNoZWRfYmxvY2tzGAEgAygLMhcud2FsbGV0cnBj",
+            "LkJsb2NrRGV0YWlscxIXCg9kZXRhY2hlZF9ibG9ja3MYAiADKAwSOwoUdW5t",
+            "aW5lZF90cmFuc2FjdGlvbnMYAyADKAsyHS53YWxsZXRycGMuVHJhbnNhY3Rp",
+            "b25EZXRhaWxzEiIKGnVubWluZWRfdHJhbnNhY3Rpb25faGFzaGVzGAQgAygM",
+            "Ih0KG0FjY291bnROb3RpZmljYXRpb25zUmVxdWVzdCKgAQocQWNjb3VudE5v",
+            "dGlmaWNhdGlvbnNSZXNwb25zZRIWCg5hY2NvdW50X251bWJlchgBIAEoDRIU",
+            "CgxhY2NvdW50X25hbWUYAiABKAkSGgoSZXh0ZXJuYWxfa2V5X2NvdW50GAMg",
+            "ASgNEhoKEmludGVybmFsX2tleV9jb3VudBgEIAEoDRIaChJpbXBvcnRlZF9r",
+            "ZXlfY291bnQYBSABKA0iWgoTQ3JlYXRlV2FsbGV0UmVxdWVzdBIZChFwdWJs",
+            "aWNfcGFzc3BocmFzZRgBIAEoDBIaChJwcml2YXRlX3Bhc3NwaHJhc2UYAiAB",
+            "KAwSDAoEc2VlZBgDIAEoDCIWChRDcmVhdGVXYWxsZXRSZXNwb25zZSIuChFP",
+            "cGVuV2FsbGV0UmVxdWVzdBIZChFwdWJsaWNfcGFzc3BocmFzZRgBIAEoDCIU",
+            "ChJPcGVuV2FsbGV0UmVzcG9uc2UiFAoSQ2xvc2VXYWxsZXRSZXF1ZXN0IhUK",
+            "E0Nsb3NlV2FsbGV0UmVzcG9uc2UiFQoTV2FsbGV0RXhpc3RzUmVxdWVzdCIm",
+            "ChRXYWxsZXRFeGlzdHNSZXNwb25zZRIOCgZleGlzdHMYASABKAgibAoYU3Rh",
+            "cnRDb25zZW5zdXNScGNSZXF1ZXN0EhcKD25ldHdvcmtfYWRkcmVzcxgBIAEo",
+            "CRIQCgh1c2VybmFtZRgCIAEoCRIQCghwYXNzd29yZBgDIAEoDBITCgtjZXJ0",
+            "aWZpY2F0ZRgEIAEoDCIbChlTdGFydENvbnNlbnN1c1JwY1Jlc3BvbnNlIlEK",
+            "GERpc2NvdmVyQWRkcmVzc2VzUmVxdWVzdBIZChFkaXNjb3Zlcl9hY2NvdW50",
+            "cxgBIAEoCBIaChJwcml2YXRlX3Bhc3NwaHJhc2UYAiABKAwiGwoZRGlzY292",
+            "ZXJBZGRyZXNzZXNSZXNwb25zZSImCiRTdWJzY3JpYmVUb0Jsb2NrTm90aWZp",
+            "Y2F0aW9uc1JlcXVlc3QiJwolU3Vic2NyaWJlVG9CbG9ja05vdGlmaWNhdGlv",
+            "bnNSZXNwb25zZSIVChNGZXRjaEhlYWRlcnNSZXF1ZXN0IrsBChRGZXRjaEhl",
+            "YWRlcnNSZXNwb25zZRIdChVmZXRjaGVkX2hlYWRlcnNfY291bnQYASABKA0S",
+            "HAoUZmlyc3RfbmV3X2Jsb2NrX2hhc2gYAiABKAwSHgoWZmlyc3RfbmV3X2Js",
+            "b2NrX2hlaWdodBgDIAEoBRIhChltYWluX2NoYWluX3RpcF9ibG9ja19oYXNo",
+            "GAQgASgMEiMKG21haW5fY2hhaW5fdGlwX2Jsb2NrX2hlaWdodBgFIAEoBSIw",
+            "ChlHZW5lcmF0ZVJhbmRvbVNlZWRSZXF1ZXN0EhMKC3NlZWRfbGVuZ3RoGAEg",
+            "ASgNIlkKGkdlbmVyYXRlUmFuZG9tU2VlZFJlc3BvbnNlEhIKCnNlZWRfYnl0",
+            "ZXMYASABKAwSEAoIc2VlZF9oZXgYAiABKAkSFQoNc2VlZF9tbmVtb25pYxgD",
+            "IAEoCSInChFEZWNvZGVTZWVkUmVxdWVzdBISCgp1c2VyX2lucHV0GAEgASgJ",
+            "IioKEkRlY29kZVNlZWRSZXNwb25zZRIUCgxkZWNvZGVkX3NlZWQYASABKAwi",
+            "gQIKFVN0YXJ0QXV0b0J1eWVyUmVxdWVzdBISCgpwYXNzcGhyYXNlGAEgASgM",
+            "Eg8KB2FjY291bnQYAiABKA0SGwoTYmFsYW5jZV90b19tYWludGFpbhgDIAEo",
+            "AxIWCg5tYXhfZmVlX3Blcl9rYhgEIAEoAxIaChJtYXhfcHJpY2VfcmVsYXRp",
+            "dmUYBSABKAESGgoSbWF4X3ByaWNlX2Fic29sdXRlGAYgASgDEhYKDnZvdGlu",
+            "Z19hZGRyZXNzGAcgASgJEhQKDHBvb2xfYWRkcmVzcxgIIAEoCRIRCglwb29s",
+            "X2ZlZXMYCSABKAESFQoNbWF4X3Blcl9ibG9jaxgKIAEoAyIYChZTdGFydEF1",
+            "dG9CdXllclJlc3BvbnNlIhYKFFN0b3BBdXRvQnV5ZXJSZXF1ZXN0IhcKFVN0",
+            "b3BBdXRvQnV5ZXJSZXNwb25zZSIaChhUaWNrZXRCdXllckNvbmZpZ1JlcXVl",
+            "c3Qi9QMKGVRpY2tldEJ1eWVyQ29uZmlnUmVzcG9uc2USDwoHYWNjb3VudBgB",
+            "IAEoDRIWCg5hdmdfcHJpY2VfbW9kZRgCIAEoCRIbChNhdmdfcHJpY2VWV0FQ",
+            "X2RlbHRhGAMgASgDEhsKE2JhbGFuY2VfdG9fbWFpbnRhaW4YBCABKAMSFQoN",
+            "YmxvY2tzX3RvX2F2ZxgFIAEoAxIdChVkb250X3dhaXRfZm9yX3RpY2tldHMY",
+            "BiABKAgSFAoMZXhwaXJ5X2RlbHRhGAcgASgDEhIKCmZlZV9zb3VyY2UYCCAB",
+            "KAkSGgoSZmVlX3RhcmdldF9zY2FsaW5nGAkgASgBEg8KB21pbl9mZWUYCiAB",
+            "KAMSDwoHbWF4X2ZlZRgMIAEoAxIVCg1tYXhfcGVyX2Jsb2NrGA0gASgDEhoK",
+            "Em1heF9wcmljZV9hYnNvbHV0ZRgOIAEoAxIaChJtYXhfcHJpY2VfcmVsYXRp",
+            "dmUYDyABKAESFgoObWF4X2luX21lbXBvb2wYESABKAMSFAoMcG9vbF9hZGRy",
+            "ZXNzGBIgASgJEhEKCXBvb2xfZmVlcxgTIAEoARIfChdzcHJlYWRfdGlja2V0",
+            "X3B1cmNoYXNlcxgUIAEoCBIWCg52b3RpbmdfYWRkcmVzcxgVIAEoCRIOCgZ0",
+            "eF9mZWUYFiABKAMiJAoRU2V0QWNjb3VudFJlcXVlc3QSDwoHYWNjb3VudBgB",
+            "IAEoDSIUChJTZXRBY2NvdW50UmVzcG9uc2UiOgobU2V0QmFsYW5jZVRvTWFp",
+            "bnRhaW5SZXF1ZXN0EhsKE2JhbGFuY2VfdG9fbWFpbnRhaW4YASABKAMiHgoc",
+            "U2V0QmFsYW5jZVRvTWFpbnRhaW5SZXNwb25zZSIqChBTZXRNYXhGZWVSZXF1",
+            "ZXN0EhYKDm1heF9mZWVfcGVyX2tiGAEgASgDIhMKEVNldE1heEZlZVJlc3Bv",
+            "bnNlIjgKGlNldE1heFByaWNlUmVsYXRpdmVSZXF1ZXN0EhoKEm1heF9wcmlj",
+            "ZV9yZWxhdGl2ZRgBIAEoASIdChtTZXRNYXhQcmljZVJlbGF0aXZlUmVzcG9u",
+            "c2UiOAoaU2V0TWF4UHJpY2VBYnNvbHV0ZVJlcXVlc3QSGgoSbWF4X3ByaWNl",
+            "X2Fic29sdXRlGAEgASgDIh0KG1NldE1heFByaWNlQWJzb2x1dGVSZXNwb25z",
+            "ZSIxChdTZXRWb3RpbmdBZGRyZXNzUmVxdWVzdBIWCg52b3RpbmdfYWRkcmVz",
+            "cxgBIAEoCSIaChhTZXRWb3RpbmdBZGRyZXNzUmVzcG9uc2UiLQoVU2V0UG9v",
+            "bEFkZHJlc3NSZXF1ZXN0EhQKDHBvb2xfYWRkcmVzcxgBIAEoCSIYChZTZXRQ",
+            "b29sQWRkcmVzc1Jlc3BvbnNlIicKElNldFBvb2xGZWVzUmVxdWVzdBIRCglw",
+            "b29sX2ZlZXMYASABKAEiFQoTU2V0UG9vbEZlZXNSZXNwb25zZSIuChVTZXRN",
+            "YXhQZXJCbG9ja1JlcXVlc3QSFQoNbWF4X3Blcl9ibG9jaxgBIAEoAyIYChZT",
+            "ZXRNYXhQZXJCbG9ja1Jlc3BvbnNlIhAKDkFnZW5kYXNSZXF1ZXN0IskCCg9B",
+            "Z2VuZGFzUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDRIyCgdhZ2VuZGFzGAIg",
+            "AygLMiEud2FsbGV0cnBjLkFnZW5kYXNSZXNwb25zZS5BZ2VuZGEalAEKBkFn",
+            "ZW5kYRIKCgJpZBgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRIMCgRtYXNr",
+            "GAMgASgNEjIKB2Nob2ljZXMYBCADKAsyIS53YWxsZXRycGMuQWdlbmRhc1Jl",
+            "c3BvbnNlLkNob2ljZRISCgpzdGFydF90aW1lGAUgASgDEhMKC2V4cGlyZV90",
+            "aW1lGAYgASgDGloKBkNob2ljZRIKCgJpZBgBIAEoCRITCgtkZXNjcmlwdGlv",
+            "bhgCIAEoCRIMCgRiaXRzGAMgASgNEhIKCmlzX2Fic3RhaW4YBCABKAgSDQoF",
+            "aXNfbm8YBSABKAgiFAoSVm90ZUNob2ljZXNSZXF1ZXN0ItgBChNWb3RlQ2hv",
+            "aWNlc1Jlc3BvbnNlEg8KB3ZlcnNpb24YASABKA0SNgoHY2hvaWNlcxgCIAMo",
+            "CzIlLndhbGxldHJwYy5Wb3RlQ2hvaWNlc1Jlc3BvbnNlLkNob2ljZRIQCgh2",
+            "b3RlYml0cxgDIAEoDRpmCgZDaG9pY2USEQoJYWdlbmRhX2lkGAEgASgJEhoK",
+            "EmFnZW5kYV9kZXNjcmlwdGlvbhgCIAEoCRIRCgljaG9pY2VfaWQYAyABKAkS",
+            "GgoSY2hvaWNlX2Rlc2NyaXB0aW9uGAQgASgJIoEBChVTZXRWb3RlQ2hvaWNl",
+            "c1JlcXVlc3QSOAoHY2hvaWNlcxgBIAMoCzInLndhbGxldHJwYy5TZXRWb3Rl",
+            "Q2hvaWNlc1JlcXVlc3QuQ2hvaWNlGi4KBkNob2ljZRIRCglhZ2VuZGFfaWQY",
+            "ASABKAkSEQoJY2hvaWNlX2lkGAIgASgJIioKFlNldFZvdGVDaG9pY2VzUmVz",
+            "cG9uc2USEAoIdm90ZWJpdHMYASABKA0yUgoOVmVyc2lvblNlcnZpY2USQAoH",
+            "VmVyc2lvbhIZLndhbGxldHJwYy5WZXJzaW9uUmVxdWVzdBoaLndhbGxldHJw",
+            "Yy5WZXJzaW9uUmVzcG9uc2UyjxAKDVdhbGxldFNlcnZpY2USNwoEUGluZxIW",
+            "LndhbGxldHJwYy5QaW5nUmVxdWVzdBoXLndhbGxldHJwYy5QaW5nUmVzcG9u",
+            "c2USQAoHTmV0d29yaxIZLndhbGxldHJwYy5OZXR3b3JrUmVxdWVzdBoaLndh",
+            "bGxldHJwYy5OZXR3b3JrUmVzcG9uc2USUgoNQWNjb3VudE51bWJlchIfLndh",
+            "bGxldHJwYy5BY2NvdW50TnVtYmVyUmVxdWVzdBogLndhbGxldHJwYy5BY2Nv",
+            "dW50TnVtYmVyUmVzcG9uc2USQwoIQWNjb3VudHMSGi53YWxsZXRycGMuQWNj",
+            "b3VudHNSZXF1ZXN0Ghsud2FsbGV0cnBjLkFjY291bnRzUmVzcG9uc2USQAoH",
+            "QmFsYW5jZRIZLndhbGxldHJwYy5CYWxhbmNlUmVxdWVzdBoaLndhbGxldHJw",
+            "Yy5CYWxhbmNlUmVzcG9uc2USWgoPR2V0VHJhbnNhY3Rpb25zEiEud2FsbGV0",
+            "cnBjLkdldFRyYW5zYWN0aW9uc1JlcXVlc3QaIi53YWxsZXRycGMuR2V0VHJh",
+            "bnNhY3Rpb25zUmVzcG9uc2UwARJMCgtUaWNrZXRQcmljZRIdLndhbGxldHJw",
+            "Yy5UaWNrZXRQcmljZVJlcXVlc3QaHi53YWxsZXRycGMuVGlja2V0UHJpY2VS",
+            "ZXNwb25zZRJGCglTdGFrZUluZm8SGy53YWxsZXRycGMuU3Rha2VJbmZvUmVx",
+            "dWVzdBocLndhbGxldHJwYy5TdGFrZUluZm9SZXNwb25zZRJ1ChhUcmFuc2Fj",
+            "dGlvbk5vdGlmaWNhdGlvbnMSKi53YWxsZXRycGMuVHJhbnNhY3Rpb25Ob3Rp",
+            "ZmljYXRpb25zUmVxdWVzdBorLndhbGxldHJwYy5UcmFuc2FjdGlvbk5vdGlm",
+            "aWNhdGlvbnNSZXNwb25zZTABEmkKFEFjY291bnROb3RpZmljYXRpb25zEiYu",
+            "d2FsbGV0cnBjLkFjY291bnROb3RpZmljYXRpb25zUmVxdWVzdBonLndhbGxl",
+            "dHJwYy5BY2NvdW50Tm90aWZpY2F0aW9uc1Jlc3BvbnNlMAESWwoQQ2hhbmdl",
+            "UGFzc3BocmFzZRIiLndhbGxldHJwYy5DaGFuZ2VQYXNzcGhyYXNlUmVxdWVz",
+            "dBojLndhbGxldHJwYy5DaGFuZ2VQYXNzcGhyYXNlUmVzcG9uc2USUgoNUmVu",
+            "YW1lQWNjb3VudBIfLndhbGxldHJwYy5SZW5hbWVBY2NvdW50UmVxdWVzdBog",
+            "LndhbGxldHJwYy5SZW5hbWVBY2NvdW50UmVzcG9uc2USPwoGUmVzY2FuEhgu",
+            "d2FsbGV0cnBjLlJlc2NhblJlcXVlc3QaGS53YWxsZXRycGMuUmVzY2FuUmVz",
+            "cG9uc2UwARJMCgtOZXh0QWNjb3VudBIdLndhbGxldHJwYy5OZXh0QWNjb3Vu",
+            "dFJlcXVlc3QaHi53YWxsZXRycGMuTmV4dEFjY291bnRSZXNwb25zZRJMCgtO",
+            "ZXh0QWRkcmVzcxIdLndhbGxldHJwYy5OZXh0QWRkcmVzc1JlcXVlc3QaHi53",
+            "YWxsZXRycGMuTmV4dEFkZHJlc3NSZXNwb25zZRJbChBJbXBvcnRQcml2YXRl",
+            "S2V5EiIud2FsbGV0cnBjLkltcG9ydFByaXZhdGVLZXlSZXF1ZXN0GiMud2Fs",
+            "bGV0cnBjLkltcG9ydFByaXZhdGVLZXlSZXNwb25zZRJPCgxJbXBvcnRTY3Jp",
+            "cHQSHi53YWxsZXRycGMuSW1wb3J0U2NyaXB0UmVxdWVzdBofLndhbGxldHJw",
+            "Yy5JbXBvcnRTY3JpcHRSZXNwb25zZRJYCg9GdW5kVHJhbnNhY3Rpb24SIS53",
+            "YWxsZXRycGMuRnVuZFRyYW5zYWN0aW9uUmVxdWVzdBoiLndhbGxldHJwYy5G",
+            "dW5kVHJhbnNhY3Rpb25SZXNwb25zZRJnChRDb25zdHJ1Y3RUcmFuc2FjdGlv",
+            "bhImLndhbGxldHJwYy5Db25zdHJ1Y3RUcmFuc2FjdGlvblJlcXVlc3QaJy53",
+            "YWxsZXRycGMuQ29uc3RydWN0VHJhbnNhY3Rpb25SZXNwb25zZRJYCg9TaWdu",
+            "VHJhbnNhY3Rpb24SIS53YWxsZXRycGMuU2lnblRyYW5zYWN0aW9uUmVxdWVz",
+            "dBoiLndhbGxldHJwYy5TaWduVHJhbnNhY3Rpb25SZXNwb25zZRJhChJQdWJs",
+            "aXNoVHJhbnNhY3Rpb24SJC53YWxsZXRycGMuUHVibGlzaFRyYW5zYWN0aW9u",
+            "UmVxdWVzdBolLndhbGxldHJwYy5QdWJsaXNoVHJhbnNhY3Rpb25SZXNwb25z",
+            "ZRJYCg9QdXJjaGFzZVRpY2tldHMSIS53YWxsZXRycGMuUHVyY2hhc2VUaWNr",
+            "ZXRzUmVxdWVzdBoiLndhbGxldHJwYy5QdXJjaGFzZVRpY2tldHNSZXNwb25z",
+            "ZRJSCg1SZXZva2VUaWNrZXRzEh8ud2FsbGV0cnBjLlJldm9rZVRpY2tldHNS",
+            "ZXF1ZXN0GiAud2FsbGV0cnBjLlJldm9rZVRpY2tldHNSZXNwb25zZRJqChVM",
+            "b2FkQWN0aXZlRGF0YUZpbHRlcnMSJy53YWxsZXRycGMuTG9hZEFjdGl2ZURh",
+            "dGFGaWx0ZXJzUmVxdWVzdBooLndhbGxldHJwYy5Mb2FkQWN0aXZlRGF0YUZp",
+            "bHRlcnNSZXNwb25zZTLmBQoTV2FsbGV0TG9hZGVyU2VydmljZRJPCgxXYWxs",
+            "ZXRFeGlzdHMSHi53YWxsZXRycGMuV2FsbGV0RXhpc3RzUmVxdWVzdBofLndh",
+            "bGxldHJwYy5XYWxsZXRFeGlzdHNSZXNwb25zZRJPCgxDcmVhdGVXYWxsZXQS",
+            "Hi53YWxsZXRycGMuQ3JlYXRlV2FsbGV0UmVxdWVzdBofLndhbGxldHJwYy5D",
+            "cmVhdGVXYWxsZXRSZXNwb25zZRJJCgpPcGVuV2FsbGV0Ehwud2FsbGV0cnBj",
+            "Lk9wZW5XYWxsZXRSZXF1ZXN0Gh0ud2FsbGV0cnBjLk9wZW5XYWxsZXRSZXNw",
+            "b25zZRJMCgtDbG9zZVdhbGxldBIdLndhbGxldHJwYy5DbG9zZVdhbGxldFJl",
+            "cXVlc3QaHi53YWxsZXRycGMuQ2xvc2VXYWxsZXRSZXNwb25zZRJeChFTdGFy",
+            "dENvbnNlbnN1c1JwYxIjLndhbGxldHJwYy5TdGFydENvbnNlbnN1c1JwY1Jl",
+            "cXVlc3QaJC53YWxsZXRycGMuU3RhcnRDb25zZW5zdXNScGNSZXNwb25zZRJe",
+            "ChFEaXNjb3ZlckFkZHJlc3NlcxIjLndhbGxldHJwYy5EaXNjb3ZlckFkZHJl",
+            "c3Nlc1JlcXVlc3QaJC53YWxsZXRycGMuRGlzY292ZXJBZGRyZXNzZXNSZXNw",
+            "b25zZRKCAQodU3Vic2NyaWJlVG9CbG9ja05vdGlmaWNhdGlvbnMSLy53YWxs",
+            "ZXRycGMuU3Vic2NyaWJlVG9CbG9ja05vdGlmaWNhdGlvbnNSZXF1ZXN0GjAu",
+            "d2FsbGV0cnBjLlN1YnNjcmliZVRvQmxvY2tOb3RpZmljYXRpb25zUmVzcG9u",
+            "c2USTwoMRmV0Y2hIZWFkZXJzEh4ud2FsbGV0cnBjLkZldGNoSGVhZGVyc1Jl",
+            "cXVlc3QaHy53YWxsZXRycGMuRmV0Y2hIZWFkZXJzUmVzcG9uc2UywAgKElRp",
+            "Y2tldEJ1eWVyU2VydmljZRJVCg5TdGFydEF1dG9CdXllchIgLndhbGxldHJw",
+            "Yy5TdGFydEF1dG9CdXllclJlcXVlc3QaIS53YWxsZXRycGMuU3RhcnRBdXRv",
+            "QnV5ZXJSZXNwb25zZRJSCg1TdG9wQXV0b0J1eWVyEh8ud2FsbGV0cnBjLlN0",
+            "b3BBdXRvQnV5ZXJSZXF1ZXN0GiAud2FsbGV0cnBjLlN0b3BBdXRvQnV5ZXJS",
+            "ZXNwb25zZRJeChFUaWNrZXRCdXllckNvbmZpZxIjLndhbGxldHJwYy5UaWNr",
+            "ZXRCdXllckNvbmZpZ1JlcXVlc3QaJC53YWxsZXRycGMuVGlja2V0QnV5ZXJD",
+            "b25maWdSZXNwb25zZRJJCgpTZXRBY2NvdW50Ehwud2FsbGV0cnBjLlNldEFj",
+            "Y291bnRSZXF1ZXN0Gh0ud2FsbGV0cnBjLlNldEFjY291bnRSZXNwb25zZRJn",
+            "ChRTZXRCYWxhbmNlVG9NYWludGFpbhImLndhbGxldHJwYy5TZXRCYWxhbmNl",
+            "VG9NYWludGFpblJlcXVlc3QaJy53YWxsZXRycGMuU2V0QmFsYW5jZVRvTWFp",
+            "bnRhaW5SZXNwb25zZRJGCglTZXRNYXhGZWUSGy53YWxsZXRycGMuU2V0TWF4",
+            "RmVlUmVxdWVzdBocLndhbGxldHJwYy5TZXRNYXhGZWVSZXNwb25zZRJkChNT",
+            "ZXRNYXhQcmljZVJlbGF0aXZlEiUud2FsbGV0cnBjLlNldE1heFByaWNlUmVs",
+            "YXRpdmVSZXF1ZXN0GiYud2FsbGV0cnBjLlNldE1heFByaWNlUmVsYXRpdmVS",
+            "ZXNwb25zZRJkChNTZXRNYXhQcmljZUFic29sdXRlEiUud2FsbGV0cnBjLlNl",
+            "dE1heFByaWNlQWJzb2x1dGVSZXF1ZXN0GiYud2FsbGV0cnBjLlNldE1heFBy",
+            "aWNlQWJzb2x1dGVSZXNwb25zZRJbChBTZXRWb3RpbmdBZGRyZXNzEiIud2Fs",
+            "bGV0cnBjLlNldFZvdGluZ0FkZHJlc3NSZXF1ZXN0GiMud2FsbGV0cnBjLlNl",
+            "dFZvdGluZ0FkZHJlc3NSZXNwb25zZRJVCg5TZXRQb29sQWRkcmVzcxIgLndh",
+            "bGxldHJwYy5TZXRQb29sQWRkcmVzc1JlcXVlc3QaIS53YWxsZXRycGMuU2V0",
+            "UG9vbEFkZHJlc3NSZXNwb25zZRJMCgtTZXRQb29sRmVlcxIdLndhbGxldHJw",
+            "Yy5TZXRQb29sRmVlc1JlcXVlc3QaHi53YWxsZXRycGMuU2V0UG9vbEZlZXNS",
+            "ZXNwb25zZRJVCg5TZXRNYXhQZXJCbG9jaxIgLndhbGxldHJwYy5TZXRNYXhQ",
+            "ZXJCbG9ja1JlcXVlc3QaIS53YWxsZXRycGMuU2V0TWF4UGVyQmxvY2tSZXNw",
+            "b25zZTK7AQoLU2VlZFNlcnZpY2USYQoSR2VuZXJhdGVSYW5kb21TZWVkEiQu",
+            "d2FsbGV0cnBjLkdlbmVyYXRlUmFuZG9tU2VlZFJlcXVlc3QaJS53YWxsZXRy",
+            "cGMuR2VuZXJhdGVSYW5kb21TZWVkUmVzcG9uc2USSQoKRGVjb2RlU2VlZBIc",
+            "LndhbGxldHJwYy5EZWNvZGVTZWVkUmVxdWVzdBodLndhbGxldHJwYy5EZWNv",
+            "ZGVTZWVkUmVzcG9uc2UyUQoNQWdlbmRhU2VydmljZRJACgdBZ2VuZGFzEhku",
+            "d2FsbGV0cnBjLkFnZW5kYXNSZXF1ZXN0Ghoud2FsbGV0cnBjLkFnZW5kYXNS",
+            "ZXNwb25zZTK0AQoNVm90aW5nU2VydmljZRJMCgtWb3RlQ2hvaWNlcxIdLndh",
+            "bGxldHJwYy5Wb3RlQ2hvaWNlc1JlcXVlc3QaHi53YWxsZXRycGMuVm90ZUNo",
+            "b2ljZXNSZXNwb25zZRJVCg5TZXRWb3RlQ2hvaWNlcxIgLndhbGxldHJwYy5T",
+            "ZXRWb3RlQ2hvaWNlc1JlcXVlc3QaIS53YWxsZXRycGMuU2V0Vm90ZUNob2lj",
+            "ZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -377,12 +370,12 @@ namespace Walletrpc {
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.PublishTransactionResponse), global::Walletrpc.PublishTransactionResponse.Parser, new[]{ "TransactionHash" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.PurchaseTicketsRequest), global::Walletrpc.PurchaseTicketsRequest.Parser, new[]{ "Passphrase", "Account", "SpendLimit", "RequiredConfirmations", "TicketAddress", "NumTickets", "PoolAddress", "PoolFees", "Expiry", "TxFee", "TicketFee" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.PurchaseTicketsResponse), global::Walletrpc.PurchaseTicketsResponse.Parser, new[]{ "TicketHashes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.RevokeTicketsRequest), global::Walletrpc.RevokeTicketsRequest.Parser, new[]{ "Passphrase" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.RevokeTicketsResponse), global::Walletrpc.RevokeTicketsResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.LoadActiveDataFiltersRequest), global::Walletrpc.LoadActiveDataFiltersRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.LoadActiveDataFiltersResponse), global::Walletrpc.LoadActiveDataFiltersResponse.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.TransactionNotificationsRequest), global::Walletrpc.TransactionNotificationsRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.TransactionNotificationsResponse), global::Walletrpc.TransactionNotificationsResponse.Parser, new[]{ "AttachedBlocks", "DetachedBlocks", "UnminedTransactions", "UnminedTransactionHashes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.SpentnessNotificationsRequest), global::Walletrpc.SpentnessNotificationsRequest.Parser, new[]{ "Account", "NoNotifyUnspent", "NoNotifySpent" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.SpentnessNotificationsResponse), global::Walletrpc.SpentnessNotificationsResponse.Parser, new[]{ "TransactionHash", "OutputIndex", "Spender" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.SpentnessNotificationsResponse.Types.Spender), global::Walletrpc.SpentnessNotificationsResponse.Types.Spender.Parser, new[]{ "TransactionHash", "InputIndex" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.AccountNotificationsRequest), global::Walletrpc.AccountNotificationsRequest.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.AccountNotificationsResponse), global::Walletrpc.AccountNotificationsResponse.Parser, new[]{ "AccountNumber", "AccountName", "ExternalKeyCount", "InternalKeyCount", "ImportedKeyCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Walletrpc.CreateWalletRequest), global::Walletrpc.CreateWalletRequest.Parser, new[]{ "PublicPassphrase", "PrivatePassphrase", "Seed" }, null, null, null),
@@ -442,36 +435,43 @@ namespace Walletrpc {
 
   }
   #region Messages
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class VersionRequest : pb::IMessage<VersionRequest> {
     private static readonly pb::MessageParser<VersionRequest> _parser = new pb::MessageParser<VersionRequest>(() => new VersionRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<VersionRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[0]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionRequest(VersionRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionRequest Clone() {
       return new VersionRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VersionRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(VersionRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -482,29 +482,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(VersionRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -518,25 +524,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class VersionResponse : pb::IMessage<VersionResponse> {
     private static readonly pb::MessageParser<VersionResponse> _parser = new pb::MessageParser<VersionResponse>(() => new VersionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<VersionResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[1]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionResponse(VersionResponse other) : this() {
       versionString_ = other.versionString_;
       major_ = other.major_;
@@ -546,6 +556,7 @@ namespace Walletrpc {
       buildMetadata_ = other.buildMetadata_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionResponse Clone() {
       return new VersionResponse(this);
     }
@@ -553,6 +564,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "version_string" field.</summary>
     public const int VersionStringFieldNumber = 1;
     private string versionString_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string VersionString {
       get { return versionString_; }
       set {
@@ -563,6 +575,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "major" field.</summary>
     public const int MajorFieldNumber = 2;
     private uint major_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Major {
       get { return major_; }
       set {
@@ -573,6 +586,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "minor" field.</summary>
     public const int MinorFieldNumber = 3;
     private uint minor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Minor {
       get { return minor_; }
       set {
@@ -583,6 +597,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "patch" field.</summary>
     public const int PatchFieldNumber = 4;
     private uint patch_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Patch {
       get { return patch_; }
       set {
@@ -593,6 +608,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "prerelease" field.</summary>
     public const int PrereleaseFieldNumber = 5;
     private string prerelease_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Prerelease {
       get { return prerelease_; }
       set {
@@ -603,6 +619,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "build_metadata" field.</summary>
     public const int BuildMetadataFieldNumber = 6;
     private string buildMetadata_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string BuildMetadata {
       get { return buildMetadata_; }
       set {
@@ -610,10 +627,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VersionResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(VersionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -630,6 +649,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (VersionString.Length != 0) hash ^= VersionString.GetHashCode();
@@ -641,10 +661,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (VersionString.Length != 0) {
         output.WriteRawTag(10);
@@ -672,6 +694,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (VersionString.Length != 0) {
@@ -695,6 +718,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(VersionResponse other) {
       if (other == null) {
         return;
@@ -719,6 +743,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -756,25 +781,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TransactionDetails : pb::IMessage<TransactionDetails> {
     private static readonly pb::MessageParser<TransactionDetails> _parser = new pb::MessageParser<TransactionDetails>(() => new TransactionDetails());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TransactionDetails> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[2]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionDetails() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionDetails(TransactionDetails other) : this() {
       hash_ = other.hash_;
       transaction_ = other.transaction_;
@@ -785,6 +814,7 @@ namespace Walletrpc {
       transactionType_ = other.transactionType_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionDetails Clone() {
       return new TransactionDetails(this);
     }
@@ -792,6 +822,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "hash" field.</summary>
     public const int HashFieldNumber = 1;
     private pb::ByteString hash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Hash {
       get { return hash_; }
       set {
@@ -802,6 +833,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "transaction" field.</summary>
     public const int TransactionFieldNumber = 2;
     private pb::ByteString transaction_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Transaction {
       get { return transaction_; }
       set {
@@ -814,6 +846,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.TransactionDetails.Types.Input> _repeated_debits_codec
         = pb::FieldCodec.ForMessage(26, global::Walletrpc.TransactionDetails.Types.Input.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Input> debits_ = new pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Input>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Input> Debits {
       get { return debits_; }
     }
@@ -823,6 +856,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.TransactionDetails.Types.Output> _repeated_credits_codec
         = pb::FieldCodec.ForMessage(34, global::Walletrpc.TransactionDetails.Types.Output.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Output> credits_ = new pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Output>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.TransactionDetails.Types.Output> Credits {
       get { return credits_; }
     }
@@ -830,6 +864,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "fee" field.</summary>
     public const int FeeFieldNumber = 5;
     private long fee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Fee {
       get { return fee_; }
       set {
@@ -841,8 +876,9 @@ namespace Walletrpc {
     public const int TimestampFieldNumber = 6;
     private long timestamp_;
     /// <summary>
-    ///  May be earlier than a block timestamp, but never later.
+    /// May be earlier than a block timestamp, but never later.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Timestamp {
       get { return timestamp_; }
       set {
@@ -853,6 +889,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "transaction_type" field.</summary>
     public const int TransactionTypeFieldNumber = 7;
     private global::Walletrpc.TransactionDetails.Types.TransactionType transactionType_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.TransactionDetails.Types.TransactionType TransactionType {
       get { return transactionType_; }
       set {
@@ -860,10 +897,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TransactionDetails);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TransactionDetails other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -881,6 +920,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Hash.Length != 0) hash ^= Hash.GetHashCode();
@@ -893,10 +933,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Hash.Length != 0) {
         output.WriteRawTag(10);
@@ -922,6 +964,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Hash.Length != 0) {
@@ -944,6 +987,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TransactionDetails other) {
       if (other == null) {
         return;
@@ -967,6 +1011,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1008,7 +1053,7 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the TransactionDetails message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       public enum TransactionType {
         [pbr::OriginalName("REGULAR")] Regular = 0,
@@ -1017,31 +1062,36 @@ namespace Walletrpc {
         [pbr::OriginalName("REVOCATION")] Revocation = 3,
       }
 
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Input : pb::IMessage<Input> {
         private static readonly pb::MessageParser<Input> _parser = new pb::MessageParser<Input>(() => new Input());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Input> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.TransactionDetails.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Input() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Input(Input other) : this() {
           index_ = other.index_;
           previousAccount_ = other.previousAccount_;
           previousAmount_ = other.previousAmount_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Input Clone() {
           return new Input(this);
         }
@@ -1049,6 +1099,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "index" field.</summary>
         public const int IndexFieldNumber = 1;
         private uint index_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint Index {
           get { return index_; }
           set {
@@ -1059,6 +1110,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "previous_account" field.</summary>
         public const int PreviousAccountFieldNumber = 2;
         private uint previousAccount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint PreviousAccount {
           get { return previousAccount_; }
           set {
@@ -1069,6 +1121,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "previous_amount" field.</summary>
         public const int PreviousAmountFieldNumber = 3;
         private long previousAmount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long PreviousAmount {
           get { return previousAmount_; }
           set {
@@ -1076,10 +1129,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Input);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Input other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1093,6 +1148,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (Index != 0) hash ^= Index.GetHashCode();
@@ -1101,10 +1157,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (Index != 0) {
             output.WriteRawTag(8);
@@ -1120,6 +1178,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (Index != 0) {
@@ -1134,6 +1193,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Input other) {
           if (other == null) {
             return;
@@ -1149,6 +1209,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -1174,25 +1235,29 @@ namespace Walletrpc {
 
       }
 
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Output : pb::IMessage<Output> {
         private static readonly pb::MessageParser<Output> _parser = new pb::MessageParser<Output>(() => new Output());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Output> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.TransactionDetails.Descriptor.NestedTypes[1]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output(Output other) : this() {
           index_ = other.index_;
           account_ = other.account_;
@@ -1202,6 +1267,7 @@ namespace Walletrpc {
           outputScript_ = other.outputScript_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output Clone() {
           return new Output(this);
         }
@@ -1209,6 +1275,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "index" field.</summary>
         public const int IndexFieldNumber = 1;
         private uint index_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint Index {
           get { return index_; }
           set {
@@ -1219,6 +1286,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "account" field.</summary>
         public const int AccountFieldNumber = 2;
         private uint account_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint Account {
           get { return account_; }
           set {
@@ -1229,6 +1297,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "internal" field.</summary>
         public const int InternalFieldNumber = 3;
         private bool internal_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Internal {
           get { return internal_; }
           set {
@@ -1239,6 +1308,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "amount" field.</summary>
         public const int AmountFieldNumber = 4;
         private long amount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long Amount {
           get { return amount_; }
           set {
@@ -1249,6 +1319,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "address" field.</summary>
         public const int AddressFieldNumber = 5;
         private string address_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Address {
           get { return address_; }
           set {
@@ -1259,6 +1330,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "output_script" field.</summary>
         public const int OutputScriptFieldNumber = 6;
         private pb::ByteString outputScript_ = pb::ByteString.Empty;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public pb::ByteString OutputScript {
           get { return outputScript_; }
           set {
@@ -1266,10 +1338,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Output);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Output other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1286,6 +1360,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (Index != 0) hash ^= Index.GetHashCode();
@@ -1297,10 +1372,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (Index != 0) {
             output.WriteRawTag(8);
@@ -1328,6 +1405,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (Index != 0) {
@@ -1351,6 +1429,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Output other) {
           if (other == null) {
             return;
@@ -1375,6 +1454,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -1417,25 +1497,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class BlockDetails : pb::IMessage<BlockDetails> {
     private static readonly pb::MessageParser<BlockDetails> _parser = new pb::MessageParser<BlockDetails>(() => new BlockDetails());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<BlockDetails> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[3]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BlockDetails() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BlockDetails(BlockDetails other) : this() {
       hash_ = other.hash_;
       height_ = other.height_;
@@ -1443,6 +1527,7 @@ namespace Walletrpc {
       transactions_ = other.transactions_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BlockDetails Clone() {
       return new BlockDetails(this);
     }
@@ -1450,6 +1535,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "hash" field.</summary>
     public const int HashFieldNumber = 1;
     private pb::ByteString hash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Hash {
       get { return hash_; }
       set {
@@ -1460,6 +1546,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "height" field.</summary>
     public const int HeightFieldNumber = 2;
     private int height_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Height {
       get { return height_; }
       set {
@@ -1470,6 +1557,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "timestamp" field.</summary>
     public const int TimestampFieldNumber = 3;
     private long timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Timestamp {
       get { return timestamp_; }
       set {
@@ -1482,14 +1570,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.TransactionDetails> _repeated_transactions_codec
         = pb::FieldCodec.ForMessage(34, global::Walletrpc.TransactionDetails.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.TransactionDetails> transactions_ = new pbc::RepeatedField<global::Walletrpc.TransactionDetails>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.TransactionDetails> Transactions {
       get { return transactions_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BlockDetails);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(BlockDetails other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1504,6 +1595,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Hash.Length != 0) hash ^= Hash.GetHashCode();
@@ -1513,10 +1605,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Hash.Length != 0) {
         output.WriteRawTag(10);
@@ -1533,6 +1627,7 @@ namespace Walletrpc {
       transactions_.WriteTo(output, _repeated_transactions_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Hash.Length != 0) {
@@ -1548,6 +1643,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(BlockDetails other) {
       if (other == null) {
         return;
@@ -1564,6 +1660,7 @@ namespace Walletrpc {
       transactions_.Add(other.transactions_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1593,30 +1690,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountBalance : pb::IMessage<AccountBalance> {
     private static readonly pb::MessageParser<AccountBalance> _parser = new pb::MessageParser<AccountBalance>(() => new AccountBalance());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountBalance> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[4]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountBalance() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountBalance(AccountBalance other) : this() {
       account_ = other.account_;
       totalBalance_ = other.totalBalance_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountBalance Clone() {
       return new AccountBalance(this);
     }
@@ -1624,6 +1726,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -1634,6 +1737,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total_balance" field.</summary>
     public const int TotalBalanceFieldNumber = 2;
     private long totalBalance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalBalance {
       get { return totalBalance_; }
       set {
@@ -1641,10 +1745,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountBalance);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountBalance other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1657,6 +1763,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Account != 0) hash ^= Account.GetHashCode();
@@ -1664,10 +1771,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Account != 0) {
         output.WriteRawTag(8);
@@ -1679,6 +1788,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Account != 0) {
@@ -1690,6 +1800,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountBalance other) {
       if (other == null) {
         return;
@@ -1702,6 +1813,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1723,36 +1835,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PingRequest : pb::IMessage<PingRequest> {
     private static readonly pb::MessageParser<PingRequest> _parser = new pb::MessageParser<PingRequest>(() => new PingRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PingRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[5]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingRequest(PingRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingRequest Clone() {
       return new PingRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PingRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PingRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1763,29 +1882,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PingRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1799,36 +1924,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PingResponse : pb::IMessage<PingResponse> {
     private static readonly pb::MessageParser<PingResponse> _parser = new pb::MessageParser<PingResponse>(() => new PingResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PingResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[6]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingResponse(PingResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PingResponse Clone() {
       return new PingResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PingResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PingResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1839,29 +1971,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PingResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1875,36 +2013,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NetworkRequest : pb::IMessage<NetworkRequest> {
     private static readonly pb::MessageParser<NetworkRequest> _parser = new pb::MessageParser<NetworkRequest>(() => new NetworkRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NetworkRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[7]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkRequest(NetworkRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkRequest Clone() {
       return new NetworkRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NetworkRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NetworkRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1915,29 +2060,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NetworkRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1951,29 +2102,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NetworkResponse : pb::IMessage<NetworkResponse> {
     private static readonly pb::MessageParser<NetworkResponse> _parser = new pb::MessageParser<NetworkResponse>(() => new NetworkResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NetworkResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[8]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkResponse(NetworkResponse other) : this() {
       activeNetwork_ = other.activeNetwork_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NetworkResponse Clone() {
       return new NetworkResponse(this);
     }
@@ -1981,6 +2137,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "active_network" field.</summary>
     public const int ActiveNetworkFieldNumber = 1;
     private uint activeNetwork_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ActiveNetwork {
       get { return activeNetwork_; }
       set {
@@ -1988,10 +2145,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NetworkResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NetworkResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2003,16 +2162,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (ActiveNetwork != 0) hash ^= ActiveNetwork.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (ActiveNetwork != 0) {
         output.WriteRawTag(8);
@@ -2020,6 +2182,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (ActiveNetwork != 0) {
@@ -2028,6 +2191,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NetworkResponse other) {
       if (other == null) {
         return;
@@ -2037,6 +2201,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2054,29 +2219,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountNumberRequest : pb::IMessage<AccountNumberRequest> {
     private static readonly pb::MessageParser<AccountNumberRequest> _parser = new pb::MessageParser<AccountNumberRequest>(() => new AccountNumberRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountNumberRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[9]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberRequest(AccountNumberRequest other) : this() {
       accountName_ = other.accountName_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberRequest Clone() {
       return new AccountNumberRequest(this);
     }
@@ -2084,6 +2254,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_name" field.</summary>
     public const int AccountNameFieldNumber = 1;
     private string accountName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AccountName {
       get { return accountName_; }
       set {
@@ -2091,10 +2262,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountNumberRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountNumberRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2106,16 +2279,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountName.Length != 0) hash ^= AccountName.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountName.Length != 0) {
         output.WriteRawTag(10);
@@ -2123,6 +2299,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountName.Length != 0) {
@@ -2131,6 +2308,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountNumberRequest other) {
       if (other == null) {
         return;
@@ -2140,6 +2318,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2157,29 +2336,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountNumberResponse : pb::IMessage<AccountNumberResponse> {
     private static readonly pb::MessageParser<AccountNumberResponse> _parser = new pb::MessageParser<AccountNumberResponse>(() => new AccountNumberResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountNumberResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[10]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberResponse(AccountNumberResponse other) : this() {
       accountNumber_ = other.accountNumber_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNumberResponse Clone() {
       return new AccountNumberResponse(this);
     }
@@ -2187,6 +2371,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_number" field.</summary>
     public const int AccountNumberFieldNumber = 1;
     private uint accountNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AccountNumber {
       get { return accountNumber_; }
       set {
@@ -2194,10 +2379,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountNumberResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountNumberResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2209,16 +2396,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountNumber != 0) {
         output.WriteRawTag(8);
@@ -2226,6 +2416,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountNumber != 0) {
@@ -2234,6 +2425,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountNumberResponse other) {
       if (other == null) {
         return;
@@ -2243,6 +2435,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2260,36 +2453,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountsRequest : pb::IMessage<AccountsRequest> {
     private static readonly pb::MessageParser<AccountsRequest> _parser = new pb::MessageParser<AccountsRequest>(() => new AccountsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[11]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsRequest(AccountsRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsRequest Clone() {
       return new AccountsRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2300,29 +2500,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountsRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2336,31 +2542,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountsResponse : pb::IMessage<AccountsResponse> {
     private static readonly pb::MessageParser<AccountsResponse> _parser = new pb::MessageParser<AccountsResponse>(() => new AccountsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[12]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsResponse(AccountsResponse other) : this() {
       accounts_ = other.accounts_.Clone();
       currentBlockHash_ = other.currentBlockHash_;
       currentBlockHeight_ = other.currentBlockHeight_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountsResponse Clone() {
       return new AccountsResponse(this);
     }
@@ -2370,6 +2581,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.AccountsResponse.Types.Account> _repeated_accounts_codec
         = pb::FieldCodec.ForMessage(10, global::Walletrpc.AccountsResponse.Types.Account.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.AccountsResponse.Types.Account> accounts_ = new pbc::RepeatedField<global::Walletrpc.AccountsResponse.Types.Account>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.AccountsResponse.Types.Account> Accounts {
       get { return accounts_; }
     }
@@ -2377,6 +2589,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "current_block_hash" field.</summary>
     public const int CurrentBlockHashFieldNumber = 2;
     private pb::ByteString currentBlockHash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString CurrentBlockHash {
       get { return currentBlockHash_; }
       set {
@@ -2387,6 +2600,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "current_block_height" field.</summary>
     public const int CurrentBlockHeightFieldNumber = 3;
     private int currentBlockHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CurrentBlockHeight {
       get { return currentBlockHeight_; }
       set {
@@ -2394,10 +2608,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2411,6 +2627,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= accounts_.GetHashCode();
@@ -2419,10 +2636,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       accounts_.WriteTo(output, _repeated_accounts_codec);
       if (CurrentBlockHash.Length != 0) {
@@ -2435,6 +2654,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += accounts_.CalculateSize(_repeated_accounts_codec);
@@ -2447,6 +2667,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountsResponse other) {
       if (other == null) {
         return;
@@ -2460,6 +2681,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2485,27 +2707,31 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the AccountsResponse message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Account : pb::IMessage<Account> {
         private static readonly pb::MessageParser<Account> _parser = new pb::MessageParser<Account>(() => new Account());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Account> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.AccountsResponse.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Account() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Account(Account other) : this() {
           accountNumber_ = other.accountNumber_;
           accountName_ = other.accountName_;
@@ -2515,6 +2741,7 @@ namespace Walletrpc {
           importedKeyCount_ = other.importedKeyCount_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Account Clone() {
           return new Account(this);
         }
@@ -2522,6 +2749,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "account_number" field.</summary>
         public const int AccountNumberFieldNumber = 1;
         private uint accountNumber_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint AccountNumber {
           get { return accountNumber_; }
           set {
@@ -2532,6 +2760,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "account_name" field.</summary>
         public const int AccountNameFieldNumber = 2;
         private string accountName_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string AccountName {
           get { return accountName_; }
           set {
@@ -2542,6 +2771,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "total_balance" field.</summary>
         public const int TotalBalanceFieldNumber = 3;
         private long totalBalance_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long TotalBalance {
           get { return totalBalance_; }
           set {
@@ -2552,6 +2782,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "external_key_count" field.</summary>
         public const int ExternalKeyCountFieldNumber = 4;
         private uint externalKeyCount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint ExternalKeyCount {
           get { return externalKeyCount_; }
           set {
@@ -2562,6 +2793,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "internal_key_count" field.</summary>
         public const int InternalKeyCountFieldNumber = 5;
         private uint internalKeyCount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint InternalKeyCount {
           get { return internalKeyCount_; }
           set {
@@ -2572,6 +2804,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "imported_key_count" field.</summary>
         public const int ImportedKeyCountFieldNumber = 6;
         private uint importedKeyCount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint ImportedKeyCount {
           get { return importedKeyCount_; }
           set {
@@ -2579,10 +2812,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Account);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Account other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -2599,6 +2834,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
@@ -2610,10 +2846,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (AccountNumber != 0) {
             output.WriteRawTag(8);
@@ -2641,6 +2879,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (AccountNumber != 0) {
@@ -2664,6 +2903,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Account other) {
           if (other == null) {
             return;
@@ -2688,6 +2928,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -2730,30 +2971,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class RenameAccountRequest : pb::IMessage<RenameAccountRequest> {
     private static readonly pb::MessageParser<RenameAccountRequest> _parser = new pb::MessageParser<RenameAccountRequest>(() => new RenameAccountRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<RenameAccountRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[13]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountRequest(RenameAccountRequest other) : this() {
       accountNumber_ = other.accountNumber_;
       newName_ = other.newName_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountRequest Clone() {
       return new RenameAccountRequest(this);
     }
@@ -2761,6 +3007,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_number" field.</summary>
     public const int AccountNumberFieldNumber = 1;
     private uint accountNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AccountNumber {
       get { return accountNumber_; }
       set {
@@ -2771,6 +3018,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "new_name" field.</summary>
     public const int NewNameFieldNumber = 2;
     private string newName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NewName {
       get { return newName_; }
       set {
@@ -2778,10 +3026,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RenameAccountRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(RenameAccountRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2794,6 +3044,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
@@ -2801,10 +3052,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountNumber != 0) {
         output.WriteRawTag(8);
@@ -2816,6 +3069,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountNumber != 0) {
@@ -2827,6 +3081,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(RenameAccountRequest other) {
       if (other == null) {
         return;
@@ -2839,6 +3094,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2860,36 +3116,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class RenameAccountResponse : pb::IMessage<RenameAccountResponse> {
     private static readonly pb::MessageParser<RenameAccountResponse> _parser = new pb::MessageParser<RenameAccountResponse>(() => new RenameAccountResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<RenameAccountResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[14]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountResponse(RenameAccountResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RenameAccountResponse Clone() {
       return new RenameAccountResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RenameAccountResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(RenameAccountResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2900,29 +3163,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(RenameAccountResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2936,29 +3205,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class RescanRequest : pb::IMessage<RescanRequest> {
     private static readonly pb::MessageParser<RescanRequest> _parser = new pb::MessageParser<RescanRequest>(() => new RescanRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<RescanRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[15]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanRequest(RescanRequest other) : this() {
       beginHeight_ = other.beginHeight_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanRequest Clone() {
       return new RescanRequest(this);
     }
@@ -2966,6 +3240,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "begin_height" field.</summary>
     public const int BeginHeightFieldNumber = 1;
     private int beginHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int BeginHeight {
       get { return beginHeight_; }
       set {
@@ -2973,10 +3248,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RescanRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(RescanRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2988,16 +3265,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (BeginHeight != 0) hash ^= BeginHeight.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (BeginHeight != 0) {
         output.WriteRawTag(8);
@@ -3005,6 +3285,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (BeginHeight != 0) {
@@ -3013,6 +3294,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(RescanRequest other) {
       if (other == null) {
         return;
@@ -3022,6 +3304,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3039,29 +3322,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class RescanResponse : pb::IMessage<RescanResponse> {
     private static readonly pb::MessageParser<RescanResponse> _parser = new pb::MessageParser<RescanResponse>(() => new RescanResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<RescanResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[16]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanResponse(RescanResponse other) : this() {
       rescannedThrough_ = other.rescannedThrough_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RescanResponse Clone() {
       return new RescanResponse(this);
     }
@@ -3069,6 +3357,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "rescanned_through" field.</summary>
     public const int RescannedThroughFieldNumber = 1;
     private int rescannedThrough_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RescannedThrough {
       get { return rescannedThrough_; }
       set {
@@ -3076,10 +3365,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RescanResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(RescanResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3091,16 +3382,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (RescannedThrough != 0) hash ^= RescannedThrough.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (RescannedThrough != 0) {
         output.WriteRawTag(8);
@@ -3108,6 +3402,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (RescannedThrough != 0) {
@@ -3116,6 +3411,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(RescanResponse other) {
       if (other == null) {
         return;
@@ -3125,6 +3421,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3142,30 +3439,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NextAccountRequest : pb::IMessage<NextAccountRequest> {
     private static readonly pb::MessageParser<NextAccountRequest> _parser = new pb::MessageParser<NextAccountRequest>(() => new NextAccountRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NextAccountRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[17]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountRequest(NextAccountRequest other) : this() {
       passphrase_ = other.passphrase_;
       accountName_ = other.accountName_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountRequest Clone() {
       return new NextAccountRequest(this);
     }
@@ -3173,6 +3475,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -3183,6 +3486,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_name" field.</summary>
     public const int AccountNameFieldNumber = 2;
     private string accountName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AccountName {
       get { return accountName_; }
       set {
@@ -3190,10 +3494,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NextAccountRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NextAccountRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3206,6 +3512,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -3213,10 +3520,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -3228,6 +3537,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -3239,6 +3549,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NextAccountRequest other) {
       if (other == null) {
         return;
@@ -3251,6 +3562,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3272,29 +3584,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NextAccountResponse : pb::IMessage<NextAccountResponse> {
     private static readonly pb::MessageParser<NextAccountResponse> _parser = new pb::MessageParser<NextAccountResponse>(() => new NextAccountResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NextAccountResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[18]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountResponse(NextAccountResponse other) : this() {
       accountNumber_ = other.accountNumber_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAccountResponse Clone() {
       return new NextAccountResponse(this);
     }
@@ -3302,6 +3619,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_number" field.</summary>
     public const int AccountNumberFieldNumber = 1;
     private uint accountNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AccountNumber {
       get { return accountNumber_; }
       set {
@@ -3309,10 +3627,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NextAccountResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NextAccountResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3324,16 +3644,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountNumber != 0) {
         output.WriteRawTag(8);
@@ -3341,6 +3664,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountNumber != 0) {
@@ -3349,6 +3673,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NextAccountResponse other) {
       if (other == null) {
         return;
@@ -3358,6 +3683,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3375,30 +3701,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NextAddressRequest : pb::IMessage<NextAddressRequest> {
     private static readonly pb::MessageParser<NextAddressRequest> _parser = new pb::MessageParser<NextAddressRequest>(() => new NextAddressRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NextAddressRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[19]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressRequest(NextAddressRequest other) : this() {
       account_ = other.account_;
       kind_ = other.kind_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressRequest Clone() {
       return new NextAddressRequest(this);
     }
@@ -3406,6 +3737,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -3416,6 +3748,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "kind" field.</summary>
     public const int KindFieldNumber = 2;
     private global::Walletrpc.NextAddressRequest.Types.Kind kind_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.NextAddressRequest.Types.Kind Kind {
       get { return kind_; }
       set {
@@ -3423,10 +3756,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NextAddressRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NextAddressRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3439,6 +3774,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Account != 0) hash ^= Account.GetHashCode();
@@ -3446,10 +3782,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Account != 0) {
         output.WriteRawTag(8);
@@ -3461,6 +3799,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Account != 0) {
@@ -3472,6 +3811,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NextAddressRequest other) {
       if (other == null) {
         return;
@@ -3484,6 +3824,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3505,7 +3846,7 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the NextAddressRequest message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       public enum Kind {
         [pbr::OriginalName("BIP0044_EXTERNAL")] Bip0044External = 0,
@@ -3517,30 +3858,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class NextAddressResponse : pb::IMessage<NextAddressResponse> {
     private static readonly pb::MessageParser<NextAddressResponse> _parser = new pb::MessageParser<NextAddressResponse>(() => new NextAddressResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<NextAddressResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[20]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressResponse(NextAddressResponse other) : this() {
       address_ = other.address_;
       publicKey_ = other.publicKey_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public NextAddressResponse Clone() {
       return new NextAddressResponse(this);
     }
@@ -3548,6 +3894,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "address" field.</summary>
     public const int AddressFieldNumber = 1;
     private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Address {
       get { return address_; }
       set {
@@ -3558,6 +3905,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "public_key" field.</summary>
     public const int PublicKeyFieldNumber = 2;
     private string publicKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PublicKey {
       get { return publicKey_; }
       set {
@@ -3565,10 +3913,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NextAddressResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(NextAddressResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3581,6 +3931,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Address.Length != 0) hash ^= Address.GetHashCode();
@@ -3588,10 +3939,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Address.Length != 0) {
         output.WriteRawTag(10);
@@ -3603,6 +3956,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Address.Length != 0) {
@@ -3614,6 +3968,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(NextAddressResponse other) {
       if (other == null) {
         return;
@@ -3626,6 +3981,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3647,25 +4003,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ImportPrivateKeyRequest : pb::IMessage<ImportPrivateKeyRequest> {
     private static readonly pb::MessageParser<ImportPrivateKeyRequest> _parser = new pb::MessageParser<ImportPrivateKeyRequest>(() => new ImportPrivateKeyRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ImportPrivateKeyRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[21]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyRequest(ImportPrivateKeyRequest other) : this() {
       passphrase_ = other.passphrase_;
       account_ = other.account_;
@@ -3674,6 +4034,7 @@ namespace Walletrpc {
       scanFrom_ = other.scanFrom_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyRequest Clone() {
       return new ImportPrivateKeyRequest(this);
     }
@@ -3681,6 +4042,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -3691,6 +4053,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 2;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -3701,6 +4064,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "private_key_wif" field.</summary>
     public const int PrivateKeyWifFieldNumber = 3;
     private string privateKeyWif_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PrivateKeyWif {
       get { return privateKeyWif_; }
       set {
@@ -3711,6 +4075,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "rescan" field.</summary>
     public const int RescanFieldNumber = 4;
     private bool rescan_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Rescan {
       get { return rescan_; }
       set {
@@ -3721,6 +4086,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "scan_from" field.</summary>
     public const int ScanFromFieldNumber = 5;
     private int scanFrom_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ScanFrom {
       get { return scanFrom_; }
       set {
@@ -3728,10 +4094,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ImportPrivateKeyRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ImportPrivateKeyRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3747,6 +4115,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -3757,10 +4126,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -3784,6 +4155,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -3804,6 +4176,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ImportPrivateKeyRequest other) {
       if (other == null) {
         return;
@@ -3825,6 +4198,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3858,36 +4232,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ImportPrivateKeyResponse : pb::IMessage<ImportPrivateKeyResponse> {
     private static readonly pb::MessageParser<ImportPrivateKeyResponse> _parser = new pb::MessageParser<ImportPrivateKeyResponse>(() => new ImportPrivateKeyResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ImportPrivateKeyResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[22]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyResponse(ImportPrivateKeyResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportPrivateKeyResponse Clone() {
       return new ImportPrivateKeyResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ImportPrivateKeyResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ImportPrivateKeyResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3898,29 +4279,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ImportPrivateKeyResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3934,25 +4321,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ImportScriptRequest : pb::IMessage<ImportScriptRequest> {
     private static readonly pb::MessageParser<ImportScriptRequest> _parser = new pb::MessageParser<ImportScriptRequest>(() => new ImportScriptRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ImportScriptRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[23]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptRequest(ImportScriptRequest other) : this() {
       passphrase_ = other.passphrase_;
       script_ = other.script_;
@@ -3960,6 +4351,7 @@ namespace Walletrpc {
       scanFrom_ = other.scanFrom_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptRequest Clone() {
       return new ImportScriptRequest(this);
     }
@@ -3967,6 +4359,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -3977,6 +4370,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "script" field.</summary>
     public const int ScriptFieldNumber = 2;
     private pb::ByteString script_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Script {
       get { return script_; }
       set {
@@ -3987,6 +4381,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "rescan" field.</summary>
     public const int RescanFieldNumber = 3;
     private bool rescan_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Rescan {
       get { return rescan_; }
       set {
@@ -3997,6 +4392,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "scan_from" field.</summary>
     public const int ScanFromFieldNumber = 4;
     private int scanFrom_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ScanFrom {
       get { return scanFrom_; }
       set {
@@ -4004,10 +4400,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ImportScriptRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ImportScriptRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4022,6 +4420,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -4031,10 +4430,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -4054,6 +4455,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -4071,6 +4473,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ImportScriptRequest other) {
       if (other == null) {
         return;
@@ -4089,6 +4492,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4118,36 +4522,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ImportScriptResponse : pb::IMessage<ImportScriptResponse> {
     private static readonly pb::MessageParser<ImportScriptResponse> _parser = new pb::MessageParser<ImportScriptResponse>(() => new ImportScriptResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ImportScriptResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[24]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptResponse(ImportScriptResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ImportScriptResponse Clone() {
       return new ImportScriptResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ImportScriptResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ImportScriptResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4158,29 +4569,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ImportScriptResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4194,30 +4611,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class BalanceRequest : pb::IMessage<BalanceRequest> {
     private static readonly pb::MessageParser<BalanceRequest> _parser = new pb::MessageParser<BalanceRequest>(() => new BalanceRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<BalanceRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[25]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceRequest(BalanceRequest other) : this() {
       accountNumber_ = other.accountNumber_;
       requiredConfirmations_ = other.requiredConfirmations_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceRequest Clone() {
       return new BalanceRequest(this);
     }
@@ -4225,6 +4647,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_number" field.</summary>
     public const int AccountNumberFieldNumber = 1;
     private uint accountNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AccountNumber {
       get { return accountNumber_; }
       set {
@@ -4235,6 +4658,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "required_confirmations" field.</summary>
     public const int RequiredConfirmationsFieldNumber = 2;
     private int requiredConfirmations_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RequiredConfirmations {
       get { return requiredConfirmations_; }
       set {
@@ -4242,10 +4666,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BalanceRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(BalanceRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4258,6 +4684,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
@@ -4265,10 +4692,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountNumber != 0) {
         output.WriteRawTag(8);
@@ -4280,6 +4709,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountNumber != 0) {
@@ -4291,6 +4721,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(BalanceRequest other) {
       if (other == null) {
         return;
@@ -4303,6 +4734,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4324,31 +4756,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class BalanceResponse : pb::IMessage<BalanceResponse> {
     private static readonly pb::MessageParser<BalanceResponse> _parser = new pb::MessageParser<BalanceResponse>(() => new BalanceResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<BalanceResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[26]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceResponse(BalanceResponse other) : this() {
       total_ = other.total_;
       spendable_ = other.spendable_;
       immatureReward_ = other.immatureReward_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BalanceResponse Clone() {
       return new BalanceResponse(this);
     }
@@ -4356,6 +4793,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total" field.</summary>
     public const int TotalFieldNumber = 1;
     private long total_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Total {
       get { return total_; }
       set {
@@ -4366,6 +4804,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "spendable" field.</summary>
     public const int SpendableFieldNumber = 2;
     private long spendable_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Spendable {
       get { return spendable_; }
       set {
@@ -4376,6 +4815,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "immature_reward" field.</summary>
     public const int ImmatureRewardFieldNumber = 3;
     private long immatureReward_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ImmatureReward {
       get { return immatureReward_; }
       set {
@@ -4383,10 +4823,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BalanceResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(BalanceResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4400,6 +4842,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Total != 0L) hash ^= Total.GetHashCode();
@@ -4408,10 +4851,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Total != 0L) {
         output.WriteRawTag(8);
@@ -4427,6 +4872,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Total != 0L) {
@@ -4441,6 +4887,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(BalanceResponse other) {
       if (other == null) {
         return;
@@ -4456,6 +4903,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4481,25 +4929,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class GetTransactionsRequest : pb::IMessage<GetTransactionsRequest> {
     private static readonly pb::MessageParser<GetTransactionsRequest> _parser = new pb::MessageParser<GetTransactionsRequest>(() => new GetTransactionsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<GetTransactionsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[27]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsRequest(GetTransactionsRequest other) : this() {
       startingBlockHash_ = other.startingBlockHash_;
       startingBlockHeight_ = other.startingBlockHeight_;
@@ -4508,6 +4960,7 @@ namespace Walletrpc {
       minimumRecentTransactions_ = other.minimumRecentTransactions_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsRequest Clone() {
       return new GetTransactionsRequest(this);
     }
@@ -4516,14 +4969,15 @@ namespace Walletrpc {
     public const int StartingBlockHashFieldNumber = 1;
     private pb::ByteString startingBlockHash_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optionally specify the starting block from which to begin including all transactions.
-    ///  Either the starting block hash or height may be specified, but not both.
-    ///  If a block height is specified and is negative, the absolute value becomes the number of
-    ///  last blocks to include.  That is, given a current chain height of 1000 and a starting block
-    ///  height of -3, transaction notifications will be created for blocks 998, 999, and 1000.
-    ///  If both options are excluded, transaction results are created for transactions since the
-    ///  genesis block.
+    /// Optionally specify the starting block from which to begin including all transactions.
+    /// Either the starting block hash or height may be specified, but not both.
+    /// If a block height is specified and is negative, the absolute value becomes the number of
+    /// last blocks to include.  That is, given a current chain height of 1000 and a starting block
+    /// height of -3, transaction notifications will be created for blocks 998, 999, and 1000.
+    /// If both options are excluded, transaction results are created for transactions since the
+    /// genesis block.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString StartingBlockHash {
       get { return startingBlockHash_; }
       set {
@@ -4534,6 +4988,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "starting_block_height" field.</summary>
     public const int StartingBlockHeightFieldNumber = 2;
     private int startingBlockHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int StartingBlockHeight {
       get { return startingBlockHeight_; }
       set {
@@ -4545,11 +5000,12 @@ namespace Walletrpc {
     public const int EndingBlockHashFieldNumber = 3;
     private pb::ByteString endingBlockHash_ = pb::ByteString.Empty;
     /// <summary>
-    ///  Optionally specify the last block that transaction results may appear in.
-    ///  Either the ending block hash or height may be specified, but not both.
-    ///  If both are excluded, transaction results are created for all transactions
-    ///  through the best block, and include all unmined transactions.
+    /// Optionally specify the last block that transaction results may appear in.
+    /// Either the ending block hash or height may be specified, but not both.
+    /// If both are excluded, transaction results are created for all transactions
+    /// through the best block, and include all unmined transactions.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString EndingBlockHash {
       get { return endingBlockHash_; }
       set {
@@ -4560,6 +5016,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "ending_block_height" field.</summary>
     public const int EndingBlockHeightFieldNumber = 4;
     private int endingBlockHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int EndingBlockHeight {
       get { return endingBlockHeight_; }
       set {
@@ -4571,11 +5028,12 @@ namespace Walletrpc {
     public const int MinimumRecentTransactionsFieldNumber = 5;
     private int minimumRecentTransactions_;
     /// <summary>
-    ///  Include at least this many of the newest transactions if they exist.
-    ///  Cannot be used when the ending block hash is specified.
+    /// Include at least this many of the newest transactions if they exist.
+    /// Cannot be used when the ending block hash is specified.
     ///
-    ///  TODO: remove until spec adds it back in some way.
+    /// TODO: remove until spec adds it back in some way.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int MinimumRecentTransactions {
       get { return minimumRecentTransactions_; }
       set {
@@ -4583,10 +5041,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetTransactionsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(GetTransactionsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4602,6 +5062,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (StartingBlockHash.Length != 0) hash ^= StartingBlockHash.GetHashCode();
@@ -4612,10 +5073,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (StartingBlockHash.Length != 0) {
         output.WriteRawTag(10);
@@ -4639,6 +5102,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (StartingBlockHash.Length != 0) {
@@ -4659,6 +5123,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GetTransactionsRequest other) {
       if (other == null) {
         return;
@@ -4680,6 +5145,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4713,30 +5179,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class GetTransactionsResponse : pb::IMessage<GetTransactionsResponse> {
     private static readonly pb::MessageParser<GetTransactionsResponse> _parser = new pb::MessageParser<GetTransactionsResponse>(() => new GetTransactionsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<GetTransactionsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[28]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsResponse(GetTransactionsResponse other) : this() {
       MinedTransactions = other.minedTransactions_ != null ? other.MinedTransactions.Clone() : null;
       unminedTransactions_ = other.unminedTransactions_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetTransactionsResponse Clone() {
       return new GetTransactionsResponse(this);
     }
@@ -4744,6 +5215,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "mined_transactions" field.</summary>
     public const int MinedTransactionsFieldNumber = 1;
     private global::Walletrpc.BlockDetails minedTransactions_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.BlockDetails MinedTransactions {
       get { return minedTransactions_; }
       set {
@@ -4756,14 +5228,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.TransactionDetails> _repeated_unminedTransactions_codec
         = pb::FieldCodec.ForMessage(18, global::Walletrpc.TransactionDetails.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.TransactionDetails> unminedTransactions_ = new pbc::RepeatedField<global::Walletrpc.TransactionDetails>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.TransactionDetails> UnminedTransactions {
       get { return unminedTransactions_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GetTransactionsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(GetTransactionsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4776,6 +5251,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (minedTransactions_ != null) hash ^= MinedTransactions.GetHashCode();
@@ -4783,10 +5259,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (minedTransactions_ != null) {
         output.WriteRawTag(10);
@@ -4795,6 +5273,7 @@ namespace Walletrpc {
       unminedTransactions_.WriteTo(output, _repeated_unminedTransactions_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (minedTransactions_ != null) {
@@ -4804,6 +5283,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GetTransactionsResponse other) {
       if (other == null) {
         return;
@@ -4817,6 +5297,7 @@ namespace Walletrpc {
       unminedTransactions_.Add(other.unminedTransactions_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4841,36 +5322,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TicketPriceRequest : pb::IMessage<TicketPriceRequest> {
     private static readonly pb::MessageParser<TicketPriceRequest> _parser = new pb::MessageParser<TicketPriceRequest>(() => new TicketPriceRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TicketPriceRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[29]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceRequest(TicketPriceRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceRequest Clone() {
       return new TicketPriceRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TicketPriceRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TicketPriceRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4881,29 +5369,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TicketPriceRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4917,30 +5411,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TicketPriceResponse : pb::IMessage<TicketPriceResponse> {
     private static readonly pb::MessageParser<TicketPriceResponse> _parser = new pb::MessageParser<TicketPriceResponse>(() => new TicketPriceResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TicketPriceResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[30]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceResponse(TicketPriceResponse other) : this() {
       ticketPrice_ = other.ticketPrice_;
       height_ = other.height_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketPriceResponse Clone() {
       return new TicketPriceResponse(this);
     }
@@ -4948,6 +5447,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "ticket_price" field.</summary>
     public const int TicketPriceFieldNumber = 1;
     private long ticketPrice_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TicketPrice {
       get { return ticketPrice_; }
       set {
@@ -4958,6 +5458,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "height" field.</summary>
     public const int HeightFieldNumber = 2;
     private int height_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Height {
       get { return height_; }
       set {
@@ -4965,10 +5466,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TicketPriceResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TicketPriceResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4981,6 +5484,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (TicketPrice != 0L) hash ^= TicketPrice.GetHashCode();
@@ -4988,10 +5492,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (TicketPrice != 0L) {
         output.WriteRawTag(8);
@@ -5003,6 +5509,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (TicketPrice != 0L) {
@@ -5014,6 +5521,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TicketPriceResponse other) {
       if (other == null) {
         return;
@@ -5026,6 +5534,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5047,36 +5556,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StakeInfoRequest : pb::IMessage<StakeInfoRequest> {
     private static readonly pb::MessageParser<StakeInfoRequest> _parser = new pb::MessageParser<StakeInfoRequest>(() => new StakeInfoRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StakeInfoRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[31]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoRequest(StakeInfoRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoRequest Clone() {
       return new StakeInfoRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StakeInfoRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StakeInfoRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5087,29 +5603,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StakeInfoRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5123,25 +5645,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StakeInfoResponse : pb::IMessage<StakeInfoResponse> {
     private static readonly pb::MessageParser<StakeInfoResponse> _parser = new pb::MessageParser<StakeInfoResponse>(() => new StakeInfoResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StakeInfoResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[32]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoResponse(StakeInfoResponse other) : this() {
       poolSize_ = other.poolSize_;
       allMempoolTix_ = other.allMempoolTix_;
@@ -5155,6 +5681,7 @@ namespace Walletrpc {
       totalSubsidy_ = other.totalSubsidy_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StakeInfoResponse Clone() {
       return new StakeInfoResponse(this);
     }
@@ -5162,6 +5689,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_size" field.</summary>
     public const int PoolSizeFieldNumber = 1;
     private uint poolSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint PoolSize {
       get { return poolSize_; }
       set {
@@ -5172,6 +5700,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "all_mempool_tix" field.</summary>
     public const int AllMempoolTixFieldNumber = 2;
     private uint allMempoolTix_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AllMempoolTix {
       get { return allMempoolTix_; }
       set {
@@ -5182,6 +5711,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "own_mempool_tix" field.</summary>
     public const int OwnMempoolTixFieldNumber = 3;
     private uint ownMempoolTix_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint OwnMempoolTix {
       get { return ownMempoolTix_; }
       set {
@@ -5192,6 +5722,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "immature" field.</summary>
     public const int ImmatureFieldNumber = 4;
     private uint immature_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Immature {
       get { return immature_; }
       set {
@@ -5202,6 +5733,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "live" field.</summary>
     public const int LiveFieldNumber = 5;
     private uint live_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Live {
       get { return live_; }
       set {
@@ -5212,6 +5744,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "voted" field.</summary>
     public const int VotedFieldNumber = 6;
     private uint voted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Voted {
       get { return voted_; }
       set {
@@ -5222,6 +5755,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "missed" field.</summary>
     public const int MissedFieldNumber = 7;
     private uint missed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Missed {
       get { return missed_; }
       set {
@@ -5232,6 +5766,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "revoked" field.</summary>
     public const int RevokedFieldNumber = 8;
     private uint revoked_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Revoked {
       get { return revoked_; }
       set {
@@ -5242,6 +5777,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "expired" field.</summary>
     public const int ExpiredFieldNumber = 9;
     private uint expired_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Expired {
       get { return expired_; }
       set {
@@ -5252,6 +5788,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total_subsidy" field.</summary>
     public const int TotalSubsidyFieldNumber = 10;
     private long totalSubsidy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalSubsidy {
       get { return totalSubsidy_; }
       set {
@@ -5259,10 +5796,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StakeInfoResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StakeInfoResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5283,6 +5822,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (PoolSize != 0) hash ^= PoolSize.GetHashCode();
@@ -5298,10 +5838,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (PoolSize != 0) {
         output.WriteRawTag(8);
@@ -5345,6 +5887,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (PoolSize != 0) {
@@ -5380,6 +5923,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StakeInfoResponse other) {
       if (other == null) {
         return;
@@ -5416,6 +5960,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5469,31 +6014,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ChangePassphraseRequest : pb::IMessage<ChangePassphraseRequest> {
     private static readonly pb::MessageParser<ChangePassphraseRequest> _parser = new pb::MessageParser<ChangePassphraseRequest>(() => new ChangePassphraseRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ChangePassphraseRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[33]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseRequest(ChangePassphraseRequest other) : this() {
       key_ = other.key_;
       oldPassphrase_ = other.oldPassphrase_;
       newPassphrase_ = other.newPassphrase_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseRequest Clone() {
       return new ChangePassphraseRequest(this);
     }
@@ -5501,6 +6051,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "key" field.</summary>
     public const int KeyFieldNumber = 1;
     private global::Walletrpc.ChangePassphraseRequest.Types.Key key_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.ChangePassphraseRequest.Types.Key Key {
       get { return key_; }
       set {
@@ -5511,6 +6062,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "old_passphrase" field.</summary>
     public const int OldPassphraseFieldNumber = 2;
     private pb::ByteString oldPassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString OldPassphrase {
       get { return oldPassphrase_; }
       set {
@@ -5521,6 +6073,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "new_passphrase" field.</summary>
     public const int NewPassphraseFieldNumber = 3;
     private pb::ByteString newPassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString NewPassphrase {
       get { return newPassphrase_; }
       set {
@@ -5528,10 +6081,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChangePassphraseRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ChangePassphraseRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5545,6 +6100,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Key != 0) hash ^= Key.GetHashCode();
@@ -5553,10 +6109,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Key != 0) {
         output.WriteRawTag(8);
@@ -5572,6 +6130,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Key != 0) {
@@ -5586,6 +6145,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ChangePassphraseRequest other) {
       if (other == null) {
         return;
@@ -5601,6 +6161,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5626,7 +6187,7 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the ChangePassphraseRequest message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       public enum Key {
         [pbr::OriginalName("PRIVATE")] Private = 0,
@@ -5638,36 +6199,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ChangePassphraseResponse : pb::IMessage<ChangePassphraseResponse> {
     private static readonly pb::MessageParser<ChangePassphraseResponse> _parser = new pb::MessageParser<ChangePassphraseResponse>(() => new ChangePassphraseResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ChangePassphraseResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[34]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseResponse(ChangePassphraseResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ChangePassphraseResponse Clone() {
       return new ChangePassphraseResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChangePassphraseResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ChangePassphraseResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5678,29 +6246,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ChangePassphraseResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5714,25 +6288,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class FundTransactionRequest : pb::IMessage<FundTransactionRequest> {
     private static readonly pb::MessageParser<FundTransactionRequest> _parser = new pb::MessageParser<FundTransactionRequest>(() => new FundTransactionRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<FundTransactionRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[35]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionRequest(FundTransactionRequest other) : this() {
       account_ = other.account_;
       targetAmount_ = other.targetAmount_;
@@ -5741,6 +6319,7 @@ namespace Walletrpc {
       includeChangeScript_ = other.includeChangeScript_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionRequest Clone() {
       return new FundTransactionRequest(this);
     }
@@ -5748,6 +6327,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -5758,6 +6338,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "target_amount" field.</summary>
     public const int TargetAmountFieldNumber = 2;
     private long targetAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TargetAmount {
       get { return targetAmount_; }
       set {
@@ -5768,6 +6349,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "required_confirmations" field.</summary>
     public const int RequiredConfirmationsFieldNumber = 3;
     private int requiredConfirmations_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RequiredConfirmations {
       get { return requiredConfirmations_; }
       set {
@@ -5778,6 +6360,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "include_immature_coinbases" field.</summary>
     public const int IncludeImmatureCoinbasesFieldNumber = 4;
     private bool includeImmatureCoinbases_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeImmatureCoinbases {
       get { return includeImmatureCoinbases_; }
       set {
@@ -5788,6 +6371,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "include_change_script" field.</summary>
     public const int IncludeChangeScriptFieldNumber = 5;
     private bool includeChangeScript_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeChangeScript {
       get { return includeChangeScript_; }
       set {
@@ -5795,10 +6379,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FundTransactionRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(FundTransactionRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5814,6 +6400,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Account != 0) hash ^= Account.GetHashCode();
@@ -5824,10 +6411,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Account != 0) {
         output.WriteRawTag(8);
@@ -5851,6 +6440,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Account != 0) {
@@ -5871,6 +6461,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(FundTransactionRequest other) {
       if (other == null) {
         return;
@@ -5892,6 +6483,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5925,31 +6517,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class FundTransactionResponse : pb::IMessage<FundTransactionResponse> {
     private static readonly pb::MessageParser<FundTransactionResponse> _parser = new pb::MessageParser<FundTransactionResponse>(() => new FundTransactionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<FundTransactionResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[36]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionResponse(FundTransactionResponse other) : this() {
       selectedOutputs_ = other.selectedOutputs_.Clone();
       totalAmount_ = other.totalAmount_;
       changePkScript_ = other.changePkScript_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FundTransactionResponse Clone() {
       return new FundTransactionResponse(this);
     }
@@ -5959,6 +6556,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.FundTransactionResponse.Types.PreviousOutput> _repeated_selectedOutputs_codec
         = pb::FieldCodec.ForMessage(10, global::Walletrpc.FundTransactionResponse.Types.PreviousOutput.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.FundTransactionResponse.Types.PreviousOutput> selectedOutputs_ = new pbc::RepeatedField<global::Walletrpc.FundTransactionResponse.Types.PreviousOutput>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.FundTransactionResponse.Types.PreviousOutput> SelectedOutputs {
       get { return selectedOutputs_; }
     }
@@ -5966,6 +6564,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total_amount" field.</summary>
     public const int TotalAmountFieldNumber = 2;
     private long totalAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalAmount {
       get { return totalAmount_; }
       set {
@@ -5976,6 +6575,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "change_pk_script" field.</summary>
     public const int ChangePkScriptFieldNumber = 3;
     private pb::ByteString changePkScript_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ChangePkScript {
       get { return changePkScript_; }
       set {
@@ -5983,10 +6583,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FundTransactionResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(FundTransactionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6000,6 +6602,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= selectedOutputs_.GetHashCode();
@@ -6008,10 +6611,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       selectedOutputs_.WriteTo(output, _repeated_selectedOutputs_codec);
       if (TotalAmount != 0L) {
@@ -6024,6 +6629,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += selectedOutputs_.CalculateSize(_repeated_selectedOutputs_codec);
@@ -6036,6 +6642,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(FundTransactionResponse other) {
       if (other == null) {
         return;
@@ -6049,6 +6656,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6074,27 +6682,31 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the FundTransactionResponse message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class PreviousOutput : pb::IMessage<PreviousOutput> {
         private static readonly pb::MessageParser<PreviousOutput> _parser = new pb::MessageParser<PreviousOutput>(() => new PreviousOutput());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<PreviousOutput> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.FundTransactionResponse.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public PreviousOutput() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public PreviousOutput(PreviousOutput other) : this() {
           transactionHash_ = other.transactionHash_;
           outputIndex_ = other.outputIndex_;
@@ -6105,6 +6717,7 @@ namespace Walletrpc {
           tree_ = other.tree_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public PreviousOutput Clone() {
           return new PreviousOutput(this);
         }
@@ -6112,6 +6725,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "transaction_hash" field.</summary>
         public const int TransactionHashFieldNumber = 1;
         private pb::ByteString transactionHash_ = pb::ByteString.Empty;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public pb::ByteString TransactionHash {
           get { return transactionHash_; }
           set {
@@ -6122,6 +6736,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "output_index" field.</summary>
         public const int OutputIndexFieldNumber = 2;
         private uint outputIndex_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint OutputIndex {
           get { return outputIndex_; }
           set {
@@ -6132,6 +6747,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "amount" field.</summary>
         public const int AmountFieldNumber = 3;
         private long amount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long Amount {
           get { return amount_; }
           set {
@@ -6142,6 +6758,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "pk_script" field.</summary>
         public const int PkScriptFieldNumber = 4;
         private pb::ByteString pkScript_ = pb::ByteString.Empty;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public pb::ByteString PkScript {
           get { return pkScript_; }
           set {
@@ -6152,6 +6769,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "receive_time" field.</summary>
         public const int ReceiveTimeFieldNumber = 5;
         private long receiveTime_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long ReceiveTime {
           get { return receiveTime_; }
           set {
@@ -6162,6 +6780,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "from_coinbase" field.</summary>
         public const int FromCoinbaseFieldNumber = 6;
         private bool fromCoinbase_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool FromCoinbase {
           get { return fromCoinbase_; }
           set {
@@ -6172,6 +6791,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "tree" field.</summary>
         public const int TreeFieldNumber = 7;
         private int tree_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int Tree {
           get { return tree_; }
           set {
@@ -6179,10 +6799,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as PreviousOutput);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(PreviousOutput other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -6200,6 +6822,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (TransactionHash.Length != 0) hash ^= TransactionHash.GetHashCode();
@@ -6212,10 +6835,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (TransactionHash.Length != 0) {
             output.WriteRawTag(10);
@@ -6247,6 +6872,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (TransactionHash.Length != 0) {
@@ -6273,6 +6899,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(PreviousOutput other) {
           if (other == null) {
             return;
@@ -6300,6 +6927,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -6346,25 +6974,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ConstructTransactionRequest : pb::IMessage<ConstructTransactionRequest> {
     private static readonly pb::MessageParser<ConstructTransactionRequest> _parser = new pb::MessageParser<ConstructTransactionRequest>(() => new ConstructTransactionRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ConstructTransactionRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[37]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionRequest(ConstructTransactionRequest other) : this() {
       sourceAccount_ = other.sourceAccount_;
       requiredConfirmations_ = other.requiredConfirmations_;
@@ -6374,6 +7006,7 @@ namespace Walletrpc {
       ChangeDestination = other.changeDestination_ != null ? other.ChangeDestination.Clone() : null;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionRequest Clone() {
       return new ConstructTransactionRequest(this);
     }
@@ -6381,6 +7014,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "source_account" field.</summary>
     public const int SourceAccountFieldNumber = 1;
     private uint sourceAccount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint SourceAccount {
       get { return sourceAccount_; }
       set {
@@ -6391,6 +7025,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "required_confirmations" field.</summary>
     public const int RequiredConfirmationsFieldNumber = 2;
     private int requiredConfirmations_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RequiredConfirmations {
       get { return requiredConfirmations_; }
       set {
@@ -6401,6 +7036,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "fee_per_kb" field.</summary>
     public const int FeePerKbFieldNumber = 3;
     private int feePerKb_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int FeePerKb {
       get { return feePerKb_; }
       set {
@@ -6411,6 +7047,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "output_selection_algorithm" field.</summary>
     public const int OutputSelectionAlgorithmFieldNumber = 4;
     private global::Walletrpc.ConstructTransactionRequest.Types.OutputSelectionAlgorithm outputSelectionAlgorithm_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.ConstructTransactionRequest.Types.OutputSelectionAlgorithm OutputSelectionAlgorithm {
       get { return outputSelectionAlgorithm_; }
       set {
@@ -6423,6 +7060,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.ConstructTransactionRequest.Types.Output> _repeated_nonChangeOutputs_codec
         = pb::FieldCodec.ForMessage(42, global::Walletrpc.ConstructTransactionRequest.Types.Output.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.ConstructTransactionRequest.Types.Output> nonChangeOutputs_ = new pbc::RepeatedField<global::Walletrpc.ConstructTransactionRequest.Types.Output>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.ConstructTransactionRequest.Types.Output> NonChangeOutputs {
       get { return nonChangeOutputs_; }
     }
@@ -6430,6 +7068,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "change_destination" field.</summary>
     public const int ChangeDestinationFieldNumber = 6;
     private global::Walletrpc.ConstructTransactionRequest.Types.OutputDestination changeDestination_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Walletrpc.ConstructTransactionRequest.Types.OutputDestination ChangeDestination {
       get { return changeDestination_; }
       set {
@@ -6437,10 +7076,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ConstructTransactionRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ConstructTransactionRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6457,6 +7098,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (SourceAccount != 0) hash ^= SourceAccount.GetHashCode();
@@ -6468,10 +7110,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (SourceAccount != 0) {
         output.WriteRawTag(8);
@@ -6496,6 +7140,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (SourceAccount != 0) {
@@ -6517,6 +7162,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ConstructTransactionRequest other) {
       if (other == null) {
         return;
@@ -6542,6 +7188,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6582,38 +7229,43 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the ConstructTransactionRequest message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       public enum OutputSelectionAlgorithm {
         [pbr::OriginalName("UNSPECIFIED")] Unspecified = 0,
         [pbr::OriginalName("ALL")] All = 1,
       }
 
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class OutputDestination : pb::IMessage<OutputDestination> {
         private static readonly pb::MessageParser<OutputDestination> _parser = new pb::MessageParser<OutputDestination>(() => new OutputDestination());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<OutputDestination> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.ConstructTransactionRequest.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public OutputDestination() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public OutputDestination(OutputDestination other) : this() {
           address_ = other.address_;
           script_ = other.script_;
           scriptVersion_ = other.scriptVersion_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public OutputDestination Clone() {
           return new OutputDestination(this);
         }
@@ -6621,6 +7273,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "address" field.</summary>
         public const int AddressFieldNumber = 1;
         private string address_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Address {
           get { return address_; }
           set {
@@ -6631,6 +7284,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "script" field.</summary>
         public const int ScriptFieldNumber = 2;
         private pb::ByteString script_ = pb::ByteString.Empty;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public pb::ByteString Script {
           get { return script_; }
           set {
@@ -6641,6 +7295,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "script_version" field.</summary>
         public const int ScriptVersionFieldNumber = 3;
         private uint scriptVersion_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint ScriptVersion {
           get { return scriptVersion_; }
           set {
@@ -6648,10 +7303,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as OutputDestination);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(OutputDestination other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -6665,6 +7322,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (Address.Length != 0) hash ^= Address.GetHashCode();
@@ -6673,10 +7331,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (Address.Length != 0) {
             output.WriteRawTag(10);
@@ -6692,6 +7352,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (Address.Length != 0) {
@@ -6706,6 +7367,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(OutputDestination other) {
           if (other == null) {
             return;
@@ -6721,6 +7383,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -6746,30 +7409,35 @@ namespace Walletrpc {
 
       }
 
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Output : pb::IMessage<Output> {
         private static readonly pb::MessageParser<Output> _parser = new pb::MessageParser<Output>(() => new Output());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Output> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.ConstructTransactionRequest.Descriptor.NestedTypes[1]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output(Output other) : this() {
           Destination = other.destination_ != null ? other.Destination.Clone() : null;
           amount_ = other.amount_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Output Clone() {
           return new Output(this);
         }
@@ -6777,6 +7445,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "destination" field.</summary>
         public const int DestinationFieldNumber = 1;
         private global::Walletrpc.ConstructTransactionRequest.Types.OutputDestination destination_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public global::Walletrpc.ConstructTransactionRequest.Types.OutputDestination Destination {
           get { return destination_; }
           set {
@@ -6787,6 +7456,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "amount" field.</summary>
         public const int AmountFieldNumber = 2;
         private long amount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long Amount {
           get { return amount_; }
           set {
@@ -6794,10 +7464,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Output);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Output other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -6810,6 +7482,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (destination_ != null) hash ^= Destination.GetHashCode();
@@ -6817,10 +7490,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (destination_ != null) {
             output.WriteRawTag(10);
@@ -6832,6 +7507,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (destination_ != null) {
@@ -6843,6 +7519,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Output other) {
           if (other == null) {
             return;
@@ -6858,6 +7535,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -6887,25 +7565,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class ConstructTransactionResponse : pb::IMessage<ConstructTransactionResponse> {
     private static readonly pb::MessageParser<ConstructTransactionResponse> _parser = new pb::MessageParser<ConstructTransactionResponse>(() => new ConstructTransactionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<ConstructTransactionResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[38]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionResponse(ConstructTransactionResponse other) : this() {
       unsignedTransaction_ = other.unsignedTransaction_;
       totalPreviousOutputAmount_ = other.totalPreviousOutputAmount_;
@@ -6913,6 +7595,7 @@ namespace Walletrpc {
       estimatedSignedSize_ = other.estimatedSignedSize_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ConstructTransactionResponse Clone() {
       return new ConstructTransactionResponse(this);
     }
@@ -6920,6 +7603,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "unsigned_transaction" field.</summary>
     public const int UnsignedTransactionFieldNumber = 1;
     private pb::ByteString unsignedTransaction_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString UnsignedTransaction {
       get { return unsignedTransaction_; }
       set {
@@ -6930,6 +7614,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total_previous_output_amount" field.</summary>
     public const int TotalPreviousOutputAmountFieldNumber = 2;
     private long totalPreviousOutputAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalPreviousOutputAmount {
       get { return totalPreviousOutputAmount_; }
       set {
@@ -6940,6 +7625,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "total_output_amount" field.</summary>
     public const int TotalOutputAmountFieldNumber = 3;
     private long totalOutputAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalOutputAmount {
       get { return totalOutputAmount_; }
       set {
@@ -6950,6 +7636,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "estimated_signed_size" field.</summary>
     public const int EstimatedSignedSizeFieldNumber = 4;
     private uint estimatedSignedSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint EstimatedSignedSize {
       get { return estimatedSignedSize_; }
       set {
@@ -6957,10 +7644,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ConstructTransactionResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(ConstructTransactionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6975,6 +7664,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (UnsignedTransaction.Length != 0) hash ^= UnsignedTransaction.GetHashCode();
@@ -6984,10 +7674,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (UnsignedTransaction.Length != 0) {
         output.WriteRawTag(10);
@@ -7007,6 +7699,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (UnsignedTransaction.Length != 0) {
@@ -7024,6 +7717,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ConstructTransactionResponse other) {
       if (other == null) {
         return;
@@ -7042,6 +7736,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7071,31 +7766,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SignTransactionRequest : pb::IMessage<SignTransactionRequest> {
     private static readonly pb::MessageParser<SignTransactionRequest> _parser = new pb::MessageParser<SignTransactionRequest>(() => new SignTransactionRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SignTransactionRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[39]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionRequest(SignTransactionRequest other) : this() {
       passphrase_ = other.passphrase_;
       serializedTransaction_ = other.serializedTransaction_;
       inputIndexes_ = other.inputIndexes_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionRequest Clone() {
       return new SignTransactionRequest(this);
     }
@@ -7103,6 +7803,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -7113,6 +7814,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "serialized_transaction" field.</summary>
     public const int SerializedTransactionFieldNumber = 2;
     private pb::ByteString serializedTransaction_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString SerializedTransaction {
       get { return serializedTransaction_; }
       set {
@@ -7126,20 +7828,23 @@ namespace Walletrpc {
         = pb::FieldCodec.ForUInt32(26);
     private readonly pbc::RepeatedField<uint> inputIndexes_ = new pbc::RepeatedField<uint>();
     /// <summary>
-    ///  If no indexes are specified, signatures scripts will be added for
-    ///  every input. If any input indexes are specified, only those inputs
-    ///  will be signed.  Rather than returning an incompletely signed
-    ///  transaction if any of the inputs to be signed can not be, the RPC
-    ///  immediately errors.
+    /// If no indexes are specified, signatures scripts will be added for
+    /// every input. If any input indexes are specified, only those inputs
+    /// will be signed.  Rather than returning an incompletely signed
+    /// transaction if any of the inputs to be signed can not be, the RPC
+    /// immediately errors.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<uint> InputIndexes {
       get { return inputIndexes_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SignTransactionRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SignTransactionRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7153,6 +7858,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -7161,10 +7867,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -7177,6 +7885,7 @@ namespace Walletrpc {
       inputIndexes_.WriteTo(output, _repeated_inputIndexes_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -7189,6 +7898,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SignTransactionRequest other) {
       if (other == null) {
         return;
@@ -7202,6 +7912,7 @@ namespace Walletrpc {
       inputIndexes_.Add(other.inputIndexes_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7228,30 +7939,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SignTransactionResponse : pb::IMessage<SignTransactionResponse> {
     private static readonly pb::MessageParser<SignTransactionResponse> _parser = new pb::MessageParser<SignTransactionResponse>(() => new SignTransactionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SignTransactionResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[40]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionResponse(SignTransactionResponse other) : this() {
       transaction_ = other.transaction_;
       unsignedInputIndexes_ = other.unsignedInputIndexes_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SignTransactionResponse Clone() {
       return new SignTransactionResponse(this);
     }
@@ -7259,6 +7975,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "transaction" field.</summary>
     public const int TransactionFieldNumber = 1;
     private pb::ByteString transaction_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Transaction {
       get { return transaction_; }
       set {
@@ -7271,14 +7988,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<uint> _repeated_unsignedInputIndexes_codec
         = pb::FieldCodec.ForUInt32(18);
     private readonly pbc::RepeatedField<uint> unsignedInputIndexes_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<uint> UnsignedInputIndexes {
       get { return unsignedInputIndexes_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SignTransactionResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SignTransactionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7291,6 +8011,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Transaction.Length != 0) hash ^= Transaction.GetHashCode();
@@ -7298,10 +8019,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Transaction.Length != 0) {
         output.WriteRawTag(10);
@@ -7310,6 +8033,7 @@ namespace Walletrpc {
       unsignedInputIndexes_.WriteTo(output, _repeated_unsignedInputIndexes_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Transaction.Length != 0) {
@@ -7319,6 +8043,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SignTransactionResponse other) {
       if (other == null) {
         return;
@@ -7329,6 +8054,7 @@ namespace Walletrpc {
       unsignedInputIndexes_.Add(other.unsignedInputIndexes_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7351,29 +8077,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PublishTransactionRequest : pb::IMessage<PublishTransactionRequest> {
     private static readonly pb::MessageParser<PublishTransactionRequest> _parser = new pb::MessageParser<PublishTransactionRequest>(() => new PublishTransactionRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PublishTransactionRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[41]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionRequest(PublishTransactionRequest other) : this() {
       signedTransaction_ = other.signedTransaction_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionRequest Clone() {
       return new PublishTransactionRequest(this);
     }
@@ -7381,6 +8112,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "signed_transaction" field.</summary>
     public const int SignedTransactionFieldNumber = 1;
     private pb::ByteString signedTransaction_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString SignedTransaction {
       get { return signedTransaction_; }
       set {
@@ -7388,10 +8120,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PublishTransactionRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PublishTransactionRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7403,16 +8137,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (SignedTransaction.Length != 0) hash ^= SignedTransaction.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (SignedTransaction.Length != 0) {
         output.WriteRawTag(10);
@@ -7420,6 +8157,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (SignedTransaction.Length != 0) {
@@ -7428,6 +8166,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PublishTransactionRequest other) {
       if (other == null) {
         return;
@@ -7437,6 +8176,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7454,29 +8194,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PublishTransactionResponse : pb::IMessage<PublishTransactionResponse> {
     private static readonly pb::MessageParser<PublishTransactionResponse> _parser = new pb::MessageParser<PublishTransactionResponse>(() => new PublishTransactionResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PublishTransactionResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[42]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionResponse(PublishTransactionResponse other) : this() {
       transactionHash_ = other.transactionHash_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishTransactionResponse Clone() {
       return new PublishTransactionResponse(this);
     }
@@ -7484,6 +8229,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "transaction_hash" field.</summary>
     public const int TransactionHashFieldNumber = 1;
     private pb::ByteString transactionHash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString TransactionHash {
       get { return transactionHash_; }
       set {
@@ -7491,10 +8237,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PublishTransactionResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PublishTransactionResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7506,16 +8254,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (TransactionHash.Length != 0) hash ^= TransactionHash.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (TransactionHash.Length != 0) {
         output.WriteRawTag(10);
@@ -7523,6 +8274,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (TransactionHash.Length != 0) {
@@ -7531,6 +8283,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PublishTransactionResponse other) {
       if (other == null) {
         return;
@@ -7540,6 +8293,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7557,25 +8311,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PurchaseTicketsRequest : pb::IMessage<PurchaseTicketsRequest> {
     private static readonly pb::MessageParser<PurchaseTicketsRequest> _parser = new pb::MessageParser<PurchaseTicketsRequest>(() => new PurchaseTicketsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PurchaseTicketsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[43]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsRequest(PurchaseTicketsRequest other) : this() {
       passphrase_ = other.passphrase_;
       account_ = other.account_;
@@ -7590,6 +8348,7 @@ namespace Walletrpc {
       ticketFee_ = other.ticketFee_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsRequest Clone() {
       return new PurchaseTicketsRequest(this);
     }
@@ -7597,6 +8356,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -7607,6 +8367,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 2;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -7617,6 +8378,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "spend_limit" field.</summary>
     public const int SpendLimitFieldNumber = 3;
     private long spendLimit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long SpendLimit {
       get { return spendLimit_; }
       set {
@@ -7627,6 +8389,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "required_confirmations" field.</summary>
     public const int RequiredConfirmationsFieldNumber = 4;
     private uint requiredConfirmations_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint RequiredConfirmations {
       get { return requiredConfirmations_; }
       set {
@@ -7637,6 +8400,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "ticket_address" field.</summary>
     public const int TicketAddressFieldNumber = 5;
     private string ticketAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string TicketAddress {
       get { return ticketAddress_; }
       set {
@@ -7647,6 +8411,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "num_tickets" field.</summary>
     public const int NumTicketsFieldNumber = 6;
     private uint numTickets_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint NumTickets {
       get { return numTickets_; }
       set {
@@ -7657,6 +8422,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_address" field.</summary>
     public const int PoolAddressFieldNumber = 7;
     private string poolAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PoolAddress {
       get { return poolAddress_; }
       set {
@@ -7667,6 +8433,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_fees" field.</summary>
     public const int PoolFeesFieldNumber = 8;
     private double poolFees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double PoolFees {
       get { return poolFees_; }
       set {
@@ -7677,6 +8444,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "expiry" field.</summary>
     public const int ExpiryFieldNumber = 9;
     private uint expiry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Expiry {
       get { return expiry_; }
       set {
@@ -7687,6 +8455,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "tx_fee" field.</summary>
     public const int TxFeeFieldNumber = 10;
     private long txFee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TxFee {
       get { return txFee_; }
       set {
@@ -7697,6 +8466,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "ticket_fee" field.</summary>
     public const int TicketFeeFieldNumber = 11;
     private long ticketFee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TicketFee {
       get { return ticketFee_; }
       set {
@@ -7704,10 +8474,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PurchaseTicketsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PurchaseTicketsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7729,6 +8501,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -7745,10 +8518,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -7796,6 +8571,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -7834,6 +8610,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PurchaseTicketsRequest other) {
       if (other == null) {
         return;
@@ -7873,6 +8650,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7930,29 +8708,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class PurchaseTicketsResponse : pb::IMessage<PurchaseTicketsResponse> {
     private static readonly pb::MessageParser<PurchaseTicketsResponse> _parser = new pb::MessageParser<PurchaseTicketsResponse>(() => new PurchaseTicketsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<PurchaseTicketsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[44]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsResponse(PurchaseTicketsResponse other) : this() {
       ticketHashes_ = other.ticketHashes_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PurchaseTicketsResponse Clone() {
       return new PurchaseTicketsResponse(this);
     }
@@ -7962,14 +8745,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<pb::ByteString> _repeated_ticketHashes_codec
         = pb::FieldCodec.ForBytes(10);
     private readonly pbc::RepeatedField<pb::ByteString> ticketHashes_ = new pbc::RepeatedField<pb::ByteString>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> TicketHashes {
       get { return ticketHashes_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PurchaseTicketsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(PurchaseTicketsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7981,26 +8767,31 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= ticketHashes_.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       ticketHashes_.WriteTo(output, _repeated_ticketHashes_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += ticketHashes_.CalculateSize(_repeated_ticketHashes_codec);
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(PurchaseTicketsResponse other) {
       if (other == null) {
         return;
@@ -8008,6 +8799,7 @@ namespace Walletrpc {
       ticketHashes_.Add(other.ticketHashes_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8025,36 +8817,249 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-  public sealed partial class LoadActiveDataFiltersRequest : pb::IMessage<LoadActiveDataFiltersRequest> {
-    private static readonly pb::MessageParser<LoadActiveDataFiltersRequest> _parser = new pb::MessageParser<LoadActiveDataFiltersRequest>(() => new LoadActiveDataFiltersRequest());
-    public static pb::MessageParser<LoadActiveDataFiltersRequest> Parser { get { return _parser; } }
+  public sealed partial class RevokeTicketsRequest : pb::IMessage<RevokeTicketsRequest> {
+    private static readonly pb::MessageParser<RevokeTicketsRequest> _parser = new pb::MessageParser<RevokeTicketsRequest>(() => new RevokeTicketsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RevokeTicketsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[45]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsRequest(RevokeTicketsRequest other) : this() {
+      passphrase_ = other.passphrase_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsRequest Clone() {
+      return new RevokeTicketsRequest(this);
+    }
+
+    /// <summary>Field number for the "passphrase" field.</summary>
+    public const int PassphraseFieldNumber = 1;
+    private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Passphrase {
+      get { return passphrase_; }
+      set {
+        passphrase_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RevokeTicketsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RevokeTicketsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Passphrase != other.Passphrase) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Passphrase.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteBytes(Passphrase);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Passphrase.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Passphrase);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RevokeTicketsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Passphrase.Length != 0) {
+        Passphrase = other.Passphrase;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            Passphrase = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RevokeTicketsResponse : pb::IMessage<RevokeTicketsResponse> {
+    private static readonly pb::MessageParser<RevokeTicketsResponse> _parser = new pb::MessageParser<RevokeTicketsResponse>(() => new RevokeTicketsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RevokeTicketsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[46]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsResponse(RevokeTicketsResponse other) : this() {
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RevokeTicketsResponse Clone() {
+      return new RevokeTicketsResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RevokeTicketsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RevokeTicketsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RevokeTicketsResponse other) {
+      if (other == null) {
+        return;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class LoadActiveDataFiltersRequest : pb::IMessage<LoadActiveDataFiltersRequest> {
+    private static readonly pb::MessageParser<LoadActiveDataFiltersRequest> _parser = new pb::MessageParser<LoadActiveDataFiltersRequest>(() => new LoadActiveDataFiltersRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LoadActiveDataFiltersRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[47]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersRequest(LoadActiveDataFiltersRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersRequest Clone() {
       return new LoadActiveDataFiltersRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LoadActiveDataFiltersRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(LoadActiveDataFiltersRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8065,29 +9070,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(LoadActiveDataFiltersRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8101,36 +9112,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class LoadActiveDataFiltersResponse : pb::IMessage<LoadActiveDataFiltersResponse> {
     private static readonly pb::MessageParser<LoadActiveDataFiltersResponse> _parser = new pb::MessageParser<LoadActiveDataFiltersResponse>(() => new LoadActiveDataFiltersResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<LoadActiveDataFiltersResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[46]; }
+      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[48]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersResponse(LoadActiveDataFiltersResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadActiveDataFiltersResponse Clone() {
       return new LoadActiveDataFiltersResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LoadActiveDataFiltersResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(LoadActiveDataFiltersResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8141,29 +9159,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(LoadActiveDataFiltersResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8177,36 +9201,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TransactionNotificationsRequest : pb::IMessage<TransactionNotificationsRequest> {
     private static readonly pb::MessageParser<TransactionNotificationsRequest> _parser = new pb::MessageParser<TransactionNotificationsRequest>(() => new TransactionNotificationsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TransactionNotificationsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[47]; }
+      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[49]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsRequest(TransactionNotificationsRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsRequest Clone() {
       return new TransactionNotificationsRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TransactionNotificationsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TransactionNotificationsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8217,29 +9248,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TransactionNotificationsRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8253,25 +9290,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TransactionNotificationsResponse : pb::IMessage<TransactionNotificationsResponse> {
     private static readonly pb::MessageParser<TransactionNotificationsResponse> _parser = new pb::MessageParser<TransactionNotificationsResponse>(() => new TransactionNotificationsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TransactionNotificationsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[48]; }
+      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[50]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsResponse(TransactionNotificationsResponse other) : this() {
       attachedBlocks_ = other.attachedBlocks_.Clone();
       detachedBlocks_ = other.detachedBlocks_.Clone();
@@ -8279,6 +9320,7 @@ namespace Walletrpc {
       unminedTransactionHashes_ = other.unminedTransactionHashes_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionNotificationsResponse Clone() {
       return new TransactionNotificationsResponse(this);
     }
@@ -8289,9 +9331,10 @@ namespace Walletrpc {
         = pb::FieldCodec.ForMessage(10, global::Walletrpc.BlockDetails.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.BlockDetails> attachedBlocks_ = new pbc::RepeatedField<global::Walletrpc.BlockDetails>();
     /// <summary>
-    ///  Sorted by increasing height.  This is a repeated field so many new blocks
-    ///  in a new best chain can be notified at once during a reorganize.
+    /// Sorted by increasing height.  This is a repeated field so many new blocks
+    /// in a new best chain can be notified at once during a reorganize.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.BlockDetails> AttachedBlocks {
       get { return attachedBlocks_; }
     }
@@ -8302,10 +9345,11 @@ namespace Walletrpc {
         = pb::FieldCodec.ForBytes(18);
     private readonly pbc::RepeatedField<pb::ByteString> detachedBlocks_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  If there was a chain reorganize, there may have been blocks with wallet
-    ///  transactions that are no longer in the best chain.  These are those
-    ///  block's hashes.
+    /// If there was a chain reorganize, there may have been blocks with wallet
+    /// transactions that are no longer in the best chain.  These are those
+    /// block's hashes.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> DetachedBlocks {
       get { return detachedBlocks_; }
     }
@@ -8316,12 +9360,13 @@ namespace Walletrpc {
         = pb::FieldCodec.ForMessage(26, global::Walletrpc.TransactionDetails.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.TransactionDetails> unminedTransactions_ = new pbc::RepeatedField<global::Walletrpc.TransactionDetails>();
     /// <summary>
-    ///  Any new unmined transactions are included here.  These unmined transactions
-    ///  refer to the current best chain, so transactions from detached blocks may
-    ///  be moved to mempool and included here if they are not mined or double spent
-    ///  in the new chain.  Additonally, if no new blocks were attached but a relevant
-    ///  unmined transaction is seen by the wallet, it will be reported here.
+    /// Any new unmined transactions are included here.  These unmined transactions
+    /// refer to the current best chain, so transactions from detached blocks may
+    /// be moved to mempool and included here if they are not mined or double spent
+    /// in the new chain.  Additonally, if no new blocks were attached but a relevant
+    /// unmined transaction is seen by the wallet, it will be reported here.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.TransactionDetails> UnminedTransactions {
       get { return unminedTransactions_; }
     }
@@ -8332,17 +9377,20 @@ namespace Walletrpc {
         = pb::FieldCodec.ForBytes(34);
     private readonly pbc::RepeatedField<pb::ByteString> unminedTransactionHashes_ = new pbc::RepeatedField<pb::ByteString>();
     /// <summary>
-    ///  Instead of notifying all of the removed unmined transactions,
-    ///  just send all of the current hashes.
+    /// Instead of notifying all of the removed unmined transactions,
+    /// just send all of the current hashes.
     /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<pb::ByteString> UnminedTransactionHashes {
       get { return unminedTransactionHashes_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TransactionNotificationsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TransactionNotificationsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8357,6 +9405,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= attachedBlocks_.GetHashCode();
@@ -8366,10 +9415,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       attachedBlocks_.WriteTo(output, _repeated_attachedBlocks_codec);
       detachedBlocks_.WriteTo(output, _repeated_detachedBlocks_codec);
@@ -8377,6 +9428,7 @@ namespace Walletrpc {
       unminedTransactionHashes_.WriteTo(output, _repeated_unminedTransactionHashes_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += attachedBlocks_.CalculateSize(_repeated_attachedBlocks_codec);
@@ -8386,6 +9438,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TransactionNotificationsResponse other) {
       if (other == null) {
         return;
@@ -8396,6 +9449,7 @@ namespace Walletrpc {
       unminedTransactionHashes_.Add(other.unminedTransactionHashes_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8425,493 +9479,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-  public sealed partial class SpentnessNotificationsRequest : pb::IMessage<SpentnessNotificationsRequest> {
-    private static readonly pb::MessageParser<SpentnessNotificationsRequest> _parser = new pb::MessageParser<SpentnessNotificationsRequest>(() => new SpentnessNotificationsRequest());
-    public static pb::MessageParser<SpentnessNotificationsRequest> Parser { get { return _parser; } }
-
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[49]; }
-    }
-
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    public SpentnessNotificationsRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    public SpentnessNotificationsRequest(SpentnessNotificationsRequest other) : this() {
-      account_ = other.account_;
-      noNotifyUnspent_ = other.noNotifyUnspent_;
-      noNotifySpent_ = other.noNotifySpent_;
-    }
-
-    public SpentnessNotificationsRequest Clone() {
-      return new SpentnessNotificationsRequest(this);
-    }
-
-    /// <summary>Field number for the "account" field.</summary>
-    public const int AccountFieldNumber = 1;
-    private uint account_;
-    public uint Account {
-      get { return account_; }
-      set {
-        account_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "no_notify_unspent" field.</summary>
-    public const int NoNotifyUnspentFieldNumber = 2;
-    private bool noNotifyUnspent_;
-    public bool NoNotifyUnspent {
-      get { return noNotifyUnspent_; }
-      set {
-        noNotifyUnspent_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "no_notify_spent" field.</summary>
-    public const int NoNotifySpentFieldNumber = 3;
-    private bool noNotifySpent_;
-    public bool NoNotifySpent {
-      get { return noNotifySpent_; }
-      set {
-        noNotifySpent_ = value;
-      }
-    }
-
-    public override bool Equals(object other) {
-      return Equals(other as SpentnessNotificationsRequest);
-    }
-
-    public bool Equals(SpentnessNotificationsRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Account != other.Account) return false;
-      if (NoNotifyUnspent != other.NoNotifyUnspent) return false;
-      if (NoNotifySpent != other.NoNotifySpent) return false;
-      return true;
-    }
-
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Account != 0) hash ^= Account.GetHashCode();
-      if (NoNotifyUnspent != false) hash ^= NoNotifyUnspent.GetHashCode();
-      if (NoNotifySpent != false) hash ^= NoNotifySpent.GetHashCode();
-      return hash;
-    }
-
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Account != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Account);
-      }
-      if (NoNotifyUnspent != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(NoNotifyUnspent);
-      }
-      if (NoNotifySpent != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(NoNotifySpent);
-      }
-    }
-
-    public int CalculateSize() {
-      int size = 0;
-      if (Account != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Account);
-      }
-      if (NoNotifyUnspent != false) {
-        size += 1 + 1;
-      }
-      if (NoNotifySpent != false) {
-        size += 1 + 1;
-      }
-      return size;
-    }
-
-    public void MergeFrom(SpentnessNotificationsRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Account != 0) {
-        Account = other.Account;
-      }
-      if (other.NoNotifyUnspent != false) {
-        NoNotifyUnspent = other.NoNotifyUnspent;
-      }
-      if (other.NoNotifySpent != false) {
-        NoNotifySpent = other.NoNotifySpent;
-      }
-    }
-
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 8: {
-            Account = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            NoNotifyUnspent = input.ReadBool();
-            break;
-          }
-          case 24: {
-            NoNotifySpent = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-  public sealed partial class SpentnessNotificationsResponse : pb::IMessage<SpentnessNotificationsResponse> {
-    private static readonly pb::MessageParser<SpentnessNotificationsResponse> _parser = new pb::MessageParser<SpentnessNotificationsResponse>(() => new SpentnessNotificationsResponse());
-    public static pb::MessageParser<SpentnessNotificationsResponse> Parser { get { return _parser; } }
-
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[50]; }
-    }
-
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    public SpentnessNotificationsResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    public SpentnessNotificationsResponse(SpentnessNotificationsResponse other) : this() {
-      transactionHash_ = other.transactionHash_;
-      outputIndex_ = other.outputIndex_;
-      Spender = other.spender_ != null ? other.Spender.Clone() : null;
-    }
-
-    public SpentnessNotificationsResponse Clone() {
-      return new SpentnessNotificationsResponse(this);
-    }
-
-    /// <summary>Field number for the "transaction_hash" field.</summary>
-    public const int TransactionHashFieldNumber = 1;
-    private pb::ByteString transactionHash_ = pb::ByteString.Empty;
-    public pb::ByteString TransactionHash {
-      get { return transactionHash_; }
-      set {
-        transactionHash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "output_index" field.</summary>
-    public const int OutputIndexFieldNumber = 2;
-    private uint outputIndex_;
-    public uint OutputIndex {
-      get { return outputIndex_; }
-      set {
-        outputIndex_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "spender" field.</summary>
-    public const int SpenderFieldNumber = 3;
-    private global::Walletrpc.SpentnessNotificationsResponse.Types.Spender spender_;
-    public global::Walletrpc.SpentnessNotificationsResponse.Types.Spender Spender {
-      get { return spender_; }
-      set {
-        spender_ = value;
-      }
-    }
-
-    public override bool Equals(object other) {
-      return Equals(other as SpentnessNotificationsResponse);
-    }
-
-    public bool Equals(SpentnessNotificationsResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (TransactionHash != other.TransactionHash) return false;
-      if (OutputIndex != other.OutputIndex) return false;
-      if (!object.Equals(Spender, other.Spender)) return false;
-      return true;
-    }
-
-    public override int GetHashCode() {
-      int hash = 1;
-      if (TransactionHash.Length != 0) hash ^= TransactionHash.GetHashCode();
-      if (OutputIndex != 0) hash ^= OutputIndex.GetHashCode();
-      if (spender_ != null) hash ^= Spender.GetHashCode();
-      return hash;
-    }
-
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (TransactionHash.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(TransactionHash);
-      }
-      if (OutputIndex != 0) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(OutputIndex);
-      }
-      if (spender_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Spender);
-      }
-    }
-
-    public int CalculateSize() {
-      int size = 0;
-      if (TransactionHash.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(TransactionHash);
-      }
-      if (OutputIndex != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OutputIndex);
-      }
-      if (spender_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spender);
-      }
-      return size;
-    }
-
-    public void MergeFrom(SpentnessNotificationsResponse other) {
-      if (other == null) {
-        return;
-      }
-      if (other.TransactionHash.Length != 0) {
-        TransactionHash = other.TransactionHash;
-      }
-      if (other.OutputIndex != 0) {
-        OutputIndex = other.OutputIndex;
-      }
-      if (other.spender_ != null) {
-        if (spender_ == null) {
-          spender_ = new global::Walletrpc.SpentnessNotificationsResponse.Types.Spender();
-        }
-        Spender.MergeFrom(other.Spender);
-      }
-    }
-
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            input.SkipLastField();
-            break;
-          case 10: {
-            TransactionHash = input.ReadBytes();
-            break;
-          }
-          case 16: {
-            OutputIndex = input.ReadUInt32();
-            break;
-          }
-          case 26: {
-            if (spender_ == null) {
-              spender_ = new global::Walletrpc.SpentnessNotificationsResponse.Types.Spender();
-            }
-            input.ReadMessage(spender_);
-            break;
-          }
-        }
-      }
-    }
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the SpentnessNotificationsResponse message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-      public sealed partial class Spender : pb::IMessage<Spender> {
-        private static readonly pb::MessageParser<Spender> _parser = new pb::MessageParser<Spender>(() => new Spender());
-        public static pb::MessageParser<Spender> Parser { get { return _parser; } }
-
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Walletrpc.SpentnessNotificationsResponse.Descriptor.NestedTypes[0]; }
-        }
-
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        public Spender() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        public Spender(Spender other) : this() {
-          transactionHash_ = other.transactionHash_;
-          inputIndex_ = other.inputIndex_;
-        }
-
-        public Spender Clone() {
-          return new Spender(this);
-        }
-
-        /// <summary>Field number for the "transaction_hash" field.</summary>
-        public const int TransactionHashFieldNumber = 1;
-        private pb::ByteString transactionHash_ = pb::ByteString.Empty;
-        public pb::ByteString TransactionHash {
-          get { return transactionHash_; }
-          set {
-            transactionHash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-
-        /// <summary>Field number for the "input_index" field.</summary>
-        public const int InputIndexFieldNumber = 2;
-        private uint inputIndex_;
-        public uint InputIndex {
-          get { return inputIndex_; }
-          set {
-            inputIndex_ = value;
-          }
-        }
-
-        public override bool Equals(object other) {
-          return Equals(other as Spender);
-        }
-
-        public bool Equals(Spender other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (TransactionHash != other.TransactionHash) return false;
-          if (InputIndex != other.InputIndex) return false;
-          return true;
-        }
-
-        public override int GetHashCode() {
-          int hash = 1;
-          if (TransactionHash.Length != 0) hash ^= TransactionHash.GetHashCode();
-          if (InputIndex != 0) hash ^= InputIndex.GetHashCode();
-          return hash;
-        }
-
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (TransactionHash.Length != 0) {
-            output.WriteRawTag(10);
-            output.WriteBytes(TransactionHash);
-          }
-          if (InputIndex != 0) {
-            output.WriteRawTag(16);
-            output.WriteUInt32(InputIndex);
-          }
-        }
-
-        public int CalculateSize() {
-          int size = 0;
-          if (TransactionHash.Length != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeBytesSize(TransactionHash);
-          }
-          if (InputIndex != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(InputIndex);
-          }
-          return size;
-        }
-
-        public void MergeFrom(Spender other) {
-          if (other == null) {
-            return;
-          }
-          if (other.TransactionHash.Length != 0) {
-            TransactionHash = other.TransactionHash;
-          }
-          if (other.InputIndex != 0) {
-            InputIndex = other.InputIndex;
-          }
-        }
-
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                input.SkipLastField();
-                break;
-              case 10: {
-                TransactionHash = input.ReadBytes();
-                break;
-              }
-              case 16: {
-                InputIndex = input.ReadUInt32();
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-    }
-    #endregion
-
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountNotificationsRequest : pb::IMessage<AccountNotificationsRequest> {
     private static readonly pb::MessageParser<AccountNotificationsRequest> _parser = new pb::MessageParser<AccountNotificationsRequest>(() => new AccountNotificationsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountNotificationsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[51]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsRequest(AccountNotificationsRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsRequest Clone() {
       return new AccountNotificationsRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountNotificationsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountNotificationsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8922,29 +9526,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountNotificationsRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8958,25 +9568,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AccountNotificationsResponse : pb::IMessage<AccountNotificationsResponse> {
     private static readonly pb::MessageParser<AccountNotificationsResponse> _parser = new pb::MessageParser<AccountNotificationsResponse>(() => new AccountNotificationsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AccountNotificationsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[52]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsResponse(AccountNotificationsResponse other) : this() {
       accountNumber_ = other.accountNumber_;
       accountName_ = other.accountName_;
@@ -8985,6 +9599,7 @@ namespace Walletrpc {
       importedKeyCount_ = other.importedKeyCount_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AccountNotificationsResponse Clone() {
       return new AccountNotificationsResponse(this);
     }
@@ -8992,6 +9607,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_number" field.</summary>
     public const int AccountNumberFieldNumber = 1;
     private uint accountNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint AccountNumber {
       get { return accountNumber_; }
       set {
@@ -9002,6 +9618,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account_name" field.</summary>
     public const int AccountNameFieldNumber = 2;
     private string accountName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AccountName {
       get { return accountName_; }
       set {
@@ -9012,6 +9629,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "external_key_count" field.</summary>
     public const int ExternalKeyCountFieldNumber = 3;
     private uint externalKeyCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ExternalKeyCount {
       get { return externalKeyCount_; }
       set {
@@ -9022,6 +9640,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "internal_key_count" field.</summary>
     public const int InternalKeyCountFieldNumber = 4;
     private uint internalKeyCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint InternalKeyCount {
       get { return internalKeyCount_; }
       set {
@@ -9032,6 +9651,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "imported_key_count" field.</summary>
     public const int ImportedKeyCountFieldNumber = 5;
     private uint importedKeyCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint ImportedKeyCount {
       get { return importedKeyCount_; }
       set {
@@ -9039,10 +9659,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AccountNotificationsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AccountNotificationsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9058,6 +9680,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (AccountNumber != 0) hash ^= AccountNumber.GetHashCode();
@@ -9068,10 +9691,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (AccountNumber != 0) {
         output.WriteRawTag(8);
@@ -9095,6 +9720,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (AccountNumber != 0) {
@@ -9115,6 +9741,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AccountNotificationsResponse other) {
       if (other == null) {
         return;
@@ -9136,6 +9763,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9169,31 +9797,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class CreateWalletRequest : pb::IMessage<CreateWalletRequest> {
     private static readonly pb::MessageParser<CreateWalletRequest> _parser = new pb::MessageParser<CreateWalletRequest>(() => new CreateWalletRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<CreateWalletRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[53]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletRequest(CreateWalletRequest other) : this() {
       publicPassphrase_ = other.publicPassphrase_;
       privatePassphrase_ = other.privatePassphrase_;
       seed_ = other.seed_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletRequest Clone() {
       return new CreateWalletRequest(this);
     }
@@ -9201,6 +9834,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "public_passphrase" field.</summary>
     public const int PublicPassphraseFieldNumber = 1;
     private pb::ByteString publicPassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicPassphrase {
       get { return publicPassphrase_; }
       set {
@@ -9211,6 +9845,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "private_passphrase" field.</summary>
     public const int PrivatePassphraseFieldNumber = 2;
     private pb::ByteString privatePassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PrivatePassphrase {
       get { return privatePassphrase_; }
       set {
@@ -9221,6 +9856,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "seed" field.</summary>
     public const int SeedFieldNumber = 3;
     private pb::ByteString seed_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Seed {
       get { return seed_; }
       set {
@@ -9228,10 +9864,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateWalletRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(CreateWalletRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9245,6 +9883,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicPassphrase.Length != 0) hash ^= PublicPassphrase.GetHashCode();
@@ -9253,10 +9892,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (PublicPassphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -9272,6 +9913,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (PublicPassphrase.Length != 0) {
@@ -9286,6 +9928,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(CreateWalletRequest other) {
       if (other == null) {
         return;
@@ -9301,6 +9944,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9326,36 +9970,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class CreateWalletResponse : pb::IMessage<CreateWalletResponse> {
     private static readonly pb::MessageParser<CreateWalletResponse> _parser = new pb::MessageParser<CreateWalletResponse>(() => new CreateWalletResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<CreateWalletResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[54]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletResponse(CreateWalletResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateWalletResponse Clone() {
       return new CreateWalletResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateWalletResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(CreateWalletResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9366,29 +10017,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(CreateWalletResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9402,29 +10059,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class OpenWalletRequest : pb::IMessage<OpenWalletRequest> {
     private static readonly pb::MessageParser<OpenWalletRequest> _parser = new pb::MessageParser<OpenWalletRequest>(() => new OpenWalletRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<OpenWalletRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[55]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletRequest(OpenWalletRequest other) : this() {
       publicPassphrase_ = other.publicPassphrase_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletRequest Clone() {
       return new OpenWalletRequest(this);
     }
@@ -9432,6 +10094,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "public_passphrase" field.</summary>
     public const int PublicPassphraseFieldNumber = 1;
     private pb::ByteString publicPassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PublicPassphrase {
       get { return publicPassphrase_; }
       set {
@@ -9439,10 +10102,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OpenWalletRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(OpenWalletRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9454,16 +10119,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicPassphrase.Length != 0) hash ^= PublicPassphrase.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (PublicPassphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -9471,6 +10139,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (PublicPassphrase.Length != 0) {
@@ -9479,6 +10148,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(OpenWalletRequest other) {
       if (other == null) {
         return;
@@ -9488,6 +10158,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9505,36 +10176,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class OpenWalletResponse : pb::IMessage<OpenWalletResponse> {
     private static readonly pb::MessageParser<OpenWalletResponse> _parser = new pb::MessageParser<OpenWalletResponse>(() => new OpenWalletResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<OpenWalletResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[56]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletResponse(OpenWalletResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenWalletResponse Clone() {
       return new OpenWalletResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OpenWalletResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(OpenWalletResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9545,29 +10223,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(OpenWalletResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9581,36 +10265,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class CloseWalletRequest : pb::IMessage<CloseWalletRequest> {
     private static readonly pb::MessageParser<CloseWalletRequest> _parser = new pb::MessageParser<CloseWalletRequest>(() => new CloseWalletRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<CloseWalletRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[57]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletRequest(CloseWalletRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletRequest Clone() {
       return new CloseWalletRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CloseWalletRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(CloseWalletRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9621,29 +10312,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(CloseWalletRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9657,36 +10354,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class CloseWalletResponse : pb::IMessage<CloseWalletResponse> {
     private static readonly pb::MessageParser<CloseWalletResponse> _parser = new pb::MessageParser<CloseWalletResponse>(() => new CloseWalletResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<CloseWalletResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[58]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletResponse(CloseWalletResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CloseWalletResponse Clone() {
       return new CloseWalletResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CloseWalletResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(CloseWalletResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9697,29 +10401,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(CloseWalletResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9733,36 +10443,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class WalletExistsRequest : pb::IMessage<WalletExistsRequest> {
     private static readonly pb::MessageParser<WalletExistsRequest> _parser = new pb::MessageParser<WalletExistsRequest>(() => new WalletExistsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<WalletExistsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[59]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsRequest(WalletExistsRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsRequest Clone() {
       return new WalletExistsRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as WalletExistsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(WalletExistsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9773,29 +10490,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(WalletExistsRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9809,29 +10532,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class WalletExistsResponse : pb::IMessage<WalletExistsResponse> {
     private static readonly pb::MessageParser<WalletExistsResponse> _parser = new pb::MessageParser<WalletExistsResponse>(() => new WalletExistsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<WalletExistsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[60]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsResponse(WalletExistsResponse other) : this() {
       exists_ = other.exists_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public WalletExistsResponse Clone() {
       return new WalletExistsResponse(this);
     }
@@ -9839,6 +10567,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "exists" field.</summary>
     public const int ExistsFieldNumber = 1;
     private bool exists_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Exists {
       get { return exists_; }
       set {
@@ -9846,10 +10575,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as WalletExistsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(WalletExistsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9861,16 +10592,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Exists != false) hash ^= Exists.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Exists != false) {
         output.WriteRawTag(8);
@@ -9878,6 +10612,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Exists != false) {
@@ -9886,6 +10621,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(WalletExistsResponse other) {
       if (other == null) {
         return;
@@ -9895,6 +10631,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9912,25 +10649,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StartConsensusRpcRequest : pb::IMessage<StartConsensusRpcRequest> {
     private static readonly pb::MessageParser<StartConsensusRpcRequest> _parser = new pb::MessageParser<StartConsensusRpcRequest>(() => new StartConsensusRpcRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StartConsensusRpcRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[61]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcRequest(StartConsensusRpcRequest other) : this() {
       networkAddress_ = other.networkAddress_;
       username_ = other.username_;
@@ -9938,6 +10679,7 @@ namespace Walletrpc {
       certificate_ = other.certificate_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcRequest Clone() {
       return new StartConsensusRpcRequest(this);
     }
@@ -9945,6 +10687,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "network_address" field.</summary>
     public const int NetworkAddressFieldNumber = 1;
     private string networkAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NetworkAddress {
       get { return networkAddress_; }
       set {
@@ -9955,6 +10698,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "username" field.</summary>
     public const int UsernameFieldNumber = 2;
     private string username_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Username {
       get { return username_; }
       set {
@@ -9965,6 +10709,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "password" field.</summary>
     public const int PasswordFieldNumber = 3;
     private pb::ByteString password_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Password {
       get { return password_; }
       set {
@@ -9975,6 +10720,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "certificate" field.</summary>
     public const int CertificateFieldNumber = 4;
     private pb::ByteString certificate_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Certificate {
       get { return certificate_; }
       set {
@@ -9982,10 +10728,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StartConsensusRpcRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StartConsensusRpcRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10000,6 +10748,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (NetworkAddress.Length != 0) hash ^= NetworkAddress.GetHashCode();
@@ -10009,10 +10758,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (NetworkAddress.Length != 0) {
         output.WriteRawTag(10);
@@ -10032,6 +10783,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (NetworkAddress.Length != 0) {
@@ -10049,6 +10801,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StartConsensusRpcRequest other) {
       if (other == null) {
         return;
@@ -10067,6 +10820,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10096,36 +10850,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StartConsensusRpcResponse : pb::IMessage<StartConsensusRpcResponse> {
     private static readonly pb::MessageParser<StartConsensusRpcResponse> _parser = new pb::MessageParser<StartConsensusRpcResponse>(() => new StartConsensusRpcResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StartConsensusRpcResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[62]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcResponse(StartConsensusRpcResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartConsensusRpcResponse Clone() {
       return new StartConsensusRpcResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StartConsensusRpcResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StartConsensusRpcResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10136,29 +10897,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StartConsensusRpcResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10172,30 +10939,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class DiscoverAddressesRequest : pb::IMessage<DiscoverAddressesRequest> {
     private static readonly pb::MessageParser<DiscoverAddressesRequest> _parser = new pb::MessageParser<DiscoverAddressesRequest>(() => new DiscoverAddressesRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<DiscoverAddressesRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[63]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesRequest(DiscoverAddressesRequest other) : this() {
       discoverAccounts_ = other.discoverAccounts_;
       privatePassphrase_ = other.privatePassphrase_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesRequest Clone() {
       return new DiscoverAddressesRequest(this);
     }
@@ -10203,6 +10975,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "discover_accounts" field.</summary>
     public const int DiscoverAccountsFieldNumber = 1;
     private bool discoverAccounts_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool DiscoverAccounts {
       get { return discoverAccounts_; }
       set {
@@ -10213,6 +10986,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "private_passphrase" field.</summary>
     public const int PrivatePassphraseFieldNumber = 2;
     private pb::ByteString privatePassphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString PrivatePassphrase {
       get { return privatePassphrase_; }
       set {
@@ -10220,10 +10994,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DiscoverAddressesRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(DiscoverAddressesRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10236,6 +11012,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (DiscoverAccounts != false) hash ^= DiscoverAccounts.GetHashCode();
@@ -10243,10 +11020,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (DiscoverAccounts != false) {
         output.WriteRawTag(8);
@@ -10258,6 +11037,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (DiscoverAccounts != false) {
@@ -10269,6 +11049,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(DiscoverAddressesRequest other) {
       if (other == null) {
         return;
@@ -10281,6 +11062,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10302,36 +11084,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class DiscoverAddressesResponse : pb::IMessage<DiscoverAddressesResponse> {
     private static readonly pb::MessageParser<DiscoverAddressesResponse> _parser = new pb::MessageParser<DiscoverAddressesResponse>(() => new DiscoverAddressesResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<DiscoverAddressesResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[64]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesResponse(DiscoverAddressesResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DiscoverAddressesResponse Clone() {
       return new DiscoverAddressesResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DiscoverAddressesResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(DiscoverAddressesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10342,29 +11131,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(DiscoverAddressesResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10378,36 +11173,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SubscribeToBlockNotificationsRequest : pb::IMessage<SubscribeToBlockNotificationsRequest> {
     private static readonly pb::MessageParser<SubscribeToBlockNotificationsRequest> _parser = new pb::MessageParser<SubscribeToBlockNotificationsRequest>(() => new SubscribeToBlockNotificationsRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SubscribeToBlockNotificationsRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[65]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsRequest(SubscribeToBlockNotificationsRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsRequest Clone() {
       return new SubscribeToBlockNotificationsRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SubscribeToBlockNotificationsRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SubscribeToBlockNotificationsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10418,29 +11220,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SubscribeToBlockNotificationsRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10454,36 +11262,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SubscribeToBlockNotificationsResponse : pb::IMessage<SubscribeToBlockNotificationsResponse> {
     private static readonly pb::MessageParser<SubscribeToBlockNotificationsResponse> _parser = new pb::MessageParser<SubscribeToBlockNotificationsResponse>(() => new SubscribeToBlockNotificationsResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SubscribeToBlockNotificationsResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[66]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsResponse(SubscribeToBlockNotificationsResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SubscribeToBlockNotificationsResponse Clone() {
       return new SubscribeToBlockNotificationsResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SubscribeToBlockNotificationsResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SubscribeToBlockNotificationsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10494,29 +11309,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SubscribeToBlockNotificationsResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10530,36 +11351,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class FetchHeadersRequest : pb::IMessage<FetchHeadersRequest> {
     private static readonly pb::MessageParser<FetchHeadersRequest> _parser = new pb::MessageParser<FetchHeadersRequest>(() => new FetchHeadersRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<FetchHeadersRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[67]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersRequest(FetchHeadersRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersRequest Clone() {
       return new FetchHeadersRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FetchHeadersRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(FetchHeadersRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10570,29 +11398,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(FetchHeadersRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10606,25 +11440,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class FetchHeadersResponse : pb::IMessage<FetchHeadersResponse> {
     private static readonly pb::MessageParser<FetchHeadersResponse> _parser = new pb::MessageParser<FetchHeadersResponse>(() => new FetchHeadersResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<FetchHeadersResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[68]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersResponse(FetchHeadersResponse other) : this() {
       fetchedHeadersCount_ = other.fetchedHeadersCount_;
       firstNewBlockHash_ = other.firstNewBlockHash_;
@@ -10633,6 +11471,7 @@ namespace Walletrpc {
       mainChainTipBlockHeight_ = other.mainChainTipBlockHeight_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchHeadersResponse Clone() {
       return new FetchHeadersResponse(this);
     }
@@ -10640,6 +11479,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "fetched_headers_count" field.</summary>
     public const int FetchedHeadersCountFieldNumber = 1;
     private uint fetchedHeadersCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint FetchedHeadersCount {
       get { return fetchedHeadersCount_; }
       set {
@@ -10650,6 +11490,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "first_new_block_hash" field.</summary>
     public const int FirstNewBlockHashFieldNumber = 2;
     private pb::ByteString firstNewBlockHash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString FirstNewBlockHash {
       get { return firstNewBlockHash_; }
       set {
@@ -10660,6 +11501,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "first_new_block_height" field.</summary>
     public const int FirstNewBlockHeightFieldNumber = 3;
     private int firstNewBlockHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int FirstNewBlockHeight {
       get { return firstNewBlockHeight_; }
       set {
@@ -10670,6 +11512,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "main_chain_tip_block_hash" field.</summary>
     public const int MainChainTipBlockHashFieldNumber = 4;
     private pb::ByteString mainChainTipBlockHash_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString MainChainTipBlockHash {
       get { return mainChainTipBlockHash_; }
       set {
@@ -10680,6 +11523,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "main_chain_tip_block_height" field.</summary>
     public const int MainChainTipBlockHeightFieldNumber = 5;
     private int mainChainTipBlockHeight_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int MainChainTipBlockHeight {
       get { return mainChainTipBlockHeight_; }
       set {
@@ -10687,10 +11531,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as FetchHeadersResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(FetchHeadersResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10706,6 +11552,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (FetchedHeadersCount != 0) hash ^= FetchedHeadersCount.GetHashCode();
@@ -10716,10 +11563,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (FetchedHeadersCount != 0) {
         output.WriteRawTag(8);
@@ -10743,6 +11592,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (FetchedHeadersCount != 0) {
@@ -10763,6 +11613,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(FetchHeadersResponse other) {
       if (other == null) {
         return;
@@ -10784,6 +11635,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10817,29 +11669,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class GenerateRandomSeedRequest : pb::IMessage<GenerateRandomSeedRequest> {
     private static readonly pb::MessageParser<GenerateRandomSeedRequest> _parser = new pb::MessageParser<GenerateRandomSeedRequest>(() => new GenerateRandomSeedRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<GenerateRandomSeedRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[69]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedRequest(GenerateRandomSeedRequest other) : this() {
       seedLength_ = other.seedLength_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedRequest Clone() {
       return new GenerateRandomSeedRequest(this);
     }
@@ -10847,6 +11704,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "seed_length" field.</summary>
     public const int SeedLengthFieldNumber = 1;
     private uint seedLength_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint SeedLength {
       get { return seedLength_; }
       set {
@@ -10854,10 +11712,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GenerateRandomSeedRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(GenerateRandomSeedRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10869,16 +11729,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (SeedLength != 0) hash ^= SeedLength.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (SeedLength != 0) {
         output.WriteRawTag(8);
@@ -10886,6 +11749,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (SeedLength != 0) {
@@ -10894,6 +11758,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GenerateRandomSeedRequest other) {
       if (other == null) {
         return;
@@ -10903,6 +11768,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10920,31 +11786,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class GenerateRandomSeedResponse : pb::IMessage<GenerateRandomSeedResponse> {
     private static readonly pb::MessageParser<GenerateRandomSeedResponse> _parser = new pb::MessageParser<GenerateRandomSeedResponse>(() => new GenerateRandomSeedResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<GenerateRandomSeedResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[70]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedResponse(GenerateRandomSeedResponse other) : this() {
       seedBytes_ = other.seedBytes_;
       seedHex_ = other.seedHex_;
       seedMnemonic_ = other.seedMnemonic_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateRandomSeedResponse Clone() {
       return new GenerateRandomSeedResponse(this);
     }
@@ -10952,6 +11823,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "seed_bytes" field.</summary>
     public const int SeedBytesFieldNumber = 1;
     private pb::ByteString seedBytes_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString SeedBytes {
       get { return seedBytes_; }
       set {
@@ -10962,6 +11834,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "seed_hex" field.</summary>
     public const int SeedHexFieldNumber = 2;
     private string seedHex_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string SeedHex {
       get { return seedHex_; }
       set {
@@ -10972,6 +11845,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "seed_mnemonic" field.</summary>
     public const int SeedMnemonicFieldNumber = 3;
     private string seedMnemonic_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string SeedMnemonic {
       get { return seedMnemonic_; }
       set {
@@ -10979,10 +11853,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GenerateRandomSeedResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(GenerateRandomSeedResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10996,6 +11872,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (SeedBytes.Length != 0) hash ^= SeedBytes.GetHashCode();
@@ -11004,10 +11881,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (SeedBytes.Length != 0) {
         output.WriteRawTag(10);
@@ -11023,6 +11902,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (SeedBytes.Length != 0) {
@@ -11037,6 +11917,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GenerateRandomSeedResponse other) {
       if (other == null) {
         return;
@@ -11052,6 +11933,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11077,29 +11959,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class DecodeSeedRequest : pb::IMessage<DecodeSeedRequest> {
     private static readonly pb::MessageParser<DecodeSeedRequest> _parser = new pb::MessageParser<DecodeSeedRequest>(() => new DecodeSeedRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<DecodeSeedRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[71]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedRequest(DecodeSeedRequest other) : this() {
       userInput_ = other.userInput_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedRequest Clone() {
       return new DecodeSeedRequest(this);
     }
@@ -11107,6 +11994,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "user_input" field.</summary>
     public const int UserInputFieldNumber = 1;
     private string userInput_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UserInput {
       get { return userInput_; }
       set {
@@ -11114,10 +12002,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DecodeSeedRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(DecodeSeedRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11129,16 +12019,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (UserInput.Length != 0) hash ^= UserInput.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (UserInput.Length != 0) {
         output.WriteRawTag(10);
@@ -11146,6 +12039,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (UserInput.Length != 0) {
@@ -11154,6 +12048,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(DecodeSeedRequest other) {
       if (other == null) {
         return;
@@ -11163,6 +12058,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11180,29 +12076,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class DecodeSeedResponse : pb::IMessage<DecodeSeedResponse> {
     private static readonly pb::MessageParser<DecodeSeedResponse> _parser = new pb::MessageParser<DecodeSeedResponse>(() => new DecodeSeedResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<DecodeSeedResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[72]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedResponse(DecodeSeedResponse other) : this() {
       decodedSeed_ = other.decodedSeed_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DecodeSeedResponse Clone() {
       return new DecodeSeedResponse(this);
     }
@@ -11210,6 +12111,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "decoded_seed" field.</summary>
     public const int DecodedSeedFieldNumber = 1;
     private pb::ByteString decodedSeed_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString DecodedSeed {
       get { return decodedSeed_; }
       set {
@@ -11217,10 +12119,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DecodeSeedResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(DecodeSeedResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11232,16 +12136,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (DecodedSeed.Length != 0) hash ^= DecodedSeed.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (DecodedSeed.Length != 0) {
         output.WriteRawTag(10);
@@ -11249,6 +12156,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (DecodedSeed.Length != 0) {
@@ -11257,6 +12165,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(DecodeSeedResponse other) {
       if (other == null) {
         return;
@@ -11266,6 +12175,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11283,25 +12193,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StartAutoBuyerRequest : pb::IMessage<StartAutoBuyerRequest> {
     private static readonly pb::MessageParser<StartAutoBuyerRequest> _parser = new pb::MessageParser<StartAutoBuyerRequest>(() => new StartAutoBuyerRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StartAutoBuyerRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[73]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerRequest(StartAutoBuyerRequest other) : this() {
       passphrase_ = other.passphrase_;
       account_ = other.account_;
@@ -11315,6 +12229,7 @@ namespace Walletrpc {
       maxPerBlock_ = other.maxPerBlock_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerRequest Clone() {
       return new StartAutoBuyerRequest(this);
     }
@@ -11322,6 +12237,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "passphrase" field.</summary>
     public const int PassphraseFieldNumber = 1;
     private pb::ByteString passphrase_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString Passphrase {
       get { return passphrase_; }
       set {
@@ -11332,6 +12248,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 2;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -11342,6 +12259,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "balance_to_maintain" field.</summary>
     public const int BalanceToMaintainFieldNumber = 3;
     private long balanceToMaintain_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long BalanceToMaintain {
       get { return balanceToMaintain_; }
       set {
@@ -11352,6 +12270,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_fee_per_kb" field.</summary>
     public const int MaxFeePerKbFieldNumber = 4;
     private long maxFeePerKb_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxFeePerKb {
       get { return maxFeePerKb_; }
       set {
@@ -11362,6 +12281,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_relative" field.</summary>
     public const int MaxPriceRelativeFieldNumber = 5;
     private double maxPriceRelative_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double MaxPriceRelative {
       get { return maxPriceRelative_; }
       set {
@@ -11372,6 +12292,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_absolute" field.</summary>
     public const int MaxPriceAbsoluteFieldNumber = 6;
     private long maxPriceAbsolute_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPriceAbsolute {
       get { return maxPriceAbsolute_; }
       set {
@@ -11382,6 +12303,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "voting_address" field.</summary>
     public const int VotingAddressFieldNumber = 7;
     private string votingAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string VotingAddress {
       get { return votingAddress_; }
       set {
@@ -11392,6 +12314,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_address" field.</summary>
     public const int PoolAddressFieldNumber = 8;
     private string poolAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PoolAddress {
       get { return poolAddress_; }
       set {
@@ -11402,6 +12325,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_fees" field.</summary>
     public const int PoolFeesFieldNumber = 9;
     private double poolFees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double PoolFees {
       get { return poolFees_; }
       set {
@@ -11412,6 +12336,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_per_block" field.</summary>
     public const int MaxPerBlockFieldNumber = 10;
     private long maxPerBlock_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPerBlock {
       get { return maxPerBlock_; }
       set {
@@ -11419,10 +12344,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StartAutoBuyerRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StartAutoBuyerRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11443,6 +12370,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Passphrase.Length != 0) hash ^= Passphrase.GetHashCode();
@@ -11458,10 +12386,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Passphrase.Length != 0) {
         output.WriteRawTag(10);
@@ -11505,6 +12435,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Passphrase.Length != 0) {
@@ -11540,6 +12471,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StartAutoBuyerRequest other) {
       if (other == null) {
         return;
@@ -11576,6 +12508,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11629,36 +12562,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StartAutoBuyerResponse : pb::IMessage<StartAutoBuyerResponse> {
     private static readonly pb::MessageParser<StartAutoBuyerResponse> _parser = new pb::MessageParser<StartAutoBuyerResponse>(() => new StartAutoBuyerResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StartAutoBuyerResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[74]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerResponse(StartAutoBuyerResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StartAutoBuyerResponse Clone() {
       return new StartAutoBuyerResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StartAutoBuyerResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StartAutoBuyerResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11669,29 +12609,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StartAutoBuyerResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11705,36 +12651,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StopAutoBuyerRequest : pb::IMessage<StopAutoBuyerRequest> {
     private static readonly pb::MessageParser<StopAutoBuyerRequest> _parser = new pb::MessageParser<StopAutoBuyerRequest>(() => new StopAutoBuyerRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StopAutoBuyerRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[75]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerRequest(StopAutoBuyerRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerRequest Clone() {
       return new StopAutoBuyerRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StopAutoBuyerRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StopAutoBuyerRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11745,29 +12698,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StopAutoBuyerRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11781,36 +12740,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class StopAutoBuyerResponse : pb::IMessage<StopAutoBuyerResponse> {
     private static readonly pb::MessageParser<StopAutoBuyerResponse> _parser = new pb::MessageParser<StopAutoBuyerResponse>(() => new StopAutoBuyerResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<StopAutoBuyerResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[76]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerResponse(StopAutoBuyerResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public StopAutoBuyerResponse Clone() {
       return new StopAutoBuyerResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StopAutoBuyerResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(StopAutoBuyerResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11821,29 +12787,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(StopAutoBuyerResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11857,36 +12829,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TicketBuyerConfigRequest : pb::IMessage<TicketBuyerConfigRequest> {
     private static readonly pb::MessageParser<TicketBuyerConfigRequest> _parser = new pb::MessageParser<TicketBuyerConfigRequest>(() => new TicketBuyerConfigRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TicketBuyerConfigRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[77]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigRequest(TicketBuyerConfigRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigRequest Clone() {
       return new TicketBuyerConfigRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TicketBuyerConfigRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TicketBuyerConfigRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -11897,29 +12876,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TicketBuyerConfigRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -11933,25 +12918,29 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class TicketBuyerConfigResponse : pb::IMessage<TicketBuyerConfigResponse> {
     private static readonly pb::MessageParser<TicketBuyerConfigResponse> _parser = new pb::MessageParser<TicketBuyerConfigResponse>(() => new TicketBuyerConfigResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<TicketBuyerConfigResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[78]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigResponse(TicketBuyerConfigResponse other) : this() {
       account_ = other.account_;
       avgPriceMode_ = other.avgPriceMode_;
@@ -11975,6 +12964,7 @@ namespace Walletrpc {
       txFee_ = other.txFee_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TicketBuyerConfigResponse Clone() {
       return new TicketBuyerConfigResponse(this);
     }
@@ -11982,6 +12972,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -11992,6 +12983,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "avg_price_mode" field.</summary>
     public const int AvgPriceModeFieldNumber = 2;
     private string avgPriceMode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AvgPriceMode {
       get { return avgPriceMode_; }
       set {
@@ -12002,6 +12994,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "avg_priceVWAP_delta" field.</summary>
     public const int AvgPriceVWAPDeltaFieldNumber = 3;
     private long avgPriceVWAPDelta_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long AvgPriceVWAPDelta {
       get { return avgPriceVWAPDelta_; }
       set {
@@ -12012,6 +13005,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "balance_to_maintain" field.</summary>
     public const int BalanceToMaintainFieldNumber = 4;
     private long balanceToMaintain_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long BalanceToMaintain {
       get { return balanceToMaintain_; }
       set {
@@ -12022,6 +13016,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "blocks_to_avg" field.</summary>
     public const int BlocksToAvgFieldNumber = 5;
     private long blocksToAvg_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long BlocksToAvg {
       get { return blocksToAvg_; }
       set {
@@ -12032,6 +13027,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "dont_wait_for_tickets" field.</summary>
     public const int DontWaitForTicketsFieldNumber = 6;
     private bool dontWaitForTickets_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool DontWaitForTickets {
       get { return dontWaitForTickets_; }
       set {
@@ -12042,6 +13038,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "expiry_delta" field.</summary>
     public const int ExpiryDeltaFieldNumber = 7;
     private long expiryDelta_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long ExpiryDelta {
       get { return expiryDelta_; }
       set {
@@ -12052,6 +13049,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "fee_source" field.</summary>
     public const int FeeSourceFieldNumber = 8;
     private string feeSource_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string FeeSource {
       get { return feeSource_; }
       set {
@@ -12062,6 +13060,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "fee_target_scaling" field.</summary>
     public const int FeeTargetScalingFieldNumber = 9;
     private double feeTargetScaling_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double FeeTargetScaling {
       get { return feeTargetScaling_; }
       set {
@@ -12072,6 +13071,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "min_fee" field.</summary>
     public const int MinFeeFieldNumber = 10;
     private long minFee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MinFee {
       get { return minFee_; }
       set {
@@ -12082,6 +13082,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_fee" field.</summary>
     public const int MaxFeeFieldNumber = 12;
     private long maxFee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxFee {
       get { return maxFee_; }
       set {
@@ -12092,6 +13093,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_per_block" field.</summary>
     public const int MaxPerBlockFieldNumber = 13;
     private long maxPerBlock_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPerBlock {
       get { return maxPerBlock_; }
       set {
@@ -12102,6 +13104,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_absolute" field.</summary>
     public const int MaxPriceAbsoluteFieldNumber = 14;
     private long maxPriceAbsolute_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPriceAbsolute {
       get { return maxPriceAbsolute_; }
       set {
@@ -12112,6 +13115,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_relative" field.</summary>
     public const int MaxPriceRelativeFieldNumber = 15;
     private double maxPriceRelative_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double MaxPriceRelative {
       get { return maxPriceRelative_; }
       set {
@@ -12122,6 +13126,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_in_mempool" field.</summary>
     public const int MaxInMempoolFieldNumber = 17;
     private long maxInMempool_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxInMempool {
       get { return maxInMempool_; }
       set {
@@ -12132,6 +13137,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_address" field.</summary>
     public const int PoolAddressFieldNumber = 18;
     private string poolAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PoolAddress {
       get { return poolAddress_; }
       set {
@@ -12142,6 +13148,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_fees" field.</summary>
     public const int PoolFeesFieldNumber = 19;
     private double poolFees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double PoolFees {
       get { return poolFees_; }
       set {
@@ -12152,6 +13159,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "spread_ticket_purchases" field.</summary>
     public const int SpreadTicketPurchasesFieldNumber = 20;
     private bool spreadTicketPurchases_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool SpreadTicketPurchases {
       get { return spreadTicketPurchases_; }
       set {
@@ -12162,6 +13170,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "voting_address" field.</summary>
     public const int VotingAddressFieldNumber = 21;
     private string votingAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string VotingAddress {
       get { return votingAddress_; }
       set {
@@ -12172,6 +13181,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "tx_fee" field.</summary>
     public const int TxFeeFieldNumber = 22;
     private long txFee_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TxFee {
       get { return txFee_; }
       set {
@@ -12179,10 +13189,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as TicketBuyerConfigResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(TicketBuyerConfigResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12213,6 +13225,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Account != 0) hash ^= Account.GetHashCode();
@@ -12238,10 +13251,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Account != 0) {
         output.WriteRawTag(8);
@@ -12325,6 +13340,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Account != 0) {
@@ -12390,6 +13406,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(TicketBuyerConfigResponse other) {
       if (other == null) {
         return;
@@ -12456,6 +13473,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -12549,29 +13567,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetAccountRequest : pb::IMessage<SetAccountRequest> {
     private static readonly pb::MessageParser<SetAccountRequest> _parser = new pb::MessageParser<SetAccountRequest>(() => new SetAccountRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetAccountRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[79]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountRequest(SetAccountRequest other) : this() {
       account_ = other.account_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountRequest Clone() {
       return new SetAccountRequest(this);
     }
@@ -12579,6 +13602,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
     private uint account_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Account {
       get { return account_; }
       set {
@@ -12586,10 +13610,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetAccountRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetAccountRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12601,16 +13627,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Account != 0) hash ^= Account.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Account != 0) {
         output.WriteRawTag(8);
@@ -12618,6 +13647,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Account != 0) {
@@ -12626,6 +13656,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetAccountRequest other) {
       if (other == null) {
         return;
@@ -12635,6 +13666,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -12652,36 +13684,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetAccountResponse : pb::IMessage<SetAccountResponse> {
     private static readonly pb::MessageParser<SetAccountResponse> _parser = new pb::MessageParser<SetAccountResponse>(() => new SetAccountResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetAccountResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[80]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountResponse(SetAccountResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetAccountResponse Clone() {
       return new SetAccountResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetAccountResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetAccountResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12692,29 +13731,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetAccountResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -12728,29 +13773,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetBalanceToMaintainRequest : pb::IMessage<SetBalanceToMaintainRequest> {
     private static readonly pb::MessageParser<SetBalanceToMaintainRequest> _parser = new pb::MessageParser<SetBalanceToMaintainRequest>(() => new SetBalanceToMaintainRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetBalanceToMaintainRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[81]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainRequest(SetBalanceToMaintainRequest other) : this() {
       balanceToMaintain_ = other.balanceToMaintain_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainRequest Clone() {
       return new SetBalanceToMaintainRequest(this);
     }
@@ -12758,6 +13808,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "balance_to_maintain" field.</summary>
     public const int BalanceToMaintainFieldNumber = 1;
     private long balanceToMaintain_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long BalanceToMaintain {
       get { return balanceToMaintain_; }
       set {
@@ -12765,10 +13816,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetBalanceToMaintainRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetBalanceToMaintainRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12780,16 +13833,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (BalanceToMaintain != 0L) hash ^= BalanceToMaintain.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (BalanceToMaintain != 0L) {
         output.WriteRawTag(8);
@@ -12797,6 +13853,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (BalanceToMaintain != 0L) {
@@ -12805,6 +13862,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetBalanceToMaintainRequest other) {
       if (other == null) {
         return;
@@ -12814,6 +13872,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -12831,36 +13890,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetBalanceToMaintainResponse : pb::IMessage<SetBalanceToMaintainResponse> {
     private static readonly pb::MessageParser<SetBalanceToMaintainResponse> _parser = new pb::MessageParser<SetBalanceToMaintainResponse>(() => new SetBalanceToMaintainResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetBalanceToMaintainResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[82]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainResponse(SetBalanceToMaintainResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetBalanceToMaintainResponse Clone() {
       return new SetBalanceToMaintainResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetBalanceToMaintainResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetBalanceToMaintainResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12871,29 +13937,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetBalanceToMaintainResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -12907,29 +13979,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxFeeRequest : pb::IMessage<SetMaxFeeRequest> {
     private static readonly pb::MessageParser<SetMaxFeeRequest> _parser = new pb::MessageParser<SetMaxFeeRequest>(() => new SetMaxFeeRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxFeeRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[83]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeRequest(SetMaxFeeRequest other) : this() {
       maxFeePerKb_ = other.maxFeePerKb_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeRequest Clone() {
       return new SetMaxFeeRequest(this);
     }
@@ -12937,6 +14014,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_fee_per_kb" field.</summary>
     public const int MaxFeePerKbFieldNumber = 1;
     private long maxFeePerKb_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxFeePerKb {
       get { return maxFeePerKb_; }
       set {
@@ -12944,10 +14022,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxFeeRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxFeeRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -12959,16 +14039,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxFeePerKb != 0L) hash ^= MaxFeePerKb.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (MaxFeePerKb != 0L) {
         output.WriteRawTag(8);
@@ -12976,6 +14059,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (MaxFeePerKb != 0L) {
@@ -12984,6 +14068,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxFeeRequest other) {
       if (other == null) {
         return;
@@ -12993,6 +14078,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13010,36 +14096,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxFeeResponse : pb::IMessage<SetMaxFeeResponse> {
     private static readonly pb::MessageParser<SetMaxFeeResponse> _parser = new pb::MessageParser<SetMaxFeeResponse>(() => new SetMaxFeeResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxFeeResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[84]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeResponse(SetMaxFeeResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxFeeResponse Clone() {
       return new SetMaxFeeResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxFeeResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxFeeResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13050,29 +14143,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxFeeResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13086,29 +14185,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPriceRelativeRequest : pb::IMessage<SetMaxPriceRelativeRequest> {
     private static readonly pb::MessageParser<SetMaxPriceRelativeRequest> _parser = new pb::MessageParser<SetMaxPriceRelativeRequest>(() => new SetMaxPriceRelativeRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPriceRelativeRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[85]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeRequest(SetMaxPriceRelativeRequest other) : this() {
       maxPriceRelative_ = other.maxPriceRelative_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeRequest Clone() {
       return new SetMaxPriceRelativeRequest(this);
     }
@@ -13116,6 +14220,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_relative" field.</summary>
     public const int MaxPriceRelativeFieldNumber = 1;
     private double maxPriceRelative_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double MaxPriceRelative {
       get { return maxPriceRelative_; }
       set {
@@ -13123,10 +14228,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPriceRelativeRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPriceRelativeRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13138,16 +14245,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxPriceRelative != 0D) hash ^= MaxPriceRelative.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (MaxPriceRelative != 0D) {
         output.WriteRawTag(9);
@@ -13155,6 +14265,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (MaxPriceRelative != 0D) {
@@ -13163,6 +14274,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPriceRelativeRequest other) {
       if (other == null) {
         return;
@@ -13172,6 +14284,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13189,36 +14302,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPriceRelativeResponse : pb::IMessage<SetMaxPriceRelativeResponse> {
     private static readonly pb::MessageParser<SetMaxPriceRelativeResponse> _parser = new pb::MessageParser<SetMaxPriceRelativeResponse>(() => new SetMaxPriceRelativeResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPriceRelativeResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[86]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeResponse(SetMaxPriceRelativeResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceRelativeResponse Clone() {
       return new SetMaxPriceRelativeResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPriceRelativeResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPriceRelativeResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13229,29 +14349,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPriceRelativeResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13265,29 +14391,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPriceAbsoluteRequest : pb::IMessage<SetMaxPriceAbsoluteRequest> {
     private static readonly pb::MessageParser<SetMaxPriceAbsoluteRequest> _parser = new pb::MessageParser<SetMaxPriceAbsoluteRequest>(() => new SetMaxPriceAbsoluteRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPriceAbsoluteRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[87]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteRequest(SetMaxPriceAbsoluteRequest other) : this() {
       maxPriceAbsolute_ = other.maxPriceAbsolute_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteRequest Clone() {
       return new SetMaxPriceAbsoluteRequest(this);
     }
@@ -13295,6 +14426,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_price_absolute" field.</summary>
     public const int MaxPriceAbsoluteFieldNumber = 1;
     private long maxPriceAbsolute_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPriceAbsolute {
       get { return maxPriceAbsolute_; }
       set {
@@ -13302,10 +14434,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPriceAbsoluteRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPriceAbsoluteRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13317,16 +14451,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxPriceAbsolute != 0L) hash ^= MaxPriceAbsolute.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (MaxPriceAbsolute != 0L) {
         output.WriteRawTag(8);
@@ -13334,6 +14471,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (MaxPriceAbsolute != 0L) {
@@ -13342,6 +14480,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPriceAbsoluteRequest other) {
       if (other == null) {
         return;
@@ -13351,6 +14490,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13368,36 +14508,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPriceAbsoluteResponse : pb::IMessage<SetMaxPriceAbsoluteResponse> {
     private static readonly pb::MessageParser<SetMaxPriceAbsoluteResponse> _parser = new pb::MessageParser<SetMaxPriceAbsoluteResponse>(() => new SetMaxPriceAbsoluteResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPriceAbsoluteResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[88]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteResponse(SetMaxPriceAbsoluteResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPriceAbsoluteResponse Clone() {
       return new SetMaxPriceAbsoluteResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPriceAbsoluteResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPriceAbsoluteResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13408,29 +14555,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPriceAbsoluteResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13444,29 +14597,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetVotingAddressRequest : pb::IMessage<SetVotingAddressRequest> {
     private static readonly pb::MessageParser<SetVotingAddressRequest> _parser = new pb::MessageParser<SetVotingAddressRequest>(() => new SetVotingAddressRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetVotingAddressRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[89]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressRequest(SetVotingAddressRequest other) : this() {
       votingAddress_ = other.votingAddress_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressRequest Clone() {
       return new SetVotingAddressRequest(this);
     }
@@ -13474,6 +14632,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "voting_address" field.</summary>
     public const int VotingAddressFieldNumber = 1;
     private string votingAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string VotingAddress {
       get { return votingAddress_; }
       set {
@@ -13481,10 +14640,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetVotingAddressRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetVotingAddressRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13496,16 +14657,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (VotingAddress.Length != 0) hash ^= VotingAddress.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (VotingAddress.Length != 0) {
         output.WriteRawTag(10);
@@ -13513,6 +14677,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (VotingAddress.Length != 0) {
@@ -13521,6 +14686,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetVotingAddressRequest other) {
       if (other == null) {
         return;
@@ -13530,6 +14696,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13547,36 +14714,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetVotingAddressResponse : pb::IMessage<SetVotingAddressResponse> {
     private static readonly pb::MessageParser<SetVotingAddressResponse> _parser = new pb::MessageParser<SetVotingAddressResponse>(() => new SetVotingAddressResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetVotingAddressResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[90]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressResponse(SetVotingAddressResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVotingAddressResponse Clone() {
       return new SetVotingAddressResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetVotingAddressResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetVotingAddressResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13587,29 +14761,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetVotingAddressResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13623,29 +14803,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetPoolAddressRequest : pb::IMessage<SetPoolAddressRequest> {
     private static readonly pb::MessageParser<SetPoolAddressRequest> _parser = new pb::MessageParser<SetPoolAddressRequest>(() => new SetPoolAddressRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetPoolAddressRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[91]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressRequest(SetPoolAddressRequest other) : this() {
       poolAddress_ = other.poolAddress_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressRequest Clone() {
       return new SetPoolAddressRequest(this);
     }
@@ -13653,6 +14838,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_address" field.</summary>
     public const int PoolAddressFieldNumber = 1;
     private string poolAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PoolAddress {
       get { return poolAddress_; }
       set {
@@ -13660,10 +14846,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetPoolAddressRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetPoolAddressRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13675,16 +14863,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (PoolAddress.Length != 0) hash ^= PoolAddress.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (PoolAddress.Length != 0) {
         output.WriteRawTag(10);
@@ -13692,6 +14883,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (PoolAddress.Length != 0) {
@@ -13700,6 +14892,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetPoolAddressRequest other) {
       if (other == null) {
         return;
@@ -13709,6 +14902,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13726,36 +14920,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetPoolAddressResponse : pb::IMessage<SetPoolAddressResponse> {
     private static readonly pb::MessageParser<SetPoolAddressResponse> _parser = new pb::MessageParser<SetPoolAddressResponse>(() => new SetPoolAddressResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetPoolAddressResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[92]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressResponse(SetPoolAddressResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolAddressResponse Clone() {
       return new SetPoolAddressResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetPoolAddressResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetPoolAddressResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13766,29 +14967,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetPoolAddressResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13802,29 +15009,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetPoolFeesRequest : pb::IMessage<SetPoolFeesRequest> {
     private static readonly pb::MessageParser<SetPoolFeesRequest> _parser = new pb::MessageParser<SetPoolFeesRequest>(() => new SetPoolFeesRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetPoolFeesRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[93]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesRequest(SetPoolFeesRequest other) : this() {
       poolFees_ = other.poolFees_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesRequest Clone() {
       return new SetPoolFeesRequest(this);
     }
@@ -13832,6 +15044,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "pool_fees" field.</summary>
     public const int PoolFeesFieldNumber = 1;
     private double poolFees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double PoolFees {
       get { return poolFees_; }
       set {
@@ -13839,10 +15052,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetPoolFeesRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetPoolFeesRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13854,16 +15069,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (PoolFees != 0D) hash ^= PoolFees.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (PoolFees != 0D) {
         output.WriteRawTag(9);
@@ -13871,6 +15089,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (PoolFees != 0D) {
@@ -13879,6 +15098,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetPoolFeesRequest other) {
       if (other == null) {
         return;
@@ -13888,6 +15108,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13905,36 +15126,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetPoolFeesResponse : pb::IMessage<SetPoolFeesResponse> {
     private static readonly pb::MessageParser<SetPoolFeesResponse> _parser = new pb::MessageParser<SetPoolFeesResponse>(() => new SetPoolFeesResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetPoolFeesResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[94]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesResponse(SetPoolFeesResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetPoolFeesResponse Clone() {
       return new SetPoolFeesResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetPoolFeesResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetPoolFeesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -13945,29 +15173,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetPoolFeesResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -13981,29 +15215,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPerBlockRequest : pb::IMessage<SetMaxPerBlockRequest> {
     private static readonly pb::MessageParser<SetMaxPerBlockRequest> _parser = new pb::MessageParser<SetMaxPerBlockRequest>(() => new SetMaxPerBlockRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPerBlockRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[95]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockRequest(SetMaxPerBlockRequest other) : this() {
       maxPerBlock_ = other.maxPerBlock_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockRequest Clone() {
       return new SetMaxPerBlockRequest(this);
     }
@@ -14011,6 +15250,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "max_per_block" field.</summary>
     public const int MaxPerBlockFieldNumber = 1;
     private long maxPerBlock_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long MaxPerBlock {
       get { return maxPerBlock_; }
       set {
@@ -14018,10 +15258,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPerBlockRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPerBlockRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14033,16 +15275,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxPerBlock != 0L) hash ^= MaxPerBlock.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (MaxPerBlock != 0L) {
         output.WriteRawTag(8);
@@ -14050,6 +15295,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (MaxPerBlock != 0L) {
@@ -14058,6 +15304,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPerBlockRequest other) {
       if (other == null) {
         return;
@@ -14067,6 +15314,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -14084,36 +15332,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetMaxPerBlockResponse : pb::IMessage<SetMaxPerBlockResponse> {
     private static readonly pb::MessageParser<SetMaxPerBlockResponse> _parser = new pb::MessageParser<SetMaxPerBlockResponse>(() => new SetMaxPerBlockResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetMaxPerBlockResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[96]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockResponse(SetMaxPerBlockResponse other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetMaxPerBlockResponse Clone() {
       return new SetMaxPerBlockResponse(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetMaxPerBlockResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetMaxPerBlockResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14124,29 +15379,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetMaxPerBlockResponse other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -14160,36 +15421,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AgendasRequest : pb::IMessage<AgendasRequest> {
     private static readonly pb::MessageParser<AgendasRequest> _parser = new pb::MessageParser<AgendasRequest>(() => new AgendasRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AgendasRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[97]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasRequest(AgendasRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasRequest Clone() {
       return new AgendasRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AgendasRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AgendasRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14200,29 +15468,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AgendasRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -14236,30 +15510,35 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AgendasResponse : pb::IMessage<AgendasResponse> {
     private static readonly pb::MessageParser<AgendasResponse> _parser = new pb::MessageParser<AgendasResponse>(() => new AgendasResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<AgendasResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[98]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasResponse(AgendasResponse other) : this() {
       version_ = other.version_;
       agendas_ = other.agendas_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AgendasResponse Clone() {
       return new AgendasResponse(this);
     }
@@ -14267,6 +15546,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 1;
     private uint version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Version {
       get { return version_; }
       set {
@@ -14279,14 +15559,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.AgendasResponse.Types.Agenda> _repeated_agendas_codec
         = pb::FieldCodec.ForMessage(18, global::Walletrpc.AgendasResponse.Types.Agenda.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Agenda> agendas_ = new pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Agenda>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Agenda> Agendas {
       get { return agendas_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AgendasResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(AgendasResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14299,6 +15582,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Version != 0) hash ^= Version.GetHashCode();
@@ -14306,10 +15590,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Version != 0) {
         output.WriteRawTag(8);
@@ -14318,6 +15604,7 @@ namespace Walletrpc {
       agendas_.WriteTo(output, _repeated_agendas_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Version != 0) {
@@ -14327,6 +15614,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(AgendasResponse other) {
       if (other == null) {
         return;
@@ -14337,6 +15625,7 @@ namespace Walletrpc {
       agendas_.Add(other.agendas_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -14358,27 +15647,31 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the AgendasResponse message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Agenda : pb::IMessage<Agenda> {
         private static readonly pb::MessageParser<Agenda> _parser = new pb::MessageParser<Agenda>(() => new Agenda());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Agenda> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.AgendasResponse.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Agenda() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Agenda(Agenda other) : this() {
           id_ = other.id_;
           description_ = other.description_;
@@ -14388,6 +15681,7 @@ namespace Walletrpc {
           expireTime_ = other.expireTime_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Agenda Clone() {
           return new Agenda(this);
         }
@@ -14395,6 +15689,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "id" field.</summary>
         public const int IdFieldNumber = 1;
         private string id_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Id {
           get { return id_; }
           set {
@@ -14405,6 +15700,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "description" field.</summary>
         public const int DescriptionFieldNumber = 2;
         private string description_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Description {
           get { return description_; }
           set {
@@ -14415,6 +15711,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "mask" field.</summary>
         public const int MaskFieldNumber = 3;
         private uint mask_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint Mask {
           get { return mask_; }
           set {
@@ -14427,6 +15724,7 @@ namespace Walletrpc {
         private static readonly pb::FieldCodec<global::Walletrpc.AgendasResponse.Types.Choice> _repeated_choices_codec
             = pb::FieldCodec.ForMessage(34, global::Walletrpc.AgendasResponse.Types.Choice.Parser);
         private readonly pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Choice> choices_ = new pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Choice>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public pbc::RepeatedField<global::Walletrpc.AgendasResponse.Types.Choice> Choices {
           get { return choices_; }
         }
@@ -14434,6 +15732,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "start_time" field.</summary>
         public const int StartTimeFieldNumber = 5;
         private long startTime_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long StartTime {
           get { return startTime_; }
           set {
@@ -14444,6 +15743,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "expire_time" field.</summary>
         public const int ExpireTimeFieldNumber = 6;
         private long expireTime_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long ExpireTime {
           get { return expireTime_; }
           set {
@@ -14451,10 +15751,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Agenda);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Agenda other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -14471,6 +15773,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -14482,10 +15785,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (Id.Length != 0) {
             output.WriteRawTag(10);
@@ -14510,6 +15815,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (Id.Length != 0) {
@@ -14531,6 +15837,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Agenda other) {
           if (other == null) {
             return;
@@ -14553,6 +15860,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -14590,25 +15898,29 @@ namespace Walletrpc {
 
       }
 
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Choice : pb::IMessage<Choice> {
         private static readonly pb::MessageParser<Choice> _parser = new pb::MessageParser<Choice>(() => new Choice());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Choice> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.AgendasResponse.Descriptor.NestedTypes[1]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice(Choice other) : this() {
           id_ = other.id_;
           description_ = other.description_;
@@ -14617,6 +15929,7 @@ namespace Walletrpc {
           isNo_ = other.isNo_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice Clone() {
           return new Choice(this);
         }
@@ -14624,6 +15937,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "id" field.</summary>
         public const int IdFieldNumber = 1;
         private string id_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Id {
           get { return id_; }
           set {
@@ -14634,6 +15948,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "description" field.</summary>
         public const int DescriptionFieldNumber = 2;
         private string description_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string Description {
           get { return description_; }
           set {
@@ -14644,6 +15959,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "bits" field.</summary>
         public const int BitsFieldNumber = 3;
         private uint bits_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public uint Bits {
           get { return bits_; }
           set {
@@ -14654,6 +15970,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "is_abstain" field.</summary>
         public const int IsAbstainFieldNumber = 4;
         private bool isAbstain_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool IsAbstain {
           get { return isAbstain_; }
           set {
@@ -14664,6 +15981,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "is_no" field.</summary>
         public const int IsNoFieldNumber = 5;
         private bool isNo_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool IsNo {
           get { return isNo_; }
           set {
@@ -14671,10 +15989,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Choice);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Choice other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -14690,6 +16010,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -14700,10 +16021,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (Id.Length != 0) {
             output.WriteRawTag(10);
@@ -14727,6 +16050,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (Id.Length != 0) {
@@ -14747,6 +16071,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Choice other) {
           if (other == null) {
             return;
@@ -14768,6 +16093,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -14806,36 +16132,43 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class VoteChoicesRequest : pb::IMessage<VoteChoicesRequest> {
     private static readonly pb::MessageParser<VoteChoicesRequest> _parser = new pb::MessageParser<VoteChoicesRequest>(() => new VoteChoicesRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<VoteChoicesRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[99]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesRequest(VoteChoicesRequest other) : this() {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesRequest Clone() {
       return new VoteChoicesRequest(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VoteChoicesRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(VoteChoicesRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14846,29 +16179,35 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(VoteChoicesRequest other) {
       if (other == null) {
         return;
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -14882,31 +16221,36 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class VoteChoicesResponse : pb::IMessage<VoteChoicesResponse> {
     private static readonly pb::MessageParser<VoteChoicesResponse> _parser = new pb::MessageParser<VoteChoicesResponse>(() => new VoteChoicesResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<VoteChoicesResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[100]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesResponse(VoteChoicesResponse other) : this() {
       version_ = other.version_;
       choices_ = other.choices_.Clone();
       votebits_ = other.votebits_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VoteChoicesResponse Clone() {
       return new VoteChoicesResponse(this);
     }
@@ -14914,6 +16258,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 1;
     private uint version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Version {
       get { return version_; }
       set {
@@ -14926,6 +16271,7 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.VoteChoicesResponse.Types.Choice> _repeated_choices_codec
         = pb::FieldCodec.ForMessage(18, global::Walletrpc.VoteChoicesResponse.Types.Choice.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.VoteChoicesResponse.Types.Choice> choices_ = new pbc::RepeatedField<global::Walletrpc.VoteChoicesResponse.Types.Choice>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.VoteChoicesResponse.Types.Choice> Choices {
       get { return choices_; }
     }
@@ -14933,6 +16279,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "votebits" field.</summary>
     public const int VotebitsFieldNumber = 3;
     private uint votebits_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Votebits {
       get { return votebits_; }
       set {
@@ -14940,10 +16287,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VoteChoicesResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(VoteChoicesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -14957,6 +16306,7 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Version != 0) hash ^= Version.GetHashCode();
@@ -14965,10 +16315,12 @@ namespace Walletrpc {
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Version != 0) {
         output.WriteRawTag(8);
@@ -14981,6 +16333,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Version != 0) {
@@ -14993,6 +16346,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(VoteChoicesResponse other) {
       if (other == null) {
         return;
@@ -15006,6 +16360,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -15031,27 +16386,31 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the VoteChoicesResponse message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Choice : pb::IMessage<Choice> {
         private static readonly pb::MessageParser<Choice> _parser = new pb::MessageParser<Choice>(() => new Choice());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Choice> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.VoteChoicesResponse.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice(Choice other) : this() {
           agendaId_ = other.agendaId_;
           agendaDescription_ = other.agendaDescription_;
@@ -15059,6 +16418,7 @@ namespace Walletrpc {
           choiceDescription_ = other.choiceDescription_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice Clone() {
           return new Choice(this);
         }
@@ -15066,6 +16426,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "agenda_id" field.</summary>
         public const int AgendaIdFieldNumber = 1;
         private string agendaId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string AgendaId {
           get { return agendaId_; }
           set {
@@ -15076,6 +16437,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "agenda_description" field.</summary>
         public const int AgendaDescriptionFieldNumber = 2;
         private string agendaDescription_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string AgendaDescription {
           get { return agendaDescription_; }
           set {
@@ -15086,6 +16448,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "choice_id" field.</summary>
         public const int ChoiceIdFieldNumber = 3;
         private string choiceId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string ChoiceId {
           get { return choiceId_; }
           set {
@@ -15096,6 +16459,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "choice_description" field.</summary>
         public const int ChoiceDescriptionFieldNumber = 4;
         private string choiceDescription_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string ChoiceDescription {
           get { return choiceDescription_; }
           set {
@@ -15103,10 +16467,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Choice);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Choice other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -15121,6 +16487,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (AgendaId.Length != 0) hash ^= AgendaId.GetHashCode();
@@ -15130,10 +16497,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (AgendaId.Length != 0) {
             output.WriteRawTag(10);
@@ -15153,6 +16522,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (AgendaId.Length != 0) {
@@ -15170,6 +16540,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Choice other) {
           if (other == null) {
             return;
@@ -15188,6 +16559,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -15222,29 +16594,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetVoteChoicesRequest : pb::IMessage<SetVoteChoicesRequest> {
     private static readonly pb::MessageParser<SetVoteChoicesRequest> _parser = new pb::MessageParser<SetVoteChoicesRequest>(() => new SetVoteChoicesRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetVoteChoicesRequest> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[101]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesRequest() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesRequest(SetVoteChoicesRequest other) : this() {
       choices_ = other.choices_.Clone();
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesRequest Clone() {
       return new SetVoteChoicesRequest(this);
     }
@@ -15254,14 +16631,17 @@ namespace Walletrpc {
     private static readonly pb::FieldCodec<global::Walletrpc.SetVoteChoicesRequest.Types.Choice> _repeated_choices_codec
         = pb::FieldCodec.ForMessage(10, global::Walletrpc.SetVoteChoicesRequest.Types.Choice.Parser);
     private readonly pbc::RepeatedField<global::Walletrpc.SetVoteChoicesRequest.Types.Choice> choices_ = new pbc::RepeatedField<global::Walletrpc.SetVoteChoicesRequest.Types.Choice>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Walletrpc.SetVoteChoicesRequest.Types.Choice> Choices {
       get { return choices_; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetVoteChoicesRequest);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetVoteChoicesRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -15273,26 +16653,31 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= choices_.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       choices_.WriteTo(output, _repeated_choices_codec);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       size += choices_.CalculateSize(_repeated_choices_codec);
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetVoteChoicesRequest other) {
       if (other == null) {
         return;
@@ -15300,6 +16685,7 @@ namespace Walletrpc {
       choices_.Add(other.choices_);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -15317,32 +16703,37 @@ namespace Walletrpc {
 
     #region Nested types
     /// <summary>Container for nested types declared in the SetVoteChoicesRequest message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
       public sealed partial class Choice : pb::IMessage<Choice> {
         private static readonly pb::MessageParser<Choice> _parser = new pb::MessageParser<Choice>(() => new Choice());
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pb::MessageParser<Choice> Parser { get { return _parser; } }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Walletrpc.SetVoteChoicesRequest.Descriptor.NestedTypes[0]; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice(Choice other) : this() {
           agendaId_ = other.agendaId_;
           choiceId_ = other.choiceId_;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public Choice Clone() {
           return new Choice(this);
         }
@@ -15350,6 +16741,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "agenda_id" field.</summary>
         public const int AgendaIdFieldNumber = 1;
         private string agendaId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string AgendaId {
           get { return agendaId_; }
           set {
@@ -15360,6 +16752,7 @@ namespace Walletrpc {
         /// <summary>Field number for the "choice_id" field.</summary>
         public const int ChoiceIdFieldNumber = 2;
         private string choiceId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string ChoiceId {
           get { return choiceId_; }
           set {
@@ -15367,10 +16760,12 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Choice);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool Equals(Choice other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -15383,6 +16778,7 @@ namespace Walletrpc {
           return true;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
           if (AgendaId.Length != 0) hash ^= AgendaId.GetHashCode();
@@ -15390,10 +16786,12 @@ namespace Walletrpc {
           return hash;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           if (AgendaId.Length != 0) {
             output.WriteRawTag(10);
@@ -15405,6 +16803,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
           if (AgendaId.Length != 0) {
@@ -15416,6 +16815,7 @@ namespace Walletrpc {
           return size;
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(Choice other) {
           if (other == null) {
             return;
@@ -15428,6 +16828,7 @@ namespace Walletrpc {
           }
         }
 
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -15454,29 +16855,34 @@ namespace Walletrpc {
 
   }
 
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class SetVoteChoicesResponse : pb::IMessage<SetVoteChoicesResponse> {
     private static readonly pb::MessageParser<SetVoteChoicesResponse> _parser = new pb::MessageParser<SetVoteChoicesResponse>(() => new SetVoteChoicesResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<SetVoteChoicesResponse> Parser { get { return _parser; } }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Walletrpc.ApiReflection.Descriptor.MessageTypes[102]; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesResponse(SetVoteChoicesResponse other) : this() {
       votebits_ = other.votebits_;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SetVoteChoicesResponse Clone() {
       return new SetVoteChoicesResponse(this);
     }
@@ -15484,6 +16890,7 @@ namespace Walletrpc {
     /// <summary>Field number for the "votebits" field.</summary>
     public const int VotebitsFieldNumber = 1;
     private uint votebits_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Votebits {
       get { return votebits_; }
       set {
@@ -15491,10 +16898,12 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SetVoteChoicesResponse);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Equals(SetVoteChoicesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -15506,16 +16915,19 @@ namespace Walletrpc {
       return true;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
       if (Votebits != 0) hash ^= Votebits.GetHashCode();
       return hash;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       if (Votebits != 0) {
         output.WriteRawTag(8);
@@ -15523,6 +16935,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
       if (Votebits != 0) {
@@ -15531,6 +16944,7 @@ namespace Walletrpc {
       return size;
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(SetVoteChoicesResponse other) {
       if (other == null) {
         return;
@@ -15540,6 +16954,7 @@ namespace Walletrpc {
       }
     }
 
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

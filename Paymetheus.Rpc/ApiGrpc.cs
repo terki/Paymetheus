@@ -5,18 +5,18 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Grpc.Core;
+using grpc = global::Grpc.Core;
 
 namespace Walletrpc {
-  public static class VersionService
+  public static partial class VersionService
   {
     static readonly string __ServiceName = "walletrpc.VersionService";
 
-    static readonly Marshaller<global::Walletrpc.VersionRequest> __Marshaller_VersionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VersionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.VersionResponse> __Marshaller_VersionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VersionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.VersionRequest> __Marshaller_VersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VersionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.VersionResponse> __Marshaller_VersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VersionResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.VersionRequest, global::Walletrpc.VersionResponse> __Method_Version = new Method<global::Walletrpc.VersionRequest, global::Walletrpc.VersionResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.VersionRequest, global::Walletrpc.VersionResponse> __Method_Version = new grpc::Method<global::Walletrpc.VersionRequest, global::Walletrpc.VersionResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Version",
         __Marshaller_VersionRequest,
@@ -29,26 +29,26 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of VersionService</summary>
-    public abstract class VersionServiceBase
+    public abstract partial class VersionServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.VersionResponse> Version(global::Walletrpc.VersionRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.VersionResponse> Version(global::Walletrpc.VersionRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for VersionService</summary>
-    public class VersionServiceClient : ClientBase<VersionServiceClient>
+    public partial class VersionServiceClient : grpc::ClientBase<VersionServiceClient>
     {
       /// <summary>Creates a new client for VersionService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public VersionServiceClient(Channel channel) : base(channel)
+      public VersionServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for VersionService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public VersionServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public VersionServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -61,22 +61,23 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.VersionResponse Version(global::Walletrpc.VersionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.VersionResponse Version(global::Walletrpc.VersionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Version(request, new CallOptions(headers, deadline, cancellationToken));
+        return Version(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.VersionResponse Version(global::Walletrpc.VersionRequest request, CallOptions options)
+      public virtual global::Walletrpc.VersionResponse Version(global::Walletrpc.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Version, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.VersionResponse> VersionAsync(global::Walletrpc.VersionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.VersionResponse> VersionAsync(global::Walletrpc.VersionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return VersionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return VersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.VersionResponse> VersionAsync(global::Walletrpc.VersionRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.VersionResponse> VersionAsync(global::Walletrpc.VersionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Version, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override VersionServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new VersionServiceClient(configuration);
@@ -84,229 +85,230 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(VersionServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(VersionServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_Version, serviceImpl.Version).Build();
     }
 
   }
-  public static class WalletService
+  public static partial class WalletService
   {
     static readonly string __ServiceName = "walletrpc.WalletService";
 
-    static readonly Marshaller<global::Walletrpc.PingRequest> __Marshaller_PingRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PingRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.PingResponse> __Marshaller_PingResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PingResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NetworkRequest> __Marshaller_NetworkRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NetworkRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NetworkResponse> __Marshaller_NetworkResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NetworkResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountNumberRequest> __Marshaller_AccountNumberRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNumberRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountNumberResponse> __Marshaller_AccountNumberResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNumberResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountsRequest> __Marshaller_AccountsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountsResponse> __Marshaller_AccountsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.BalanceRequest> __Marshaller_BalanceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BalanceRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.BalanceResponse> __Marshaller_BalanceResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BalanceResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.GetTransactionsRequest> __Marshaller_GetTransactionsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GetTransactionsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.GetTransactionsResponse> __Marshaller_GetTransactionsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GetTransactionsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TicketPriceRequest> __Marshaller_TicketPriceRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketPriceRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TicketPriceResponse> __Marshaller_TicketPriceResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketPriceResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StakeInfoRequest> __Marshaller_StakeInfoRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StakeInfoResponse> __Marshaller_StakeInfoResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TransactionNotificationsRequest> __Marshaller_TransactionNotificationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TransactionNotificationsResponse> __Marshaller_TransactionNotificationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SpentnessNotificationsRequest> __Marshaller_SpentnessNotificationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SpentnessNotificationsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SpentnessNotificationsResponse> __Marshaller_SpentnessNotificationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SpentnessNotificationsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountNotificationsRequest> __Marshaller_AccountNotificationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AccountNotificationsResponse> __Marshaller_AccountNotificationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ChangePassphraseRequest> __Marshaller_ChangePassphraseRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ChangePassphraseResponse> __Marshaller_ChangePassphraseResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.RenameAccountRequest> __Marshaller_RenameAccountRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RenameAccountRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.RenameAccountResponse> __Marshaller_RenameAccountResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RenameAccountResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.RescanRequest> __Marshaller_RescanRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RescanRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.RescanResponse> __Marshaller_RescanResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RescanResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NextAccountRequest> __Marshaller_NextAccountRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAccountRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NextAccountResponse> __Marshaller_NextAccountResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAccountResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NextAddressRequest> __Marshaller_NextAddressRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAddressRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.NextAddressResponse> __Marshaller_NextAddressResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAddressResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ImportPrivateKeyRequest> __Marshaller_ImportPrivateKeyRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportPrivateKeyRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ImportPrivateKeyResponse> __Marshaller_ImportPrivateKeyResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportPrivateKeyResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ImportScriptRequest> __Marshaller_ImportScriptRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportScriptRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ImportScriptResponse> __Marshaller_ImportScriptResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportScriptResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.FundTransactionRequest> __Marshaller_FundTransactionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FundTransactionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.FundTransactionResponse> __Marshaller_FundTransactionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FundTransactionResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ConstructTransactionRequest> __Marshaller_ConstructTransactionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConstructTransactionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.ConstructTransactionResponse> __Marshaller_ConstructTransactionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConstructTransactionResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SignTransactionRequest> __Marshaller_SignTransactionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SignTransactionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SignTransactionResponse> __Marshaller_SignTransactionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SignTransactionResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.PublishTransactionRequest> __Marshaller_PublishTransactionRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PublishTransactionRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.PublishTransactionResponse> __Marshaller_PublishTransactionResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PublishTransactionResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.PurchaseTicketsRequest> __Marshaller_PurchaseTicketsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PurchaseTicketsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.PurchaseTicketsResponse> __Marshaller_PurchaseTicketsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PurchaseTicketsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.LoadActiveDataFiltersRequest> __Marshaller_LoadActiveDataFiltersRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.LoadActiveDataFiltersRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.LoadActiveDataFiltersResponse> __Marshaller_LoadActiveDataFiltersResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.LoadActiveDataFiltersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PingRequest> __Marshaller_PingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PingRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PingResponse> __Marshaller_PingResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PingResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NetworkRequest> __Marshaller_NetworkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NetworkRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NetworkResponse> __Marshaller_NetworkResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NetworkResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountNumberRequest> __Marshaller_AccountNumberRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNumberRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountNumberResponse> __Marshaller_AccountNumberResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNumberResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountsRequest> __Marshaller_AccountsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountsResponse> __Marshaller_AccountsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.BalanceRequest> __Marshaller_BalanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BalanceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.BalanceResponse> __Marshaller_BalanceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BalanceResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.GetTransactionsRequest> __Marshaller_GetTransactionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GetTransactionsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.GetTransactionsResponse> __Marshaller_GetTransactionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GetTransactionsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TicketPriceRequest> __Marshaller_TicketPriceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketPriceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TicketPriceResponse> __Marshaller_TicketPriceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketPriceResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StakeInfoRequest> __Marshaller_StakeInfoRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StakeInfoResponse> __Marshaller_StakeInfoResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TransactionNotificationsRequest> __Marshaller_TransactionNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TransactionNotificationsResponse> __Marshaller_TransactionNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountNotificationsRequest> __Marshaller_AccountNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AccountNotificationsResponse> __Marshaller_AccountNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ChangePassphraseRequest> __Marshaller_ChangePassphraseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ChangePassphraseResponse> __Marshaller_ChangePassphraseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RenameAccountRequest> __Marshaller_RenameAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RenameAccountRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RenameAccountResponse> __Marshaller_RenameAccountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RenameAccountResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RescanRequest> __Marshaller_RescanRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RescanRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RescanResponse> __Marshaller_RescanResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RescanResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NextAccountRequest> __Marshaller_NextAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAccountRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NextAccountResponse> __Marshaller_NextAccountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAccountResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NextAddressRequest> __Marshaller_NextAddressRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAddressRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.NextAddressResponse> __Marshaller_NextAddressResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.NextAddressResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ImportPrivateKeyRequest> __Marshaller_ImportPrivateKeyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportPrivateKeyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ImportPrivateKeyResponse> __Marshaller_ImportPrivateKeyResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportPrivateKeyResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ImportScriptRequest> __Marshaller_ImportScriptRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportScriptRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ImportScriptResponse> __Marshaller_ImportScriptResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ImportScriptResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.FundTransactionRequest> __Marshaller_FundTransactionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FundTransactionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.FundTransactionResponse> __Marshaller_FundTransactionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FundTransactionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ConstructTransactionRequest> __Marshaller_ConstructTransactionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConstructTransactionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ConstructTransactionResponse> __Marshaller_ConstructTransactionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConstructTransactionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SignTransactionRequest> __Marshaller_SignTransactionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SignTransactionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SignTransactionResponse> __Marshaller_SignTransactionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SignTransactionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PublishTransactionRequest> __Marshaller_PublishTransactionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PublishTransactionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PublishTransactionResponse> __Marshaller_PublishTransactionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PublishTransactionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PurchaseTicketsRequest> __Marshaller_PurchaseTicketsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PurchaseTicketsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.PurchaseTicketsResponse> __Marshaller_PurchaseTicketsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.PurchaseTicketsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RevokeTicketsRequest> __Marshaller_RevokeTicketsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RevokeTicketsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.RevokeTicketsResponse> __Marshaller_RevokeTicketsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RevokeTicketsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.LoadActiveDataFiltersRequest> __Marshaller_LoadActiveDataFiltersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.LoadActiveDataFiltersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.LoadActiveDataFiltersResponse> __Marshaller_LoadActiveDataFiltersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.LoadActiveDataFiltersResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.PingRequest, global::Walletrpc.PingResponse> __Method_Ping = new Method<global::Walletrpc.PingRequest, global::Walletrpc.PingResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.PingRequest, global::Walletrpc.PingResponse> __Method_Ping = new grpc::Method<global::Walletrpc.PingRequest, global::Walletrpc.PingResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Ping",
         __Marshaller_PingRequest,
         __Marshaller_PingResponse);
 
-    static readonly Method<global::Walletrpc.NetworkRequest, global::Walletrpc.NetworkResponse> __Method_Network = new Method<global::Walletrpc.NetworkRequest, global::Walletrpc.NetworkResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.NetworkRequest, global::Walletrpc.NetworkResponse> __Method_Network = new grpc::Method<global::Walletrpc.NetworkRequest, global::Walletrpc.NetworkResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Network",
         __Marshaller_NetworkRequest,
         __Marshaller_NetworkResponse);
 
-    static readonly Method<global::Walletrpc.AccountNumberRequest, global::Walletrpc.AccountNumberResponse> __Method_AccountNumber = new Method<global::Walletrpc.AccountNumberRequest, global::Walletrpc.AccountNumberResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.AccountNumberRequest, global::Walletrpc.AccountNumberResponse> __Method_AccountNumber = new grpc::Method<global::Walletrpc.AccountNumberRequest, global::Walletrpc.AccountNumberResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "AccountNumber",
         __Marshaller_AccountNumberRequest,
         __Marshaller_AccountNumberResponse);
 
-    static readonly Method<global::Walletrpc.AccountsRequest, global::Walletrpc.AccountsResponse> __Method_Accounts = new Method<global::Walletrpc.AccountsRequest, global::Walletrpc.AccountsResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.AccountsRequest, global::Walletrpc.AccountsResponse> __Method_Accounts = new grpc::Method<global::Walletrpc.AccountsRequest, global::Walletrpc.AccountsResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Accounts",
         __Marshaller_AccountsRequest,
         __Marshaller_AccountsResponse);
 
-    static readonly Method<global::Walletrpc.BalanceRequest, global::Walletrpc.BalanceResponse> __Method_Balance = new Method<global::Walletrpc.BalanceRequest, global::Walletrpc.BalanceResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.BalanceRequest, global::Walletrpc.BalanceResponse> __Method_Balance = new grpc::Method<global::Walletrpc.BalanceRequest, global::Walletrpc.BalanceResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Balance",
         __Marshaller_BalanceRequest,
         __Marshaller_BalanceResponse);
 
-    static readonly Method<global::Walletrpc.GetTransactionsRequest, global::Walletrpc.GetTransactionsResponse> __Method_GetTransactions = new Method<global::Walletrpc.GetTransactionsRequest, global::Walletrpc.GetTransactionsResponse>(
-        MethodType.ServerStreaming,
+    static readonly grpc::Method<global::Walletrpc.GetTransactionsRequest, global::Walletrpc.GetTransactionsResponse> __Method_GetTransactions = new grpc::Method<global::Walletrpc.GetTransactionsRequest, global::Walletrpc.GetTransactionsResponse>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "GetTransactions",
         __Marshaller_GetTransactionsRequest,
         __Marshaller_GetTransactionsResponse);
 
-    static readonly Method<global::Walletrpc.TicketPriceRequest, global::Walletrpc.TicketPriceResponse> __Method_TicketPrice = new Method<global::Walletrpc.TicketPriceRequest, global::Walletrpc.TicketPriceResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.TicketPriceRequest, global::Walletrpc.TicketPriceResponse> __Method_TicketPrice = new grpc::Method<global::Walletrpc.TicketPriceRequest, global::Walletrpc.TicketPriceResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "TicketPrice",
         __Marshaller_TicketPriceRequest,
         __Marshaller_TicketPriceResponse);
 
-    static readonly Method<global::Walletrpc.StakeInfoRequest, global::Walletrpc.StakeInfoResponse> __Method_StakeInfo = new Method<global::Walletrpc.StakeInfoRequest, global::Walletrpc.StakeInfoResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.StakeInfoRequest, global::Walletrpc.StakeInfoResponse> __Method_StakeInfo = new grpc::Method<global::Walletrpc.StakeInfoRequest, global::Walletrpc.StakeInfoResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "StakeInfo",
         __Marshaller_StakeInfoRequest,
         __Marshaller_StakeInfoResponse);
 
-    static readonly Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse> __Method_TransactionNotifications = new Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse>(
-        MethodType.ServerStreaming,
+    static readonly grpc::Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse> __Method_TransactionNotifications = new grpc::Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "TransactionNotifications",
         __Marshaller_TransactionNotificationsRequest,
         __Marshaller_TransactionNotificationsResponse);
 
-    static readonly Method<global::Walletrpc.SpentnessNotificationsRequest, global::Walletrpc.SpentnessNotificationsResponse> __Method_SpentnessNotifications = new Method<global::Walletrpc.SpentnessNotificationsRequest, global::Walletrpc.SpentnessNotificationsResponse>(
-        MethodType.ServerStreaming,
-        __ServiceName,
-        "SpentnessNotifications",
-        __Marshaller_SpentnessNotificationsRequest,
-        __Marshaller_SpentnessNotificationsResponse);
-
-    static readonly Method<global::Walletrpc.AccountNotificationsRequest, global::Walletrpc.AccountNotificationsResponse> __Method_AccountNotifications = new Method<global::Walletrpc.AccountNotificationsRequest, global::Walletrpc.AccountNotificationsResponse>(
-        MethodType.ServerStreaming,
+    static readonly grpc::Method<global::Walletrpc.AccountNotificationsRequest, global::Walletrpc.AccountNotificationsResponse> __Method_AccountNotifications = new grpc::Method<global::Walletrpc.AccountNotificationsRequest, global::Walletrpc.AccountNotificationsResponse>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "AccountNotifications",
         __Marshaller_AccountNotificationsRequest,
         __Marshaller_AccountNotificationsResponse);
 
-    static readonly Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse> __Method_ChangePassphrase = new Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse> __Method_ChangePassphrase = new grpc::Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "ChangePassphrase",
         __Marshaller_ChangePassphraseRequest,
         __Marshaller_ChangePassphraseResponse);
 
-    static readonly Method<global::Walletrpc.RenameAccountRequest, global::Walletrpc.RenameAccountResponse> __Method_RenameAccount = new Method<global::Walletrpc.RenameAccountRequest, global::Walletrpc.RenameAccountResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.RenameAccountRequest, global::Walletrpc.RenameAccountResponse> __Method_RenameAccount = new grpc::Method<global::Walletrpc.RenameAccountRequest, global::Walletrpc.RenameAccountResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "RenameAccount",
         __Marshaller_RenameAccountRequest,
         __Marshaller_RenameAccountResponse);
 
-    static readonly Method<global::Walletrpc.RescanRequest, global::Walletrpc.RescanResponse> __Method_Rescan = new Method<global::Walletrpc.RescanRequest, global::Walletrpc.RescanResponse>(
-        MethodType.ServerStreaming,
+    static readonly grpc::Method<global::Walletrpc.RescanRequest, global::Walletrpc.RescanResponse> __Method_Rescan = new grpc::Method<global::Walletrpc.RescanRequest, global::Walletrpc.RescanResponse>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "Rescan",
         __Marshaller_RescanRequest,
         __Marshaller_RescanResponse);
 
-    static readonly Method<global::Walletrpc.NextAccountRequest, global::Walletrpc.NextAccountResponse> __Method_NextAccount = new Method<global::Walletrpc.NextAccountRequest, global::Walletrpc.NextAccountResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.NextAccountRequest, global::Walletrpc.NextAccountResponse> __Method_NextAccount = new grpc::Method<global::Walletrpc.NextAccountRequest, global::Walletrpc.NextAccountResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "NextAccount",
         __Marshaller_NextAccountRequest,
         __Marshaller_NextAccountResponse);
 
-    static readonly Method<global::Walletrpc.NextAddressRequest, global::Walletrpc.NextAddressResponse> __Method_NextAddress = new Method<global::Walletrpc.NextAddressRequest, global::Walletrpc.NextAddressResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.NextAddressRequest, global::Walletrpc.NextAddressResponse> __Method_NextAddress = new grpc::Method<global::Walletrpc.NextAddressRequest, global::Walletrpc.NextAddressResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "NextAddress",
         __Marshaller_NextAddressRequest,
         __Marshaller_NextAddressResponse);
 
-    static readonly Method<global::Walletrpc.ImportPrivateKeyRequest, global::Walletrpc.ImportPrivateKeyResponse> __Method_ImportPrivateKey = new Method<global::Walletrpc.ImportPrivateKeyRequest, global::Walletrpc.ImportPrivateKeyResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.ImportPrivateKeyRequest, global::Walletrpc.ImportPrivateKeyResponse> __Method_ImportPrivateKey = new grpc::Method<global::Walletrpc.ImportPrivateKeyRequest, global::Walletrpc.ImportPrivateKeyResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "ImportPrivateKey",
         __Marshaller_ImportPrivateKeyRequest,
         __Marshaller_ImportPrivateKeyResponse);
 
-    static readonly Method<global::Walletrpc.ImportScriptRequest, global::Walletrpc.ImportScriptResponse> __Method_ImportScript = new Method<global::Walletrpc.ImportScriptRequest, global::Walletrpc.ImportScriptResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.ImportScriptRequest, global::Walletrpc.ImportScriptResponse> __Method_ImportScript = new grpc::Method<global::Walletrpc.ImportScriptRequest, global::Walletrpc.ImportScriptResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "ImportScript",
         __Marshaller_ImportScriptRequest,
         __Marshaller_ImportScriptResponse);
 
-    static readonly Method<global::Walletrpc.FundTransactionRequest, global::Walletrpc.FundTransactionResponse> __Method_FundTransaction = new Method<global::Walletrpc.FundTransactionRequest, global::Walletrpc.FundTransactionResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.FundTransactionRequest, global::Walletrpc.FundTransactionResponse> __Method_FundTransaction = new grpc::Method<global::Walletrpc.FundTransactionRequest, global::Walletrpc.FundTransactionResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "FundTransaction",
         __Marshaller_FundTransactionRequest,
         __Marshaller_FundTransactionResponse);
 
-    static readonly Method<global::Walletrpc.ConstructTransactionRequest, global::Walletrpc.ConstructTransactionResponse> __Method_ConstructTransaction = new Method<global::Walletrpc.ConstructTransactionRequest, global::Walletrpc.ConstructTransactionResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.ConstructTransactionRequest, global::Walletrpc.ConstructTransactionResponse> __Method_ConstructTransaction = new grpc::Method<global::Walletrpc.ConstructTransactionRequest, global::Walletrpc.ConstructTransactionResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "ConstructTransaction",
         __Marshaller_ConstructTransactionRequest,
         __Marshaller_ConstructTransactionResponse);
 
-    static readonly Method<global::Walletrpc.SignTransactionRequest, global::Walletrpc.SignTransactionResponse> __Method_SignTransaction = new Method<global::Walletrpc.SignTransactionRequest, global::Walletrpc.SignTransactionResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SignTransactionRequest, global::Walletrpc.SignTransactionResponse> __Method_SignTransaction = new grpc::Method<global::Walletrpc.SignTransactionRequest, global::Walletrpc.SignTransactionResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SignTransaction",
         __Marshaller_SignTransactionRequest,
         __Marshaller_SignTransactionResponse);
 
-    static readonly Method<global::Walletrpc.PublishTransactionRequest, global::Walletrpc.PublishTransactionResponse> __Method_PublishTransaction = new Method<global::Walletrpc.PublishTransactionRequest, global::Walletrpc.PublishTransactionResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.PublishTransactionRequest, global::Walletrpc.PublishTransactionResponse> __Method_PublishTransaction = new grpc::Method<global::Walletrpc.PublishTransactionRequest, global::Walletrpc.PublishTransactionResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "PublishTransaction",
         __Marshaller_PublishTransactionRequest,
         __Marshaller_PublishTransactionResponse);
 
-    static readonly Method<global::Walletrpc.PurchaseTicketsRequest, global::Walletrpc.PurchaseTicketsResponse> __Method_PurchaseTickets = new Method<global::Walletrpc.PurchaseTicketsRequest, global::Walletrpc.PurchaseTicketsResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.PurchaseTicketsRequest, global::Walletrpc.PurchaseTicketsResponse> __Method_PurchaseTickets = new grpc::Method<global::Walletrpc.PurchaseTicketsRequest, global::Walletrpc.PurchaseTicketsResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "PurchaseTickets",
         __Marshaller_PurchaseTicketsRequest,
         __Marshaller_PurchaseTicketsResponse);
 
-    static readonly Method<global::Walletrpc.LoadActiveDataFiltersRequest, global::Walletrpc.LoadActiveDataFiltersResponse> __Method_LoadActiveDataFilters = new Method<global::Walletrpc.LoadActiveDataFiltersRequest, global::Walletrpc.LoadActiveDataFiltersResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.RevokeTicketsRequest, global::Walletrpc.RevokeTicketsResponse> __Method_RevokeTickets = new grpc::Method<global::Walletrpc.RevokeTicketsRequest, global::Walletrpc.RevokeTicketsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RevokeTickets",
+        __Marshaller_RevokeTicketsRequest,
+        __Marshaller_RevokeTicketsResponse);
+
+    static readonly grpc::Method<global::Walletrpc.LoadActiveDataFiltersRequest, global::Walletrpc.LoadActiveDataFiltersResponse> __Method_LoadActiveDataFilters = new grpc::Method<global::Walletrpc.LoadActiveDataFiltersRequest, global::Walletrpc.LoadActiveDataFiltersResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "LoadActiveDataFilters",
         __Marshaller_LoadActiveDataFiltersRequest,
@@ -319,150 +321,160 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of WalletService</summary>
-    public abstract class WalletServiceBase
+    public abstract partial class WalletServiceBase
     {
       /// <summary>
-      ///  Queries
+      /// Queries
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PingResponse> Ping(global::Walletrpc.PingRequest request, ServerCallContext context)
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PingResponse> Ping(global::Walletrpc.PingRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NetworkResponse> Network(global::Walletrpc.NetworkRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NetworkResponse> Network(global::Walletrpc.NetworkRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AccountNumberResponse> AccountNumber(global::Walletrpc.AccountNumberRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AccountNumberResponse> AccountNumber(global::Walletrpc.AccountNumberRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AccountsResponse> Accounts(global::Walletrpc.AccountsRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AccountsResponse> Accounts(global::Walletrpc.AccountsRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.BalanceResponse> Balance(global::Walletrpc.BalanceRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.BalanceResponse> Balance(global::Walletrpc.BalanceRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task GetTransactions(global::Walletrpc.GetTransactionsRequest request, IServerStreamWriter<global::Walletrpc.GetTransactionsResponse> responseStream, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task GetTransactions(global::Walletrpc.GetTransactionsRequest request, grpc::IServerStreamWriter<global::Walletrpc.GetTransactionsResponse> responseStream, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.TicketPriceResponse> TicketPrice(global::Walletrpc.TicketPriceRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.TicketPriceResponse> TicketPrice(global::Walletrpc.TicketPriceRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StakeInfoResponse> StakeInfo(global::Walletrpc.StakeInfoRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StakeInfoResponse> StakeInfo(global::Walletrpc.StakeInfoRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       /// <summary>
-      ///  Notifications
+      /// Notifications
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, IServerStreamWriter<global::Walletrpc.TransactionNotificationsResponse> responseStream, ServerCallContext context)
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      public virtual global::System.Threading.Tasks.Task TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, grpc::IServerStreamWriter<global::Walletrpc.TransactionNotificationsResponse> responseStream, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task SpentnessNotifications(global::Walletrpc.SpentnessNotificationsRequest request, IServerStreamWriter<global::Walletrpc.SpentnessNotificationsResponse> responseStream, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, grpc::IServerStreamWriter<global::Walletrpc.AccountNotificationsResponse> responseStream, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
-      }
-
-      public virtual global::System.Threading.Tasks.Task AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, IServerStreamWriter<global::Walletrpc.AccountNotificationsResponse> responseStream, ServerCallContext context)
-      {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       /// <summary>
-      ///  Control
+      /// Control
       /// </summary>
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ChangePassphraseResponse> ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, ServerCallContext context)
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ChangePassphraseResponse> ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.RenameAccountResponse> RenameAccount(global::Walletrpc.RenameAccountRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.RenameAccountResponse> RenameAccount(global::Walletrpc.RenameAccountRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task Rescan(global::Walletrpc.RescanRequest request, IServerStreamWriter<global::Walletrpc.RescanResponse> responseStream, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task Rescan(global::Walletrpc.RescanRequest request, grpc::IServerStreamWriter<global::Walletrpc.RescanResponse> responseStream, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NextAccountResponse> NextAccount(global::Walletrpc.NextAccountRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NextAccountResponse> NextAccount(global::Walletrpc.NextAccountRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NextAddressResponse> NextAddress(global::Walletrpc.NextAddressRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.NextAddressResponse> NextAddress(global::Walletrpc.NextAddressRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ImportScriptResponse> ImportScript(global::Walletrpc.ImportScriptRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ImportScriptResponse> ImportScript(global::Walletrpc.ImportScriptRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.FundTransactionResponse> FundTransaction(global::Walletrpc.FundTransactionRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.FundTransactionResponse> FundTransaction(global::Walletrpc.FundTransactionRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ConstructTransactionResponse> ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.ConstructTransactionResponse> ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SignTransactionResponse> SignTransaction(global::Walletrpc.SignTransactionRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SignTransactionResponse> SignTransaction(global::Walletrpc.SignTransactionRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PublishTransactionResponse> PublishTransaction(global::Walletrpc.PublishTransactionRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PublishTransactionResponse> PublishTransaction(global::Walletrpc.PublishTransactionRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PurchaseTicketsResponse> PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.PurchaseTicketsResponse> PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.RevokeTicketsResponse> RevokeTickets(global::Walletrpc.RevokeTicketsRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for WalletService</summary>
-    public class WalletServiceClient : ClientBase<WalletServiceClient>
+    public partial class WalletServiceClient : grpc::ClientBase<WalletServiceClient>
     {
       /// <summary>Creates a new client for WalletService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public WalletServiceClient(Channel channel) : base(channel)
+      public WalletServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for WalletService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public WalletServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public WalletServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -476,379 +488,428 @@ namespace Walletrpc {
       }
 
       /// <summary>
-      ///  Queries
+      /// Queries
       /// </summary>
-      public virtual global::Walletrpc.PingResponse Ping(global::Walletrpc.PingRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Walletrpc.PingResponse Ping(global::Walletrpc.PingRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Ping(request, new CallOptions(headers, deadline, cancellationToken));
+        return Ping(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  Queries
+      /// Queries
       /// </summary>
-      public virtual global::Walletrpc.PingResponse Ping(global::Walletrpc.PingRequest request, CallOptions options)
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Walletrpc.PingResponse Ping(global::Walletrpc.PingRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Ping, null, options, request);
       }
       /// <summary>
-      ///  Queries
+      /// Queries
       /// </summary>
-      public virtual AsyncUnaryCall<global::Walletrpc.PingResponse> PingAsync(global::Walletrpc.PingRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PingResponse> PingAsync(global::Walletrpc.PingRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return PingAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return PingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  Queries
+      /// Queries
       /// </summary>
-      public virtual AsyncUnaryCall<global::Walletrpc.PingResponse> PingAsync(global::Walletrpc.PingRequest request, CallOptions options)
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PingResponse> PingAsync(global::Walletrpc.PingRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Ping, null, options, request);
       }
-      public virtual global::Walletrpc.NetworkResponse Network(global::Walletrpc.NetworkRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.NetworkResponse Network(global::Walletrpc.NetworkRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Network(request, new CallOptions(headers, deadline, cancellationToken));
+        return Network(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.NetworkResponse Network(global::Walletrpc.NetworkRequest request, CallOptions options)
+      public virtual global::Walletrpc.NetworkResponse Network(global::Walletrpc.NetworkRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Network, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NetworkResponse> NetworkAsync(global::Walletrpc.NetworkRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NetworkResponse> NetworkAsync(global::Walletrpc.NetworkRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return NetworkAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return NetworkAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NetworkResponse> NetworkAsync(global::Walletrpc.NetworkRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NetworkResponse> NetworkAsync(global::Walletrpc.NetworkRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Network, null, options, request);
       }
-      public virtual global::Walletrpc.AccountNumberResponse AccountNumber(global::Walletrpc.AccountNumberRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.AccountNumberResponse AccountNumber(global::Walletrpc.AccountNumberRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return AccountNumber(request, new CallOptions(headers, deadline, cancellationToken));
+        return AccountNumber(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.AccountNumberResponse AccountNumber(global::Walletrpc.AccountNumberRequest request, CallOptions options)
+      public virtual global::Walletrpc.AccountNumberResponse AccountNumber(global::Walletrpc.AccountNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AccountNumber, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AccountNumberResponse> AccountNumberAsync(global::Walletrpc.AccountNumberRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AccountNumberResponse> AccountNumberAsync(global::Walletrpc.AccountNumberRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return AccountNumberAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return AccountNumberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AccountNumberResponse> AccountNumberAsync(global::Walletrpc.AccountNumberRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AccountNumberResponse> AccountNumberAsync(global::Walletrpc.AccountNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AccountNumber, null, options, request);
       }
-      public virtual global::Walletrpc.AccountsResponse Accounts(global::Walletrpc.AccountsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.AccountsResponse Accounts(global::Walletrpc.AccountsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Accounts(request, new CallOptions(headers, deadline, cancellationToken));
+        return Accounts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.AccountsResponse Accounts(global::Walletrpc.AccountsRequest request, CallOptions options)
+      public virtual global::Walletrpc.AccountsResponse Accounts(global::Walletrpc.AccountsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Accounts, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AccountsResponse> AccountsAsync(global::Walletrpc.AccountsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AccountsResponse> AccountsAsync(global::Walletrpc.AccountsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return AccountsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return AccountsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AccountsResponse> AccountsAsync(global::Walletrpc.AccountsRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AccountsResponse> AccountsAsync(global::Walletrpc.AccountsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Accounts, null, options, request);
       }
-      public virtual global::Walletrpc.BalanceResponse Balance(global::Walletrpc.BalanceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.BalanceResponse Balance(global::Walletrpc.BalanceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Balance(request, new CallOptions(headers, deadline, cancellationToken));
+        return Balance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.BalanceResponse Balance(global::Walletrpc.BalanceRequest request, CallOptions options)
+      public virtual global::Walletrpc.BalanceResponse Balance(global::Walletrpc.BalanceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Balance, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.BalanceResponse> BalanceAsync(global::Walletrpc.BalanceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.BalanceResponse> BalanceAsync(global::Walletrpc.BalanceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return BalanceAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return BalanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.BalanceResponse> BalanceAsync(global::Walletrpc.BalanceRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.BalanceResponse> BalanceAsync(global::Walletrpc.BalanceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Balance, null, options, request);
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.GetTransactionsResponse> GetTransactions(global::Walletrpc.GetTransactionsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.GetTransactionsResponse> GetTransactions(global::Walletrpc.GetTransactionsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GetTransactions(request, new CallOptions(headers, deadline, cancellationToken));
+        return GetTransactions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.GetTransactionsResponse> GetTransactions(global::Walletrpc.GetTransactionsRequest request, CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.GetTransactionsResponse> GetTransactions(global::Walletrpc.GetTransactionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_GetTransactions, null, options, request);
       }
-      public virtual global::Walletrpc.TicketPriceResponse TicketPrice(global::Walletrpc.TicketPriceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.TicketPriceResponse TicketPrice(global::Walletrpc.TicketPriceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return TicketPrice(request, new CallOptions(headers, deadline, cancellationToken));
+        return TicketPrice(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.TicketPriceResponse TicketPrice(global::Walletrpc.TicketPriceRequest request, CallOptions options)
+      public virtual global::Walletrpc.TicketPriceResponse TicketPrice(global::Walletrpc.TicketPriceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_TicketPrice, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.TicketPriceResponse> TicketPriceAsync(global::Walletrpc.TicketPriceRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.TicketPriceResponse> TicketPriceAsync(global::Walletrpc.TicketPriceRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return TicketPriceAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return TicketPriceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.TicketPriceResponse> TicketPriceAsync(global::Walletrpc.TicketPriceRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.TicketPriceResponse> TicketPriceAsync(global::Walletrpc.TicketPriceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_TicketPrice, null, options, request);
       }
-      public virtual global::Walletrpc.StakeInfoResponse StakeInfo(global::Walletrpc.StakeInfoRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.StakeInfoResponse StakeInfo(global::Walletrpc.StakeInfoRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StakeInfo(request, new CallOptions(headers, deadline, cancellationToken));
+        return StakeInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.StakeInfoResponse StakeInfo(global::Walletrpc.StakeInfoRequest request, CallOptions options)
+      public virtual global::Walletrpc.StakeInfoResponse StakeInfo(global::Walletrpc.StakeInfoRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StakeInfo, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StakeInfoResponse> StakeInfoAsync(global::Walletrpc.StakeInfoRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StakeInfoResponse> StakeInfoAsync(global::Walletrpc.StakeInfoRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StakeInfoAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return StakeInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StakeInfoResponse> StakeInfoAsync(global::Walletrpc.StakeInfoRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StakeInfoResponse> StakeInfoAsync(global::Walletrpc.StakeInfoRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StakeInfo, null, options, request);
       }
       /// <summary>
-      ///  Notifications
+      /// Notifications
       /// </summary>
-      public virtual AsyncServerStreamingCall<global::Walletrpc.TransactionNotificationsResponse> TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.TransactionNotificationsResponse> TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return TransactionNotifications(request, new CallOptions(headers, deadline, cancellationToken));
+        return TransactionNotifications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  Notifications
+      /// Notifications
       /// </summary>
-      public virtual AsyncServerStreamingCall<global::Walletrpc.TransactionNotificationsResponse> TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, CallOptions options)
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.TransactionNotificationsResponse> TransactionNotifications(global::Walletrpc.TransactionNotificationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_TransactionNotifications, null, options, request);
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.SpentnessNotificationsResponse> SpentnessNotifications(global::Walletrpc.SpentnessNotificationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.AccountNotificationsResponse> AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SpentnessNotifications(request, new CallOptions(headers, deadline, cancellationToken));
+        return AccountNotifications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.SpentnessNotificationsResponse> SpentnessNotifications(global::Walletrpc.SpentnessNotificationsRequest request, CallOptions options)
-      {
-        return CallInvoker.AsyncServerStreamingCall(__Method_SpentnessNotifications, null, options, request);
-      }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.AccountNotificationsResponse> AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-      {
-        return AccountNotifications(request, new CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.AccountNotificationsResponse> AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.AccountNotificationsResponse> AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_AccountNotifications, null, options, request);
       }
       /// <summary>
-      ///  Control
+      /// Control
       /// </summary>
-      public virtual global::Walletrpc.ChangePassphraseResponse ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Walletrpc.ChangePassphraseResponse ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ChangePassphrase(request, new CallOptions(headers, deadline, cancellationToken));
+        return ChangePassphrase(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  Control
+      /// Control
       /// </summary>
-      public virtual global::Walletrpc.ChangePassphraseResponse ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, CallOptions options)
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Walletrpc.ChangePassphraseResponse ChangePassphrase(global::Walletrpc.ChangePassphraseRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ChangePassphrase, null, options, request);
       }
       /// <summary>
-      ///  Control
+      /// Control
       /// </summary>
-      public virtual AsyncUnaryCall<global::Walletrpc.ChangePassphraseResponse> ChangePassphraseAsync(global::Walletrpc.ChangePassphraseRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ChangePassphraseResponse> ChangePassphraseAsync(global::Walletrpc.ChangePassphraseRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ChangePassphraseAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return ChangePassphraseAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///  Control
+      /// Control
       /// </summary>
-      public virtual AsyncUnaryCall<global::Walletrpc.ChangePassphraseResponse> ChangePassphraseAsync(global::Walletrpc.ChangePassphraseRequest request, CallOptions options)
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ChangePassphraseResponse> ChangePassphraseAsync(global::Walletrpc.ChangePassphraseRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ChangePassphrase, null, options, request);
       }
-      public virtual global::Walletrpc.RenameAccountResponse RenameAccount(global::Walletrpc.RenameAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.RenameAccountResponse RenameAccount(global::Walletrpc.RenameAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return RenameAccount(request, new CallOptions(headers, deadline, cancellationToken));
+        return RenameAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.RenameAccountResponse RenameAccount(global::Walletrpc.RenameAccountRequest request, CallOptions options)
+      public virtual global::Walletrpc.RenameAccountResponse RenameAccount(global::Walletrpc.RenameAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RenameAccount, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.RenameAccountResponse> RenameAccountAsync(global::Walletrpc.RenameAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.RenameAccountResponse> RenameAccountAsync(global::Walletrpc.RenameAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return RenameAccountAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return RenameAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.RenameAccountResponse> RenameAccountAsync(global::Walletrpc.RenameAccountRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.RenameAccountResponse> RenameAccountAsync(global::Walletrpc.RenameAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RenameAccount, null, options, request);
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.RescanResponse> Rescan(global::Walletrpc.RescanRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.RescanResponse> Rescan(global::Walletrpc.RescanRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Rescan(request, new CallOptions(headers, deadline, cancellationToken));
+        return Rescan(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncServerStreamingCall<global::Walletrpc.RescanResponse> Rescan(global::Walletrpc.RescanRequest request, CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.RescanResponse> Rescan(global::Walletrpc.RescanRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_Rescan, null, options, request);
       }
-      public virtual global::Walletrpc.NextAccountResponse NextAccount(global::Walletrpc.NextAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.NextAccountResponse NextAccount(global::Walletrpc.NextAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return NextAccount(request, new CallOptions(headers, deadline, cancellationToken));
+        return NextAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.NextAccountResponse NextAccount(global::Walletrpc.NextAccountRequest request, CallOptions options)
+      public virtual global::Walletrpc.NextAccountResponse NextAccount(global::Walletrpc.NextAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_NextAccount, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NextAccountResponse> NextAccountAsync(global::Walletrpc.NextAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NextAccountResponse> NextAccountAsync(global::Walletrpc.NextAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return NextAccountAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return NextAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NextAccountResponse> NextAccountAsync(global::Walletrpc.NextAccountRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NextAccountResponse> NextAccountAsync(global::Walletrpc.NextAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_NextAccount, null, options, request);
       }
-      public virtual global::Walletrpc.NextAddressResponse NextAddress(global::Walletrpc.NextAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.NextAddressResponse NextAddress(global::Walletrpc.NextAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return NextAddress(request, new CallOptions(headers, deadline, cancellationToken));
+        return NextAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.NextAddressResponse NextAddress(global::Walletrpc.NextAddressRequest request, CallOptions options)
+      public virtual global::Walletrpc.NextAddressResponse NextAddress(global::Walletrpc.NextAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_NextAddress, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NextAddressResponse> NextAddressAsync(global::Walletrpc.NextAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NextAddressResponse> NextAddressAsync(global::Walletrpc.NextAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return NextAddressAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return NextAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.NextAddressResponse> NextAddressAsync(global::Walletrpc.NextAddressRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.NextAddressResponse> NextAddressAsync(global::Walletrpc.NextAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_NextAddress, null, options, request);
       }
-      public virtual global::Walletrpc.ImportPrivateKeyResponse ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.ImportPrivateKeyResponse ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ImportPrivateKey(request, new CallOptions(headers, deadline, cancellationToken));
+        return ImportPrivateKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.ImportPrivateKeyResponse ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, CallOptions options)
+      public virtual global::Walletrpc.ImportPrivateKeyResponse ImportPrivateKey(global::Walletrpc.ImportPrivateKeyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ImportPrivateKey, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKeyAsync(global::Walletrpc.ImportPrivateKeyRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKeyAsync(global::Walletrpc.ImportPrivateKeyRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ImportPrivateKeyAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return ImportPrivateKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKeyAsync(global::Walletrpc.ImportPrivateKeyRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ImportPrivateKeyResponse> ImportPrivateKeyAsync(global::Walletrpc.ImportPrivateKeyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ImportPrivateKey, null, options, request);
       }
-      public virtual global::Walletrpc.ImportScriptResponse ImportScript(global::Walletrpc.ImportScriptRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.ImportScriptResponse ImportScript(global::Walletrpc.ImportScriptRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ImportScript(request, new CallOptions(headers, deadline, cancellationToken));
+        return ImportScript(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.ImportScriptResponse ImportScript(global::Walletrpc.ImportScriptRequest request, CallOptions options)
+      public virtual global::Walletrpc.ImportScriptResponse ImportScript(global::Walletrpc.ImportScriptRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ImportScript, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ImportScriptResponse> ImportScriptAsync(global::Walletrpc.ImportScriptRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ImportScriptResponse> ImportScriptAsync(global::Walletrpc.ImportScriptRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ImportScriptAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return ImportScriptAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ImportScriptResponse> ImportScriptAsync(global::Walletrpc.ImportScriptRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ImportScriptResponse> ImportScriptAsync(global::Walletrpc.ImportScriptRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ImportScript, null, options, request);
       }
-      public virtual global::Walletrpc.FundTransactionResponse FundTransaction(global::Walletrpc.FundTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.FundTransactionResponse FundTransaction(global::Walletrpc.FundTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return FundTransaction(request, new CallOptions(headers, deadline, cancellationToken));
+        return FundTransaction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.FundTransactionResponse FundTransaction(global::Walletrpc.FundTransactionRequest request, CallOptions options)
+      public virtual global::Walletrpc.FundTransactionResponse FundTransaction(global::Walletrpc.FundTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_FundTransaction, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.FundTransactionResponse> FundTransactionAsync(global::Walletrpc.FundTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.FundTransactionResponse> FundTransactionAsync(global::Walletrpc.FundTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return FundTransactionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return FundTransactionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.FundTransactionResponse> FundTransactionAsync(global::Walletrpc.FundTransactionRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.FundTransactionResponse> FundTransactionAsync(global::Walletrpc.FundTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_FundTransaction, null, options, request);
       }
-      public virtual global::Walletrpc.ConstructTransactionResponse ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.ConstructTransactionResponse ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ConstructTransaction(request, new CallOptions(headers, deadline, cancellationToken));
+        return ConstructTransaction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.ConstructTransactionResponse ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, CallOptions options)
+      public virtual global::Walletrpc.ConstructTransactionResponse ConstructTransaction(global::Walletrpc.ConstructTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ConstructTransaction, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ConstructTransactionResponse> ConstructTransactionAsync(global::Walletrpc.ConstructTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ConstructTransactionResponse> ConstructTransactionAsync(global::Walletrpc.ConstructTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return ConstructTransactionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return ConstructTransactionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.ConstructTransactionResponse> ConstructTransactionAsync(global::Walletrpc.ConstructTransactionRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.ConstructTransactionResponse> ConstructTransactionAsync(global::Walletrpc.ConstructTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ConstructTransaction, null, options, request);
       }
-      public virtual global::Walletrpc.SignTransactionResponse SignTransaction(global::Walletrpc.SignTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SignTransactionResponse SignTransaction(global::Walletrpc.SignTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SignTransaction(request, new CallOptions(headers, deadline, cancellationToken));
+        return SignTransaction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SignTransactionResponse SignTransaction(global::Walletrpc.SignTransactionRequest request, CallOptions options)
+      public virtual global::Walletrpc.SignTransactionResponse SignTransaction(global::Walletrpc.SignTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SignTransaction, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SignTransactionResponse> SignTransactionAsync(global::Walletrpc.SignTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SignTransactionResponse> SignTransactionAsync(global::Walletrpc.SignTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SignTransactionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SignTransactionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SignTransactionResponse> SignTransactionAsync(global::Walletrpc.SignTransactionRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SignTransactionResponse> SignTransactionAsync(global::Walletrpc.SignTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SignTransaction, null, options, request);
       }
-      public virtual global::Walletrpc.PublishTransactionResponse PublishTransaction(global::Walletrpc.PublishTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.PublishTransactionResponse PublishTransaction(global::Walletrpc.PublishTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return PublishTransaction(request, new CallOptions(headers, deadline, cancellationToken));
+        return PublishTransaction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.PublishTransactionResponse PublishTransaction(global::Walletrpc.PublishTransactionRequest request, CallOptions options)
+      public virtual global::Walletrpc.PublishTransactionResponse PublishTransaction(global::Walletrpc.PublishTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PublishTransaction, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.PublishTransactionResponse> PublishTransactionAsync(global::Walletrpc.PublishTransactionRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PublishTransactionResponse> PublishTransactionAsync(global::Walletrpc.PublishTransactionRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return PublishTransactionAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return PublishTransactionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.PublishTransactionResponse> PublishTransactionAsync(global::Walletrpc.PublishTransactionRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PublishTransactionResponse> PublishTransactionAsync(global::Walletrpc.PublishTransactionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PublishTransaction, null, options, request);
       }
-      public virtual global::Walletrpc.PurchaseTicketsResponse PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.PurchaseTicketsResponse PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return PurchaseTickets(request, new CallOptions(headers, deadline, cancellationToken));
+        return PurchaseTickets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.PurchaseTicketsResponse PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, CallOptions options)
+      public virtual global::Walletrpc.PurchaseTicketsResponse PurchaseTickets(global::Walletrpc.PurchaseTicketsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PurchaseTickets, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.PurchaseTicketsResponse> PurchaseTicketsAsync(global::Walletrpc.PurchaseTicketsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PurchaseTicketsResponse> PurchaseTicketsAsync(global::Walletrpc.PurchaseTicketsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return PurchaseTicketsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return PurchaseTicketsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.PurchaseTicketsResponse> PurchaseTicketsAsync(global::Walletrpc.PurchaseTicketsRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.PurchaseTicketsResponse> PurchaseTicketsAsync(global::Walletrpc.PurchaseTicketsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PurchaseTickets, null, options, request);
       }
-      public virtual global::Walletrpc.LoadActiveDataFiltersResponse LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.RevokeTicketsResponse RevokeTickets(global::Walletrpc.RevokeTicketsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return LoadActiveDataFilters(request, new CallOptions(headers, deadline, cancellationToken));
+        return RevokeTickets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.LoadActiveDataFiltersResponse LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, CallOptions options)
+      public virtual global::Walletrpc.RevokeTicketsResponse RevokeTickets(global::Walletrpc.RevokeTicketsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RevokeTickets, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.RevokeTicketsResponse> RevokeTicketsAsync(global::Walletrpc.RevokeTicketsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return RevokeTicketsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.RevokeTicketsResponse> RevokeTicketsAsync(global::Walletrpc.RevokeTicketsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RevokeTickets, null, options, request);
+      }
+      public virtual global::Walletrpc.LoadActiveDataFiltersResponse LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return LoadActiveDataFilters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Walletrpc.LoadActiveDataFiltersResponse LoadActiveDataFilters(global::Walletrpc.LoadActiveDataFiltersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_LoadActiveDataFilters, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFiltersAsync(global::Walletrpc.LoadActiveDataFiltersRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFiltersAsync(global::Walletrpc.LoadActiveDataFiltersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return LoadActiveDataFiltersAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return LoadActiveDataFiltersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFiltersAsync(global::Walletrpc.LoadActiveDataFiltersRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.LoadActiveDataFiltersResponse> LoadActiveDataFiltersAsync(global::Walletrpc.LoadActiveDataFiltersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_LoadActiveDataFilters, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override WalletServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new WalletServiceClient(configuration);
@@ -856,9 +917,10 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(WalletServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(WalletServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_Ping, serviceImpl.Ping)
           .AddMethod(__Method_Network, serviceImpl.Network)
           .AddMethod(__Method_AccountNumber, serviceImpl.AccountNumber)
@@ -868,7 +930,6 @@ namespace Walletrpc {
           .AddMethod(__Method_TicketPrice, serviceImpl.TicketPrice)
           .AddMethod(__Method_StakeInfo, serviceImpl.StakeInfo)
           .AddMethod(__Method_TransactionNotifications, serviceImpl.TransactionNotifications)
-          .AddMethod(__Method_SpentnessNotifications, serviceImpl.SpentnessNotifications)
           .AddMethod(__Method_AccountNotifications, serviceImpl.AccountNotifications)
           .AddMethod(__Method_ChangePassphrase, serviceImpl.ChangePassphrase)
           .AddMethod(__Method_RenameAccount, serviceImpl.RenameAccount)
@@ -882,82 +943,83 @@ namespace Walletrpc {
           .AddMethod(__Method_SignTransaction, serviceImpl.SignTransaction)
           .AddMethod(__Method_PublishTransaction, serviceImpl.PublishTransaction)
           .AddMethod(__Method_PurchaseTickets, serviceImpl.PurchaseTickets)
+          .AddMethod(__Method_RevokeTickets, serviceImpl.RevokeTickets)
           .AddMethod(__Method_LoadActiveDataFilters, serviceImpl.LoadActiveDataFilters).Build();
     }
 
   }
-  public static class WalletLoaderService
+  public static partial class WalletLoaderService
   {
     static readonly string __ServiceName = "walletrpc.WalletLoaderService";
 
-    static readonly Marshaller<global::Walletrpc.WalletExistsRequest> __Marshaller_WalletExistsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.WalletExistsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.WalletExistsResponse> __Marshaller_WalletExistsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.WalletExistsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.CreateWalletRequest> __Marshaller_CreateWalletRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CreateWalletRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.CreateWalletResponse> __Marshaller_CreateWalletResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CreateWalletResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.OpenWalletRequest> __Marshaller_OpenWalletRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.OpenWalletRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.OpenWalletResponse> __Marshaller_OpenWalletResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.OpenWalletResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.CloseWalletRequest> __Marshaller_CloseWalletRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CloseWalletRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.CloseWalletResponse> __Marshaller_CloseWalletResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CloseWalletResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StartConsensusRpcRequest> __Marshaller_StartConsensusRpcRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartConsensusRpcRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StartConsensusRpcResponse> __Marshaller_StartConsensusRpcResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartConsensusRpcResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.DiscoverAddressesRequest> __Marshaller_DiscoverAddressesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DiscoverAddressesRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.DiscoverAddressesResponse> __Marshaller_DiscoverAddressesResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DiscoverAddressesResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SubscribeToBlockNotificationsRequest> __Marshaller_SubscribeToBlockNotificationsRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SubscribeToBlockNotificationsRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SubscribeToBlockNotificationsResponse> __Marshaller_SubscribeToBlockNotificationsResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SubscribeToBlockNotificationsResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.FetchHeadersRequest> __Marshaller_FetchHeadersRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FetchHeadersRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.FetchHeadersResponse> __Marshaller_FetchHeadersResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FetchHeadersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.WalletExistsRequest> __Marshaller_WalletExistsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.WalletExistsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.WalletExistsResponse> __Marshaller_WalletExistsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.WalletExistsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.CreateWalletRequest> __Marshaller_CreateWalletRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CreateWalletRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.CreateWalletResponse> __Marshaller_CreateWalletResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CreateWalletResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.OpenWalletRequest> __Marshaller_OpenWalletRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.OpenWalletRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.OpenWalletResponse> __Marshaller_OpenWalletResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.OpenWalletResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.CloseWalletRequest> __Marshaller_CloseWalletRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CloseWalletRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.CloseWalletResponse> __Marshaller_CloseWalletResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.CloseWalletResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StartConsensusRpcRequest> __Marshaller_StartConsensusRpcRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartConsensusRpcRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StartConsensusRpcResponse> __Marshaller_StartConsensusRpcResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartConsensusRpcResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.DiscoverAddressesRequest> __Marshaller_DiscoverAddressesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DiscoverAddressesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.DiscoverAddressesResponse> __Marshaller_DiscoverAddressesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DiscoverAddressesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SubscribeToBlockNotificationsRequest> __Marshaller_SubscribeToBlockNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SubscribeToBlockNotificationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SubscribeToBlockNotificationsResponse> __Marshaller_SubscribeToBlockNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SubscribeToBlockNotificationsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.FetchHeadersRequest> __Marshaller_FetchHeadersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FetchHeadersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.FetchHeadersResponse> __Marshaller_FetchHeadersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.FetchHeadersResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.WalletExistsRequest, global::Walletrpc.WalletExistsResponse> __Method_WalletExists = new Method<global::Walletrpc.WalletExistsRequest, global::Walletrpc.WalletExistsResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.WalletExistsRequest, global::Walletrpc.WalletExistsResponse> __Method_WalletExists = new grpc::Method<global::Walletrpc.WalletExistsRequest, global::Walletrpc.WalletExistsResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "WalletExists",
         __Marshaller_WalletExistsRequest,
         __Marshaller_WalletExistsResponse);
 
-    static readonly Method<global::Walletrpc.CreateWalletRequest, global::Walletrpc.CreateWalletResponse> __Method_CreateWallet = new Method<global::Walletrpc.CreateWalletRequest, global::Walletrpc.CreateWalletResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.CreateWalletRequest, global::Walletrpc.CreateWalletResponse> __Method_CreateWallet = new grpc::Method<global::Walletrpc.CreateWalletRequest, global::Walletrpc.CreateWalletResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "CreateWallet",
         __Marshaller_CreateWalletRequest,
         __Marshaller_CreateWalletResponse);
 
-    static readonly Method<global::Walletrpc.OpenWalletRequest, global::Walletrpc.OpenWalletResponse> __Method_OpenWallet = new Method<global::Walletrpc.OpenWalletRequest, global::Walletrpc.OpenWalletResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.OpenWalletRequest, global::Walletrpc.OpenWalletResponse> __Method_OpenWallet = new grpc::Method<global::Walletrpc.OpenWalletRequest, global::Walletrpc.OpenWalletResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "OpenWallet",
         __Marshaller_OpenWalletRequest,
         __Marshaller_OpenWalletResponse);
 
-    static readonly Method<global::Walletrpc.CloseWalletRequest, global::Walletrpc.CloseWalletResponse> __Method_CloseWallet = new Method<global::Walletrpc.CloseWalletRequest, global::Walletrpc.CloseWalletResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.CloseWalletRequest, global::Walletrpc.CloseWalletResponse> __Method_CloseWallet = new grpc::Method<global::Walletrpc.CloseWalletRequest, global::Walletrpc.CloseWalletResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "CloseWallet",
         __Marshaller_CloseWalletRequest,
         __Marshaller_CloseWalletResponse);
 
-    static readonly Method<global::Walletrpc.StartConsensusRpcRequest, global::Walletrpc.StartConsensusRpcResponse> __Method_StartConsensusRpc = new Method<global::Walletrpc.StartConsensusRpcRequest, global::Walletrpc.StartConsensusRpcResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.StartConsensusRpcRequest, global::Walletrpc.StartConsensusRpcResponse> __Method_StartConsensusRpc = new grpc::Method<global::Walletrpc.StartConsensusRpcRequest, global::Walletrpc.StartConsensusRpcResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "StartConsensusRpc",
         __Marshaller_StartConsensusRpcRequest,
         __Marshaller_StartConsensusRpcResponse);
 
-    static readonly Method<global::Walletrpc.DiscoverAddressesRequest, global::Walletrpc.DiscoverAddressesResponse> __Method_DiscoverAddresses = new Method<global::Walletrpc.DiscoverAddressesRequest, global::Walletrpc.DiscoverAddressesResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.DiscoverAddressesRequest, global::Walletrpc.DiscoverAddressesResponse> __Method_DiscoverAddresses = new grpc::Method<global::Walletrpc.DiscoverAddressesRequest, global::Walletrpc.DiscoverAddressesResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "DiscoverAddresses",
         __Marshaller_DiscoverAddressesRequest,
         __Marshaller_DiscoverAddressesResponse);
 
-    static readonly Method<global::Walletrpc.SubscribeToBlockNotificationsRequest, global::Walletrpc.SubscribeToBlockNotificationsResponse> __Method_SubscribeToBlockNotifications = new Method<global::Walletrpc.SubscribeToBlockNotificationsRequest, global::Walletrpc.SubscribeToBlockNotificationsResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SubscribeToBlockNotificationsRequest, global::Walletrpc.SubscribeToBlockNotificationsResponse> __Method_SubscribeToBlockNotifications = new grpc::Method<global::Walletrpc.SubscribeToBlockNotificationsRequest, global::Walletrpc.SubscribeToBlockNotificationsResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SubscribeToBlockNotifications",
         __Marshaller_SubscribeToBlockNotificationsRequest,
         __Marshaller_SubscribeToBlockNotificationsResponse);
 
-    static readonly Method<global::Walletrpc.FetchHeadersRequest, global::Walletrpc.FetchHeadersResponse> __Method_FetchHeaders = new Method<global::Walletrpc.FetchHeadersRequest, global::Walletrpc.FetchHeadersResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.FetchHeadersRequest, global::Walletrpc.FetchHeadersResponse> __Method_FetchHeaders = new grpc::Method<global::Walletrpc.FetchHeadersRequest, global::Walletrpc.FetchHeadersResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "FetchHeaders",
         __Marshaller_FetchHeadersRequest,
@@ -970,61 +1032,61 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of WalletLoaderService</summary>
-    public abstract class WalletLoaderServiceBase
+    public abstract partial class WalletLoaderServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.WalletExistsResponse> WalletExists(global::Walletrpc.WalletExistsRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.WalletExistsResponse> WalletExists(global::Walletrpc.WalletExistsRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.CreateWalletResponse> CreateWallet(global::Walletrpc.CreateWalletRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.CreateWalletResponse> CreateWallet(global::Walletrpc.CreateWalletRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.OpenWalletResponse> OpenWallet(global::Walletrpc.OpenWalletRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.OpenWalletResponse> OpenWallet(global::Walletrpc.OpenWalletRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.CloseWalletResponse> CloseWallet(global::Walletrpc.CloseWalletRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.CloseWalletResponse> CloseWallet(global::Walletrpc.CloseWalletRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.FetchHeadersResponse> FetchHeaders(global::Walletrpc.FetchHeadersRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.FetchHeadersResponse> FetchHeaders(global::Walletrpc.FetchHeadersRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for WalletLoaderService</summary>
-    public class WalletLoaderServiceClient : ClientBase<WalletLoaderServiceClient>
+    public partial class WalletLoaderServiceClient : grpc::ClientBase<WalletLoaderServiceClient>
     {
       /// <summary>Creates a new client for WalletLoaderService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public WalletLoaderServiceClient(Channel channel) : base(channel)
+      public WalletLoaderServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for WalletLoaderService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public WalletLoaderServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public WalletLoaderServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -1037,134 +1099,135 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.WalletExistsResponse WalletExists(global::Walletrpc.WalletExistsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.WalletExistsResponse WalletExists(global::Walletrpc.WalletExistsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return WalletExists(request, new CallOptions(headers, deadline, cancellationToken));
+        return WalletExists(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.WalletExistsResponse WalletExists(global::Walletrpc.WalletExistsRequest request, CallOptions options)
+      public virtual global::Walletrpc.WalletExistsResponse WalletExists(global::Walletrpc.WalletExistsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_WalletExists, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.WalletExistsResponse> WalletExistsAsync(global::Walletrpc.WalletExistsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.WalletExistsResponse> WalletExistsAsync(global::Walletrpc.WalletExistsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return WalletExistsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return WalletExistsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.WalletExistsResponse> WalletExistsAsync(global::Walletrpc.WalletExistsRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.WalletExistsResponse> WalletExistsAsync(global::Walletrpc.WalletExistsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_WalletExists, null, options, request);
       }
-      public virtual global::Walletrpc.CreateWalletResponse CreateWallet(global::Walletrpc.CreateWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.CreateWalletResponse CreateWallet(global::Walletrpc.CreateWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return CreateWallet(request, new CallOptions(headers, deadline, cancellationToken));
+        return CreateWallet(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.CreateWalletResponse CreateWallet(global::Walletrpc.CreateWalletRequest request, CallOptions options)
+      public virtual global::Walletrpc.CreateWalletResponse CreateWallet(global::Walletrpc.CreateWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateWallet, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.CreateWalletResponse> CreateWalletAsync(global::Walletrpc.CreateWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.CreateWalletResponse> CreateWalletAsync(global::Walletrpc.CreateWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return CreateWalletAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return CreateWalletAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.CreateWalletResponse> CreateWalletAsync(global::Walletrpc.CreateWalletRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.CreateWalletResponse> CreateWalletAsync(global::Walletrpc.CreateWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateWallet, null, options, request);
       }
-      public virtual global::Walletrpc.OpenWalletResponse OpenWallet(global::Walletrpc.OpenWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.OpenWalletResponse OpenWallet(global::Walletrpc.OpenWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return OpenWallet(request, new CallOptions(headers, deadline, cancellationToken));
+        return OpenWallet(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.OpenWalletResponse OpenWallet(global::Walletrpc.OpenWalletRequest request, CallOptions options)
+      public virtual global::Walletrpc.OpenWalletResponse OpenWallet(global::Walletrpc.OpenWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_OpenWallet, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.OpenWalletResponse> OpenWalletAsync(global::Walletrpc.OpenWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.OpenWalletResponse> OpenWalletAsync(global::Walletrpc.OpenWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return OpenWalletAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return OpenWalletAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.OpenWalletResponse> OpenWalletAsync(global::Walletrpc.OpenWalletRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.OpenWalletResponse> OpenWalletAsync(global::Walletrpc.OpenWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_OpenWallet, null, options, request);
       }
-      public virtual global::Walletrpc.CloseWalletResponse CloseWallet(global::Walletrpc.CloseWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.CloseWalletResponse CloseWallet(global::Walletrpc.CloseWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return CloseWallet(request, new CallOptions(headers, deadline, cancellationToken));
+        return CloseWallet(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.CloseWalletResponse CloseWallet(global::Walletrpc.CloseWalletRequest request, CallOptions options)
+      public virtual global::Walletrpc.CloseWalletResponse CloseWallet(global::Walletrpc.CloseWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CloseWallet, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.CloseWalletResponse> CloseWalletAsync(global::Walletrpc.CloseWalletRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.CloseWalletResponse> CloseWalletAsync(global::Walletrpc.CloseWalletRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return CloseWalletAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return CloseWalletAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.CloseWalletResponse> CloseWalletAsync(global::Walletrpc.CloseWalletRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.CloseWalletResponse> CloseWalletAsync(global::Walletrpc.CloseWalletRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CloseWallet, null, options, request);
       }
-      public virtual global::Walletrpc.StartConsensusRpcResponse StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.StartConsensusRpcResponse StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StartConsensusRpc(request, new CallOptions(headers, deadline, cancellationToken));
+        return StartConsensusRpc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.StartConsensusRpcResponse StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, CallOptions options)
+      public virtual global::Walletrpc.StartConsensusRpcResponse StartConsensusRpc(global::Walletrpc.StartConsensusRpcRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StartConsensusRpc, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpcAsync(global::Walletrpc.StartConsensusRpcRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpcAsync(global::Walletrpc.StartConsensusRpcRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StartConsensusRpcAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return StartConsensusRpcAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpcAsync(global::Walletrpc.StartConsensusRpcRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StartConsensusRpcResponse> StartConsensusRpcAsync(global::Walletrpc.StartConsensusRpcRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StartConsensusRpc, null, options, request);
       }
-      public virtual global::Walletrpc.DiscoverAddressesResponse DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.DiscoverAddressesResponse DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return DiscoverAddresses(request, new CallOptions(headers, deadline, cancellationToken));
+        return DiscoverAddresses(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.DiscoverAddressesResponse DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, CallOptions options)
+      public virtual global::Walletrpc.DiscoverAddressesResponse DiscoverAddresses(global::Walletrpc.DiscoverAddressesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DiscoverAddresses, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddressesAsync(global::Walletrpc.DiscoverAddressesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddressesAsync(global::Walletrpc.DiscoverAddressesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return DiscoverAddressesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return DiscoverAddressesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddressesAsync(global::Walletrpc.DiscoverAddressesRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.DiscoverAddressesResponse> DiscoverAddressesAsync(global::Walletrpc.DiscoverAddressesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DiscoverAddresses, null, options, request);
       }
-      public virtual global::Walletrpc.SubscribeToBlockNotificationsResponse SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SubscribeToBlockNotificationsResponse SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SubscribeToBlockNotifications(request, new CallOptions(headers, deadline, cancellationToken));
+        return SubscribeToBlockNotifications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SubscribeToBlockNotificationsResponse SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, CallOptions options)
+      public virtual global::Walletrpc.SubscribeToBlockNotificationsResponse SubscribeToBlockNotifications(global::Walletrpc.SubscribeToBlockNotificationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SubscribeToBlockNotifications, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotificationsAsync(global::Walletrpc.SubscribeToBlockNotificationsRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotificationsAsync(global::Walletrpc.SubscribeToBlockNotificationsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SubscribeToBlockNotificationsAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SubscribeToBlockNotificationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotificationsAsync(global::Walletrpc.SubscribeToBlockNotificationsRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SubscribeToBlockNotificationsResponse> SubscribeToBlockNotificationsAsync(global::Walletrpc.SubscribeToBlockNotificationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SubscribeToBlockNotifications, null, options, request);
       }
-      public virtual global::Walletrpc.FetchHeadersResponse FetchHeaders(global::Walletrpc.FetchHeadersRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.FetchHeadersResponse FetchHeaders(global::Walletrpc.FetchHeadersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return FetchHeaders(request, new CallOptions(headers, deadline, cancellationToken));
+        return FetchHeaders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.FetchHeadersResponse FetchHeaders(global::Walletrpc.FetchHeadersRequest request, CallOptions options)
+      public virtual global::Walletrpc.FetchHeadersResponse FetchHeaders(global::Walletrpc.FetchHeadersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_FetchHeaders, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.FetchHeadersResponse> FetchHeadersAsync(global::Walletrpc.FetchHeadersRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.FetchHeadersResponse> FetchHeadersAsync(global::Walletrpc.FetchHeadersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return FetchHeadersAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return FetchHeadersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.FetchHeadersResponse> FetchHeadersAsync(global::Walletrpc.FetchHeadersRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.FetchHeadersResponse> FetchHeadersAsync(global::Walletrpc.FetchHeadersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_FetchHeaders, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override WalletLoaderServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new WalletLoaderServiceClient(configuration);
@@ -1172,9 +1235,10 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(WalletLoaderServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(WalletLoaderServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_WalletExists, serviceImpl.WalletExists)
           .AddMethod(__Method_CreateWallet, serviceImpl.CreateWallet)
           .AddMethod(__Method_OpenWallet, serviceImpl.OpenWallet)
@@ -1186,114 +1250,114 @@ namespace Walletrpc {
     }
 
   }
-  public static class TicketBuyerService
+  public static partial class TicketBuyerService
   {
     static readonly string __ServiceName = "walletrpc.TicketBuyerService";
 
-    static readonly Marshaller<global::Walletrpc.StartAutoBuyerRequest> __Marshaller_StartAutoBuyerRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartAutoBuyerRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StartAutoBuyerResponse> __Marshaller_StartAutoBuyerResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartAutoBuyerResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StopAutoBuyerRequest> __Marshaller_StopAutoBuyerRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StopAutoBuyerRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.StopAutoBuyerResponse> __Marshaller_StopAutoBuyerResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StopAutoBuyerResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TicketBuyerConfigRequest> __Marshaller_TicketBuyerConfigRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketBuyerConfigRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.TicketBuyerConfigResponse> __Marshaller_TicketBuyerConfigResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketBuyerConfigResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetAccountRequest> __Marshaller_SetAccountRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetAccountRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetAccountResponse> __Marshaller_SetAccountResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetAccountResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetBalanceToMaintainRequest> __Marshaller_SetBalanceToMaintainRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetBalanceToMaintainRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetBalanceToMaintainResponse> __Marshaller_SetBalanceToMaintainResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetBalanceToMaintainResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxFeeRequest> __Marshaller_SetMaxFeeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxFeeRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxFeeResponse> __Marshaller_SetMaxFeeResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxFeeResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPriceRelativeRequest> __Marshaller_SetMaxPriceRelativeRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceRelativeRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPriceRelativeResponse> __Marshaller_SetMaxPriceRelativeResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceRelativeResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPriceAbsoluteRequest> __Marshaller_SetMaxPriceAbsoluteRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceAbsoluteRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPriceAbsoluteResponse> __Marshaller_SetMaxPriceAbsoluteResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceAbsoluteResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetVotingAddressRequest> __Marshaller_SetVotingAddressRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVotingAddressRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetVotingAddressResponse> __Marshaller_SetVotingAddressResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVotingAddressResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetPoolAddressRequest> __Marshaller_SetPoolAddressRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolAddressRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetPoolAddressResponse> __Marshaller_SetPoolAddressResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolAddressResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetPoolFeesRequest> __Marshaller_SetPoolFeesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolFeesRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetPoolFeesResponse> __Marshaller_SetPoolFeesResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolFeesResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPerBlockRequest> __Marshaller_SetMaxPerBlockRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPerBlockRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetMaxPerBlockResponse> __Marshaller_SetMaxPerBlockResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPerBlockResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StartAutoBuyerRequest> __Marshaller_StartAutoBuyerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartAutoBuyerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StartAutoBuyerResponse> __Marshaller_StartAutoBuyerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StartAutoBuyerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StopAutoBuyerRequest> __Marshaller_StopAutoBuyerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StopAutoBuyerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.StopAutoBuyerResponse> __Marshaller_StopAutoBuyerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StopAutoBuyerResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TicketBuyerConfigRequest> __Marshaller_TicketBuyerConfigRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketBuyerConfigRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.TicketBuyerConfigResponse> __Marshaller_TicketBuyerConfigResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketBuyerConfigResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetAccountRequest> __Marshaller_SetAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetAccountRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetAccountResponse> __Marshaller_SetAccountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetAccountResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetBalanceToMaintainRequest> __Marshaller_SetBalanceToMaintainRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetBalanceToMaintainRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetBalanceToMaintainResponse> __Marshaller_SetBalanceToMaintainResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetBalanceToMaintainResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxFeeRequest> __Marshaller_SetMaxFeeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxFeeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxFeeResponse> __Marshaller_SetMaxFeeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxFeeResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPriceRelativeRequest> __Marshaller_SetMaxPriceRelativeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceRelativeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPriceRelativeResponse> __Marshaller_SetMaxPriceRelativeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceRelativeResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPriceAbsoluteRequest> __Marshaller_SetMaxPriceAbsoluteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceAbsoluteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPriceAbsoluteResponse> __Marshaller_SetMaxPriceAbsoluteResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPriceAbsoluteResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetVotingAddressRequest> __Marshaller_SetVotingAddressRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVotingAddressRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetVotingAddressResponse> __Marshaller_SetVotingAddressResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVotingAddressResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetPoolAddressRequest> __Marshaller_SetPoolAddressRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolAddressRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetPoolAddressResponse> __Marshaller_SetPoolAddressResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolAddressResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetPoolFeesRequest> __Marshaller_SetPoolFeesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolFeesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetPoolFeesResponse> __Marshaller_SetPoolFeesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetPoolFeesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPerBlockRequest> __Marshaller_SetMaxPerBlockRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPerBlockRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetMaxPerBlockResponse> __Marshaller_SetMaxPerBlockResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetMaxPerBlockResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.StartAutoBuyerRequest, global::Walletrpc.StartAutoBuyerResponse> __Method_StartAutoBuyer = new Method<global::Walletrpc.StartAutoBuyerRequest, global::Walletrpc.StartAutoBuyerResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.StartAutoBuyerRequest, global::Walletrpc.StartAutoBuyerResponse> __Method_StartAutoBuyer = new grpc::Method<global::Walletrpc.StartAutoBuyerRequest, global::Walletrpc.StartAutoBuyerResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "StartAutoBuyer",
         __Marshaller_StartAutoBuyerRequest,
         __Marshaller_StartAutoBuyerResponse);
 
-    static readonly Method<global::Walletrpc.StopAutoBuyerRequest, global::Walletrpc.StopAutoBuyerResponse> __Method_StopAutoBuyer = new Method<global::Walletrpc.StopAutoBuyerRequest, global::Walletrpc.StopAutoBuyerResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.StopAutoBuyerRequest, global::Walletrpc.StopAutoBuyerResponse> __Method_StopAutoBuyer = new grpc::Method<global::Walletrpc.StopAutoBuyerRequest, global::Walletrpc.StopAutoBuyerResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "StopAutoBuyer",
         __Marshaller_StopAutoBuyerRequest,
         __Marshaller_StopAutoBuyerResponse);
 
-    static readonly Method<global::Walletrpc.TicketBuyerConfigRequest, global::Walletrpc.TicketBuyerConfigResponse> __Method_TicketBuyerConfig = new Method<global::Walletrpc.TicketBuyerConfigRequest, global::Walletrpc.TicketBuyerConfigResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.TicketBuyerConfigRequest, global::Walletrpc.TicketBuyerConfigResponse> __Method_TicketBuyerConfig = new grpc::Method<global::Walletrpc.TicketBuyerConfigRequest, global::Walletrpc.TicketBuyerConfigResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "TicketBuyerConfig",
         __Marshaller_TicketBuyerConfigRequest,
         __Marshaller_TicketBuyerConfigResponse);
 
-    static readonly Method<global::Walletrpc.SetAccountRequest, global::Walletrpc.SetAccountResponse> __Method_SetAccount = new Method<global::Walletrpc.SetAccountRequest, global::Walletrpc.SetAccountResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetAccountRequest, global::Walletrpc.SetAccountResponse> __Method_SetAccount = new grpc::Method<global::Walletrpc.SetAccountRequest, global::Walletrpc.SetAccountResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetAccount",
         __Marshaller_SetAccountRequest,
         __Marshaller_SetAccountResponse);
 
-    static readonly Method<global::Walletrpc.SetBalanceToMaintainRequest, global::Walletrpc.SetBalanceToMaintainResponse> __Method_SetBalanceToMaintain = new Method<global::Walletrpc.SetBalanceToMaintainRequest, global::Walletrpc.SetBalanceToMaintainResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetBalanceToMaintainRequest, global::Walletrpc.SetBalanceToMaintainResponse> __Method_SetBalanceToMaintain = new grpc::Method<global::Walletrpc.SetBalanceToMaintainRequest, global::Walletrpc.SetBalanceToMaintainResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetBalanceToMaintain",
         __Marshaller_SetBalanceToMaintainRequest,
         __Marshaller_SetBalanceToMaintainResponse);
 
-    static readonly Method<global::Walletrpc.SetMaxFeeRequest, global::Walletrpc.SetMaxFeeResponse> __Method_SetMaxFee = new Method<global::Walletrpc.SetMaxFeeRequest, global::Walletrpc.SetMaxFeeResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetMaxFeeRequest, global::Walletrpc.SetMaxFeeResponse> __Method_SetMaxFee = new grpc::Method<global::Walletrpc.SetMaxFeeRequest, global::Walletrpc.SetMaxFeeResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetMaxFee",
         __Marshaller_SetMaxFeeRequest,
         __Marshaller_SetMaxFeeResponse);
 
-    static readonly Method<global::Walletrpc.SetMaxPriceRelativeRequest, global::Walletrpc.SetMaxPriceRelativeResponse> __Method_SetMaxPriceRelative = new Method<global::Walletrpc.SetMaxPriceRelativeRequest, global::Walletrpc.SetMaxPriceRelativeResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetMaxPriceRelativeRequest, global::Walletrpc.SetMaxPriceRelativeResponse> __Method_SetMaxPriceRelative = new grpc::Method<global::Walletrpc.SetMaxPriceRelativeRequest, global::Walletrpc.SetMaxPriceRelativeResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetMaxPriceRelative",
         __Marshaller_SetMaxPriceRelativeRequest,
         __Marshaller_SetMaxPriceRelativeResponse);
 
-    static readonly Method<global::Walletrpc.SetMaxPriceAbsoluteRequest, global::Walletrpc.SetMaxPriceAbsoluteResponse> __Method_SetMaxPriceAbsolute = new Method<global::Walletrpc.SetMaxPriceAbsoluteRequest, global::Walletrpc.SetMaxPriceAbsoluteResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetMaxPriceAbsoluteRequest, global::Walletrpc.SetMaxPriceAbsoluteResponse> __Method_SetMaxPriceAbsolute = new grpc::Method<global::Walletrpc.SetMaxPriceAbsoluteRequest, global::Walletrpc.SetMaxPriceAbsoluteResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetMaxPriceAbsolute",
         __Marshaller_SetMaxPriceAbsoluteRequest,
         __Marshaller_SetMaxPriceAbsoluteResponse);
 
-    static readonly Method<global::Walletrpc.SetVotingAddressRequest, global::Walletrpc.SetVotingAddressResponse> __Method_SetVotingAddress = new Method<global::Walletrpc.SetVotingAddressRequest, global::Walletrpc.SetVotingAddressResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetVotingAddressRequest, global::Walletrpc.SetVotingAddressResponse> __Method_SetVotingAddress = new grpc::Method<global::Walletrpc.SetVotingAddressRequest, global::Walletrpc.SetVotingAddressResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetVotingAddress",
         __Marshaller_SetVotingAddressRequest,
         __Marshaller_SetVotingAddressResponse);
 
-    static readonly Method<global::Walletrpc.SetPoolAddressRequest, global::Walletrpc.SetPoolAddressResponse> __Method_SetPoolAddress = new Method<global::Walletrpc.SetPoolAddressRequest, global::Walletrpc.SetPoolAddressResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetPoolAddressRequest, global::Walletrpc.SetPoolAddressResponse> __Method_SetPoolAddress = new grpc::Method<global::Walletrpc.SetPoolAddressRequest, global::Walletrpc.SetPoolAddressResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetPoolAddress",
         __Marshaller_SetPoolAddressRequest,
         __Marshaller_SetPoolAddressResponse);
 
-    static readonly Method<global::Walletrpc.SetPoolFeesRequest, global::Walletrpc.SetPoolFeesResponse> __Method_SetPoolFees = new Method<global::Walletrpc.SetPoolFeesRequest, global::Walletrpc.SetPoolFeesResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetPoolFeesRequest, global::Walletrpc.SetPoolFeesResponse> __Method_SetPoolFees = new grpc::Method<global::Walletrpc.SetPoolFeesRequest, global::Walletrpc.SetPoolFeesResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetPoolFees",
         __Marshaller_SetPoolFeesRequest,
         __Marshaller_SetPoolFeesResponse);
 
-    static readonly Method<global::Walletrpc.SetMaxPerBlockRequest, global::Walletrpc.SetMaxPerBlockResponse> __Method_SetMaxPerBlock = new Method<global::Walletrpc.SetMaxPerBlockRequest, global::Walletrpc.SetMaxPerBlockResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetMaxPerBlockRequest, global::Walletrpc.SetMaxPerBlockResponse> __Method_SetMaxPerBlock = new grpc::Method<global::Walletrpc.SetMaxPerBlockRequest, global::Walletrpc.SetMaxPerBlockResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetMaxPerBlock",
         __Marshaller_SetMaxPerBlockRequest,
@@ -1306,81 +1370,81 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of TicketBuyerService</summary>
-    public abstract class TicketBuyerServiceBase
+    public abstract partial class TicketBuyerServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetAccountResponse> SetAccount(global::Walletrpc.SetAccountRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetAccountResponse> SetAccount(global::Walletrpc.SetAccountRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxFeeResponse> SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxFeeResponse> SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetVotingAddressResponse> SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetVotingAddressResponse> SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetPoolAddressResponse> SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetPoolAddressResponse> SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetPoolFeesResponse> SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetPoolFeesResponse> SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for TicketBuyerService</summary>
-    public class TicketBuyerServiceClient : ClientBase<TicketBuyerServiceClient>
+    public partial class TicketBuyerServiceClient : grpc::ClientBase<TicketBuyerServiceClient>
     {
       /// <summary>Creates a new client for TicketBuyerService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public TicketBuyerServiceClient(Channel channel) : base(channel)
+      public TicketBuyerServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for TicketBuyerService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public TicketBuyerServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public TicketBuyerServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -1393,198 +1457,199 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.StartAutoBuyerResponse StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.StartAutoBuyerResponse StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StartAutoBuyer(request, new CallOptions(headers, deadline, cancellationToken));
+        return StartAutoBuyer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.StartAutoBuyerResponse StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, CallOptions options)
+      public virtual global::Walletrpc.StartAutoBuyerResponse StartAutoBuyer(global::Walletrpc.StartAutoBuyerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StartAutoBuyer, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyerAsync(global::Walletrpc.StartAutoBuyerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyerAsync(global::Walletrpc.StartAutoBuyerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StartAutoBuyerAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return StartAutoBuyerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyerAsync(global::Walletrpc.StartAutoBuyerRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StartAutoBuyerResponse> StartAutoBuyerAsync(global::Walletrpc.StartAutoBuyerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StartAutoBuyer, null, options, request);
       }
-      public virtual global::Walletrpc.StopAutoBuyerResponse StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.StopAutoBuyerResponse StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StopAutoBuyer(request, new CallOptions(headers, deadline, cancellationToken));
+        return StopAutoBuyer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.StopAutoBuyerResponse StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, CallOptions options)
+      public virtual global::Walletrpc.StopAutoBuyerResponse StopAutoBuyer(global::Walletrpc.StopAutoBuyerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_StopAutoBuyer, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyerAsync(global::Walletrpc.StopAutoBuyerRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyerAsync(global::Walletrpc.StopAutoBuyerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return StopAutoBuyerAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return StopAutoBuyerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyerAsync(global::Walletrpc.StopAutoBuyerRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.StopAutoBuyerResponse> StopAutoBuyerAsync(global::Walletrpc.StopAutoBuyerRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StopAutoBuyer, null, options, request);
       }
-      public virtual global::Walletrpc.TicketBuyerConfigResponse TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.TicketBuyerConfigResponse TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return TicketBuyerConfig(request, new CallOptions(headers, deadline, cancellationToken));
+        return TicketBuyerConfig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.TicketBuyerConfigResponse TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, CallOptions options)
+      public virtual global::Walletrpc.TicketBuyerConfigResponse TicketBuyerConfig(global::Walletrpc.TicketBuyerConfigRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_TicketBuyerConfig, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfigAsync(global::Walletrpc.TicketBuyerConfigRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfigAsync(global::Walletrpc.TicketBuyerConfigRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return TicketBuyerConfigAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return TicketBuyerConfigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfigAsync(global::Walletrpc.TicketBuyerConfigRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.TicketBuyerConfigResponse> TicketBuyerConfigAsync(global::Walletrpc.TicketBuyerConfigRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_TicketBuyerConfig, null, options, request);
       }
-      public virtual global::Walletrpc.SetAccountResponse SetAccount(global::Walletrpc.SetAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetAccountResponse SetAccount(global::Walletrpc.SetAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetAccount(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetAccountResponse SetAccount(global::Walletrpc.SetAccountRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetAccountResponse SetAccount(global::Walletrpc.SetAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetAccount, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetAccountResponse> SetAccountAsync(global::Walletrpc.SetAccountRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetAccountResponse> SetAccountAsync(global::Walletrpc.SetAccountRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetAccountAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetAccountResponse> SetAccountAsync(global::Walletrpc.SetAccountRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetAccountResponse> SetAccountAsync(global::Walletrpc.SetAccountRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetAccount, null, options, request);
       }
-      public virtual global::Walletrpc.SetBalanceToMaintainResponse SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetBalanceToMaintainResponse SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetBalanceToMaintain(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetBalanceToMaintain(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetBalanceToMaintainResponse SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetBalanceToMaintainResponse SetBalanceToMaintain(global::Walletrpc.SetBalanceToMaintainRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetBalanceToMaintain, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintainAsync(global::Walletrpc.SetBalanceToMaintainRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintainAsync(global::Walletrpc.SetBalanceToMaintainRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetBalanceToMaintainAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetBalanceToMaintainAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintainAsync(global::Walletrpc.SetBalanceToMaintainRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetBalanceToMaintainResponse> SetBalanceToMaintainAsync(global::Walletrpc.SetBalanceToMaintainRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetBalanceToMaintain, null, options, request);
       }
-      public virtual global::Walletrpc.SetMaxFeeResponse SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetMaxFeeResponse SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxFee(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxFee(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetMaxFeeResponse SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetMaxFeeResponse SetMaxFee(global::Walletrpc.SetMaxFeeRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetMaxFee, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxFeeResponse> SetMaxFeeAsync(global::Walletrpc.SetMaxFeeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxFeeResponse> SetMaxFeeAsync(global::Walletrpc.SetMaxFeeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxFeeAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxFeeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxFeeResponse> SetMaxFeeAsync(global::Walletrpc.SetMaxFeeRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxFeeResponse> SetMaxFeeAsync(global::Walletrpc.SetMaxFeeRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetMaxFee, null, options, request);
       }
-      public virtual global::Walletrpc.SetMaxPriceRelativeResponse SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetMaxPriceRelativeResponse SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPriceRelative(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPriceRelative(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetMaxPriceRelativeResponse SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetMaxPriceRelativeResponse SetMaxPriceRelative(global::Walletrpc.SetMaxPriceRelativeRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetMaxPriceRelative, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelativeAsync(global::Walletrpc.SetMaxPriceRelativeRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelativeAsync(global::Walletrpc.SetMaxPriceRelativeRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPriceRelativeAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPriceRelativeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelativeAsync(global::Walletrpc.SetMaxPriceRelativeRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPriceRelativeResponse> SetMaxPriceRelativeAsync(global::Walletrpc.SetMaxPriceRelativeRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetMaxPriceRelative, null, options, request);
       }
-      public virtual global::Walletrpc.SetMaxPriceAbsoluteResponse SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetMaxPriceAbsoluteResponse SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPriceAbsolute(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPriceAbsolute(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetMaxPriceAbsoluteResponse SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetMaxPriceAbsoluteResponse SetMaxPriceAbsolute(global::Walletrpc.SetMaxPriceAbsoluteRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetMaxPriceAbsolute, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsoluteAsync(global::Walletrpc.SetMaxPriceAbsoluteRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsoluteAsync(global::Walletrpc.SetMaxPriceAbsoluteRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPriceAbsoluteAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPriceAbsoluteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsoluteAsync(global::Walletrpc.SetMaxPriceAbsoluteRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPriceAbsoluteResponse> SetMaxPriceAbsoluteAsync(global::Walletrpc.SetMaxPriceAbsoluteRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetMaxPriceAbsolute, null, options, request);
       }
-      public virtual global::Walletrpc.SetVotingAddressResponse SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetVotingAddressResponse SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetVotingAddress(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetVotingAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetVotingAddressResponse SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetVotingAddressResponse SetVotingAddress(global::Walletrpc.SetVotingAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetVotingAddress, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetVotingAddressResponse> SetVotingAddressAsync(global::Walletrpc.SetVotingAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetVotingAddressResponse> SetVotingAddressAsync(global::Walletrpc.SetVotingAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetVotingAddressAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetVotingAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetVotingAddressResponse> SetVotingAddressAsync(global::Walletrpc.SetVotingAddressRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetVotingAddressResponse> SetVotingAddressAsync(global::Walletrpc.SetVotingAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetVotingAddress, null, options, request);
       }
-      public virtual global::Walletrpc.SetPoolAddressResponse SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetPoolAddressResponse SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetPoolAddress(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetPoolAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetPoolAddressResponse SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetPoolAddressResponse SetPoolAddress(global::Walletrpc.SetPoolAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetPoolAddress, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetPoolAddressResponse> SetPoolAddressAsync(global::Walletrpc.SetPoolAddressRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetPoolAddressResponse> SetPoolAddressAsync(global::Walletrpc.SetPoolAddressRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetPoolAddressAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetPoolAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetPoolAddressResponse> SetPoolAddressAsync(global::Walletrpc.SetPoolAddressRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetPoolAddressResponse> SetPoolAddressAsync(global::Walletrpc.SetPoolAddressRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetPoolAddress, null, options, request);
       }
-      public virtual global::Walletrpc.SetPoolFeesResponse SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetPoolFeesResponse SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetPoolFees(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetPoolFees(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetPoolFeesResponse SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetPoolFeesResponse SetPoolFees(global::Walletrpc.SetPoolFeesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetPoolFees, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetPoolFeesResponse> SetPoolFeesAsync(global::Walletrpc.SetPoolFeesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetPoolFeesResponse> SetPoolFeesAsync(global::Walletrpc.SetPoolFeesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetPoolFeesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetPoolFeesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetPoolFeesResponse> SetPoolFeesAsync(global::Walletrpc.SetPoolFeesRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetPoolFeesResponse> SetPoolFeesAsync(global::Walletrpc.SetPoolFeesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetPoolFees, null, options, request);
       }
-      public virtual global::Walletrpc.SetMaxPerBlockResponse SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetMaxPerBlockResponse SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPerBlock(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPerBlock(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetMaxPerBlockResponse SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetMaxPerBlockResponse SetMaxPerBlock(global::Walletrpc.SetMaxPerBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetMaxPerBlock, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlockAsync(global::Walletrpc.SetMaxPerBlockRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlockAsync(global::Walletrpc.SetMaxPerBlockRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetMaxPerBlockAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetMaxPerBlockAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlockAsync(global::Walletrpc.SetMaxPerBlockRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetMaxPerBlockResponse> SetMaxPerBlockAsync(global::Walletrpc.SetMaxPerBlockRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetMaxPerBlock, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override TicketBuyerServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new TicketBuyerServiceClient(configuration);
@@ -1592,9 +1657,10 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(TicketBuyerServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(TicketBuyerServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_StartAutoBuyer, serviceImpl.StartAutoBuyer)
           .AddMethod(__Method_StopAutoBuyer, serviceImpl.StopAutoBuyer)
           .AddMethod(__Method_TicketBuyerConfig, serviceImpl.TicketBuyerConfig)
@@ -1610,24 +1676,24 @@ namespace Walletrpc {
     }
 
   }
-  public static class SeedService
+  public static partial class SeedService
   {
     static readonly string __ServiceName = "walletrpc.SeedService";
 
-    static readonly Marshaller<global::Walletrpc.GenerateRandomSeedRequest> __Marshaller_GenerateRandomSeedRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GenerateRandomSeedRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.GenerateRandomSeedResponse> __Marshaller_GenerateRandomSeedResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GenerateRandomSeedResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.DecodeSeedRequest> __Marshaller_DecodeSeedRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DecodeSeedRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.DecodeSeedResponse> __Marshaller_DecodeSeedResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DecodeSeedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.GenerateRandomSeedRequest> __Marshaller_GenerateRandomSeedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GenerateRandomSeedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.GenerateRandomSeedResponse> __Marshaller_GenerateRandomSeedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.GenerateRandomSeedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.DecodeSeedRequest> __Marshaller_DecodeSeedRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DecodeSeedRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.DecodeSeedResponse> __Marshaller_DecodeSeedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.DecodeSeedResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.GenerateRandomSeedRequest, global::Walletrpc.GenerateRandomSeedResponse> __Method_GenerateRandomSeed = new Method<global::Walletrpc.GenerateRandomSeedRequest, global::Walletrpc.GenerateRandomSeedResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.GenerateRandomSeedRequest, global::Walletrpc.GenerateRandomSeedResponse> __Method_GenerateRandomSeed = new grpc::Method<global::Walletrpc.GenerateRandomSeedRequest, global::Walletrpc.GenerateRandomSeedResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "GenerateRandomSeed",
         __Marshaller_GenerateRandomSeedRequest,
         __Marshaller_GenerateRandomSeedResponse);
 
-    static readonly Method<global::Walletrpc.DecodeSeedRequest, global::Walletrpc.DecodeSeedResponse> __Method_DecodeSeed = new Method<global::Walletrpc.DecodeSeedRequest, global::Walletrpc.DecodeSeedResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.DecodeSeedRequest, global::Walletrpc.DecodeSeedResponse> __Method_DecodeSeed = new grpc::Method<global::Walletrpc.DecodeSeedRequest, global::Walletrpc.DecodeSeedResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "DecodeSeed",
         __Marshaller_DecodeSeedRequest,
@@ -1640,31 +1706,31 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of SeedService</summary>
-    public abstract class SeedServiceBase
+    public abstract partial class SeedServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.DecodeSeedResponse> DecodeSeed(global::Walletrpc.DecodeSeedRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.DecodeSeedResponse> DecodeSeed(global::Walletrpc.DecodeSeedRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for SeedService</summary>
-    public class SeedServiceClient : ClientBase<SeedServiceClient>
+    public partial class SeedServiceClient : grpc::ClientBase<SeedServiceClient>
     {
       /// <summary>Creates a new client for SeedService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public SeedServiceClient(Channel channel) : base(channel)
+      public SeedServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for SeedService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public SeedServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public SeedServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -1677,38 +1743,39 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.GenerateRandomSeedResponse GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.GenerateRandomSeedResponse GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GenerateRandomSeed(request, new CallOptions(headers, deadline, cancellationToken));
+        return GenerateRandomSeed(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.GenerateRandomSeedResponse GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, CallOptions options)
+      public virtual global::Walletrpc.GenerateRandomSeedResponse GenerateRandomSeed(global::Walletrpc.GenerateRandomSeedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GenerateRandomSeed, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeedAsync(global::Walletrpc.GenerateRandomSeedRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeedAsync(global::Walletrpc.GenerateRandomSeedRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return GenerateRandomSeedAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return GenerateRandomSeedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeedAsync(global::Walletrpc.GenerateRandomSeedRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.GenerateRandomSeedResponse> GenerateRandomSeedAsync(global::Walletrpc.GenerateRandomSeedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GenerateRandomSeed, null, options, request);
       }
-      public virtual global::Walletrpc.DecodeSeedResponse DecodeSeed(global::Walletrpc.DecodeSeedRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.DecodeSeedResponse DecodeSeed(global::Walletrpc.DecodeSeedRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return DecodeSeed(request, new CallOptions(headers, deadline, cancellationToken));
+        return DecodeSeed(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.DecodeSeedResponse DecodeSeed(global::Walletrpc.DecodeSeedRequest request, CallOptions options)
+      public virtual global::Walletrpc.DecodeSeedResponse DecodeSeed(global::Walletrpc.DecodeSeedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DecodeSeed, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.DecodeSeedResponse> DecodeSeedAsync(global::Walletrpc.DecodeSeedRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.DecodeSeedResponse> DecodeSeedAsync(global::Walletrpc.DecodeSeedRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return DecodeSeedAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return DecodeSeedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.DecodeSeedResponse> DecodeSeedAsync(global::Walletrpc.DecodeSeedRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.DecodeSeedResponse> DecodeSeedAsync(global::Walletrpc.DecodeSeedRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DecodeSeed, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override SeedServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SeedServiceClient(configuration);
@@ -1716,23 +1783,24 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(SeedServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(SeedServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GenerateRandomSeed, serviceImpl.GenerateRandomSeed)
           .AddMethod(__Method_DecodeSeed, serviceImpl.DecodeSeed).Build();
     }
 
   }
-  public static class AgendaService
+  public static partial class AgendaService
   {
     static readonly string __ServiceName = "walletrpc.AgendaService";
 
-    static readonly Marshaller<global::Walletrpc.AgendasRequest> __Marshaller_AgendasRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AgendasRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.AgendasResponse> __Marshaller_AgendasResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AgendasResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AgendasRequest> __Marshaller_AgendasRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AgendasRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.AgendasResponse> __Marshaller_AgendasResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AgendasResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.AgendasRequest, global::Walletrpc.AgendasResponse> __Method_Agendas = new Method<global::Walletrpc.AgendasRequest, global::Walletrpc.AgendasResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.AgendasRequest, global::Walletrpc.AgendasResponse> __Method_Agendas = new grpc::Method<global::Walletrpc.AgendasRequest, global::Walletrpc.AgendasResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "Agendas",
         __Marshaller_AgendasRequest,
@@ -1745,26 +1813,26 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of AgendaService</summary>
-    public abstract class AgendaServiceBase
+    public abstract partial class AgendaServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AgendasResponse> Agendas(global::Walletrpc.AgendasRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.AgendasResponse> Agendas(global::Walletrpc.AgendasRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for AgendaService</summary>
-    public class AgendaServiceClient : ClientBase<AgendaServiceClient>
+    public partial class AgendaServiceClient : grpc::ClientBase<AgendaServiceClient>
     {
       /// <summary>Creates a new client for AgendaService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public AgendaServiceClient(Channel channel) : base(channel)
+      public AgendaServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for AgendaService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public AgendaServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public AgendaServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -1777,22 +1845,23 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.AgendasResponse Agendas(global::Walletrpc.AgendasRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.AgendasResponse Agendas(global::Walletrpc.AgendasRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return Agendas(request, new CallOptions(headers, deadline, cancellationToken));
+        return Agendas(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.AgendasResponse Agendas(global::Walletrpc.AgendasRequest request, CallOptions options)
+      public virtual global::Walletrpc.AgendasResponse Agendas(global::Walletrpc.AgendasRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_Agendas, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AgendasResponse> AgendasAsync(global::Walletrpc.AgendasRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AgendasResponse> AgendasAsync(global::Walletrpc.AgendasRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return AgendasAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return AgendasAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.AgendasResponse> AgendasAsync(global::Walletrpc.AgendasRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.AgendasResponse> AgendasAsync(global::Walletrpc.AgendasRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_Agendas, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override AgendaServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new AgendaServiceClient(configuration);
@@ -1800,31 +1869,32 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(AgendaServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(AgendaServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_Agendas, serviceImpl.Agendas).Build();
     }
 
   }
-  public static class VotingService
+  public static partial class VotingService
   {
     static readonly string __ServiceName = "walletrpc.VotingService";
 
-    static readonly Marshaller<global::Walletrpc.VoteChoicesRequest> __Marshaller_VoteChoicesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VoteChoicesRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.VoteChoicesResponse> __Marshaller_VoteChoicesResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VoteChoicesResponse.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetVoteChoicesRequest> __Marshaller_SetVoteChoicesRequest = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVoteChoicesRequest.Parser.ParseFrom);
-    static readonly Marshaller<global::Walletrpc.SetVoteChoicesResponse> __Marshaller_SetVoteChoicesResponse = Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVoteChoicesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.VoteChoicesRequest> __Marshaller_VoteChoicesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VoteChoicesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.VoteChoicesResponse> __Marshaller_VoteChoicesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.VoteChoicesResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetVoteChoicesRequest> __Marshaller_SetVoteChoicesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVoteChoicesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.SetVoteChoicesResponse> __Marshaller_SetVoteChoicesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.SetVoteChoicesResponse.Parser.ParseFrom);
 
-    static readonly Method<global::Walletrpc.VoteChoicesRequest, global::Walletrpc.VoteChoicesResponse> __Method_VoteChoices = new Method<global::Walletrpc.VoteChoicesRequest, global::Walletrpc.VoteChoicesResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.VoteChoicesRequest, global::Walletrpc.VoteChoicesResponse> __Method_VoteChoices = new grpc::Method<global::Walletrpc.VoteChoicesRequest, global::Walletrpc.VoteChoicesResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "VoteChoices",
         __Marshaller_VoteChoicesRequest,
         __Marshaller_VoteChoicesResponse);
 
-    static readonly Method<global::Walletrpc.SetVoteChoicesRequest, global::Walletrpc.SetVoteChoicesResponse> __Method_SetVoteChoices = new Method<global::Walletrpc.SetVoteChoicesRequest, global::Walletrpc.SetVoteChoicesResponse>(
-        MethodType.Unary,
+    static readonly grpc::Method<global::Walletrpc.SetVoteChoicesRequest, global::Walletrpc.SetVoteChoicesResponse> __Method_SetVoteChoices = new grpc::Method<global::Walletrpc.SetVoteChoicesRequest, global::Walletrpc.SetVoteChoicesResponse>(
+        grpc::MethodType.Unary,
         __ServiceName,
         "SetVoteChoices",
         __Marshaller_SetVoteChoicesRequest,
@@ -1837,31 +1907,31 @@ namespace Walletrpc {
     }
 
     /// <summary>Base class for server-side implementations of VotingService</summary>
-    public abstract class VotingServiceBase
+    public abstract partial class VotingServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.VoteChoicesResponse> VoteChoices(global::Walletrpc.VoteChoicesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.VoteChoicesResponse> VoteChoices(global::Walletrpc.VoteChoicesRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, grpc::ServerCallContext context)
       {
-        throw new RpcException(new Status(StatusCode.Unimplemented, ""));
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
     /// <summary>Client for VotingService</summary>
-    public class VotingServiceClient : ClientBase<VotingServiceClient>
+    public partial class VotingServiceClient : grpc::ClientBase<VotingServiceClient>
     {
       /// <summary>Creates a new client for VotingService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public VotingServiceClient(Channel channel) : base(channel)
+      public VotingServiceClient(grpc::Channel channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for VotingService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public VotingServiceClient(CallInvoker callInvoker) : base(callInvoker)
+      public VotingServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
@@ -1874,38 +1944,39 @@ namespace Walletrpc {
       {
       }
 
-      public virtual global::Walletrpc.VoteChoicesResponse VoteChoices(global::Walletrpc.VoteChoicesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.VoteChoicesResponse VoteChoices(global::Walletrpc.VoteChoicesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return VoteChoices(request, new CallOptions(headers, deadline, cancellationToken));
+        return VoteChoices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.VoteChoicesResponse VoteChoices(global::Walletrpc.VoteChoicesRequest request, CallOptions options)
+      public virtual global::Walletrpc.VoteChoicesResponse VoteChoices(global::Walletrpc.VoteChoicesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_VoteChoices, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.VoteChoicesResponse> VoteChoicesAsync(global::Walletrpc.VoteChoicesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.VoteChoicesResponse> VoteChoicesAsync(global::Walletrpc.VoteChoicesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return VoteChoicesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return VoteChoicesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.VoteChoicesResponse> VoteChoicesAsync(global::Walletrpc.VoteChoicesRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.VoteChoicesResponse> VoteChoicesAsync(global::Walletrpc.VoteChoicesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_VoteChoices, null, options, request);
       }
-      public virtual global::Walletrpc.SetVoteChoicesResponse SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::Walletrpc.SetVoteChoicesResponse SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetVoteChoices(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetVoteChoices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Walletrpc.SetVoteChoicesResponse SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, CallOptions options)
+      public virtual global::Walletrpc.SetVoteChoicesResponse SetVoteChoices(global::Walletrpc.SetVoteChoicesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetVoteChoices, null, options, request);
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoicesAsync(global::Walletrpc.SetVoteChoicesRequest request, Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoicesAsync(global::Walletrpc.SetVoteChoicesRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return SetVoteChoicesAsync(request, new CallOptions(headers, deadline, cancellationToken));
+        return SetVoteChoicesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual AsyncUnaryCall<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoicesAsync(global::Walletrpc.SetVoteChoicesRequest request, CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.SetVoteChoicesResponse> SetVoteChoicesAsync(global::Walletrpc.SetVoteChoicesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetVoteChoices, null, options, request);
       }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override VotingServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new VotingServiceClient(configuration);
@@ -1913,9 +1984,10 @@ namespace Walletrpc {
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
-    public static ServerServiceDefinition BindService(VotingServiceBase serviceImpl)
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(VotingServiceBase serviceImpl)
     {
-      return ServerServiceDefinition.CreateBuilder()
+      return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_VoteChoices, serviceImpl.VoteChoices)
           .AddMethod(__Method_SetVoteChoices, serviceImpl.SetVoteChoices).Build();
     }

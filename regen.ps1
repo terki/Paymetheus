@@ -1,4 +1,4 @@
-$Tools = ".\packages\Grpc.Tools.0.15.0\tools\windows_x64"
+$Tools = ".\packages\Grpc.Tools.1.3.0\tools\windows_x64"
 $ProtoDir = ".\Paymetheus.Rpc\protos"
 $OutDir = "Paymetheus.Rpc"
 

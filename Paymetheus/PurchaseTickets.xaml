@@ -13,11 +13,11 @@
       WindowWidth="640" WindowHeight="480" d:DesignWidth="780" d:DesignHeight="1500"
       DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=PurchaseTicketsViewModel}">
 
-    <ScrollViewer Style="{StaticResource MainPaneScrollViewerStyle}">
-        <StackPanel Margin="40 20 40 0">
+    <ScrollViewer Style="{StaticResource MainPaneScrollViewerStyle}" BorderThickness="40">
+        <StackPanel Margin="40 20 40 40">
             <StackPanel>
                 <TextBlock Margin="0 0 0 10" Grid.Column="0" Text="Purchase tickets" Style="{StaticResource shellMediumHeaderTextBlockStyle}"/>
-                <TextBlock Margin="0 0 0 20" Grid.Column="0" Style="{StaticResource shellDescriptionTextBlockStyle}">
+                <TextBlock Margin="0 0 0 20" Grid.Column="0" Style="{StaticResource shellDescriptionTextBlockStyle}" MaxWidth="700">
                     In order to stake mine, you must make a deposit to the network in the form of a ticket.
                     The ticket enters the owner in a lottery for the next several months, at which time it
                     may be chosen at any block for validation.
@@ -131,7 +131,20 @@
 
             <Button Style="{DynamicResource ButtonBlue}" Margin="0 20 0 0" Content="PURCHASE" HorizontalAlignment="Left" Command="{Binding Execute}" Width="100"/>
 
-            <TextBox Text="{Binding ResponseString, Mode=TwoWay}" Foreground="#FF0C1E3E" FontSize="16" Margin="0 40 0 0" Background="Transparent" BorderThickness="0" IsReadOnly="True" TextWrapping="Wrap"/>
+            <TextBlock Text="{Binding ResponseString, Mode=OneWay}" Foreground="#FF0C1E3E" FontSize="16" Margin="0 40 0 0" Background="Transparent" TextWrapping="Wrap">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
 
             <StackPanel Visibility="{Binding VotePreferencesVisibility, Mode=OneWay}">
                 <StackPanel.Resources>
@@ -146,12 +159,22 @@
                         </Grid>
                     </DataTemplate>
                 </StackPanel.Resources>
-                <TextBlock FontSize="20" Margin="0 0 0 12">
+                <TextBlock FontSize="20" Margin="0 24 0 12">
                     <Run Text="Voting preferences"/>
                     <Run Text="(v"/><Run Text="{Binding VoteVersion, FallbackValue=#, Mode=OneTime}"/><Run Text=")"/>
                 </TextBlock>
                 <ItemsControl Padding="0 0 0 20" HorizontalContentAlignment="Left" ScrollViewer.CanContentScroll="True"
                               ItemsSource="{Binding AgendaChoices, Mode=OneTime}" ItemTemplate="{StaticResource AgendaChoiceTemplate}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontSize="20" Margin="0 24 0 12" Text="Revoke tickets"/>
+                <TextBlock Margin="0 0 0 6" Grid.Column="0" Style="{StaticResource shellDescriptionTextBlockStyle}" MaxWidth="700">
+                    Tickets that expire before being chosen to vote or for which votes are not created and mined
+                    must be revoked to unlock the Decred used to purchase the ticket.  Stakepools may produces
+                    revocations on your behalf but are not required to.  Just like votes, Decred unlocked by
+                    revocations must mature before the outputs become spendable.
+                </TextBlock>
+                <Button Style="{DynamicResource ButtonBlue}" Margin="0 12" Content="REVOKE TICKETS" HorizontalAlignment="Left" Command="{Binding RevokeTickets}" Width="130"/>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>

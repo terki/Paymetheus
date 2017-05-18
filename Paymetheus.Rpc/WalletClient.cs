@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 9, 2);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 10, 0);
 
         public static void Initialize()
         {
@@ -412,6 +412,16 @@ namespace Paymetheus.Rpc
             var response = await client.PurchaseTicketsAsync(request, cancellationToken: _tokenSource.Token);
 
             return response.TicketHashes.Select(h => new Blake256Hash(h.ToByteArray())).ToList();
+        }
+
+        public async Task RevokeTicketsAsync(string passphrase)
+        {
+            var client = new WalletService.WalletServiceClient(_channel);
+            var request = new RevokeTicketsRequest
+            {
+                Passphrase = ByteString.CopyFromUtf8(passphrase),
+            };
+            await client.RevokeTicketsAsync(request, cancellationToken: _tokenSource.Token);
         }
 
         public async Task<Amount> TicketPriceAsync()
