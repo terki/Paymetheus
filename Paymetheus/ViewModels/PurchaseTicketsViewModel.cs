@@ -266,31 +266,6 @@ namespace Paymetheus.ViewModels
             }
         }
 
-
-        private Amount _splitFee = TransactionFees.DefaultFeePerKb;
-        public string SplitFee
-        {
-            get { return _splitFee.ToString(); }
-            set
-            {
-                try
-                {
-                    var splitFee = Denomination.Decred.AmountFromString(value);
-
-                    if (splitFee < MinFeePerKb)
-                        throw new ArgumentException($"Fee is too low (must be at least {MinFeePerKb})");
-                    if (splitFee >= HighFeeThreshold)
-                        throw new ArgumentException($"Fee is too high (must be less than {HighFeeThreshold})");
-
-                    _splitFee = splitFee;
-                }
-                finally
-                {
-                    EnableOrDisableSendCommand();
-                }
-            }
-        }
-
         private const uint MinExpiry = 2;
         private uint _expiry = 16; // The default expiry is 16.
         public uint Expiry
@@ -464,9 +439,6 @@ namespace Paymetheus.ViewModels
             int requiredConfirms = 2; // TODO allow user to set
             uint expiryHeight = _expiry + (uint)synchronizer.SyncedBlockHeight;
 
-            Amount splitFeeLocal = _splitFee;
-            Amount ticketFeeLocal = _ticketFee;
-
             Address votingAddress;
             Address poolFeeAddress;
             decimal poolFees;
@@ -503,7 +475,7 @@ namespace Paymetheus.ViewModels
             {
                 purchaseResponse = await walletClient.PurchaseTicketsAsync(account, spendLimit,
                     requiredConfirms, votingAddress, _ticketsToPurchase, poolFeeAddress,
-                    poolFees, expiryHeight, _splitFee, _ticketFee, passphrase);
+                    poolFees, expiryHeight, TransactionFees.DefaultFeePerKb, _ticketFee, passphrase);
             }
             catch (Grpc.Core.RpcException ex)
             {

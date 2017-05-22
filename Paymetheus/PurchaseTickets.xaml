@@ -67,43 +67,36 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
-                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="200"/>
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Style="{StaticResource shellDescriptionTextBlockStyle}" Text="Source account"/>
+                <TextBlock Grid.Row="0" Text="Source account"/>
                 <ComboBox Grid.Row="0" Grid.Column="1" Width="250" HorizontalAlignment="Left"
                           ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=SynchronizerViewModel.Accounts}"
                           SelectedItem="{Binding SelectedSourceAccount}"
                           ItemTemplate="{StaticResource ComboBoxAccountDataTemplate}"
                           Style="{DynamicResource ComboBoxStyleWithCurrency}" ItemContainerStyle="{DynamicResource ComboBoxItemStyle}"/>
 
-                <TextBlock Grid.Row="1" Style="{StaticResource shellDescriptionTextBlockStyle}" Text="Tickets to purchase"/>
+                <TextBlock Grid.Row="1" Text="Tickets to purchase"/>
                 <TextBox Grid.Row="1" Grid.Column="1"
-                         Text="{Binding TicketsToPurchase, ValidatesOnExceptions=True}" Height="22" Margin="0,1,0,0" VerticalAlignment="Top"
+                         Text="{Binding TicketsToPurchase, ValidatesOnExceptions=True}"
                          f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
 
-                <TextBlock Grid.Row="2" Text="Ticket fee (DCR/kB)"/>
+                <TextBlock Grid.Row="2" Text="Ticket transation fee (DCR/kB)"/>
                 <TextBox Grid.Row="2" Grid.Column="1"
                          Text="{Binding TicketFee, ValidatesOnExceptions=True}"
                          PreviewTextInput="OutputAmountTextBox_PreviewTextInput"
                          f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
 
-                <TextBlock Grid.Row="3" Text="Split fee (DCR/kB)"/>
-                <TextBox Grid.Row="3" Grid.Column="1"
-                         Text="{Binding SplitFee, ValidatesOnExceptions=True}"
-                         PreviewTextInput="OutputAmountTextBox_PreviewTextInput"
+                <TextBlock Grid.Row="3" Text="Expiry (blocks)" />
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Expiry, ValidatesOnExceptions=True}"
                          f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
 
-                <TextBlock Grid.Row="4" Text="Expiry (blocks)" Style="{StaticResource shellDescriptionTextBlockStyle}" />
-                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Expiry, ValidatesOnExceptions=True}"
-                         f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
-
-                <TextBlock Grid.Row="5" Text="Stake pool preference"/>
-                <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
+                <TextBlock Grid.Row="4" Text="Stake pool preference"/>
+                <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
                     <ComboBox Width="250" HorizontalAlignment="Left"
                           ItemsSource="{Binding Path=ConfiguredStakePools}"
                           DisplayMemberPath="DisplayName"
@@ -111,22 +104,22 @@
                     <Button Content="Manage pools" Command="{Binding ManageStakePools}" Style="{StaticResource ButtonWhite}" Margin="6 0"/>
                 </StackPanel>
 
-                <TextBlock Grid.Row="6" Text="Voting address" Visibility="{Binding VotingAddressOptionVisibility}"/>
-                <TextBox Grid.Row="6" Grid.Column="1" Visibility="{Binding VotingAddressOptionVisibility}"
+                <TextBlock Grid.Row="5" Text="Voting address" Visibility="{Binding VotingAddressOptionVisibility}"/>
+                <TextBox Grid.Row="5" Grid.Column="1" Visibility="{Binding VotingAddressOptionVisibility}"
                          Text="{Binding VotingAddress, Mode=OneWayToSource, ValidatesOnExceptions=True}"
                          Width="250" HorizontalContentAlignment="Left"
                          f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
 
-                <TextBlock Grid.Row="7" Text="Pool fee address" Visibility="{Binding ManualPoolOptionsVisibility}"/>
-                <TextBox Grid.Row="7" Grid.Column="1" Visibility="{Binding ManualPoolOptionsVisibility}"
+                <TextBlock Grid.Row="6" Text="Pool fee address" Visibility="{Binding ManualPoolOptionsVisibility}"/>
+                <TextBox Grid.Row="6" Grid.Column="1" Visibility="{Binding ManualPoolOptionsVisibility}"
                          Text="{Binding PoolFeeAddress, Mode=OneWayToSource, ValidatesOnExceptions=True}"
                          Width="250" HorizontalAlignment="Left"
                          f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
 
-                <TextBlock Grid.Row="8" Text="Pool fees (%)" Visibility="{Binding ManualPoolOptionsVisibility}"/>
-                <TextBox Grid.Row="8" Grid.Column="1" Visibility="{Binding ManualPoolOptionsVisibility}"
+                <TextBlock Grid.Row="7" Text="Pool fees (%)" Visibility="{Binding ManualPoolOptionsVisibility}"/>
+                <TextBox Grid.Row="7" Grid.Column="1" Visibility="{Binding ManualPoolOptionsVisibility}"
                          Text="{Binding PoolFees, ValidatesOnExceptions=True}"
-                         f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text"/>
+                         f:AttachableProperties.UpdateSourceOnEnterProperty="TextBox.Text" />
             </Grid>
 
             <Button Style="{DynamicResource ButtonBlue}" Margin="0 20 0 0" Content="PURCHASE" HorizontalAlignment="Left" Command="{Binding Execute}" Width="100"/>
