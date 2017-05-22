@@ -2,7 +2,6 @@
 // Copyright (c) 2016 The Decred developers
 // Licensed under the ISC license.  See LICENSE file in the project root for full license information.
 
-using Paymetheus.Decred.Script;
 using System;
 using System.Linq;
 
@@ -10,7 +9,7 @@ namespace Paymetheus.Decred.Wallet
 {
     public static class TransactionFees
     {
-        public static readonly Amount DefaultFeePerKb = 1000000;
+        public static readonly Amount DefaultFeePerKb = (long)1e5;
 
         public static Amount FeeForSerializeSize(Amount feePerKb, int txSerializeSize)
         {
