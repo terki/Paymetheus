@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 10, 0);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 11, 0);
 
         public static void Initialize()
         {
