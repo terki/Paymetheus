@@ -457,7 +457,27 @@ namespace Paymetheus.ViewModels
                 // a pool, but for code simplicity it is done this way.  Also, in future versions of the
                 // API when it may be possible to generate a new reward address for each ticket, we will
                 // need to import these scripts ever time.
-                await walletClient.ImportScriptAsync(selection.MultisigVoteScript, false, 0, passphrase);
+                string fraudReason = null;
+                try
+                {
+                    var importResp = await walletClient.ImportScriptAsync(selection.MultisigVoteScript, false, 0, passphrase,
+                        requireRedeemable: true);
+                    if (importResp.Item1 != purchaseInfo.VotingAddress)
+                    {
+                        fraudReason = "The stakepool voting address is not the P2SH address of the voting redeem script.";
+                    }
+                }
+                catch (RpcException ex) when (ex.Status.StatusCode == Grpc.Core.StatusCode.FailedPrecondition)
+                {
+                    fraudReason = "The stakepool 1-of-2 voting script is not redeemable by your wallet.";
+                }
+                if (fraudReason != null)
+                {
+                    MessageBox.Show(fraudReason + "\n\n" +
+                        $"Please report this to the stakepool administrator and the {BlockChain.CurrencyName} developers.",
+                        "Warning");
+                    return false;
+                }
 
                 votingAddress = Address.Decode(purchaseInfo.VotingAddress);
                 poolFeeAddress = Address.Decode(purchaseInfo.FeeAddress);

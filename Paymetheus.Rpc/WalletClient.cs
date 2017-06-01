@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 11, 0);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 12, 0);
 
         public static void Initialize()
         {
@@ -252,7 +252,8 @@ namespace Paymetheus.Rpc
             await client.ImportPrivateKeyAsync(request, cancellationToken: _tokenSource.Token);
         }
 
-        public async Task ImportScriptAsync(byte[] scriptBytes, bool rescan, int scanFrom, string passphrase)
+        public async Task<TupleValue<string, bool>> ImportScriptAsync(byte[] scriptBytes, bool rescan, int scanFrom,
+            string passphrase, bool requireRedeemable)
         {
             if (scriptBytes == null)
                 throw new ArgumentNullException(nameof(scriptBytes));
@@ -266,8 +267,10 @@ namespace Paymetheus.Rpc
                 Rescan = rescan,
                 Passphrase = ByteString.CopyFromUtf8(passphrase), // Poorly named: this outputs UTF8 from a UTF16 System.String
                 ScanFrom = scanFrom,
+                RequireRedeemable = requireRedeemable,
             };
-            await client.ImportScriptAsync(request, cancellationToken: _tokenSource.Token);
+            var resp = await client.ImportScriptAsync(request, cancellationToken: _tokenSource.Token);
+            return TupleValue.Create(resp.P2ShAddress, resp.Redeemable);
         }
 
         private async Task ChangePassphrase(ChangePassphraseRequest.Types.Key which, string oldPassphrase, string newPassphrase)

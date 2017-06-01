@@ -49,7 +49,7 @@ namespace Paymetheus.ViewModels
             try
             {
                 var rpcClient = App.Current.Synchronizer.WalletRpcClient;
-                await rpcClient.ImportScriptAsync(_scriptBytes, false, 0, Passphrase);
+                await rpcClient.ImportScriptAsync(_scriptBytes, false, 0, Passphrase, requireRedeemable: false);
                 if (Rescan)
                 {
                     // TODO: hook the rescan progress somewhere so the shell viewmodel can show when the rescan is over.
