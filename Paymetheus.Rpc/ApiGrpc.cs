@@ -113,10 +113,14 @@ namespace Walletrpc {
     static readonly grpc::Marshaller<global::Walletrpc.TicketPriceResponse> __Marshaller_TicketPriceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TicketPriceResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.StakeInfoRequest> __Marshaller_StakeInfoRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.StakeInfoResponse> __Marshaller_StakeInfoResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.StakeInfoResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.BlockInfoRequest> __Marshaller_BlockInfoRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BlockInfoRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.BlockInfoResponse> __Marshaller_BlockInfoResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.BlockInfoResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.TransactionNotificationsRequest> __Marshaller_TransactionNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.TransactionNotificationsResponse> __Marshaller_TransactionNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.TransactionNotificationsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.AccountNotificationsRequest> __Marshaller_AccountNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.AccountNotificationsResponse> __Marshaller_AccountNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.AccountNotificationsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ConfirmationNotificationsRequest> __Marshaller_ConfirmationNotificationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConfirmationNotificationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Walletrpc.ConfirmationNotificationsResponse> __Marshaller_ConfirmationNotificationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ConfirmationNotificationsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.ChangePassphraseRequest> __Marshaller_ChangePassphraseRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.ChangePassphraseResponse> __Marshaller_ChangePassphraseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.ChangePassphraseResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Walletrpc.RenameAccountRequest> __Marshaller_RenameAccountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Walletrpc.RenameAccountRequest.Parser.ParseFrom);
@@ -202,6 +206,13 @@ namespace Walletrpc {
         __Marshaller_StakeInfoRequest,
         __Marshaller_StakeInfoResponse);
 
+    static readonly grpc::Method<global::Walletrpc.BlockInfoRequest, global::Walletrpc.BlockInfoResponse> __Method_BlockInfo = new grpc::Method<global::Walletrpc.BlockInfoRequest, global::Walletrpc.BlockInfoResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "BlockInfo",
+        __Marshaller_BlockInfoRequest,
+        __Marshaller_BlockInfoResponse);
+
     static readonly grpc::Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse> __Method_TransactionNotifications = new grpc::Method<global::Walletrpc.TransactionNotificationsRequest, global::Walletrpc.TransactionNotificationsResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -215,6 +226,13 @@ namespace Walletrpc {
         "AccountNotifications",
         __Marshaller_AccountNotificationsRequest,
         __Marshaller_AccountNotificationsResponse);
+
+    static readonly grpc::Method<global::Walletrpc.ConfirmationNotificationsRequest, global::Walletrpc.ConfirmationNotificationsResponse> __Method_ConfirmationNotifications = new grpc::Method<global::Walletrpc.ConfirmationNotificationsRequest, global::Walletrpc.ConfirmationNotificationsResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "ConfirmationNotifications",
+        __Marshaller_ConfirmationNotificationsRequest,
+        __Marshaller_ConfirmationNotificationsResponse);
 
     static readonly grpc::Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse> __Method_ChangePassphrase = new grpc::Method<global::Walletrpc.ChangePassphraseRequest, global::Walletrpc.ChangePassphraseResponse>(
         grpc::MethodType.Unary,
@@ -369,6 +387,11 @@ namespace Walletrpc {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Walletrpc.BlockInfoResponse> BlockInfo(global::Walletrpc.BlockInfoRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// Notifications
       /// </summary>
@@ -382,6 +405,11 @@ namespace Walletrpc {
       }
 
       public virtual global::System.Threading.Tasks.Task AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, grpc::IServerStreamWriter<global::Walletrpc.AccountNotificationsResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task ConfirmationNotifications(grpc::IAsyncStreamReader<global::Walletrpc.ConfirmationNotificationsRequest> requestStream, grpc::IServerStreamWriter<global::Walletrpc.ConfirmationNotificationsResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -635,6 +663,22 @@ namespace Walletrpc {
       {
         return CallInvoker.AsyncUnaryCall(__Method_StakeInfo, null, options, request);
       }
+      public virtual global::Walletrpc.BlockInfoResponse BlockInfo(global::Walletrpc.BlockInfoRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return BlockInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Walletrpc.BlockInfoResponse BlockInfo(global::Walletrpc.BlockInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_BlockInfo, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.BlockInfoResponse> BlockInfoAsync(global::Walletrpc.BlockInfoRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return BlockInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Walletrpc.BlockInfoResponse> BlockInfoAsync(global::Walletrpc.BlockInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_BlockInfo, null, options, request);
+      }
       /// <summary>
       /// Notifications
       /// </summary>
@@ -664,6 +708,14 @@ namespace Walletrpc {
       public virtual grpc::AsyncServerStreamingCall<global::Walletrpc.AccountNotificationsResponse> AccountNotifications(global::Walletrpc.AccountNotificationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_AccountNotifications, null, options, request);
+      }
+      public virtual grpc::AsyncDuplexStreamingCall<global::Walletrpc.ConfirmationNotificationsRequest, global::Walletrpc.ConfirmationNotificationsResponse> ConfirmationNotifications(grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ConfirmationNotifications(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncDuplexStreamingCall<global::Walletrpc.ConfirmationNotificationsRequest, global::Walletrpc.ConfirmationNotificationsResponse> ConfirmationNotifications(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_ConfirmationNotifications, null, options);
       }
       /// <summary>
       /// Control
@@ -929,8 +981,10 @@ namespace Walletrpc {
           .AddMethod(__Method_GetTransactions, serviceImpl.GetTransactions)
           .AddMethod(__Method_TicketPrice, serviceImpl.TicketPrice)
           .AddMethod(__Method_StakeInfo, serviceImpl.StakeInfo)
+          .AddMethod(__Method_BlockInfo, serviceImpl.BlockInfo)
           .AddMethod(__Method_TransactionNotifications, serviceImpl.TransactionNotifications)
           .AddMethod(__Method_AccountNotifications, serviceImpl.AccountNotifications)
+          .AddMethod(__Method_ConfirmationNotifications, serviceImpl.ConfirmationNotifications)
           .AddMethod(__Method_ChangePassphrase, serviceImpl.ChangePassphrase)
           .AddMethod(__Method_RenameAccount, serviceImpl.RenameAccount)
           .AddMethod(__Method_Rescan, serviceImpl.Rescan)

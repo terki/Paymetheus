@@ -21,7 +21,7 @@ namespace Paymetheus.Rpc
 {
     public sealed class WalletClient : IDisposable
     {
-        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 12, 0);
+        private static readonly SemanticVersion RequiredRpcServerVersion = new SemanticVersion(4, 16, 0);
 
         public static void Initialize()
         {
@@ -200,6 +200,7 @@ namespace Paymetheus.Rpc
             {
                 Account = account.AccountNumber,
                 Kind = NextAddressRequest.Types.Kind.Bip0044External,
+                GapPolicy = NextAddressRequest.Types.GapPolicy.Wrap,
             };
             var resp = await client.NextAddressAsync(request, cancellationToken: _tokenSource.Token);
             return TupleValue.Create(resp.Address, resp.PublicKey);
@@ -212,6 +213,7 @@ namespace Paymetheus.Rpc
             {
                 Account = account.AccountNumber,
                 Kind = NextAddressRequest.Types.Kind.Bip0044Internal,
+                GapPolicy = NextAddressRequest.Types.GapPolicy.Wrap,
             };
             var resp = await client.NextAddressAsync(request, cancellationToken: _tokenSource.Token);
             return resp.Address;
