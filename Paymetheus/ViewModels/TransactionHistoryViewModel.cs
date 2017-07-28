@@ -1,15 +1,19 @@
 ﻿// Copyright (c) 2016 The Decred developers
 // Licensed under the ISC license.  See LICENSE file in the project root for full license information.
 
+using CsvHelper;
 using Paymetheus.Decred;
 using Paymetheus.Decred.Wallet;
 using Paymetheus.Framework;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Paymetheus.ViewModels
 {
@@ -23,6 +27,7 @@ namespace Paymetheus.ViewModels
 
             _selectedAccount = synchronizer.Accounts[0];
             Task.Run(() => PopulateHistoryAsync(_selectedAccount.Account));
+            ExportTransactionHistoryCommand = new DelegateCommand(ExportTransactionHistory);
         }
 
         private AccountViewModel _selectedAccount;
@@ -153,6 +158,87 @@ namespace Paymetheus.ViewModels
 
             DebitSum = totalDebits;
             CreditSum = totalCredits;
+        }
+
+        public ICommand ExportTransactionHistoryCommand { get; }
+
+        private void ExportTransactionHistory()
+        {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "";
+            dlg.DefaultExt = ".csv";
+            dlg.Filter = "Comma separated file|*.csv";
+            dlg.Title = "Export Transaction History";
+
+            Nullable<bool> result = dlg.ShowDialog();
+            if (result == true)
+            {
+                // Save document
+                string filename = dlg.FileName;
+
+                TextWriter textWriter = new StreamWriter(filename);
+
+                var csv = new CsvWriter(textWriter);
+                csv.Configuration.QuoteAllFields = true;
+                csv.WriteField("Confirmed");
+                csv.WriteField("Date");
+                csv.WriteField("Type");
+                csv.WriteField("Label");
+                csv.WriteField("Address");
+                csv.WriteField("Amount (DCR)");
+                csv.WriteField("ID");
+                csv.NextRecord();
+
+                bool multiOutputWarningShown = false;
+
+                foreach (var item in Transactions.Reverse())
+                {
+                    var outputs = item.Transaction.Outputs.Where(x => x.Destination != "Change" && x.Destination != "Non-address output");
+                    csv.WriteField((item.Transaction.ConfirmationStatus == ConfirmationStatus.Confirmed).ToString().ToLower());
+                    csv.WriteField(item.Transaction.LocalSeenTime.ToString("s"));
+                    string txType = "Unknown";
+                    switch (item.Transaction.Category)
+                    {
+                        case TransactionCategory.Receive: txType = "Received with"; break;
+                        case TransactionCategory.Send: txType = "Sent to"; break;
+                        // TODO: are these compatible with e g bitcoin.tax import?
+                        case TransactionCategory.TicketPurchase: txType = "Ticket purchase"; break;
+                        case TransactionCategory.TicketRevocation: txType = "Ticket revocation"; break;
+                        case TransactionCategory.Vote: txType = "Vote"; break;
+                    }
+                    // if (item.Transaction.GroupedOutputs.Count > 0 && !item.Transaction.GroupedOutputs.Any(x => x.Destination != "Change"))
+                    if (outputs.Count() == 0)
+                    {
+                        // txType = "Payment to yourself";
+                        txType = item.AccountDebitCredit>=0?"Received with":"Sent to";
+                        csv.WriteField(txType);
+                        csv.WriteField(""); // Label
+                        csv.WriteField(SelectedAccount.AccountProperties.AccountName); // Address
+                    }
+                    else
+                    {
+                        csv.WriteField(txType);
+                        csv.WriteField(""); // Label
+                        if (outputs.Count() > 1)
+                        {
+                            csv.WriteField("Multiple addresses"); // Address
+                            if (!multiOutputWarningShown)
+                            {
+                                MessageBox.Show("Multiple non-change outputs transactions not supported yet");
+                                multiOutputWarningShown = true;
+                            }
+                        }
+                        else
+                        {
+                            csv.WriteField(outputs.First().Address); // Address
+                        }
+                    }
+                    csv.WriteField(Denomination.Decred.DoubleFromAmount(item.AccountDebitCredit).ToString("0.00000000",CultureInfo.InvariantCulture));
+                    csv.WriteField(item.Transaction.TxHash);
+                    csv.NextRecord();
+                }
+                textWriter.Close();
+            }
         }
     }
 }

@@ -35,7 +35,8 @@ namespace Paymetheus.ViewModels
 
             Depth = BlockChain.Depth(wallet.ChainTip.Height, transactionLocation);
             Inputs = _transaction.Inputs.Select(input => new Input(-input.Amount, wallet.AccountName(input.PreviousAccount))).ToArray();
-            Outputs = _transaction.Outputs.Select(output => new Output(output.Amount, wallet.OutputDestination(output))).ToArray();
+            Address adr;
+            Outputs = _transaction.Outputs.Select(output => new Output(output.Amount, wallet.OutputDestination(output), output is WalletTransaction.Output.UncontrolledOutput && Address.TryFromOutputScript(((WalletTransaction.Output.UncontrolledOutput)output).PkScript, App.Current.ActiveNetwork,out adr) ? adr.ToString() : wallet.OutputDestination(output))).ToArray();
             GroupedOutputs = groupedOutputs;
         }
 
@@ -55,14 +56,16 @@ namespace Paymetheus.ViewModels
 
         public struct Output
         {
-            public Output(Amount amount, string destination)
+            public Output(Amount amount, string destination, string address)
             {
                 Amount = amount;
                 Destination = destination;
+                Address = address;
             }
 
             public Amount Amount { get; }
             public string Destination { get; }
+            public string Address { get; }
         }
 
         public Blake256Hash TxHash => _transaction.Hash;
